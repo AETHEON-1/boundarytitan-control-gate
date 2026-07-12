@@ -1,0 +1,11 @@
+{
+  "combined_spec_exists": true,
+  "approval_record_exists": true,
+  "known_limitations_exists": true,
+  "hash_manifest_exists": true,
+  "release_manifest_exists": true,
+  "old_prepublication_bundle_removed": true,
+  "green_not_approval_present": true,
+  "receipt_not_permission_present": true,
+  "not_yet_published_present": true
+}
