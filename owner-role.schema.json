@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OwnerRoleAssignment",
+  "type": "object",
+  "required": [
+    "id",
+    "role_type",
+    "subject_id",
+    "authority_basis",
+    "scope",
+    "effective_from"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "role_type": {
+      "enum": [
+        "ACCOUNTABLE_OWNER",
+        "DECISION_OWNER",
+        "REVIEWER",
+        "OPERATOR",
+        "RELEASE_AUTHORITY",
+        "REVOCATION_AUTHORITY",
+        "EMERGENCY_STOP_AUTHORITY",
+        "AUDITOR",
+        "EVIDENCE_CUSTODIAN",
+        "SYSTEM_CUSTODIAN",
+        "AFFECTED_PARTY"
+      ]
+    },
+    "subject_id": {
+      "type": "string"
+    },
+    "authority_basis": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "effective_from": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "revocation_path": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

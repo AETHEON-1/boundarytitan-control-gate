@@ -1,0 +1,8 @@
+flowchart LR
+  U[Untrusted Input] --> A[Preparation Boundary]
+  A --> B[Validation Boundary]
+  B --> C[Human Authority Boundary]
+  C --> D[Release Boundary]
+  D --> E[Execution Boundary]
+  X[External Stop Boundary] -.-> D
+  X -.-> E
