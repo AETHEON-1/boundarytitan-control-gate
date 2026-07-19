@@ -2,7 +2,7 @@
 
 Architecture Specification v1.0 — Release Candidate 1
 
-Status: HUMAN-APPROVED ARCHITECTURE BASELINE — RELEASE CANDIDATE — NOT YET PUBLISHED  
+Status: HUMAN-APPROVED ARCHITECTURE BASELINE — RELEASE CANDIDATE — PUBLISHED  
 Version: 1.0.0-rc.1  
 Candidate tag: `architecture-v1.0-rc1`  
 Human approval recorded: 2026-07-11  
