@@ -7,6 +7,7 @@
 
 export type ReceiptReviewState = 'PREPARED' | 'HELD_FOR_HUMAN_REVIEW' | 'SUPERSEDED';
 export type ConsequenceReversibility = 'REVERSIBLE' | 'PARTIALLY_REVERSIBLE' | 'IRREVERSIBLE' | 'UNKNOWN';
+export type DependencyContextState = 'RECORDED' | 'NONE_DECLARED' | 'UNKNOWN';
 
 export interface ReceiptEvidenceReference {
   evidence_id: string;
@@ -32,7 +33,9 @@ export interface ConsequenceReceiptV2 {
   stop_path_owner_id: string;
   revocation_authority_id: string;
   evidence: ReceiptEvidenceReference[];
+  dependency_context_state: DependencyContextState;
   dependency_references: string[];
+  reinspection_candidate_references: string[];
   unresolved_questions: string[];
   who_can_still_say_no: string[];
   review_state: ReceiptReviewState;
