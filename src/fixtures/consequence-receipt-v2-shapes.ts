@@ -1,0 +1,32 @@
+import type { ConsequenceReceiptV2 } from '../types/consequence-receipt-v2-contracts';
+
+export const consequenceReceiptV2Shape: ConsequenceReceiptV2 = {
+  id: 'receipt-v2-example-001',
+  proposal_reference: 'proposal-example-001',
+  task_wall_id: 'task-wall-example-001',
+  workcell_id: 'workcell-example-001',
+  scope: 'Prepare a bounded evidence review packet.',
+  expected_consequence: 'A human receives a review packet; no external action occurs.',
+  affected_surface: 'internal review artifact',
+  reversibility: 'REVERSIBLE',
+  accountable_human_owner_id: 'human-owner-example',
+  decision_owner_id: 'human-decision-owner-example',
+  external_stop_path_id: 'external-stop-example-001',
+  stop_path_owner_id: 'external-stop-authority-example',
+  revocation_authority_id: 'human-revocation-authority-example',
+  evidence: [{
+    evidence_id: 'evidence-example-001',
+    claim: 'The cited context supports the stated scope.',
+    source_reference: 'BOUNDARY-ATLAS-CONTEXT-NOTES.md',
+    evidence_custodian_id: 'evidence-custodian-example',
+    freshness_status: 'CURRENT',
+    content_hash: 'example-content-hash',
+  }],
+  dependency_references: ['dependency-declaration-example-001'],
+  unresolved_questions: ['Whether the human decision owner accepts the proposed scope.'],
+  who_can_still_say_no: ['human-decision-owner-example', 'external-stop-authority-example'],
+  review_state: 'HELD_FOR_HUMAN_REVIEW',
+  prepared_at: '2026-08-20T00:00:00Z',
+  prepared_by: 'machine-preparation-example',
+  expiry: '2026-08-27T00:00:00Z',
+};
