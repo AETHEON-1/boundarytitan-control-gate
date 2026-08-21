@@ -21,9 +21,15 @@ DENIED, HELD, REQUIRES_EXTERNAL_REVIEW, EXECUTED_PENDING_READBACK, READBACK_SUPP
 
 ## External design anchors
 
-Delego demonstrates intent-bound and single-use approval patterns. SPIFFE provides short-lived workload identity documents, while preserving identity as distinct from authorization. Cedar separates policy evaluation from application enforcement. TUF supplies rollback and trust-root rotation concepts. Temporal demonstrates durable human approval through signals and timers.
+The implementation references are named explicitly in [CITATIONS.md](./CITATIONS.md). The relevant patterns are:
 
-These are implementation references, not validation of BoundaryTitan architecture.
+- Delego-Dev's Delego project: intent-bound, single-use action authorization and audit receipts.
+- SPIFFE project: short-lived workload identity documents; identity remains distinct from authorization.
+- Cedar Policy Language project: policy language and authorization decision evaluation; enforcement remains an application responsibility.
+- The Update Framework project: signed metadata, rollback detection, freeze detection, role separation, and trust-root/key rotation.
+- Temporal Technologies: durable human-in-the-loop waits using Signals, timers, and recorded decisions.
+
+These are implementation references and attributed design patterns, not validation of BoundaryTitan architecture, legal advice, safety certification, or claims that the cited projects endorse BoundaryTitan.
 
 ## Required adversarial checks
 
