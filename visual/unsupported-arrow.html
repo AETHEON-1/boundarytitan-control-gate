@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>First Unsupported Arrow Finder</title>
+<style>
+:root{font-family:Inter,system-ui,sans-serif;color:#18212b;background:#eef1f3;line-height:1.45}body{margin:0}.wrap{max-width:1100px;margin:auto;padding:28px}header,.card{background:#fff;border:1px solid #c8d0d6;border-radius:12px;box-shadow:0 4px 18px #18212b10}header{padding:24px;margin-bottom:18px}.card{padding:18px;margin:14px 0}.banner{margin-top:14px;padding:12px;border-left:4px solid #bf2d32;background:#fff3f3;font-weight:700}.arrow{border-left:5px solid #bf2d32}.arrow.documented{border-left-color:#63717d}.arrow.downstream{border-left-color:#b27a00}.path{font-family:ui-monospace,monospace;background:#f1f4f6;padding:3px 6px;border-radius:4px}.meta{color:#5d6872;font-size:13px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.label{font-weight:700;color:#52606b}.red{color:#9b272c}.amber{color:#8a5b00}@media(max-width:700px){.grid{grid-template-columns:1fr}.wrap{padding:14px}}
+</style>
+</head>
+<body><main class="wrap">
+<header><h1>First Unsupported Arrow Finder</h1>
+<p class="meta">Read-only inspection of transition support. JSON Pointer identifies the source locations.</p>
+<div class="banner">The first unsupported arrow is a finding, not an authorization decision.</div></header>
+<section id="summary"></section><section id="arrows"></section>
+<p class="meta">Fixture only. No approval, permission, release, execution, mutation, revocation, certification, or closure path.</p>
+</main>
+<script>
+const esc=v=>String(v??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+const list=a=>a.length?a.map(x=>"<li><span class='path'>"+esc(x)+"</span></li>").join(""):"<li>None recorded</li>";
+fetch("unsupported-arrows.json").then(r=>r.json()).then(d=>{
+const first=d.arrows.find(x=>x.disposition==="FIRST_UNSUPPORTED_ARROW");
+document.getElementById("summary").innerHTML="<div class='card arrow'><h2>First unsupported arrow</h2><p><b>"+esc(first.from)+" → "+esc(first.to)+"</b></p><p>"+esc(first.claim)+"</p><p><span class='label'>Evidence:</span> <span class='red'>"+esc(first.evidenceState)+"</span> · <span class='label'>Owner:</span> "+esc(first.owner||"MISSING")+" · <span class='label'>Stop path:</span> "+esc(first.stopPath)+"</p></div>";
+document.getElementById("arrows").innerHTML=d.arrows.map(x=>"<article class='card arrow "+(x.disposition==="DOCUMENTED"?"documented":x.disposition==="DOWNSTREAM_UNTESTED"?"downstream":"")+"'><h2>"+esc(x.from)+" → "+esc(x.to)+"</h2><p>"+esc(x.claim)+"</p><div class='grid'><div><p><span class='label'>From:</span> <span class='path'>"+esc(x.fromPointer)+"</span></p><p><span class='label'>To:</span> <span class='path'>"+esc(x.toPointer)+"</span></p><p><span class='label'>Disposition:</span> "+esc(x.disposition)+"</p></div><div><p><span class='label'>Evidence:</span> "+esc(x.evidenceState)+"</p><p><span class='label'>Owner:</span> "+esc(x.owner||"MISSING")+"</p><p><span class='label'>Stop:</span> "+esc(x.stopPath)+"</p></div></div><p><span class='label'>Evidence pointers:</span></p><ul>"+list(x.evidencePointers)+"</ul><p><span class='label'>Consequence:</span> "+esc(x.consequence)+"</p></article>").join("");
+}).catch(()=>document.body.innerHTML="<main class='wrap'><div class='card'><h1>UNKNOWN</h1><p>Arrow evidence could not be loaded. No unsupported-arrow result is established.</p></div></main>");
+</script></body></html>
