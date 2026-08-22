@@ -170,3 +170,72 @@ A case cannot be Green unless every authority-bearing arrow has:
 ## Status boundary
 
 This is a terminology and authority-mapping artifact. It does not establish independent review, field validation, deployment readiness, safety, or certification. The machine may prepare the index; it may not certify the index or authorize itself through it.
+
+
+## Pre-Action Control Requirement
+
+Human-in-the-loop review is insufficient when the human sees the proposal only after authority, credentials, execution, or irreversible consequence has already been released.
+
+For consequential actions, the system must produce an inspectable pre-action work record before receiving the power to act.
+
+Required sequence:
+
+```text
+Proposed action
+→ Inspectable evidence packet
+→ Human challenge
+→ Scoped authority decision
+→ Credential/tool release
+→ Bounded execution
+→ Consequence monitoring
+→ External stop and recovery
+```
+
+The pre-action record must identify:
+
+- exact action and target;
+- intended outcome;
+- evidence used and source provenance;
+- assumptions and uncertainty;
+- alternatives considered or rejected;
+- authority basis and scope;
+- credentials and tools requested;
+- predicted consequences and harm budget;
+- reversibility and recovery plan;
+- consequence owner;
+- independent denial, revocation, and stop authority;
+- the condition that changes or suspends the decision.
+
+**Explanation is not evidence. Evidence is not authority. Authority is not enforcement.**
+
+This requirement does not require disclosure of private chain-of-thought. It requires a reproducible, decision-relevant work product that an independent reviewer can inspect before consequence begins.
+
+## Machine Judgment Boundary
+
+The machine may generate the proposal, evidence packet, test, explanation, and uncertainty record.
+
+It may not control:
+
+- final evaluation;
+- authority to proceed;
+- acceptance of residual risk;
+- closure of failure;
+- certification;
+- deployment;
+- its own external stop.
+
+**The machine cannot be the final judge of the machine.**
+
+A machine-generated work record cannot authorize itself, certify itself, or close itself. If the pre-action authority record is absent, incomplete, stale, ambiguous, or not independently reviewable, the action remains non-Green.
+
+## Additional missing arrows
+
+| Existing arrow | Unsupported inference | Required arrow |
+|---|---|---|
+| Proposal → explanation | Explanation proves the proposal | Proposal → inspectable work record |
+| Work record → approval | Documentation creates authority | Record → independent human disposition |
+| Human review → control | Review means effective veto | Review → pre-action denial or release power |
+| Approval → credential release | Approval reaches the enforcement point | Decision → independently enforced credential gate |
+| Credential release → bounded action | Credential scope matches the request | Credential → exact action-target binding |
+| Machine test → machine validity | Self-authored testing is independent | Test → independent admission and evaluation |
+| Machine result → closure | The system may close its own failure | Result → external disposition |
