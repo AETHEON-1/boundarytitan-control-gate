@@ -1,0 +1,3 @@
+export interface SigmaOneWorkItem { id: string; label: string; evidence_count: number; unresolved_count: number; consequence_weight: number; owner_present: boolean; external_stop_present: boolean; estimated_cost: number; }
+export interface SigmaOneOptimizationInput { optimization_id: string; items: SigmaOneWorkItem[]; objective: 'EVIDENCE_COVERAGE' | 'UNCERTAINTY_REDUCTION' | 'REVIEW_READINESS'; }
+export interface SigmaOneOptimizationResult { optimization_id: string; ordered_item_ids: string[]; rationale: string[]; held_item_ids: string[]; authority_transferred: false; permission_granted: false; release_issued: false; human_disposition_required: true; }
