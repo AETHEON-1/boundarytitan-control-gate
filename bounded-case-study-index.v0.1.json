@@ -1,0 +1,86 @@
+{
+  "schema_version": "0.1",
+  "status": "PREPARED",
+  "index_type": "AUTHORITY_ARROW_EVIDENCE_BOUNDARY",
+  "entries": [
+    {
+      "id": "BT-BCS-001",
+      "title": "AISI cyber-evaluation incident",
+      "primary_arrow": "test authorization -> bounded behavior",
+      "disposition": "CONTRADICTED"
+    },
+    {
+      "id": "BT-BCS-002",
+      "title": "Runtime control establishment",
+      "primary_arrow": "policy result -> enforced execution",
+      "disposition": "NOT ESTABLISHED"
+    },
+    {
+      "id": "BT-BCS-003",
+      "title": "Test-boundary control",
+      "primary_arrow": "test environment -> consequence isolation",
+      "disposition": "REQUIRES INDEPENDENT REVIEW"
+    },
+    {
+      "id": "BT-BCS-004",
+      "title": "Intent-governed authorization",
+      "primary_arrow": "user intent -> permitted tool action",
+      "disposition": "OPEN"
+    },
+    {
+      "id": "BT-BCS-005",
+      "title": "Authorization propagation",
+      "primary_arrow": "parent authority -> child-agent authority",
+      "disposition": "OPEN"
+    },
+    {
+      "id": "BT-BCS-006",
+      "title": "Revocation dominance",
+      "primary_arrow": "revocation -> descendant cessation",
+      "disposition": "NOT TESTED"
+    },
+    {
+      "id": "BT-BCS-007",
+      "title": "End-to-end transparency",
+      "primary_arrow": "event record -> reconstructable chain",
+      "disposition": "STRUCTURAL ONLY"
+    },
+    {
+      "id": "BT-BCS-008",
+      "title": "Sigma-1 optimization",
+      "primary_arrow": "optimization -> improved preparation",
+      "disposition": "IMPLEMENTED STRUCTURALLY"
+    },
+    {
+      "id": "BT-BCS-009",
+      "title": "Human review boundary",
+      "primary_arrow": "human presence -> effective human control",
+      "disposition": "OPEN"
+    },
+    {
+      "id": "BT-BCS-010",
+      "title": "Receipt boundary",
+      "primary_arrow": "evidence receipt -> permission",
+      "disposition": "EXPLICITLY REJECTED"
+    },
+    {
+      "id": "BT-BCS-011",
+      "title": "Unsupported-arrow visual finder",
+      "primary_arrow": "scan result -> bounded omission evidence",
+      "disposition": "STRUCTURAL ONLY"
+    },
+    {
+      "id": "BT-BCS-012",
+      "title": "Machine self-evaluation",
+      "primary_arrow": "test output -> evaluation authority",
+      "disposition": "EXPLICITLY REJECTED"
+    }
+  ],
+  "prohibited_states": [
+    "PASS",
+    "SAFE",
+    "CERTIFIED",
+    "COMPLETE",
+    "APPROVED"
+  ]
+}
