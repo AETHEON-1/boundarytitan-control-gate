@@ -4,6 +4,16 @@
 
 Access, capability, approval, permission, release, and execution are distinct.
 
+Capability is not itself restricted by this model. The control surface governs access to capability, authority to invoke it, execution, and consequence-bearing transitions.
+
+```text
+Capability may remain available
+→ access is scoped
+→ invocation is permitted
+→ execution is controlled
+→ consequence is owned
+```
+
 ## Permission dimensions
 
 - subject
@@ -34,6 +44,8 @@ A PermissionGrant requires:
 ## Deny-by-default
 
 Missing or ambiguous dimensions default to no permission.
+
+This is deny-by-default for access and execution, not a claim that the underlying capability must be erased, hidden, or destroyed.
 
 ## Inheritance
 

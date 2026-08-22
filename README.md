@@ -34,3 +34,39 @@ Mandatory separations:
 - Routing does not transfer authority.
 
 Publication remains a separate human-controlled action. This release candidate may be inspected, compared, hashed, staged, or returned for revision. It may not publish itself.
+
+## Current project identity
+
+The newest version is called **The Impossible System**: a cross-domain human-agency preservation system for consequence-bearing environments.
+
+It is not limited to AI. It studies how capability becomes access, permission, authority, action, and consequence—and where an unsupported arrow allows unearned authority to enter the system.
+
+## Specialist entry points
+
+- `SPECIALIST-OUTREACH-README.md` — what this is and what specialists are being asked to challenge.
+- `CARPENTERS-NOTE.md` — human-origin statement and invitation to counterexample.
+- `TERMINOLOGY-ENCYCLOPEDIA-ARCHITECTURE-v0.1.md` — shared cross-domain language surface.
+- `SPECIALIST-LANGUAGE-AUDIT-v0.1.md` — audit terms that hide uncertainty or authority.
+- `OPEN-HANDOFF-TRANSFER-PACKAGE-v0.1.md` — custody and independent-review boundary.
+- `FINAL-SLEDGEHAMMER-BATTERY-REPORT-v0.1.md` — latest adversarial disposition.
+
+## Minimum kernel
+
+```text
+CAN ⊬ MAY
+OUTPUT ⊬ AUTHORITY
+RECEIPT ⊬ PERMISSION
+UNKNOWN ⊬ HARMLESS
+LOCAL PASS ⊬ GLOBAL SAFETY
+MACHINE OUTPUT ⊬ FINAL VERIFICATION
+```
+
+## Language rule
+
+Specialists may speak specialist language. The repository requires a cross-domain translation whenever terminology could hide a permission, authority, state, consequence, or stop transition.
+
+> **If the language hides the arrow, the system hides the authority.**
+
+## Current verification boundary
+
+Typecheck and local tests are structural evidence only. They do not establish legal compliance, field safety, runtime access enforcement, complete lane reconstruction, independent verification, publication, merge, or deployment.
