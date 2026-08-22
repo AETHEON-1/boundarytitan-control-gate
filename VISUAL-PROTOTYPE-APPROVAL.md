@@ -6,14 +6,16 @@ Scope: Read-only Boundary State Inspector prototype
 
 ## Approved
 
-The human owner approves continued development of the visual prototype containing:
+The human owner approves continued development of the visual prototype and schema-validation layer containing:
 
 - consequence receipt rendering;
 - authority-transition inspection;
 - evidence and uncertainty display;
 - stop and revocation display;
 - ledger timeline rendering;
-- canonical JSON fixture loading.
+- canonical JSON fixture loading;
+- visual-state schema validation;
+- static conformance tests.
 
 ## Not approved
 
