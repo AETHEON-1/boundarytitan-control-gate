@@ -1,0 +1,55 @@
+{
+  "source": {
+    "artifactId": "fixture-boundary-state-001",
+    "schemaVersion": "visual-state-v0.1",
+    "stateVersion": "1",
+    "observedAt": "2026-08-22T00:00:00Z",
+    "freshness": "fixture",
+    "sourceHash": "fixture-only-not-a-live-ledger"
+  },
+  "receipt": {
+    "lane": "Visual Tools",
+    "action": "Render a bounded state inspection packet",
+    "evidenceState": "SUPPORTED",
+    "boundedInference": "A read-only representation can expose missing authority without acquiring authority.",
+    "openQuestions": ["What is the canonical state envelope?", "Who accepts visual fidelity?"],
+    "uninspectedSurfaces": ["Live credentials", "Queued actions", "Replicated authority"],
+    "consequenceOwner": "human-owner-required",
+    "decisionOwner": "human-decision-owner-required",
+    "evidenceCustodian": "evidence-custodian-required",
+    "consequence": "A human receives an inspection view; no external action occurs.",
+    "reversibility": "View-only; no state mutation.",
+    "approvalState": "NOT_REQUESTED",
+    "permissionState": "NOT_GRANTED",
+    "releaseState": "NOT_APPLICABLE",
+    "executionState": "NOT_EXECUTED",
+    "externalStopAuthority": "external-stop-authority-required",
+    "whoCanStillSayNo": ["human-decision-owner-required", "external-stop-authority-required"]
+  },
+  "transitions": [
+    {"name":"Signal","state":"RECORDED","authority":"NONE"},
+    {"name":"Proposal","state":"PREPARED","authority":"NONE"},
+    {"name":"Validation","state":"SUPPORTED","authority":"NONE"},
+    {"name":"Routing","state":"GREEN_ELIGIBLE","authority":"NONE"},
+    {"name":"Human Review","state":"REQUIRED","authority":"EXTERNAL"},
+    {"name":"Approval","state":"NOT_REQUESTED","authority":"EXTERNAL"},
+    {"name":"Permission","state":"NOT_GRANTED","authority":"EXTERNAL"},
+    {"name":"Release","state":"NOT_APPLICABLE","authority":"EXTERNAL"},
+    {"name":"Execution","state":"NOT_EXECUTED","authority":"EXTERNAL"},
+    {"name":"Consequence","state":"NONE","authority":"EXTERNAL"}
+  ],
+  "stop": {
+    "declared": true,
+    "available": false,
+    "externallyControlled": "UNKNOWN",
+    "tested": false,
+    "authorityInvalidated": "NOT_APPLICABLE",
+    "queuedActionCancelled": "NOT_TESTED",
+    "cachedAuthorityRemoved": "NOT_TESTED",
+    "recoveryReauthorized": "NOT_TESTED"
+  },
+  "ledger": [
+    {"at":"2026-08-22T00:00:00Z","actor":"fixture","event":"STATE_SNAPSHOT_LOADED","authorityBasis":"none","state":"READ_ONLY"},
+    {"at":"2026-08-22T00:00:01Z","actor":"renderer","event":"RECEIPT_RENDERED","authorityBasis":"visual-contract-v0.1","state":"INSPECTION_ONLY"}
+  ]
+}
