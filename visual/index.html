@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boundary State Inspector</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:#18212b;background:#eef1f3;line-height:1.45}
+body{margin:0}.wrap{max-width:1180px;margin:auto;padding:28px}
+header,.panel{background:#fff;border:1px solid #c8d0d6;border-radius:12px;box-shadow:0 4px 18px #18212b10}
+header{padding:24px;margin-bottom:18px}h1,h2{margin:0 0 8px}h1{font-size:28px}h2{font-size:17px;border-bottom:1px solid #d9dee2;padding-bottom:8px}
+.sub{color:#5d6872}.banner{margin-top:16px;padding:12px;border-left:4px solid #bf2d32;background:#fff3f3;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}.panel{padding:18px;margin-bottom:18px}
+dl{display:grid;grid-template-columns:170px 1fr;gap:8px;margin:0}dt{font-weight:700;color:#52606b}dd{margin:0;overflow-wrap:anywhere}
+.arrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.node{padding:9px 11px;border:1px solid #b7c1c8;border-radius:8px;background:#f8fafb}.node span{display:block;font-size:11px;color:#62717d}.arrow i{color:#9b272c;font-style:normal;font-weight:700}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:9px;border-bottom:1px solid #e0e5e8;vertical-align:top}th{font-size:12px;color:#52606b}
+.tag{display:inline-block;padding:3px 7px;border-radius:999px;background:#e8edf0;font-size:12px;font-weight:700}.red{color:#9b272c}.amber{color:#8a5b00}.green{color:#23633c}
+ul{margin:8px 0 0;padding-left:22px}.foot{color:#5d6872;font-size:13px}
+@media(max-width:650px){.wrap{padding:14px}dl{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header>
+<h1>Boundary State Inspector</h1>
+<div class="sub">Read-only visual representation of canonical fixture state</div>
+<div class="banner">GREEN_ELIGIBLE IS NOT APPROVAL · RECEIPT IS NOT PERMISSION · NO EXECUTION PATH</div>
+</header>
+<section class="grid">
+<div class="panel"><h2>Source</h2><dl id="source"></dl></div>
+<div class="panel"><h2>Consequence Receipt</h2><dl id="receipt"></dl></div>
+</section>
+<section class="panel"><h2>Authority Arrow Inspector</h2><div id="arrows" class="arrow"></div></section>
+<section class="grid">
+<div class="panel"><h2>Evidence / Uncertainty</h2><div id="evidence"></div></div>
+<div class="panel"><h2>Stop / Revocation</h2><div id="stop"></div></div>
+</section>
+<section class="panel"><h2>Ledger Timeline</h2><table><thead><tr><th>Time</th><th>Actor</th><th>Event</th><th>Authority basis</th><th>State</th></tr></thead><tbody id="ledger"></tbody></table></section>
+<p class="foot">The renderer may expose state. It may not establish state. Fixture only; no live connection, approval, permission, release, execution, revocation, or closure.</p>
+</main>
+<script>
+const esc=v=>String(v??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+const list=a=>"<ul>"+(a||[]).map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>";
+const dl=(obj,skip=[])=>Object.entries(obj).filter(([k])=>!skip.includes(k)).map(([k,v])=>"<dt>"+esc(k)+"</dt><dd>"+(Array.isArray(v)?list(v):"<span class='tag'>"+esc(v)+"</span>")+"</dd>").join("");
+fetch("visual-state.json").then(r=>r.json()).then(s=>{
+document.getElementById("source").innerHTML=dl(s.source);
+document.getElementById("receipt").innerHTML=dl(s.receipt);
+document.getElementById("evidence").innerHTML="<p><b>Evidence state:</b> <span class='tag green'>"+esc(s.receipt.evidenceState)+"</span></p><p><b>Bounded inference:</b> "+esc(s.receipt.boundedInference)+"</p><p><b>Open questions:</b>"+list(s.receipt.openQuestions)+"</p><p><b>Uninspected surfaces:</b>"+list(s.receipt.uninspectedSurfaces)+"</p>";
+document.getElementById("stop").innerHTML=dl(s.stop);
+document.getElementById("arrows").innerHTML=s.transitions.map((x,i)=>"<div class='node'><b>"+esc(x.name)+"</b><span>"+esc(x.state)+" · "+esc(x.authority)+"</span></div>"+(i<s.transitions.length-1?"<i>→</i>":"")).join("");
+document.getElementById("ledger").innerHTML=s.ledger.map(x=>"<tr><td>"+esc(x.at)+"</td><td>"+esc(x.actor)+"</td><td>"+esc(x.event)+"</td><td>"+esc(x.authorityBasis)+"</td><td>"+esc(x.state)+"</td></tr>").join("");
+}).catch(e=>document.body.innerHTML="<main class='wrap'><div class='panel'><h1>UNKNOWN</h1><p>Canonical fixture could not be loaded. The visual state is not tested.</p></div></main>");
+</script>
+</body>
+</html>

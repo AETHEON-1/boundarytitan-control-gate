@@ -1,0 +1,39 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://boundarytitan.example/schemas/visual-state-v0.1.json",
+  "title":"Boundary State Inspector Visual State",
+  "type":"object",
+  "required":["source","receipt","transitions","stop","ledger"],
+  "additionalProperties":false,
+  "properties":{
+    "source":{
+      "type":"object","additionalProperties":false,
+      "required":["artifactId","schemaVersion","stateVersion","observedAt","freshness","sourceHash"],
+      "properties":{
+        "artifactId":{"type":"string","minLength":1},
+        "schemaVersion":{"const":"visual-state-v0.1"},
+        "stateVersion":{"type":"string","minLength":1},
+        "observedAt":{"type":"string","format":"date-time"},
+        "freshness":{"type":"string","minLength":1},
+        "sourceHash":{"type":"string","minLength":1}
+      }
+    },
+    "receipt":{
+      "type":"object","additionalProperties":false,
+      "required":["lane","action","evidenceState","boundedInference","openQuestions","uninspectedSurfaces","consequenceOwner","decisionOwner","evidenceCustodian","consequence","reversibility","approvalState","permissionState","releaseState","executionState","externalStopAuthority","whoCanStillSayNo"],
+      "properties":{
+        "lane":{"type":"string","minLength":1},"action":{"type":"string","minLength":1},
+        "evidenceState":{"enum":["SUPPORTED","CONTRADICTED","INDETERMINATE","TEST_INVALID","NOT_TESTED","UNKNOWN","STALE","MISSING"]},
+        "boundedInference":{"type":"string"},"openQuestions":{"type":"array","items":{"type":"string"}},
+        "uninspectedSurfaces":{"type":"array","items":{"type":"string"}},
+        "consequenceOwner":{"type":"string","minLength":1},"decisionOwner":{"type":"string","minLength":1},"evidenceCustodian":{"type":"string","minLength":1},
+        "consequence":{"type":"string"},"reversibility":{"type":"string"},
+        "approvalState":{"type":"string"},"permissionState":{"type":"string"},"releaseState":{"type":"string"},"executionState":{"type":"string"},
+        "externalStopAuthority":{"type":"string","minLength":1},"whoCanStillSayNo":{"type":"array","minItems":1,"items":{"type":"string","minLength":1}}
+      }
+    },
+    "transitions":{"type":"array","minItems":1,"items":{"type":"object","additionalProperties":false,"required":["name","state","authority"],"properties":{"name":{"type":"string"},"state":{"type":"string"},"authority":{"type":"string"}}}},
+    "stop":{"type":"object","additionalProperties":false,"required":["declared","available","externallyControlled","tested","authorityInvalidated","queuedActionCancelled","cachedAuthorityRemoved","recoveryReauthorized"],"properties":{"declared":{"type":"boolean"},"available":{"type":"boolean"},"externallyControlled":{"type":"string"},"tested":{"type":"boolean"},"authorityInvalidated":{"type":"string"},"queuedActionCancelled":{"type":"string"},"cachedAuthorityRemoved":{"type":"string"},"recoveryReauthorized":{"type":"string"}}},
+    "ledger":{"type":"array","minItems":1,"items":{"type":"object","additionalProperties":false,"required":["at","actor","event","authorityBasis","state"],"properties":{"at":{"type":"string","format":"date-time"},"actor":{"type":"string"},"event":{"type":"string"},"authorityBasis":{"type":"string"},"state":{"type":"string"}}}}
+  }
+}
