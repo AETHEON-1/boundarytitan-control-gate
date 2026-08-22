@@ -1,0 +1,49 @@
+{
+  "artifactId":"unsupported-arrow-fixture-001",
+  "schemaVersion":"unsupported-arrow-v0.1",
+  "sourceHash":"fixture-only-not-a-live-ledger",
+  "arrows":[
+    {
+      "id":"arrow-validation-human-review",
+      "from":"Validation",
+      "to":"Human Review",
+      "fromPointer":"/transitions/2",
+      "toPointer":"/transitions/4",
+      "claim":"Validation permits human review",
+      "evidenceState":"SUPPORTED",
+      "evidencePointers":["/receipt/evidenceState","/transitions/2/state"],
+      "owner":"human-decision-owner-required",
+      "consequence":"No external action; human review is required.",
+      "stopPath":"external-stop-authority-required",
+      "disposition":"DOCUMENTED"
+    },
+    {
+      "id":"arrow-routing-approval",
+      "from":"Routing",
+      "to":"Approval",
+      "fromPointer":"/transitions/3",
+      "toPointer":"/transitions/5",
+      "claim":"GREEN_ELIGIBLE permits approval",
+      "evidenceState":"INDETERMINATE",
+      "evidencePointers":["/transitions/3/state"],
+      "owner":null,
+      "consequence":"Green eligibility could be mistaken for approval.",
+      "stopPath":"UNKNOWN",
+      "disposition":"FIRST_UNSUPPORTED_ARROW"
+    },
+    {
+      "id":"arrow-approval-permission",
+      "from":"Approval",
+      "to":"Permission",
+      "fromPointer":"/transitions/5",
+      "toPointer":"/transitions/6",
+      "claim":"Approval establishes permission",
+      "evidenceState":"NOT_TESTED",
+      "evidencePointers":[],
+      "owner":null,
+      "consequence":"A decision could be treated as an executable grant.",
+      "stopPath":"UNKNOWN",
+      "disposition":"DOWNSTREAM_UNTESTED"
+    }
+  ]
+}
