@@ -18,7 +18,9 @@ describe('Zombie Permission Hunter prototype', () => {
       ...zombiePermissionFixture, id: 'permission-valid-001', granted_scope: ['read:inventory'],
       observed_scope: ['read:inventory'], expires_at: '2026-08-22T00:00:00Z', owner_id: 'owner-01',
     }, { ...zombieHunterContext, uninspected_surfaces: [] });
-    expect(output.finding.status).toBe('NO_DECLARED_DEFECT_DETECTED');
+    expect(output.finding.status).toBe('EXPIRING');
+    expect(output.finding.detected_conditions).toContain('EXPIRING');
+    expect(output.finding.recommended_disposition).toBe('HUMAN_REVIEW');
     expect(output.finding.coverage_statement).toContain('completeness is not established');
     expect(output.human_translation_key.translation_loss.length).toBeGreaterThan(0);
   });

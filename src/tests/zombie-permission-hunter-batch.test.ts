@@ -10,7 +10,7 @@ describe('Zombie Permission Hunter batch prototype', () => {
 
     expect(outputs).toHaveLength(2);
     expect(outputs[0].finding.recommended_disposition).toBe('HUMAN_REVIEW');
-    expect(outputs[1].finding.status).toBe('NO_DECLARED_DEFECT_DETECTED');
+    expect(outputs[1].finding.status).toBe('EXPIRING');
     expect(outputs.every((output) => output.finding.action_taken === 'NONE')).toBe(true);
     expect(outputs.every((output) => output.machine_authority_boundary === 'NO_AUTHORIZATION_NO_CERTIFICATION_NO_CLOSURE')).toBe(true);
   });

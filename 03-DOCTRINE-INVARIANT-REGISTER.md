@@ -20,3 +20,8 @@
 | D-016 | Critical transitions should emit tamper-evident records. | Proposed implementation control | Audit design requirement | Human decision required |
 | D-017 | Credentialed authority must be scoped, revocable, and isolated. | Owner-established / proposed implementation | Credential controller | Confirm public-source status |
 | D-018 | Every action must produce a Consequence Receipt. | Owner-established doctrine | Receipt requirement | Confirm scope and exceptions |
+| D-019 | The architecture remains open to attack, correction, and human reopening; no internal state constitutes final closure. | Owner-established doctrine | Prevents completion and self-certification claims | Human review required |
+| D-020 | Unknown is a recorded state, not a defect to be guessed away. | Owner-established doctrine | Preserves uncertainty across communication, delegation, receipts, and release | Human review required |
+| D-021 | Capability is not restricted by default; access to capability and authority to invoke it are bounded. | Owner-established doctrine | Separates available potential from controlled access and consequence | Human review required |
+| D-022 | Recursive improvement may propose changes and tests; recursive self-authorization is never permitted. | Owner-established doctrine | Keeps adaptation separate from authority grant, release, and closure | Human review required |
+| D-023 | Known weaknesses remain visible and are treated as design inputs, not erased by documentation or local success. | Owner-established doctrine | Requires containment, ownership, testing, and external stop design around weakness | Human review required |
