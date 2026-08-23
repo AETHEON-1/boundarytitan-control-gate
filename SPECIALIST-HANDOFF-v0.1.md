@@ -23,6 +23,7 @@ BoundaryTitan is an inspectable, declaration-first control architecture that kee
 | Consequence Receipt v2 | Human review packet | Approval, permission, release, or execution |
 | Review Surface | Read-only presentation | Decision, persistence, or action |
 | 51-50 omissions pass | Documented gaps and limits | Proof, closure, or certification |
+| PR #8–#11 handoff addendum | Merged read-only permission, robotics, visual, schema, and unsupported-arrow additions | Runtime enforcement, completeness, certification, or deployment |
 
 ## Required specialist questions
 
