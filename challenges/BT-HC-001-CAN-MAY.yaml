@@ -1,0 +1,73 @@
+challenge_id: BT-HC-001
+claim: "Capability alone does not establish permission: CAN does not, by itself, entail MAY."
+
+challenge_type: internal-hostile
+status: OPEN
+
+domains:
+  source: cross-disciplinary
+  receiving: consequence-bearing decision systems
+
+claimed_arrow:
+  from: Capability
+  to: Permission
+  proposition: "CAN -> MAY"
+
+attack_objective: >-
+  Construct a genuine consequence-bearing counterexample in which the bare fact
+  that an actor can perform X is sufficient, without importing law, ownership,
+  delegation, consent, role, convention, emergency doctrine, policy, or any other
+  normative premise, to establish that the actor may perform X.
+
+evidence:
+  established:
+    - "Capability and permission are analytically distinguishable concepts in many operational systems."
+  disputed: []
+  missing:
+    - "A counterexample where capability alone carries the full normative burden."
+
+first_unsupported_arrow: OPEN
+
+premises:
+  explicit:
+    - "The challenge concerns consequence-bearing systems, not trivial physical possibility."
+  hidden_to_test:
+    - "Whether default liberty, ownership, emergency powers, or convention are being smuggled in as unacknowledged authority premises."
+
+falsification:
+  conditions:
+    - "Produce a consequence-bearing case where CAN alone is sufficient for MAY and no independent normative or authority premise is required."
+    - "Show that any purported authority premise is logically redundant rather than merely implicit."
+  counterevidence: []
+
+authority:
+  standing_source: "Must be established independently of capability unless challenge succeeds."
+  admission_owner: "External human reviewer"
+  disposition_authority: "External human reviewer"
+  consequence_owner: "Must be identified for the challenged case"
+  external_stop_authority: "External to the system under test"
+
+consequence:
+  action: "Acceptance would require narrowing or rejecting the CAN-not-MAY kernel for the demonstrated class."
+  affected_parties:
+    - "BoundaryTitan methodology"
+    - "Any downstream system relying on the distinction"
+  reversibility: "Repository doctrine remains unchanged until explicit human disposition."
+
+state:
+  evidence_state: NOT_TESTED
+  authority_state: UNESTABLISHED
+  disposition: OPEN
+
+requested_specialist_attack:
+  - jurisprudence
+  - moral philosophy
+  - economics
+  - emergency management
+  - distributed systems
+  - cybersecurity
+  - institutional governance
+
+boundary: >-
+  BoundaryTitan receives no privileged status. Machine analysis may prepare
+  evidence but may not declare the challenge won, lost, solved, certified, or closed.
