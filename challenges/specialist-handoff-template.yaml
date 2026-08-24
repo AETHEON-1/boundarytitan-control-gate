@@ -1,0 +1,60 @@
+handoff_id:
+challenge_id:
+
+claim:
+disputed_arrow:
+  from:
+  to:
+
+established_evidence: []
+first_unsupported_arrow:
+required_or_hidden_premises: []
+
+specialist_route:
+  primary_discipline:
+  secondary_disciplines: []
+  target_person_or_organization:
+  claimed_domain_context:
+  route:
+
+bounded_question:
+
+falsification:
+  what_would_change_the_claim: []
+  counterexample_requested:
+
+consequence:
+  if_arrow_accepted:
+  affected_parties: []
+  consequence_owner:
+  external_stop_authority:
+
+handoff:
+  sent_date:
+  state: PREPARED
+  acknowledgment_date:
+  response_date:
+
+evidence_received:
+  sources: []
+  facts: []
+  counterexamples: []
+  contradictions: []
+  unresolved_questions: []
+
+challenge_state:
+  evidence_state: INDETERMINATE
+  authority_state: UNESTABLISHED
+  disposition: OPEN
+
+human_disposition:
+  owner:
+  decision:
+  date:
+  rationale:
+
+boundaries:
+  no_response_is_not_support: true
+  credentials_are_not_evidence: true
+  machine_may_close: false
+  repository_state_is_permission_state: false
