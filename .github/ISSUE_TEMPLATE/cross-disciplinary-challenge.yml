@@ -1,0 +1,153 @@
+name: Cross-Disciplinary Arrow Challenge
+description: Challenge a consequential arrow using evidence, falsification conditions, ownership, and stop authority.
+title: "[CHALLENGE] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Attack the arrow, not the discipline.
+
+        Credentials are not proof. Contributor identity may establish attribution, but it does not establish truth. A successful defense of A does not establish A -> B.
+
+  - type: textarea
+    id: claim
+    attributes:
+      label: Frozen claim
+      description: State one exact consequential claim.
+      placeholder: "A establishes B because..."
+    validations:
+      required: true
+
+  - type: input
+    id: source-domain
+    attributes:
+      label: Source domain
+      placeholder: "e.g. economics"
+    validations:
+      required: true
+
+  - type: input
+    id: receiving-domain
+    attributes:
+      label: Receiving domain
+      placeholder: "e.g. public policy"
+    validations:
+      required: true
+
+  - type: textarea
+    id: established-evidence
+    attributes:
+      label: Established evidence
+      description: List evidence supporting the source proposition. Distinguish observed facts from inference.
+    validations:
+      required: true
+
+  - type: textarea
+    id: claimed-arrow
+    attributes:
+      label: Claimed arrow
+      description: Write the exact handoff under attack.
+      placeholder: "A -> B"
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Why does A support B?
+      description: Supply the inferential bridge. Do not rely on title, reputation, institution, or consensus alone.
+    validations:
+      required: true
+
+  - type: textarea
+    id: unsupported-arrow
+    attributes:
+      label: First unsupported arrow
+      description: Identify the earliest transition that is not yet established. Use UNKNOWN if genuinely unresolved.
+    validations:
+      required: true
+
+  - type: textarea
+    id: hidden-premises
+    attributes:
+      label: Hidden premises
+      description: State assumptions that must be true for the arrow to hold.
+    validations:
+      required: true
+
+  - type: textarea
+    id: falsification
+    attributes:
+      label: What would falsify your position?
+      description: Give concrete evidence or a counterexample that would change the claim state.
+    validations:
+      required: true
+
+  - type: textarea
+    id: counterevidence
+    attributes:
+      label: Counterevidence
+      description: Include known evidence against your position. Use NONE IDENTIFIED rather than leaving this blank.
+    validations:
+      required: true
+
+  - type: textarea
+    id: authority-transition
+    attributes:
+      label: Authority transition
+      description: Who decided this evidence has standing and may influence disposition or action?
+    validations:
+      required: true
+
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Consequence
+      description: What changes for whom if the claim is accepted?
+    validations:
+      required: true
+
+  - type: input
+    id: consequence-owner
+    attributes:
+      label: Consequence owner
+      description: Identify the attributable person, role, institution, or body that owns the consequence. UNKNOWN is admissible and remains an open defect.
+    validations:
+      required: true
+
+  - type: input
+    id: stop-authority
+    attributes:
+      label: Who can still say no?
+      description: Identify the external stop authority, or state NONE / UNKNOWN and defend why the system remains legitimate.
+    validations:
+      required: true
+
+  - type: textarea
+    id: uncertainty
+    attributes:
+      label: Remaining uncertainty
+      description: Preserve uncertainty where evidence ends.
+    validations:
+      required: true
+
+  - type: textarea
+    id: requested-attack
+    attributes:
+      label: Requested specialist attack
+      description: Name the disciplines, roles, or practical experience needed to attack the arrow. Titles route review; they do not settle it.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Challenge boundaries
+      options:
+        - label: I understand that credentials, reputation, and institutional affiliation do not substitute for evidence.
+          required: true
+        - label: I understand that this submission does not authorize, certify, deploy, or close anything.
+          required: true
+        - label: I accept that BoundaryTitan claims may be attacked using the same standard.
+          required: true
