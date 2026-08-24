@@ -1,0 +1,75 @@
+challenge_id: BT-HC-002
+claim: "Credible control of a consequence-bearing system requires a binding stop authority external to the controlled system."
+
+challenge_type: internal-hostile
+status: OPEN
+
+domains:
+  source: control architecture
+  receiving: consequence-bearing systems
+
+claimed_arrow:
+  from: Control claim
+  to: Binding stop authority
+  proposition: "Credible control -> external brake"
+
+attack_objective: >-
+  Construct a consequence-bearing system with credible, enforceable control in
+  which no final stop authority exists outside the controlled system, and show
+  that the system cannot exercise, revoke, bypass, rewrite, recreate, or supersede
+  the authority that binds it.
+
+evidence:
+  established:
+    - "Internal controls may be known, modeled, and predicted by the controlled system."
+  disputed:
+    - "Whether externality is strictly necessary in every credible control architecture."
+  missing:
+    - "A surviving counterexample with no external authority layer."
+
+first_unsupported_arrow: OPEN
+
+premises:
+  explicit:
+    - "The challenge concerns binding consequence control, not advisory safeguards."
+  hidden_to_test:
+    - "Whether cryptographic, formal, physical, institutional, or hardware constraints count as external authority or merely internal mechanism."
+    - "Whether substrate separation is sufficient when replacement authority remains internal."
+
+falsification:
+  conditions:
+    - "Demonstrate a consequential system whose final binding stop is wholly internal yet cannot be bypassed, rewritten, revoked, recreated, or superseded by that system."
+    - "Demonstrate that no external authority is required for installation, custody, replacement, recovery, or enforcement of the stop condition."
+  counterevidence: []
+
+authority:
+  standing_source: "Must be established independently"
+  admission_owner: "External human reviewer"
+  disposition_authority: "External human reviewer"
+  consequence_owner: "Must be identified"
+  external_stop_authority: "Under challenge"
+
+consequence:
+  action: "Acceptance would require narrowing the external-brake requirement to the surviving architecture class."
+  affected_parties:
+    - "BoundaryTitan control architecture"
+    - "Systems using external-stop requirements"
+  reversibility: "No doctrine change without explicit human disposition."
+
+state:
+  evidence_state: NOT_TESTED
+  authority_state: UNESTABLISHED
+  disposition: OPEN
+
+requested_specialist_attack:
+  - control theory
+  - formal methods
+  - cryptography
+  - hardware security
+  - distributed systems
+  - safety engineering
+  - institutional governance
+
+boundary: >-
+  The existence of a mechanism does not establish that the mechanism owns the
+  authority that makes its consequence binding. Machine output cannot certify this challenge.
