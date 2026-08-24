@@ -1,0 +1,77 @@
+challenge_id: BT-HC-003
+claim: "Legitimate consequential authority requires identifiable consequence ownership."
+
+challenge_type: internal-hostile
+status: OPEN
+
+domains:
+  source: governance and accountability
+  receiving: consequence-bearing systems
+
+claimed_arrow:
+  from: Disposition authority
+  to: Consequence ownership
+  proposition: "Legitimate disposition -> identifiable consequence owner"
+
+attack_objective: >-
+  Construct a legitimate consequence-bearing system in which consequential
+  authority exists without a uniquely identifiable consequence owner, and show
+  that distributed, collective, institutional, market, judicial, or emergency
+  responsibility is sufficient without smuggling in a latent owner at another layer.
+
+evidence:
+  established:
+    - "Many real systems distribute responsibility across institutions, roles, and time."
+  disputed:
+    - "Whether legitimacy requires one uniquely identifiable owner rather than attributable distributed ownership."
+  missing:
+    - "A counterexample where legitimate consequential authority persists despite no attributable consequence owner at any relevant layer."
+
+first_unsupported_arrow: OPEN
+
+premises:
+  explicit:
+    - "Ownership means attributable responsibility for consequence, not necessarily sole personal liability."
+  hidden_to_test:
+    - "Whether boards, courts, legislatures, markets, agencies, and emergency chains count as owners collectively."
+    - "Whether responsibility can be emergent without becoming unowned."
+
+falsification:
+  conditions:
+    - "Demonstrate legitimate consequential authority with no identifiable individual, role, institution, collective body, or delegated principal owning the consequence."
+    - "Show that accountability, remedy, and stop authority remain coherent despite the absence of attributable ownership."
+  counterevidence: []
+
+authority:
+  standing_source: "Must be established independently"
+  admission_owner: "External human reviewer"
+  disposition_authority: "External human reviewer"
+  consequence_owner: "Under challenge"
+  external_stop_authority: "Must be identified where applicable"
+
+consequence:
+  action: "Acceptance would require narrowing 'no owner, no brake' and distinguishing unique ownership from attributable distributed ownership."
+  affected_parties:
+    - "BoundaryTitan authority model"
+    - "Challenge records requiring consequence ownership"
+  reversibility: "No doctrine change without explicit human disposition."
+
+state:
+  evidence_state: NOT_TESTED
+  authority_state: UNESTABLISHED
+  disposition: OPEN
+
+requested_specialist_attack:
+  - administrative law
+  - corporate governance
+  - constitutional law
+  - economics
+  - public policy
+  - emergency management
+  - organizational theory
+  - distributed systems
+
+boundary: >-
+  Distributed responsibility is not automatically ownerless responsibility.
+  The challenge succeeds only if attribution can disappear without destroying
+  legitimate consequential authority, remedy, or stop power.
