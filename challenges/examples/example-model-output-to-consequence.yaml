@@ -1,0 +1,66 @@
+challenge_id: CDW-EXAMPLE-001
+claim: "A sufficiently accurate model output may determine a consequential disposition."
+
+claimed_domain_context: "Illustrative example only; not a live case."
+
+domains:
+  source: "machine learning evaluation"
+  receiving: "consequence-bearing decision process"
+
+consequential_system: "generic automated decision pipeline"
+
+evidence:
+  established:
+    - "A model can produce an output with measurable predictive performance."
+  disputed:
+    - "Predictive performance alone establishes standing to determine disposition."
+  missing:
+    - "Authority source for admitting the output as dispositive"
+    - "Named consequence owner"
+    - "External stop authority"
+
+arrow:
+  from: "predictive accuracy"
+  to: "disposition authority"
+  justification: "Not established by predictive accuracy alone."
+  first_unsupported_arrow: "Accurate output → legitimate disposition authority"
+
+premises:
+  explicit:
+    - "The output is relevant to the decision."
+  hidden:
+    - "Relevance implies standing."
+    - "Standing implies permission to determine consequence."
+
+falsification:
+  conditions:
+    - "Provide an independent authority source that validly delegates disposition authority under the stated scope and conditions."
+  counterevidence:
+    - "Cases where accurate signals are advisory only and cannot authorize the consequential action."
+
+authority:
+  standing_source: null
+  admission_owner: null
+  disposition_authority: null
+  consequence_owner: null
+  external_stop_authority: null
+
+consequence:
+  action: "unspecified consequential disposition"
+  affected_parties: []
+  reversibility: "unknown"
+
+requested_specialist_attack: "Identify a domain where predictive accuracy alone, without an independent authority premise, necessarily establishes legitimate disposition authority."
+remaining_uncertainty:
+  - "Legitimate authority sources vary by domain and are not resolved by this example."
+
+state:
+  evidence_state: INDETERMINATE
+  authority_state: UNESTABLISHED
+  disposition: REQUIRES PREMISE
+
+constraints:
+  credential_fields_prohibited: true
+  machine_authorization_prohibited: true
+  self_certification_prohibited: true
+  external_stop_required: true

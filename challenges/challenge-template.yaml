@@ -1,0 +1,55 @@
+challenge_id:
+claim:
+
+claimed_domain_context:
+
+domains:
+  source:
+  receiving:
+
+consequential_system:
+
+evidence:
+  established: []
+  disputed: []
+  missing: []
+
+arrow:
+  from:
+  to:
+  justification:
+  first_unsupported_arrow:
+
+premises:
+  explicit: []
+  hidden: []
+
+falsification:
+  conditions: []
+  counterevidence: []
+
+authority:
+  standing_source:
+  admission_owner:
+  disposition_authority:
+  consequence_owner:
+  external_stop_authority:
+
+consequence:
+  action:
+  affected_parties: []
+  reversibility:
+
+requested_specialist_attack:
+remaining_uncertainty: []
+
+state:
+  evidence_state: INDETERMINATE
+  authority_state: UNESTABLISHED
+  disposition: OPEN
+
+constraints:
+  credential_fields_prohibited: true
+  machine_authorization_prohibited: true
+  self_certification_prohibited: true
+  external_stop_required: true
