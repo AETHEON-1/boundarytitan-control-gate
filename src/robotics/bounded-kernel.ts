@@ -1,4 +1,5 @@
 import type { BoundedKernelInput, BoundedKernelResult, EvidenceStatus, GateDecision, MotionLedgerEntry, SpecialistHandoff } from '../types/robotics-bounded-kernel-contracts';
+import { parseUtcTimestamp } from '../types/temporal';
 
 /** Read-only gate. It cannot grant motion authority. */
 export function assessBoundedRoboticsKernel(input: BoundedKernelInput, proposalId: string, now: string): BoundedKernelResult {
@@ -7,25 +8,25 @@ export function assessBoundedRoboticsKernel(input: BoundedKernelInput, proposalI
   let evidence: EvidenceStatus = 'SUPPORTED';
   const allIsolated = input.maintenance.energy_sources.length > 0 && input.maintenance.energy_sources.every((source) => source.isolated);
   const degraded = input.degradation.some((record) => record.status === 'EXCEEDED');
-  const nowMs = Date.parse(now);
-  const manifestExpiryMs = Date.parse(input.manifest.expires_at);
-  const brakeTestedAtMs = Date.parse(input.brake.last_tested_at ?? '');
-  const brakeValidUntilMs = Date.parse(input.brake.test_valid_until ?? '');
-  const brakeTimesValid = !Number.isNaN(brakeTestedAtMs) && !Number.isNaN(brakeValidUntilMs) && !Number.isNaN(nowMs);
+  const nowMs = parseUtcTimestamp(now);
+  const manifestExpiryMs = parseUtcTimestamp(input.manifest.expires_at);
+  const brakeTestedAtMs = parseUtcTimestamp(input.brake.last_tested_at);
+  const brakeValidUntilMs = parseUtcTimestamp(input.brake.test_valid_until);
+  const brakeTimesValid = brakeTestedAtMs !== undefined && brakeValidUntilMs !== undefined && nowMs !== undefined;
   const brakeTestValid = Boolean(input.brake.last_test_id && input.brake.last_test_status === 'PASS' && input.brake.independent_verifier_id && input.brake.measured_latency_ms !== undefined && input.brake.measured_latency_ms <= input.brake.maximum_latency_ms && brakeTimesValid && brakeTestedAtMs <= nowMs && nowMs < brakeValidUntilMs);
   const brakeIndependent = input.brake.independent_of_model && input.brake.independent_of_planner && input.brake.bypasses_ordinary_motion_control;
   const standardsReviewed = input.standards.applicability_status === 'REVIEWED' && Boolean(input.standards.competent_reviewer_id && input.standards.reviewed_at);
   const independentMeasurementPresent = input.independent_measurement_ids.length > 0;
 
   if (!input.manifest.allowed_actions.length || input.manifest.forbidden_actions.length === 0) reasons.push('Authority manifest is incomplete; allowed and forbidden actions must both be explicit.');
-  if (Number.isNaN(nowMs) || Number.isNaN(manifestExpiryMs)) reasons.push('Authority manifest or reference time is invalid.');
+  if (nowMs === undefined || manifestExpiryMs === undefined) reasons.push('Authority manifest or reference time is invalid.');
   else if (manifestExpiryMs <= nowMs) reasons.push('Authority manifest is expired.');
   if (input.manifest.stop_authority_ids.length === 0 || !input.manifest.consequence_owner_id) reasons.push('Consequence owner or stop authority is missing.');
   if (input.safety.current !== 'AUTHORIZED' && input.safety.current !== 'STANDBY') reasons.push('Safety state does not admit a pre-action review.');
   if (!brakeIndependent) reasons.push('External brake independence is not established.');
   if (!brakeTimesValid) { reasons.push('External brake test validity timestamps are invalid or missing.'); evidence = 'NOT_TESTED'; }
-  else if (brakeTestedAtMs > nowMs) { reasons.push('External brake test is dated in the future.'); evidence = 'NOT_TESTED'; }
-  else if (nowMs >= brakeValidUntilMs) { reasons.push('External brake test validity has expired.'); evidence = 'NOT_TESTED'; }
+  else if (brakeTestedAtMs! > nowMs!) { reasons.push('External brake test is dated in the future.'); evidence = 'NOT_TESTED'; }
+  else if (nowMs! >= brakeValidUntilMs!) { reasons.push('External brake test validity has expired.'); evidence = 'NOT_TESTED'; }
   if (!brakeTestValid) { reasons.push('External brake does not have a current passing test with independent verification.'); evidence = 'NOT_TESTED'; }
   if (input.brake.measured_latency_ms === undefined) { reasons.push('External brake measured latency is missing.'); evidence = 'NOT_TESTED'; }
   if (input.brake.measured_latency_ms !== undefined && input.brake.measured_latency_ms > input.brake.maximum_latency_ms) reasons.push('Measured brake latency exceeds the maximum.');
