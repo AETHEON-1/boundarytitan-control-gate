@@ -9,10 +9,13 @@
 
 - TypeScript typecheck: PASS.
 - Robotics kernel and specialist handoff battery: 8/8 tests PASS.
-- Full Jest suite: 43/45 PASS.
-- Remaining failures: two Zombie Permission Hunter fixtures classify an exact 24-hour expiry as `EXPIRING` rather than the stale expected value `NO_DECLARED_DEFECT_DETECTED`.
+- Full Jest suite: 33/33 suites and 105/105 tests PASS.
+- Python specialist handoff tests: 3/3 PASS.
+- Current tracked-tree ledger: verified by `npm run verify:state`.
 - Independent verification, field validation, deployment, and publication: NOT ESTABLISHED.
 - `node_modules/` is local untracked test infrastructure and is excluded from this index.
+- `RELEASE_CANDIDATE_MANIFEST.json` and `SHA256SUMS.txt` are historical RC1
+  custody artifacts; they are not the current-tree ledger.
 
 ## Reading order
 

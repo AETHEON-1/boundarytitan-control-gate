@@ -28,3 +28,9 @@ test('expires requests before routing', () => {
   const result = assessSwitchboardAgentGate({ ...valid, expires_at: '2026-08-21T00:00:00Z' }, laneRegistry);
   expect(result.disposition).toBe('EXPIRED');
 });
+
+test('holds an invalid expiry instead of routing it', () => {
+  const result = assessSwitchboardAgentGate({ ...valid, expires_at: 'not-a-date' }, laneRegistry);
+  expect(result.disposition).toBe('HOLD_FOR_HUMAN_REVIEW');
+  expect(result.reasons).toContain('Expiry timestamp is invalid.');
+});

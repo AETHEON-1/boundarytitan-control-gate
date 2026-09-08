@@ -8,6 +8,10 @@ Candidate tag: `architecture-v1.0-rc1`
 Human approval recorded: 2026-07-11  
 Owner and release authority: Michael J. Cates / The Carpenter of Impossible Systems
 
+Current repository state and repair verification: `CURRENT-REPOSITORY-STATE-v0.2.md`.
+The RC1 status above is historical package state; it does not describe the
+current Git tree.
+
 This package is the final release candidate for the BoundaryTitan Control Gate Architecture Specification v1.0.
 
 It has been reviewed and approved by the human owner as the architecture baseline. It has not yet been published, merged into the public repository, deployed, or represented as universal certification.
@@ -70,3 +74,7 @@ Specialists may speak specialist language. The repository requires a cross-domai
 ## Current verification boundary
 
 Typecheck and local tests are structural evidence only. They do not establish legal compliance, field safety, runtime access enforcement, complete lane reconstruction, independent verification, publication, merge, or deployment.
+
+Run the read-only repository-state check with `npm run verify:state`. It checks
+the current tracked-tree ledger and confirms that the RC1 release artifacts are
+explicitly historical rather than current authorization.

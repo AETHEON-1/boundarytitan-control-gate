@@ -1,4 +1,10 @@
 {
+  "verification_scope": "historical_rc1_snapshot",
+  "current_repository_state_document": "CURRENT-REPOSITORY-STATE-v0.2.md",
+  "current_tree_manifest": "CURRENT-REPOSITORY-MANIFEST.json",
+  "machine_certification": false,
+  "deployment_authority": false,
+  "independent_verification": "not_performed",
   "combined_spec_exists": true,
   "approval_record_exists": true,
   "known_limitations_exists": true,
