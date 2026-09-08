@@ -60,3 +60,27 @@ The following are BoundaryTitan's own synthesis and are not attributed to the pr
 ## License and reuse note
 
 No source code is copied by this declaration-only artifact. Future implementation reuse must inspect each source repository's current license, notices, dependencies, and security terms before incorporation.
+
+## Authorization-machinery adversarial battery sources
+
+Model Context Protocol, “Authorization — Security Best Practices,” specification revision 2026-07-28:
+https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/security_best_practices
+
+Relevant patterns: token audience binding, confused-deputy resistance, authorization-code protection, redirect security, and resource-server validation.
+
+National Security Agency, *Cybersecurity Information: Model Context Protocol Security*, May/June 2026:
+https://media.defense.gov/2026/Jun/02/2003943289/-1/-1/0/CSI_MCP_SECURITY.PDF
+
+Relevant patterns: tool/semantic poisoning, downstream automation manipulation, multi-agent propagation, and MCP implementation attack surface.
+
+OWASP AI Security Verification Standard research, “Prompt Injection Defense,” MCP-specific attack vectors:
+https://github.com/OWASP/AISVS/blob/main/1.0/research/chapters/C02-User-Input-Validation/C02-01-Prompt-Injection-Defense.md
+
+Relevant patterns: tool poisoning, tool shadowing, rug-pull redefinitions, command/configuration injection, authentication gaps, and execution-layer controls.
+
+Huang, C.; Huang, X.; Tran, N. P.; Milani Fard, A., *Model Context Protocol Threat Modeling and Analyzing Vulnerabilities to Prompt Injection with Tool Poisoning*, arXiv:2603.22489:
+https://arxiv.org/abs/2603.22489
+
+Relevant patterns: STRIDE/DREAD threat modeling across MCP components and empirical tool-poisoning analysis.
+
+These sources inform defensive challenge construction. They do not validate BoundaryTitan, establish complete coverage, or grant authority to any machine-generated disposition.

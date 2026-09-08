@@ -1,0 +1,32 @@
+name: refresh repository manifest once
+
+on:
+  push:
+    branches:
+      - challenge/authorization-machinery-battery-2026-09-08
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Remove one-shot workflow from resulting tree
+        run: git rm .github/workflows/refresh-manifest-once.yml
+      - name: Regenerate current-tree ledger
+        run: node scripts/verify-repository-state.js --write
+      - name: Commit ledger and self-remove
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CURRENT-REPOSITORY-MANIFEST.json
+          git commit -m "Refresh repository ledger for authorization challenge battery"
+          git push origin HEAD
