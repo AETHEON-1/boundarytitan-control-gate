@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://boundarytitan.dev/schemas/control-event-record.schema.json",
+  "title": "BoundaryTitan Control Event Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "trace_id", "event_type", "occurred_at", "actor_id", "subject_refs", "input_refs", "output_refs", "evidence_refs", "authority_refs", "owner_refs", "external_stop_refs", "authorization_status", "uncertainty"],
+  "properties": {
+    "event_id": { "type": "string", "minLength": 1 },
+    "trace_id": { "type": "string", "minLength": 1 },
+    "event_type": { "enum": ["INTAKE", "EVIDENCE_PRESERVED", "AUTHORITY_REQUESTED", "OWNER_ASSIGNED", "STOP_TESTED", "REVOCATION_ISSUED", "BYPASS_DETECTED", "CONSEQUENCE_COMMITTED", "HUMAN_DISPOSITION", "REOPENED"] },
+    "occurred_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{3})?Z$" },
+    "actor_id": { "type": "string", "minLength": 1 },
+    "subject_refs": { "type": "array", "items": { "type": "string" } },
+    "input_refs": { "type": "array", "items": { "type": "string" } },
+    "output_refs": { "type": "array", "items": { "type": "string" } },
+    "evidence_refs": { "type": "array", "items": { "type": "string" } },
+    "authority_refs": { "type": "array", "items": { "type": "string" } },
+    "owner_refs": { "type": "array", "items": { "type": "string" } },
+    "external_stop_refs": { "type": "array", "items": { "type": "string" } },
+    "consequence_class": { "type": "string" },
+    "reversibility": { "enum": ["REVERSIBLE", "PARTIALLY_REVERSIBLE", "IRREVERSIBLE", "UNKNOWN"] },
+    "authorization_status": { "enum": ["NOT_AUTHORITY", "EXTERNAL_DECISION_REQUIRED", "UNKNOWN"] },
+    "uncertainty": { "type": "array", "items": { "type": "string" } }
+  }
+}
