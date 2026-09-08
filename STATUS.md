@@ -1,5 +1,8 @@
 # Release Candidate Status
 
+> Historical RC1 package record. For the current Git tree and repair status,
+> see `CURRENT-REPOSITORY-STATE-v0.2.md`.
+
 Package: BoundaryTitan Control Gate Architecture Specification v1.0  
 Version: 1.0.0-rc.1  
 Candidate: RC1  

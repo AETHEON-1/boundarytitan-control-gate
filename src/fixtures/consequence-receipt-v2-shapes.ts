@@ -30,5 +30,5 @@ export const consequenceReceiptV2Shape: ConsequenceReceiptV2 = {
   review_state: 'HELD_FOR_HUMAN_REVIEW',
   prepared_at: '2026-08-20T00:00:00Z',
   prepared_by: 'machine-preparation-example',
-  expiry: '2026-08-27T00:00:00Z',
+  expiry: '2099-01-01T00:00:00Z',
 };

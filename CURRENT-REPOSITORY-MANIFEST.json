@@ -1,0 +1,1274 @@
+{
+  "artifact": "BoundaryTitan current repository tree",
+  "version": "0.1.0",
+  "scope": "tracked working tree, excluding this self-referential manifest",
+  "machine_certification": false,
+  "deployment_authority": false,
+  "files": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "size_bytes": 657,
+      "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
+    },
+    {
+      "path": "CURRENT-REPOSITORY-STATE-v0.2.md",
+      "size_bytes": 2619,
+      "sha256": "faac3ad7dd3e0b4fd38d1b20d9cac60575b69d7b2722ab2ac9f21b2848fc069a"
+    },
+    {
+      "path": "scripts/verify-repository-state.js",
+      "size_bytes": 4744,
+      "sha256": "34dd776dae9297524d3c30f7d5f8069fd64cd6a39b551dd0450ac6cf3d1edb1f"
+    },
+    {
+      "path": "test_agentic_handoff.py",
+      "size_bytes": 1949,
+      "sha256": "2d0a69bcdde5145ae3ff59f423ef683568438b9853626549bbb500e1d1de0ffc"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/cross-disciplinary-challenge.yml",
+      "size_bytes": 4592,
+      "sha256": "19d055fcb7a7d1db0d79e1d250e716d979015be714a5c563c8d2e3ec08f9eb10"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 68,
+      "sha256": "7b97761fd5ed4a32a0c6dc2c29804f087699e9f1baea2f0121f6464f299154f0"
+    },
+    {
+      "path": "00-CONTROL-SURFACE-SWEEP-STATUS.md",
+      "size_bytes": 1356,
+      "sha256": "f612a3fb33073ae61f486e19859722cee6a188254fc9d6007a9e694e0cdd50db"
+    },
+    {
+      "path": "01-PROJECT-CONSTITUTION.md",
+      "size_bytes": 2136,
+      "sha256": "7bc85b5cdbe5dc4fde30298056cbfd087938955d717ed0afd6521bb157888f75"
+    },
+    {
+      "path": "02-CANONICAL-SOURCE-HIERARCHY.md",
+      "size_bytes": 1557,
+      "sha256": "9155a9916e35ade746734bb706451569398465af758fee0a965f47abfe6495cb"
+    },
+    {
+      "path": "03-DOCTRINE-INVARIANT-REGISTER.md",
+      "size_bytes": 3902,
+      "sha256": "21082289d968373eab56c79ec522197abdd051d1673fb62575864bfb9b1e492e"
+    },
+    {
+      "path": "04-GLOSSARY.md",
+      "size_bytes": 3351,
+      "sha256": "a3cd2ca50b2f2cc14248be4a31bb36858d079b8acc740be407cfb882fb977a53"
+    },
+    {
+      "path": "05-SYSTEM-ARCHITECTURE.md",
+      "size_bytes": 1762,
+      "sha256": "ec13ebb034346f94ad3926d336b961e9df2fcd7e668512f17c2a278c96aa146b"
+    },
+    {
+      "path": "06-DOMAIN-MODEL.md",
+      "size_bytes": 1848,
+      "sha256": "ec068fa1a8413a4547a18788d767d4a5801ad1ac45d00155d9f027e3bd9ea1c7"
+    },
+    {
+      "path": "07-AUTHORITY-ROLE-MODEL.md",
+      "size_bytes": 1252,
+      "sha256": "c0403777df3d8c850886707ece350f62ea4a47dacdce9456be8a717d35ce88ac"
+    },
+    {
+      "path": "08-STATE-MODEL.md",
+      "size_bytes": 1407,
+      "sha256": "e7824d5e313105f406e564889d5ccd9e7392d26e872fb0debb3341f8420ca9de"
+    },
+    {
+      "path": "09-RULE-CATALOG.md",
+      "size_bytes": 1949,
+      "sha256": "a4d0b47ca9dd1b3443acb2f546806f685175952ceb18e82cace14418be8677fd"
+    },
+    {
+      "path": "10-MODULE-CATALOG.md",
+      "size_bytes": 1701,
+      "sha256": "e81b24c886ba287148a5caeaa11531cbbe0f4b4b9ea95e90ef58c150e05c099e"
+    },
+    {
+      "path": "11-DATA-MODEL.md",
+      "size_bytes": 1844,
+      "sha256": "cafa123f6aa4da79f7bc8286a3031bf7d038b5921c272d38163fe4159063b41d"
+    },
+    {
+      "path": "11-OPERATIONAL-GUIDANCE-SYNC.md",
+      "size_bytes": 5955,
+      "sha256": "bb2da8c28436d66d3db90dcf88fa8a1c224c9a770e87d6fd2cf89212b08bd1cc"
+    },
+    {
+      "path": "12-CONSEQUENCE-RECEIPT-SPEC.md",
+      "size_bytes": 1320,
+      "sha256": "4febf720162727a4e7e647c62cf50030c3a904b7b2e241d4bcf247b66675d5b4"
+    },
+    {
+      "path": "13-PERMISSION-MODEL.md",
+      "size_bytes": 1421,
+      "sha256": "9197ca942013981f4d8eac53a312b14ea5d2fe9fcdca701c351a52ae851f7bd1"
+    },
+    {
+      "path": "14-USER-WORKFLOWS-AND-UI.md",
+      "size_bytes": 1429,
+      "sha256": "012a658c5f07736da256ee1a83c09372ab5896fc0e35eb5c3843ccdc74181a57"
+    },
+    {
+      "path": "15-API-SPECIFICATION.md",
+      "size_bytes": 909,
+      "sha256": "4e1d8ec0cfe21bb44686719e073bc41d332e35f1b2bb7948f97a1b9b56ec8833"
+    },
+    {
+      "path": "16-THREAT-AND-FAILURE-MODEL.md",
+      "size_bytes": 2305,
+      "sha256": "acb442557a7cb8bdc93383f332978714b5d885024dc4f7f6bf0cd57f877a7b28"
+    },
+    {
+      "path": "17-TEST-STRATEGY.md",
+      "size_bytes": 1144,
+      "sha256": "22797eee4b8a0a87286ebfcece422882935dd01ead36ee1dff386590a9e2847a"
+    },
+    {
+      "path": "18-DEPLOYMENT-RECOVERY-REVOCATION.md",
+      "size_bytes": 1094,
+      "sha256": "c5d680efeae03fefbe31a9e5831690853e889caa515e55df029683fc2c678817"
+    },
+    {
+      "path": "19-TRACEABILITY-LEDGER.md",
+      "size_bytes": 1192,
+      "sha256": "0a2fdb519064a9c87f7652a696392185325c066ed23cd882fd67dc8cd3aa26b5"
+    },
+    {
+      "path": "20-BREAK-PASS-REPORT.md",
+      "size_bytes": 1373,
+      "sha256": "ca9f5113e93ecd6d11b8333710a4225fefe4608b4ae264893814b99b51201c87"
+    },
+    {
+      "path": "21-HUMAN-DECISION-PACKET.md",
+      "size_bytes": 831,
+      "sha256": "54c2374e237d0d44a83e0060a7b647d7b74b789cff1af480295b9dae95323fd3"
+    },
+    {
+      "path": "22-PUBLICATION-CHECKLIST.md",
+      "size_bytes": 1146,
+      "sha256": "e172236e4fc17646e9a798552942ef3ce05d8cf6fb8b3f6f944afa082500b94a"
+    },
+    {
+      "path": "23-IMPLEMENTATION-ROADMAP.md",
+      "size_bytes": 1267,
+      "sha256": "9c52f110f95be144adb6fc2c46c391c6a34f855395e77869c64d117f4f850680"
+    },
+    {
+      "path": "24-OUT-OF-SCOPE.md",
+      "size_bytes": 472,
+      "sha256": "b5a873cf566a0ba9ff63c6ed02f7c143c7a60baa43c750ad49b00af7e6f5ff0c"
+    },
+    {
+      "path": "25-KNOWN-LIMITATIONS.md",
+      "size_bytes": 2191,
+      "sha256": "c9260dd1d8221f51141e102d7d9fdbf20e7736cdd31817cf8dc46120483eab0b"
+    },
+    {
+      "path": "250-SIGMA-LANES-SOURCE-SYNC-v0.1.md",
+      "size_bytes": 4976,
+      "sha256": "1134b6188834f58ee105c0b3673a38fd7222f17273f5ffed000fb79718ebf953"
+    },
+    {
+      "path": "ACTION-AUTHORITY-EVIDENCE-PACKET.md",
+      "size_bytes": 2540,
+      "sha256": "db87483fd2f28fb44e69d411a1673ca52cac599a4ef873e5d3b21f042237594c"
+    },
+    {
+      "path": "ADR-001-MODULAR-MONOLITH-FIRST.md",
+      "size_bytes": 382,
+      "sha256": "9ea2885abaf5157f155b5d0bfc6c814e77ead65fef168bf5f594329a03584e9a"
+    },
+    {
+      "path": "ADR-002-GREEN-IS-NOT-APPROVAL.md",
+      "size_bytes": 449,
+      "sha256": "31aaf39c5bb71d4586db1bb5421d5175d0e4f97fd9be2238a01c5138c4fa1162"
+    },
+    {
+      "path": "ADR-003-EXTERNAL-STOP-PATH.md",
+      "size_bytes": 406,
+      "sha256": "8c70ed450451c115f6e338b78607bff1927ab62f15c761d237e3140313d235b7"
+    },
+    {
+      "path": "ADR-004-APPEND-ONLY-EVIDENCE.md",
+      "size_bytes": 385,
+      "sha256": "3291c8820dd4b0cd65915345b2f64306c6bf139723719923c20eac4dadbf0352"
+    },
+    {
+      "path": "APPROVAL_RECORD.md",
+      "size_bytes": 994,
+      "sha256": "3efb1c0eaafaaae2224a48ce5aa22d0f022a4bcec694d806a04ebb6102300d43"
+    },
+    {
+      "path": "AUTHORITY-RESOLVER-AND-CRYPTOGRAPHIC-FAILURE-STATE-REGISTER-v0.1.md",
+      "size_bytes": 9362,
+      "sha256": "c614338c45adb8c65a1a3a0ec830b05823a1d83113c9d6481dccad2bc13c3676"
+    },
+    {
+      "path": "BOUNDARY-ASSISTANT-TOOLBOX-HIERARCHY-v0.1.md",
+      "size_bytes": 6043,
+      "sha256": "787dabc3d1e6ae9ff51d94da9b0013d3e6706cece41f143a1f3fb1bd83ccea11"
+    },
+    {
+      "path": "BOUNDARY-ATLAS-CONTEXT-NOTES.md",
+      "size_bytes": 3593,
+      "sha256": "5b36755957165f2faad29f5a6c09a75c154f6cc4275e107290e712e6fcae1a7f"
+    },
+    {
+      "path": "BOUNDARYTITAN-CAN-MAY-SNAPSHOT-INTEGRATION-v0.1.md",
+      "size_bytes": 3892,
+      "sha256": "cade8f8aacb3703298bd4680bac3de885c4936e4e34d58e152db067a31c30585"
+    },
+    {
+      "path": "BOUNDARYTITAN-CONTROL-GATE-ARCHITECTURE-v1.0-rc1.md",
+      "size_bytes": 42097,
+      "sha256": "5a83467d5aed88ceae3e2c917de36b8f7f5d47b37bff5321d164a6301270ccd9"
+    },
+    {
+      "path": "BOUNDED-AGENT-51-50-OMISSIONS-PASS.md",
+      "size_bytes": 6148,
+      "sha256": "ee83c4e0ff702807903669010ddb9a7e71d1e15661d49036f034095a0d8d1329"
+    },
+    {
+      "path": "BOUNDED-CASE-STUDY-INDEX-v0.1.md",
+      "size_bytes": 3447,
+      "sha256": "6611409b96ad89e27fc67de651a638caa422e9358603506b4bf8e3910940d81e"
+    },
+    {
+      "path": "BOUNDED-CASE-STUDY-WORKFLOW-v0.1.md",
+      "size_bytes": 931,
+      "sha256": "d95ce520225b8354f3e3b932d1e9ea0b5afab6631a9648c90ed015b27df2ce19"
+    },
+    {
+      "path": "BT-AGENTIC-LANE-SAME-BRAIN-DIFFERENT-KEYS-v0.1.1-SPECIALIST-HANDOFF.py",
+      "size_bytes": 21221,
+      "sha256": "396e6aa502790fad9585d6fc77e964ab673efdf7a418f4824c5cf9604d24778e"
+    },
+    {
+      "path": "BT-BCS-CAN-MAY-001-FINAL-TEST-BATTERY.md",
+      "size_bytes": 7996,
+      "sha256": "d8ae79da9c4c43de703c5e70e00379875479eb11540d4ebd3160983c51e073fe"
+    },
+    {
+      "path": "BUILD-CATALOG.md",
+      "size_bytes": 7239,
+      "sha256": "37c4cf97c71324de9c1d272c894c59628911c0980115510a4e87cd7a8c3c4897"
+    },
+    {
+      "path": "CAN-MAY-CROSS-DOMAIN-BUILD-MAP-v0.1.md",
+      "size_bytes": 8680,
+      "sha256": "66ed5cc550125f79e496688ca902b7e34bd3b7a3d9b64684871c173d5ee067ca"
+    },
+    {
+      "path": "CAN-MAY-DOMAIN-REGISTRY-v0.1.md",
+      "size_bytes": 720,
+      "sha256": "6630e49cb2809fad52f851132388e0f6139fe35619f3320017454becf0e29c2f"
+    },
+    {
+      "path": "CAN-MAY-EVIDENCE-ANCHORS-v0.1.md",
+      "size_bytes": 3967,
+      "sha256": "e55c7c32fbff0aeafd3572a13595bfb29844ea0445fd69332291d0e380a32f08"
+    },
+    {
+      "path": "CAN-MAY-UNIVERSAL-KERNEL-v0.1.md",
+      "size_bytes": 1380,
+      "sha256": "bf1a9cd35066be9f6c1cec2b7fd986200e947a1f9708f829402a045a6f281303"
+    },
+    {
+      "path": "CARPENTERS-NOTE.md",
+      "size_bytes": 2660,
+      "sha256": "a392f88f03a3ab2e8b32cc111a7da772eb77612f6d106c3f368964342fc391a3"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size_bytes": 978,
+      "sha256": "a7ca1afe11be4713a895e9f721e523d714c0a1cd28649228e418ab58756d2955"
+    },
+    {
+      "path": "CHAOS-ENGINE-WORKFLOW-v0.1.md",
+      "size_bytes": 971,
+      "sha256": "63d9f9657c3b3176e78c98b3a4fc8853030b9828c1fa7e0277dddf6b1e608daf"
+    },
+    {
+      "path": "CITATIONS.md",
+      "size_bytes": 2964,
+      "sha256": "5930ec3f8d588f9a440ff0f49ed445e942a45c0759460283938a5f5b5600dbf0"
+    },
+    {
+      "path": "COMMUNICATION-DEFAULT-ADVERSARIAL-BATTERY-v0.1.md",
+      "size_bytes": 5413,
+      "sha256": "84a03e661521101de8b69ee7801221c9f000c62ad7bec81988eed0d709a64d35"
+    },
+    {
+      "path": "CONSTRAINT-PRECEDES-CAPABILITY-DOCTRINE-v0.1.md",
+      "size_bytes": 965,
+      "sha256": "62b3f4358201c666f6549cf2324f07afd51bce7c9aec653111cd272c6a800791"
+    },
+    {
+      "path": "CONVERSE-EXHAUSTION-WORKFLOW-v0.1.md",
+      "size_bytes": 956,
+      "sha256": "780978b0ffc53a3fe834f3220e7111f317a872a09e8d7e84e669170416eb0a52"
+    },
+    {
+      "path": "CROSS-DISCIPLINARY-CHALLENGE-PROTOCOL.md",
+      "size_bytes": 3656,
+      "sha256": "d2659a32f9201e5d295f98e24d9e5f5a4b9a21e4756f3d7785335c118955bd95"
+    },
+    {
+      "path": "CRYPTOGRAPHY-LANE-v0.1.md",
+      "size_bytes": 6357,
+      "sha256": "7e9d0ff5b64289d9c83d43581e20d28092b4ddb51a485426b842a66bd9c7117c"
+    },
+    {
+      "path": "CURRENT-WORK-INTEGRATION.md",
+      "size_bytes": 3434,
+      "sha256": "31ce2b447f80919dc33c6889be03646088b276b20081aad609d6f0b811f6a294"
+    },
+    {
+      "path": "END-TO-END-REVIEW-STATUS-v0.1.md",
+      "size_bytes": 2387,
+      "sha256": "9335b248b75dcc59cbfd43f40786b9d846169b412a0396b107fbaf3860b6ca17"
+    },
+    {
+      "path": "END-TO-END-TRANSPARENCY-v0.1.md",
+      "size_bytes": 1252,
+      "sha256": "c49206348dae9c5059056612e9d01963f6f14fdde28ebb9428f4c96ce68fd4ae"
+    },
+    {
+      "path": "EVIDENCE-AISI-UNSANCTIONED-AGENT-BEHAVIOUR-2026-08-04.md",
+      "size_bytes": 1870,
+      "sha256": "d950a27825bdde402c269be7df45efa1b0d5de692cc8c39a6d2e3fc46747ae04"
+    },
+    {
+      "path": "FIFTY-ONE-FIFTY-WORKFLOW-v0.1.md",
+      "size_bytes": 1753,
+      "sha256": "c1c6c7f2cd5be0e115afdf9a35897bf6af5a67c14842e370087f7225104f6368"
+    },
+    {
+      "path": "FINAL-REVIEW-AND-PROPOSALS-v0.1.md",
+      "size_bytes": 3625,
+      "sha256": "39f6103f30c00c74dec7b9493a40045625e84e06e8b15f5e324758c8cab41826"
+    },
+    {
+      "path": "FINAL-SLEDGEHAMMER-BATTERY-REPORT-v0.1.md",
+      "size_bytes": 3342,
+      "sha256": "458f5a94d9001d92116c86fb88a71d7eda1b287ad6cddd2a66470d937f88889b"
+    },
+    {
+      "path": "FINAL-WEB-INTEGRATION-SCAN-v0.1.md",
+      "size_bytes": 4945,
+      "sha256": "55715acb1b53cc2456220a82b34e088e71555d43669b7806a1712fcef54f3b35"
+    },
+    {
+      "path": "GITHUB_RELEASE_STAGING.md",
+      "size_bytes": 824,
+      "sha256": "e4a3cdab98302131c58054bcb0d1d448f1c4a881eb8e41908f75911dbf3bb8b2"
+    },
+    {
+      "path": "HOSTILE-DECONSTRUCTION-ENGINE-v0.1.md",
+      "size_bytes": 1553,
+      "sha256": "3a6d315f2ed348c80d6c594456d677d3da8b88c0df5d91cdf624fa8c20ef5613"
+    },
+    {
+      "path": "IMPOSSIBLE-SYSTEM-NAMING-DECISION-v0.1.md",
+      "size_bytes": 1560,
+      "sha256": "daa7b2a9f613f89c6ab1d9a1c250bad8e57b5b627ba053afff689ca227ea1dee"
+    },
+    {
+      "path": "INQUISITION-ENGINE-WORKFLOW-v0.1.md",
+      "size_bytes": 1075,
+      "sha256": "f78c16db5c369984f7a3815fbde581c8db7829ab0dcb114337528f01c92ae39a"
+    },
+    {
+      "path": "INTEGRATION-AND-ENFORCEMENT-TRACEABILITY-MATRIX-v0.1.md",
+      "size_bytes": 7396,
+      "sha256": "f05d98b09dc417bffe63def042effb63abcf3f3fdbdbacd77e3c9397c68fc1ee"
+    },
+    {
+      "path": "INVERSE-EXHAUSTION-WORKFLOW-v0.1.md",
+      "size_bytes": 1032,
+      "sha256": "4bef7ce97914baba2996f1bd70738ae231579c964b77a720dd3d58546f80f1c2"
+    },
+    {
+      "path": "KNOWN_LIMITATIONS.md",
+      "size_bytes": 2191,
+      "sha256": "c9260dd1d8221f51141e102d7d9fdbf20e7736cdd31817cf8dc46120483eab0b"
+    },
+    {
+      "path": "LANE-ROUTING-WORKFLOW-v0.1.md",
+      "size_bytes": 803,
+      "sha256": "f8f2335eb1d51a1ac317169629a591cac882b7dd6353d4407e80fafd54b06d0e"
+    },
+    {
+      "path": "LICENSE-DECISION.md",
+      "size_bytes": 568,
+      "sha256": "a5e41f803922f7d4874588a08969514760e52b7ec6d578a84b6a2c518c097743"
+    },
+    {
+      "path": "LOCKED-CANDIDATE-BASELINE-v0.1.md",
+      "size_bytes": 2272,
+      "sha256": "23c19e09654d70465b14b9c126588569ec7a68d87ba8af7cfbbffc4179d3b753"
+    },
+    {
+      "path": "MAINTENANCE-LANE-AND-DRIFT-CONTROL-SPEC-v0.1.md",
+      "size_bytes": 8179,
+      "sha256": "688182e6131cc675bd369435eba6a1e6bfbdc20e5aae27292c1bbeb8733cac95"
+    },
+    {
+      "path": "MAINTENANCE-WORKFLOW-v0.1.md",
+      "size_bytes": 5651,
+      "sha256": "a54e7e7529215b30160e52de79ee86136692571b750fe681ab393466f83f5bdc"
+    },
+    {
+      "path": "OMISSIONS-PASS-WORKFLOW-v0.1.md",
+      "size_bytes": 949,
+      "sha256": "eca2130737e9231db562439a0c954d360aa1c5566249228e96780b817f26d1bb"
+    },
+    {
+      "path": "OPEN-BOUNDARY-CONTROL-ARCHITECTURE-v0.1.md",
+      "size_bytes": 4033,
+      "sha256": "dba28a2bfc0e49b2dc80d3b2954038aa047be907a6af53e830fa5f40240f2a1b"
+    },
+    {
+      "path": "OPEN-HANDOFF-TRANSFER-PACKAGE-v0.1.md",
+      "size_bytes": 4858,
+      "sha256": "ec5cec09c000d945bf86e909ae7d90d118d120a70bf9b419d9874b938eeb0718"
+    },
+    {
+      "path": "PHASE1-SCHEMA-GAP-NOTES.md",
+      "size_bytes": 492,
+      "sha256": "9e2d22c20d6a09cf9f1e228a503ba462cd6229abb2fbb7b557276527aeea87cf"
+    },
+    {
+      "path": "PRE-ACTION-AUTHORITY-GATE-SPEC-v0.1.md",
+      "size_bytes": 5744,
+      "sha256": "c0ec8eb82e76a930dd6c88b5ad495919c4d80e1c7bc4965453fcc20659b06d0c"
+    },
+    {
+      "path": "PREPARATION-PACKAGE-v0.1.md",
+      "size_bytes": 4612,
+      "sha256": "4d8352763ad35b4d5924dd10a10c32fa54736cc907735f1e232ed41f81f56f33"
+    },
+    {
+      "path": "PRESERVE-THE-UNKNOWN-INVARIANT-v0.1.md",
+      "size_bytes": 2632,
+      "sha256": "721da86e09bd61a57c69189061a6204f46d93ee28f00cceaccf62483246fdd28"
+    },
+    {
+      "path": "PUBLICATION_MANIFEST.md",
+      "size_bytes": 1017,
+      "sha256": "9e7686e73f1863fb743ece618b5b888fb89422ff5e89446a3dd8a06891222042"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3443,
+      "sha256": "5dbfd985d2aba62ed2122b37f7e3923efc2e35e2762893fbbf87a23a2eda88c8"
+    },
+    {
+      "path": "RELEASE_CANDIDATE_CHECKS.json",
+      "size_bytes": 637,
+      "sha256": "f391868d90b29e5146235d0bf8dae0276906cc76f5e96471a8c17cf1fbbf1028"
+    },
+    {
+      "path": "RELEASE_CANDIDATE_MANIFEST.json",
+      "size_bytes": 8516,
+      "sha256": "072205be7717c0d0cf5f0f61bb8f3bedd767207068c2af11a70ff066a8e69482"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "size_bytes": 2130,
+      "sha256": "20a3b2a78dcba3d98ade18809ac97a1c12089d4a479b8192ae5e0964a3c25158"
+    },
+    {
+      "path": "REMAINING-ITEMS-DISPOSITION-v0.1.md",
+      "size_bytes": 3602,
+      "sha256": "77248dad4a3350f472e558e9162f2b6f381a42bcd8f0cc56140b8fa794cff767"
+    },
+    {
+      "path": "REPO-INDEX.md",
+      "size_bytes": 10029,
+      "sha256": "1a10828b4a55e44ff35061b122d9fffc92eff4621541d09c08ca408cf84670c0"
+    },
+    {
+      "path": "REVIEW-SURFACE-BOUNDARY.md",
+      "size_bytes": 743,
+      "sha256": "2395e260b3e6ffdcc33d95766f5e87a9c594cadb1de8c79e97ae5ceb90c0ca60"
+    },
+    {
+      "path": "REVIEW-SURFACE-HTK.md",
+      "size_bytes": 951,
+      "sha256": "b39ab6e344900852bb299a282d2d2bb948928ecfe3ea2bc4686d39266b0fcd14"
+    },
+    {
+      "path": "ROBOTICS-BOUNDED-KERNEL-v0.1.md",
+      "size_bytes": 1727,
+      "sha256": "520db228811045786028fc134d3f40d582a150aec2ee1b986c9122da99e0ef8f"
+    },
+    {
+      "path": "ROBOTICS-MINIMUM-KERNEL.md",
+      "size_bytes": 3106,
+      "sha256": "dff7a5874763f15a9f32c8b7af07760979b3a52f9db0df6cd989499897fb5504"
+    },
+    {
+      "path": "ROBOTICS-PRE-ACTION-PROTOTYPE.md",
+      "size_bytes": 1456,
+      "sha256": "5ce690f631c6b55508544481cccdb5d308f7e224bf26e0d692aa0087ca272521"
+    },
+    {
+      "path": "ROBOTICS-SPECIALIST-HANDOFF-TEST-BATTERY-v0.1.md",
+      "size_bytes": 1588,
+      "sha256": "e30801e81fda272cbb1b307b19e172ef9f025d5565d40c75c1fde35e6b21fb04"
+    },
+    {
+      "path": "ROBOTICS-SYSTEM-AUTHORITY-LIFECYCLE.md",
+      "size_bytes": 2112,
+      "sha256": "9be16d9e48cbf921b682b09e17639b14ce53da22d795e456523221c0c4e10bd7"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "size_bytes": 4844,
+      "sha256": "57a0489b0d43bcc544b0a0d5ee113058b2a51e770c3a2c5348b219798467a8a9"
+    },
+    {
+      "path": "SIGMA-1-OPTIMIZATION-PASS-v0.1.md",
+      "size_bytes": 946,
+      "sha256": "e6887957730b95f292541d5278480fac379b3e7eaf467cc3990e56585181d543"
+    },
+    {
+      "path": "SIGMA-TWO-DIAGONAL-WORKFLOW-v0.1.md",
+      "size_bytes": 1167,
+      "sha256": "22f19f28fafc57228da6ba0989c7f2f836ca00c37a46e5228079bbd1d03bf1a5"
+    },
+    {
+      "path": "SLEDGEHAMMER-WORKFLOW-v0.1.md",
+      "size_bytes": 3698,
+      "sha256": "3dfcf19ca029e2bfa79a4e68f5c77f5663e023f034026bb5a3699ed7e3732870"
+    },
+    {
+      "path": "SPECIALIST-HANDOFF-PR8-PR11-v0.1.md",
+      "size_bytes": 3208,
+      "sha256": "92cfc4e831c3b1832c2fe1f95b1387827c708fd6e67f2d5e98877b8179ff4481"
+    },
+    {
+      "path": "SPECIALIST-HANDOFF-READINESS.md",
+      "size_bytes": 895,
+      "sha256": "9bc8615b37b414e97df1254f4a9bbe9d69ed162007a12ef74e5a5f7ea187061d"
+    },
+    {
+      "path": "SPECIALIST-HANDOFF-v0.1.md",
+      "size_bytes": 3854,
+      "sha256": "cfdb0415da8386d05c90a6ac24ae6a1a2eb140fc8a3b51c28934a868294ae06e"
+    },
+    {
+      "path": "SPECIALIST-LANGUAGE-AUDIT-v0.1.md",
+      "size_bytes": 3656,
+      "sha256": "79a06fd3296fcb8b98a80bd63c4e84525b1376d1c9709bfdc06e5e92e5f2930e"
+    },
+    {
+      "path": "SPECIALIST-OUTREACH-README.md",
+      "size_bytes": 6338,
+      "sha256": "3161fe38c79e3f72683dfab1c7c98424a05017a41daf95274dc179db512b7f14"
+    },
+    {
+      "path": "SPECIALIST-TITLE-AND-MISSING-ARROW-INDEX-v0.1.md",
+      "size_bytes": 12214,
+      "sha256": "d7a596643af00335be1385a4ff06f72bcfa548c45a5a04a08d2a3f640a481e87"
+    },
+    {
+      "path": "STATE-RECONCILIATION-v1.1.md",
+      "size_bytes": 2359,
+      "sha256": "bcc8d27148d709a35058b0d6c716051d8f0e822c466233aac94799eb34910ba8"
+    },
+    {
+      "path": "STATUS.md",
+      "size_bytes": 1353,
+      "sha256": "2f242eaf8edc150499f00e7632e56862c7147f3e27721ba4d90d7a24f6c9e850"
+    },
+    {
+      "path": "SWITCHBOARD-AGENT-GATE-v0.1.md",
+      "size_bytes": 902,
+      "sha256": "1c78fab727a2c103d531f3cf23d972a0e3b290d89a8c0175fd45175ad72b41c9"
+    },
+    {
+      "path": "TERMINOLOGY-ENCYCLOPEDIA-ARCHITECTURE-v0.1.md",
+      "size_bytes": 6764,
+      "sha256": "08b2f4fc6070f8d2a3eb0a3c26f39b955301cb7d7b441477d0ad77b5ab27a193"
+    },
+    {
+      "path": "TEST-BOUNDARY-CONTROL-GAP-v0.1.md",
+      "size_bytes": 1860,
+      "sha256": "8b433781847b65b6dbd34c41f1282f61747411c1a98d6bb052cf2acb838400cb"
+    },
+    {
+      "path": "TEST-RESULT-ONLY-v0.1.md",
+      "size_bytes": 1003,
+      "sha256": "33799b10e68b5b60e0303713bdb17b4f7de0df3a6dd8ca3b3b8f4c20a83a3de1"
+    },
+    {
+      "path": "THERMODYNAMIC-REGULATION-METHOD-v0.1.md",
+      "size_bytes": 5442,
+      "sha256": "ec87cad34933080b58026eb5e7dbb335ee6c74f2f026963bda8733e67dcfa288"
+    },
+    {
+      "path": "VERSION",
+      "size_bytes": 11,
+      "sha256": "8e3ccfbe492191dbb919be7b4ef3d93bd88f92b1d99532b25ba19c5ad9f1f722"
+    },
+    {
+      "path": "VISUAL-PROTOTYPE-APPROVAL.md",
+      "size_bytes": 1147,
+      "sha256": "f2e203560789e06f97ea7ea7efd6fc214500f3f0c6453d9cc361e10fa18c0f4d"
+    },
+    {
+      "path": "VISUAL-REPRESENTATION-CONTRACT-v0.1.md",
+      "size_bytes": 5823,
+      "sha256": "67ad0adb4189b21a68e787b96a3a07dcba09a53b39be2d45eb952c022419b5b0"
+    },
+    {
+      "path": "WEAKNESS-PRESERVATION-AND-DESIGN-v0.1.md",
+      "size_bytes": 3265,
+      "sha256": "e7b6fd94bd08308606ced5b6a8960f61fa3789ea33144c9a37f39aa30ab4fd51"
+    },
+    {
+      "path": "ZOMBIE-PERMISSION-HUNTER-PROTOTYPE.md",
+      "size_bytes": 1166,
+      "sha256": "d4daf315fc853377c65fcf7c94e6631858631edb33b4a08e9c52fcc4cf224294"
+    },
+    {
+      "path": "audit-event.schema.json",
+      "size_bytes": 1006,
+      "sha256": "d49b8bf63cbcaefd1a07ea1b0d993ca2fa77e6c5d9c6bb5e54d94668c47a1a00"
+    },
+    {
+      "path": "bounded-case-study-index.v0.1.json",
+      "size_bytes": 2436,
+      "sha256": "f98d9d3efca686609cfd67959973bd4a4953f355bc9ab9912a3076de6ae40113"
+    },
+    {
+      "path": "challenges/BT-HC-001-CAN-MAY.yaml",
+      "size_bytes": 2606,
+      "sha256": "e012bebaa359209bf8efd9809884790177cb9b5dfed9981aefa1ea78a4c83fe6"
+    },
+    {
+      "path": "challenges/BT-HC-002-EXTERNAL-BRAKE.yaml",
+      "size_bytes": 2784,
+      "sha256": "fa2992deb90bbc6f83ea0c61105fd20075c82f74febbe21e20c3b7ea229457c3"
+    },
+    {
+      "path": "challenges/BT-HC-003-CONSEQUENCE-OWNERSHIP.yaml",
+      "size_bytes": 2994,
+      "sha256": "060b8c5f89ab20979c9d19baf4cbd0091a284ac69f1efbedc42c980ed7c4c9c7"
+    },
+    {
+      "path": "challenges/CHALLENGE-REGISTER.md",
+      "size_bytes": 1730,
+      "sha256": "69ca17bd83613a04f80c09757af70dbf4da52f73c1c4e955d363c6d6acb69db7"
+    },
+    {
+      "path": "challenges/README.md",
+      "size_bytes": 1612,
+      "sha256": "d6943eda710fb1a74faa3640478e78999b0c02c21cce168ba7d1a6ec376104c9"
+    },
+    {
+      "path": "challenges/SPECIALIST-HANDOFF-LEDGER.md",
+      "size_bytes": 2292,
+      "sha256": "228bcd059c4ade7fcf0b8f758edaaa003260c5b507d236bf69af934da9040968"
+    },
+    {
+      "path": "challenges/SPECIALIST-HANDOFF-PROTOCOL.md",
+      "size_bytes": 4052,
+      "sha256": "b53e76bd752f285a78fe955f48d05eac34166e72d22a5cb6325f98478fe426eb"
+    },
+    {
+      "path": "challenges/SPECIALIST-INVITATION.md",
+      "size_bytes": 1999,
+      "sha256": "4e78e129655d62c129061a4d569d811a39bad10f8558f5d544422422f6f1cff5"
+    },
+    {
+      "path": "challenges/challenge-template.yaml",
+      "size_bytes": 817,
+      "sha256": "279ac29133ebb68fff10ccca853b2f0c6b47ff52775304cbccfb607facb7ece1"
+    },
+    {
+      "path": "challenges/examples/example-model-output-to-consequence.yaml",
+      "size_bytes": 2192,
+      "sha256": "9af70bf10d65866fe57a5adde854caef020331f7be8b00afeb0232aedeef6bcb"
+    },
+    {
+      "path": "challenges/specialist-handoff-template.yaml",
+      "size_bytes": 1007,
+      "sha256": "0814cb44c8358db824110c1f45821c12ecab37b43d9f6d7431101010e83b67f4"
+    },
+    {
+      "path": "consequence-receipt.schema.json",
+      "size_bytes": 3503,
+      "sha256": "e71aacb1b140b1303cec51cfb815f5a75bfaa52c15a43b858253029a9bcc04bd"
+    },
+    {
+      "path": "control-sequence.mmd",
+      "size_bytes": 249,
+      "sha256": "abeb522849ec2580368ac2f64d30257426984f97013c2147906f76eb33abe13f"
+    },
+    {
+      "path": "examples/review-packet.html",
+      "size_bytes": 1360,
+      "sha256": "fa4dd680da8f66ef2560b9c3078ad043a7934b89e24cfafd89aea575542c6ef9"
+    },
+    {
+      "path": "operational-guidance.schema.json",
+      "size_bytes": 2223,
+      "sha256": "b4f6a568e78d219deb42514fb516b710eab54bcfacae47f88874cf65b9388201"
+    },
+    {
+      "path": "owner-role.schema.json",
+      "size_bytes": 1107,
+      "sha256": "8e576c689a0dab9c0375949c25c73426c7923e5e6996ca2190de46f05a740d68"
+    },
+    {
+      "path": "package-lock.json",
+      "size_bytes": 141504,
+      "sha256": "377bf3bc80d081c2c21ef1f6f4848c02ba0afe1f8a1e345f9fc9e993244a1d56"
+    },
+    {
+      "path": "package.json",
+      "size_bytes": 701,
+      "sha256": "47297033148e95c4ec39fd0d5b122edfd1175f0783dc479bcf789d91e753f313"
+    },
+    {
+      "path": "source-manifest.csv",
+      "size_bytes": 2373,
+      "sha256": "b469137f63bf6d19f7cb540da29e26b8d884e8f8f5ccbdf8608c85683d453030"
+    },
+    {
+      "path": "src/can-may/universal-kernel.ts",
+      "size_bytes": 2727,
+      "sha256": "629678513e14eca336a3300dfb9df7892bdcbb0a07b85322c5af755fff0b3c70"
+    },
+    {
+      "path": "src/fixtures/bounded-agent-workcell-shapes.ts",
+      "size_bytes": 1107,
+      "sha256": "49cf960bcad86f00708b16bbf90a86f3ac100b89d500ccd6f4b8d3e3a556d284"
+    },
+    {
+      "path": "src/fixtures/can-may-domain-registry.ts",
+      "size_bytes": 9134,
+      "sha256": "fe04bb32a7045b1273ed0e7a0d3b0b4a49af991c6cb91670cfdaf334f38b2091"
+    },
+    {
+      "path": "src/fixtures/consequence-receipt-v2-shapes.ts",
+      "size_bytes": 1616,
+      "sha256": "cdeb21c73d75e2c8f0ce69924830cc58e13f13faac2ff178c542042a2f5cc813"
+    },
+    {
+      "path": "src/fixtures/dependency-reinspection-shapes.ts",
+      "size_bytes": 1365,
+      "sha256": "ab296f5835228c43e3a4c7c57ea417bcde6222fed0c1e2e137339527c736b427"
+    },
+    {
+      "path": "src/fixtures/invalid-shapes.ts",
+      "size_bytes": 1567,
+      "sha256": "da8859696581b5352cddecc8633190a87cdf287be666a2b741e28cde9e43bdcd"
+    },
+    {
+      "path": "src/fixtures/lane-registry.ts",
+      "size_bytes": 4875,
+      "sha256": "0e24eda57b3d36683d75b83997dcdd4e18dd77854e546bbcd56854625b1f9aea"
+    },
+    {
+      "path": "src/fixtures/review-surface-shapes.ts",
+      "size_bytes": 752,
+      "sha256": "49f47c058f5fd7182dd1fd856b1c83b4d554e94192767d8362c0fc1212033ae2"
+    },
+    {
+      "path": "src/fixtures/specialist-handoff-shapes.ts",
+      "size_bytes": 867,
+      "sha256": "58f95126e3254ca3a1b997dcc79bdd3e99813343a6f2f15d2e7a200fa941ff02"
+    },
+    {
+      "path": "src/fixtures/task-wall-shapes.ts",
+      "size_bytes": 2860,
+      "sha256": "2c42ff1910c95422ef4ff2a233951738a8a0591d02ff10be9431c3b1f6e87972"
+    },
+    {
+      "path": "src/fixtures/valid-shapes.ts",
+      "size_bytes": 2309,
+      "sha256": "14dac735b87457e0a2fdab51744c5cd087e436c27cdcc89e0b7c4854fe17ccc9"
+    },
+    {
+      "path": "src/fixtures/zombie-permission-hunter-shapes.ts",
+      "size_bytes": 978,
+      "sha256": "5576a9b3f680acd4d196538feaef679d3d80a2b127a11a76ae2e85286941f584"
+    },
+    {
+      "path": "src/maintenance/zombie-permission-hunter-batch.ts",
+      "size_bytes": 596,
+      "sha256": "20cf071c08299f22091a902e8e834a2eded0294c122c4ac8619e960d068d932c"
+    },
+    {
+      "path": "src/maintenance/zombie-permission-hunter.ts",
+      "size_bytes": 4994,
+      "sha256": "db01721ae3612889705c223609016854a4d0470b1288f42b059fa2699da4fc50"
+    },
+    {
+      "path": "src/review/review-surface.ts",
+      "size_bytes": 7065,
+      "sha256": "eacde95364bdb95dba49673c7c418d23034dbca801c4e86f521281aacbac079b"
+    },
+    {
+      "path": "src/robotics/bounded-kernel.ts",
+      "size_bytes": 6348,
+      "sha256": "0d74f390dbeda542b39fb5a307dc8038c3cf44e15b2be821e10d8bf2f9ce9b83"
+    },
+    {
+      "path": "src/robotics/pre-action-gate.ts",
+      "size_bytes": 3540,
+      "sha256": "e49f9f091355a325579194e6b5b9e68ce74b64a9ba517e4790dafd542b00e185"
+    },
+    {
+      "path": "src/robotics/system-lifecycle.ts",
+      "size_bytes": 2313,
+      "sha256": "c0392b51d778c523bafce88cecc5af4df823eae4bd0f6a9770a73051db6225fd"
+    },
+    {
+      "path": "src/tests/authority-boundary-invariants.test.ts",
+      "size_bytes": 2080,
+      "sha256": "d996c7db9009ba99cbfcc872790656e0295e5684035adbe3b49d5a47b85be5f2"
+    },
+    {
+      "path": "src/tests/bounded-agent-workcell-contracts.test.ts",
+      "size_bytes": 1308,
+      "sha256": "6428a59eadcbf50de3aad8c1d140b94de6b355b036bc8f019a4bd1456f7ce02b"
+    },
+    {
+      "path": "src/tests/bounded-case-study-workflow.test.ts",
+      "size_bytes": 2444,
+      "sha256": "0ffc49cdfd3f00169fe39d99d83c9fc20b243ec57eb4f4ea8a4a94be27f56363"
+    },
+    {
+      "path": "src/tests/can-may-domain-registry.test.ts",
+      "size_bytes": 1003,
+      "sha256": "15e4f837d22dfa5fdbcbbb037873ad64cfecb76ca92ec4eb9bbfa7f33ddb77ef"
+    },
+    {
+      "path": "src/tests/can-may-kernel.test.ts",
+      "size_bytes": 2766,
+      "sha256": "56a31ddadf994fb79a1cbf977115ee7cc82fd0762a19227e2429433108d4c7dc"
+    },
+    {
+      "path": "src/tests/chaos-engine.test.ts",
+      "size_bytes": 1805,
+      "sha256": "98919cbc29089d9325b98d7251f72c0917d63636368d1847b6226570aa97039f"
+    },
+    {
+      "path": "src/tests/consequence-receipt-v2-contracts.test.ts",
+      "size_bytes": 1446,
+      "sha256": "f95ef3f83972d63f17cb432fbec1127b50b0c0cdc390c82b8101d60bf864fb48"
+    },
+    {
+      "path": "src/tests/constraint-precedes-capability.test.ts",
+      "size_bytes": 2228,
+      "sha256": "589ff54d8462c54fa1466f5be124f05fd6b9b728beb38b16f0fba09ba9d27aac"
+    },
+    {
+      "path": "src/tests/converse-exhaustion-workflow.test.ts",
+      "size_bytes": 2608,
+      "sha256": "51abb2c1ab2e0d658c3a060810de0f5dfd96f3f565f6322884f3638289721456"
+    },
+    {
+      "path": "src/tests/dependency-reinspection-contracts.test.ts",
+      "size_bytes": 1010,
+      "sha256": "e7cb4b3c48dc894f411782caee8cd9155beff5ccf4fb74bd55601281cc5571f0"
+    },
+    {
+      "path": "src/tests/end-to-end-transparency.test.ts",
+      "size_bytes": 2571,
+      "sha256": "d0085c00d2a6ee500e4b2f0e78f84d816a7ca7375916964db8922186560b8184"
+    },
+    {
+      "path": "src/tests/fifty-one-fifty-workflow.test.ts",
+      "size_bytes": 2389,
+      "sha256": "3c9f5364a47ba04a6e1db55e60eda09a69a2211e4538673a0e98bee5dfd798d5"
+    },
+    {
+      "path": "src/tests/fixture-classification.test.ts",
+      "size_bytes": 777,
+      "sha256": "37ef64e3b33f6cbb2b308160df08b9bab432a25ca9292e04755565f863b9908d"
+    },
+    {
+      "path": "src/tests/hostile-deconstruction.test.ts",
+      "size_bytes": 1855,
+      "sha256": "2a38d438f0d19b50740b7f98c252ec2655fb64a32a25b2fe5c478671a8f2260f"
+    },
+    {
+      "path": "src/tests/inquisition-engine.test.ts",
+      "size_bytes": 2042,
+      "sha256": "064520ba7c66768bfe947a5d8c9447467d11208e5bd19df140a3231ee9fc46d9"
+    },
+    {
+      "path": "src/tests/inverse-exhaustion-workflow.test.ts",
+      "size_bytes": 2718,
+      "sha256": "cc8a428b322bed46561e9c87763655dfad81549f2beb0057ce18a04e5aee9652"
+    },
+    {
+      "path": "src/tests/lane-router.test.ts",
+      "size_bytes": 1400,
+      "sha256": "cf7016b9bbf028a7d0e8de6a6d33bf6c6bdd88a422c543a74b3f343c523ba42a"
+    },
+    {
+      "path": "src/tests/omissions-pass-workflow.test.ts",
+      "size_bytes": 1893,
+      "sha256": "de0dcf1e96037f8699f7b12cd3a9f59cc90069050c070a2298b1bb70bd5bcb19"
+    },
+    {
+      "path": "src/tests/review-surface.test.ts",
+      "size_bytes": 2308,
+      "sha256": "48d4d15d8d3ad8664eac2a33e9ad7ccc4bd60a7cb427b520c0fc52e4a48f3f80"
+    },
+    {
+      "path": "src/tests/robotics-bounded-kernel.test.ts",
+      "size_bytes": 4477,
+      "sha256": "b5a666c1c2dd2d84a4407f4e234d4fb7dc7cdcc5b49d88f777dd04724ce1cc24"
+    },
+    {
+      "path": "src/tests/robotics-pre-action-gate.test.ts",
+      "size_bytes": 2410,
+      "sha256": "ad80d7fcc760c2865c35e35c3bf6f6079d607a1d1f8d3c4dafe512e71afb6dba"
+    },
+    {
+      "path": "src/tests/robotics-specialist-handoff-battery.test.ts",
+      "size_bytes": 4727,
+      "sha256": "3e362f8d524e93c2a34ace3d9d6869ac5f9546abf3ea9255f5a2cb048e778d7d"
+    },
+    {
+      "path": "src/tests/robotics-system-lifecycle.test.ts",
+      "size_bytes": 2424,
+      "sha256": "cded928fc779395b4a8011e889954c39dd16db98bdd36ffb70824e398aa5613d"
+    },
+    {
+      "path": "src/tests/schema-alignment.test.ts",
+      "size_bytes": 1948,
+      "sha256": "ff1b86c456f4a3c43fb2c24cec1fddc2bd1ef689f58af1cfe676c9666fa2771c"
+    },
+    {
+      "path": "src/tests/sigma-one-optimization.test.ts",
+      "size_bytes": 1211,
+      "sha256": "ec145c5b805351809fa2cd52f2b0c1e78c6507aa54348ecd2eff62fe3f96008a"
+    },
+    {
+      "path": "src/tests/sigma-two-diagonal-workflow.test.ts",
+      "size_bytes": 2469,
+      "sha256": "9bfeed83982c00d9bca2febda83f35b8785fb571ae5f48ef0779186c500d7e5a"
+    },
+    {
+      "path": "src/tests/specialist-handoff-contracts.test.ts",
+      "size_bytes": 781,
+      "sha256": "1bdd41b3a2388f00d7513cf28dcfd4b9b22ac940a83254ce306ad5e6ccf06381"
+    },
+    {
+      "path": "src/tests/switchboard-agent-gate.test.ts",
+      "size_bytes": 2245,
+      "sha256": "a9ec678326d5027737ec0017ddded80d2bfad352ea447d7d6d4647c7b7fba501"
+    },
+    {
+      "path": "src/tests/task-wall-contracts.test.ts",
+      "size_bytes": 1620,
+      "sha256": "6e642f1778f05d6affb5a3b503347e6bcffca407f8e0202f727eb556b62706d1"
+    },
+    {
+      "path": "src/tests/zombie-permission-hunter-batch.test.ts",
+      "size_bytes": 1064,
+      "sha256": "3cd20143408f8e6cfebe5e1e31d37a28591f8fb2121ae5fc1e502b43537b11b6"
+    },
+    {
+      "path": "src/tests/zombie-permission-hunter.test.ts",
+      "size_bytes": 1787,
+      "sha256": "0b7633decc37ee9ee0e0edd6aa33ef92584c34f98454fbcd9e3b7da1e89ac569"
+    },
+    {
+      "path": "src/types/action-authority-evidence-packet.ts",
+      "size_bytes": 1196,
+      "sha256": "330d1df28a442e25c76ca701d85826f43a6b56bee1b88357089f6d6a7d6ad844"
+    },
+    {
+      "path": "src/types/bounded-agent-workcell-contracts.ts",
+      "size_bytes": 1069,
+      "sha256": "1983259f4088d095125589a1a732ef70558c46a88bc7e8f4b4688233541add71"
+    },
+    {
+      "path": "src/types/bounded-case-study-contracts.ts",
+      "size_bytes": 1177,
+      "sha256": "d3da5bb105ba14a02c92eb678595ff74982d29d07bce4b03ae4d4ffd50ccee27"
+    },
+    {
+      "path": "src/types/can-may-domain-registry.ts",
+      "size_bytes": 643,
+      "sha256": "6c24bbf310058e7356e36deac9106e9cbb4a53e24d9aba71ee9a0cbcf82ed5ba"
+    },
+    {
+      "path": "src/types/can-may-kernel-contracts.ts",
+      "size_bytes": 2462,
+      "sha256": "2db2deb54c9dbf2ab7e9d183a0b842b74beafbbd1f6ccec2e27ea217ac888f6c"
+    },
+    {
+      "path": "src/types/chaos-engine-contracts.ts",
+      "size_bytes": 1433,
+      "sha256": "f64fadf483233d9b6cfcf4a1fda57557bd182e3d7cb6647236cdf08c39b57383"
+    },
+    {
+      "path": "src/types/consequence-receipt-v2-contracts.ts",
+      "size_bytes": 1469,
+      "sha256": "24dadf5a6d9362d236fb11ca6af7688c5e517c5324c4bf5c566dc9526f227fff"
+    },
+    {
+      "path": "src/types/constraint-precedes-capability-contracts.ts",
+      "size_bytes": 1059,
+      "sha256": "927fb79ccd525ed787792545309de64fb8c8fc01b19f67df204b6eb7bd00695a"
+    },
+    {
+      "path": "src/types/converse-exhaustion-contracts.ts",
+      "size_bytes": 1125,
+      "sha256": "a08ca46794efb06f79068f55d1877223c0833e193875a07e939d86d9b5927603"
+    },
+    {
+      "path": "src/types/core-contracts.ts",
+      "size_bytes": 3227,
+      "sha256": "d1f223cec8b315990da56a58d3dd59b4a81d297fbf214a0bb04011157dce4570"
+    },
+    {
+      "path": "src/types/delegation-revocation-record.ts",
+      "size_bytes": 511,
+      "sha256": "627dbbec114f90639404da7d04d011222bcc123d42dc5b9d88c973aefe167235"
+    },
+    {
+      "path": "src/types/dependency-reinspection-contracts.ts",
+      "size_bytes": 1289,
+      "sha256": "ad427387fd5da4f6c89072806a7295e73276f4f3ea7880ff56b673faa40357dc"
+    },
+    {
+      "path": "src/types/end-to-end-transparency-contracts.ts",
+      "size_bytes": 1282,
+      "sha256": "03d13310b63c86fc2a1fb47f9d10c999e7e6a343e4ec3cd945f70edfde9c2066"
+    },
+    {
+      "path": "src/types/fifty-one-fifty-contracts.ts",
+      "size_bytes": 1388,
+      "sha256": "730748501190e4018e0511bc6c11c113fcfbde282587a3b0173cabd0c7aadd8f"
+    },
+    {
+      "path": "src/types/hostile-deconstruction-contracts.ts",
+      "size_bytes": 1267,
+      "sha256": "233e34bfcf2d9db9ec6f7ff14556b4279bc71333bfae5021f76da3a2af555b95"
+    },
+    {
+      "path": "src/types/inert-contracts.ts",
+      "size_bytes": 1686,
+      "sha256": "a7659abdc8594c94c5ff306e2174eeb17b023925c7c3143a35523b384d27c123"
+    },
+    {
+      "path": "src/types/inquisition-engine-contracts.ts",
+      "size_bytes": 1302,
+      "sha256": "3ac8cca996828816ad2202cf35dcbe132371705b25613eebb30f23d267855379"
+    },
+    {
+      "path": "src/types/inverse-exhaustion-contracts.ts",
+      "size_bytes": 1099,
+      "sha256": "a10b7df9bb682c3e032f6fe2cb3f18d57868addd76bf39d111c7866cb77d4804"
+    },
+    {
+      "path": "src/types/lane-contracts.ts",
+      "size_bytes": 821,
+      "sha256": "c25ff44949295a2f0768fed45eb49e75536d5abf2b7986f241bd3f3a7a26b27e"
+    },
+    {
+      "path": "src/types/mediation-coverage-record.ts",
+      "size_bytes": 619,
+      "sha256": "041c8150149e0a5ec35d6a0219d3452bde8bd8361bd8903aa58c29d0b54797fc"
+    },
+    {
+      "path": "src/types/omissions-pass-contracts.ts",
+      "size_bytes": 1536,
+      "sha256": "c63c002554480cd036a0405a6e4ac1b93d96c83e4d43e272cf2d67cb55631401"
+    },
+    {
+      "path": "src/types/robotics-bounded-kernel-contracts.ts",
+      "size_bytes": 5029,
+      "sha256": "71713a978f5fc84d4073c6ff39b15462a1df918f1bbaeedad8d645a7c40a2a10"
+    },
+    {
+      "path": "src/types/robotics-pre-action-contracts.ts",
+      "size_bytes": 2050,
+      "sha256": "57e1e28658adf5a7d581a03328580b0f8cc5b7c63c392e682a63dacfcfc143c6"
+    },
+    {
+      "path": "src/types/robotics-system-authority-lifecycle-contracts.ts",
+      "size_bytes": 3153,
+      "sha256": "96e5e32d3e71d447bd6f954b5c0ad922a11c7baf0423b905153e873ae93ccb93"
+    },
+    {
+      "path": "src/types/sigma-one-optimization-contracts.ts",
+      "size_bytes": 661,
+      "sha256": "ef3a17c40a2e76d2f3cbfa17b206a71d4ac4da82ec3c99cfc984ad17e79513f1"
+    },
+    {
+      "path": "src/types/sigma-two-diagonal-contracts.ts",
+      "size_bytes": 1198,
+      "sha256": "52b4697d7d321a3e8b7f1580ed746f5b020af171dbf5fb40228f9f8df29b2847"
+    },
+    {
+      "path": "src/types/specialist-handoff-contracts.ts",
+      "size_bytes": 475,
+      "sha256": "5e4aaa3a574a9ace6c4dc81819a537e5119dd4e65cd239f87eb5be0695e77df3"
+    },
+    {
+      "path": "src/types/switchboard-agent-gate-contracts.ts",
+      "size_bytes": 928,
+      "sha256": "6d7895e39dc52ab4af5c6b252686e80aeb81c0034d0bd6d3a5b7bac991db6601"
+    },
+    {
+      "path": "src/types/task-wall-contracts.ts",
+      "size_bytes": 2489,
+      "sha256": "45c94ca8a431c8666dc231b1f15409bb4ab583f98267c2261fca72bc5b3620a5"
+    },
+    {
+      "path": "src/types/zombie-permission-hunter-contracts.ts",
+      "size_bytes": 2308,
+      "sha256": "fbd04982e6aa7fcd4ba9aad7d217e6edf696d36038befbe4ef412d36309d9040"
+    },
+    {
+      "path": "src/workflows/bounded-case-study.ts",
+      "size_bytes": 3402,
+      "sha256": "0c9a4d84f33ea2ddc669420b4320b2f79a6ae944338f3fcf353bf174988d0123"
+    },
+    {
+      "path": "src/workflows/chaos-engine.ts",
+      "size_bytes": 2033,
+      "sha256": "5b50df00335f42153a1842efd6f1dd46c2b13402c4566280a8e5ed9adbb957f3"
+    },
+    {
+      "path": "src/workflows/constraint-precedes-capability.ts",
+      "size_bytes": 2069,
+      "sha256": "902e0912e4825370e8525647a6633c435c0262203b0568e9e2c2047d81488b2c"
+    },
+    {
+      "path": "src/workflows/converse-exhaustion.ts",
+      "size_bytes": 2428,
+      "sha256": "1121528eaecdf2559564d3df3df322584f80cc1717b52666e92cb9f2e3c7bb85"
+    },
+    {
+      "path": "src/workflows/end-to-end-transparency.ts",
+      "size_bytes": 3181,
+      "sha256": "d5305f73fe349dac9c263ef7940796d2b5b628fb8ce01842f0634056e658271c"
+    },
+    {
+      "path": "src/workflows/fifty-one-fifty.ts",
+      "size_bytes": 3835,
+      "sha256": "ae0f20fb453dc0d05643997717a88b118322f62cc1b7a1518c9cc08112ac2448"
+    },
+    {
+      "path": "src/workflows/hostile-deconstruction.ts",
+      "size_bytes": 3365,
+      "sha256": "52a91eea28781aa48ed52c257b509ed5de662d48699728fcda3cc4021317bcdd"
+    },
+    {
+      "path": "src/workflows/inquisition-engine.ts",
+      "size_bytes": 3710,
+      "sha256": "74222f7a67e3de4d9c7867ff13f0520a2b746ae6ba2335cb1af2a05cedf65e0e"
+    },
+    {
+      "path": "src/workflows/inverse-exhaustion.ts",
+      "size_bytes": 2539,
+      "sha256": "a01ebde3c31e0feb9be2739d632d7316928771ee0df20859ee44e4b667eca2ae"
+    },
+    {
+      "path": "src/workflows/lane-router.ts",
+      "size_bytes": 1395,
+      "sha256": "022d9258f34cc04d87f94a223ccc898226266aa9e2c71a0d5a496dbd48557632"
+    },
+    {
+      "path": "src/workflows/omissions-pass.ts",
+      "size_bytes": 5735,
+      "sha256": "53a4a39fc8a5aaf7375cf2b3df7a19d1bba1a2565ce3bd7ce38cade8a0d942e9"
+    },
+    {
+      "path": "src/workflows/sigma-one-optimization.ts",
+      "size_bytes": 1302,
+      "sha256": "2d53c32516eee06aef839310488a8085c9432d0219cadaddd64bd30f1e2217b1"
+    },
+    {
+      "path": "src/workflows/sigma-two-diagonal.ts",
+      "size_bytes": 3358,
+      "sha256": "0282cadafc4fdd4bb6fd8d2dcf0785f371b049306a207e32af5e8fa409c9e173"
+    },
+    {
+      "path": "src/workflows/switchboard-agent-gate.ts",
+      "size_bytes": 3044,
+      "sha256": "6c6816e1d1b1580b68d036ef0c82626593283c006383c4145f4d77f6455aa00a"
+    },
+    {
+      "path": "state-machine.mmd",
+      "size_bytes": 635,
+      "sha256": "2a384af9b08b4636235b50942b70bb13782639c52910113eb3cff8d7b8d422ac"
+    },
+    {
+      "path": "trust-boundaries.mmd",
+      "size_bytes": 233,
+      "sha256": "208c0f09391a9e0c1ae9247408d6e6658a17030397b3f0dad0552fa432b16ccd"
+    },
+    {
+      "path": "tsconfig.json",
+      "size_bytes": 218,
+      "sha256": "78d4b850be720d75e1c7968cfb4509ab4bd312728b6db594e943133e23ddcaf0"
+    },
+    {
+      "path": "visual/README.md",
+      "size_bytes": 707,
+      "sha256": "4a47655aedb029e5ef2e174014011da6850d4cb055b93667eb5c67e908a66b8b"
+    },
+    {
+      "path": "visual/UNSUPPORTED-ARROW-README.md",
+      "size_bytes": 622,
+      "sha256": "6e44de52b07f67da99f1e1daaad5597010d8a30254995d7af57df3854356460e"
+    },
+    {
+      "path": "visual/index.html",
+      "size_bytes": 4483,
+      "sha256": "a39ecb286832edfcbe9c5f764bd94c698044cec05eca7c31758bca1eda786a85"
+    },
+    {
+      "path": "visual/unsupported-arrow.html",
+      "size_bytes": 3524,
+      "sha256": "c496f661df4e52490983cae5a2fe97393247321f212e3c165f23c4bc0ac19d05"
+    },
+    {
+      "path": "visual/unsupported-arrows.json",
+      "size_bytes": 1640,
+      "sha256": "9cc33bc6f8e5e6894897c6400877801a767f9d0afd6f503dd229f90221b723ce"
+    },
+    {
+      "path": "visual/visual-state.json",
+      "size_bytes": 2602,
+      "sha256": "c74e32cb1900470601749368cf9fae66b04e9f6b3456de5ae58f3cc7111bd597"
+    },
+    {
+      "path": "visual/visual-state.schema.json",
+      "size_bytes": 3308,
+      "sha256": "766a9a7e9a3f2a086d44016d256c99060a1e1548b701716d75ce0dd2576ab4d1"
+    },
+    {
+      "path": "visual/visual-state.schema.test.ts",
+      "size_bytes": 618,
+      "sha256": "99f1b7b797c1af3bb0e244e01a1829bc62027d2b3e2e8f2d2e0d579c45901245"
+    },
+    {
+      "path": "visual/visual-state.test.ts",
+      "size_bytes": 2506,
+      "sha256": "50acceaffc9cc7c75aadd4af3029ec5e17a15f2a93678f6284244a6d827c17ad"
+    }
+  ]
+}

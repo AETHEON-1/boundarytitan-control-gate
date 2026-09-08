@@ -27,4 +27,9 @@ describe('read-only review surface', () => {
     const html = renderReviewSurface(completeReviewReceipt);
     expect(html).not.toMatch(/<button|<form|approve|release|execute/i);
   });
+  test('holds expired, invalid, and blank evidence metadata', () => {
+    expect(deriveReviewStatus({ ...completeReviewReceipt, expiry: '2000-01-01T00:00:00Z' })).toBe('RED');
+    expect(deriveReviewStatus({ ...completeReviewReceipt, expiry: 'not-a-date' })).toBe('RED');
+    expect(deriveReviewStatus({ ...completeReviewReceipt, evidence: [{ ...completeReviewReceipt.evidence[0], claim: '   ' }] })).toBe('RED');
+  });
 });

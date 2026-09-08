@@ -1,5 +1,8 @@
 # End-to-End Review Status v0.1
 
+> Historical review record. Current repository state is recorded in
+> `CURRENT-REPOSITORY-STATE-v0.2.md`.
+
 ## Review state
 
 REVIEW COMPLETED — BOUNDED ADVANCEMENT APPLIED — INDEPENDENT REVIEW PENDING

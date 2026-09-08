@@ -25,19 +25,29 @@ export interface ReviewSurfaceModel {
   expiry: string;
 }
 
-export function checkReceiptCompleteness(receipt: ConsequenceReceiptV2): CompletenessFinding[] {
+const present = (value: string | undefined) => typeof value === 'string' && value.trim().length > 0;
+const parsedTime = (value: string | undefined) => {
+  if (!present(value)) return undefined;
+  const time = Date.parse(value as string);
+  return Number.isNaN(time) ? undefined : time;
+};
+
+export function checkReceiptCompleteness(receipt: ConsequenceReceiptV2, now = new Date()): CompletenessFinding[] {
   const findings: CompletenessFinding[] = [];
-  if (!receipt.accountable_human_owner_id || !receipt.decision_owner_id) findings.push({ code: 'MISSING_OWNER', message: 'A named human owner is required.', severity: 'RED' });
-  if (!receipt.external_stop_path_id || !receipt.stop_path_owner_id) findings.push({ code: 'MISSING_STOP_PATH', message: 'An external stop path and owner are required.', severity: 'RED' });
-  if (!receipt.revocation_authority_id) findings.push({ code: 'MISSING_REVOCATION_AUTHORITY', message: 'A revocation authority is required.', severity: 'YELLOW' });
+  if (!present(receipt.accountable_human_owner_id) || !present(receipt.decision_owner_id)) findings.push({ code: 'MISSING_OWNER', message: 'A named human owner is required.', severity: 'RED' });
+  if (!present(receipt.external_stop_path_id) || !present(receipt.stop_path_owner_id)) findings.push({ code: 'MISSING_STOP_PATH', message: 'An external stop path and owner are required.', severity: 'RED' });
+  if (!present(receipt.revocation_authority_id)) findings.push({ code: 'MISSING_REVOCATION_AUTHORITY', message: 'A revocation authority is required.', severity: 'YELLOW' });
   if (!receipt.reversibility || receipt.reversibility === 'UNKNOWN') findings.push({ code: 'UNKNOWN_REVERSIBILITY', message: 'Reversibility must be stated.', severity: 'YELLOW' });
   if (receipt.evidence.length === 0) findings.push({ code: 'MISSING_EVIDENCE', message: 'Evidence is required.', severity: 'RED' });
+  if (receipt.evidence.some((item) => !present(item.evidence_id) || !present(item.claim) || !present(item.source_reference))) findings.push({ code: 'INVALID_EVIDENCE_REFERENCE', message: 'Evidence identifiers, claims, and source references must be nonblank.', severity: 'RED' });
   if (receipt.evidence.some((item) => item.freshness_status !== 'CURRENT')) findings.push({ code: 'NONCURRENT_EVIDENCE', message: 'Evidence is stale or freshness is unknown.', severity: 'YELLOW' });
-  if (receipt.evidence.some((item) => !item.evidence_custodian_id)) findings.push({ code: 'MISSING_EVIDENCE_CUSTODY', message: 'Evidence custody is required.', severity: 'YELLOW' });
+  if (receipt.evidence.some((item) => !present(item.evidence_custodian_id))) findings.push({ code: 'MISSING_EVIDENCE_CUSTODY', message: 'Evidence custody is required.', severity: 'YELLOW' });
   if (receipt.dependency_context_state === 'UNKNOWN') findings.push({ code: 'UNKNOWN_DEPENDENCY_CONTEXT', message: 'Dependency context is unknown.', severity: 'YELLOW' });
   if (receipt.unresolved_questions.length === 0) findings.push({ code: 'MISSING_UNRESOLVED_QUESTIONS', message: 'Open questions must be visible.', severity: 'YELLOW' });
-  if (receipt.who_can_still_say_no.length === 0) findings.push({ code: 'MISSING_DENIAL_PATH', message: 'A visible denial path is required.', severity: 'RED' });
-  if (!receipt.expiry) findings.push({ code: 'MISSING_EXPIRY', message: 'Receipt expiry is required.', severity: 'YELLOW' });
+  if (receipt.who_can_still_say_no.length === 0 || receipt.who_can_still_say_no.some((item) => !present(item))) findings.push({ code: 'MISSING_DENIAL_PATH', message: 'A visible denial path is required.', severity: 'RED' });
+  const expiry = parsedTime(receipt.expiry);
+  if (expiry === undefined) findings.push({ code: 'INVALID_EXPIRY', message: 'Receipt expiry must be a valid timestamp.', severity: 'RED' });
+  else if (expiry <= now.getTime()) findings.push({ code: 'EXPIRED_RECEIPT', message: 'Receipt expiry has passed.', severity: 'RED' });
   return findings;
 }
 

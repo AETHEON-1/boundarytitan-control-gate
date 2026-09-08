@@ -6,6 +6,9 @@
   "human_approval_recorded": "2026-07-11",
   "publication_state": "not_published",
   "machine_certification": false,
+  "verification_scope": "historical_rc1_snapshot",
+  "current_repository_state_document": "CURRENT-REPOSITORY-STATE-v0.2.md",
+  "current_tree_manifest": "CURRENT-REPOSITORY-MANIFEST.json",
   "files": [
     {
       "path": "APPROVAL_RECORD.md",

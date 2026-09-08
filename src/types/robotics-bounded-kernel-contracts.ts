@@ -48,6 +48,7 @@ export interface ExternalBrakeContract {
   last_test_id?: string;
   last_test_status?: 'PASS' | 'FAIL' | 'NOT_RUN' | 'INVALID';
   last_tested_at?: string;
+  test_valid_until: string;
   independent_verifier_id?: string;
 }
 
