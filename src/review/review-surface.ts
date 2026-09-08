@@ -1,4 +1,5 @@
 import type { ConsequenceReceiptV2 } from '../types/consequence-receipt-v2-contracts';
+import { parseUtcTimestamp } from '../types/temporal';
 
 export type ReviewSurfaceStatus = 'GREEN_ELIGIBLE' | 'YELLOW' | 'RED' | 'BLACK';
 
@@ -26,12 +27,6 @@ export interface ReviewSurfaceModel {
 }
 
 const present = (value: string | undefined) => typeof value === 'string' && value.trim().length > 0;
-const parsedTime = (value: string | undefined) => {
-  if (!present(value)) return undefined;
-  const time = Date.parse(value as string);
-  return Number.isNaN(time) ? undefined : time;
-};
-
 export function checkReceiptCompleteness(receipt: ConsequenceReceiptV2, now = new Date()): CompletenessFinding[] {
   const findings: CompletenessFinding[] = [];
   if (!present(receipt.accountable_human_owner_id) || !present(receipt.decision_owner_id)) findings.push({ code: 'MISSING_OWNER', message: 'A named human owner is required.', severity: 'RED' });
@@ -45,7 +40,7 @@ export function checkReceiptCompleteness(receipt: ConsequenceReceiptV2, now = ne
   if (receipt.dependency_context_state === 'UNKNOWN') findings.push({ code: 'UNKNOWN_DEPENDENCY_CONTEXT', message: 'Dependency context is unknown.', severity: 'YELLOW' });
   if (receipt.unresolved_questions.length === 0) findings.push({ code: 'MISSING_UNRESOLVED_QUESTIONS', message: 'Open questions must be visible.', severity: 'YELLOW' });
   if (receipt.who_can_still_say_no.length === 0 || receipt.who_can_still_say_no.some((item) => !present(item))) findings.push({ code: 'MISSING_DENIAL_PATH', message: 'A visible denial path is required.', severity: 'RED' });
-  const expiry = parsedTime(receipt.expiry);
+  const expiry = parseUtcTimestamp(receipt.expiry);
   if (expiry === undefined) findings.push({ code: 'INVALID_EXPIRY', message: 'Receipt expiry must be a valid timestamp.', severity: 'RED' });
   else if (expiry <= now.getTime()) findings.push({ code: 'EXPIRED_RECEIPT', message: 'Receipt expiry has passed.', severity: 'RED' });
   return findings;
