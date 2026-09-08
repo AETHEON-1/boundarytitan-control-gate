@@ -6,29 +6,49 @@
   "deployment_authority": false,
   "files": [
     {
-      "path": ".github/workflows/verify.yml",
-      "size_bytes": 657,
-      "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
+      "path": ".github/CODEOWNERS",
+      "size_bytes": 88,
+      "sha256": "c989251892698f69de8bb65a545877f302d5acb4d0e051752b5caebcdb8ad92b"
     },
     {
-      "path": "CURRENT-REPOSITORY-STATE-v0.2.md",
-      "size_bytes": 2619,
-      "sha256": "faac3ad7dd3e0b4fd38d1b20d9cac60575b69d7b2722ab2ac9f21b2848fc069a"
+      "path": ".github/dependabot.yml",
+      "size_bytes": 101,
+      "sha256": "146fc4a7e29026507034652f344d0f100f70fd1a61e2a9cfa74bbabe38281b43"
     },
     {
-      "path": "scripts/verify-repository-state.js",
-      "size_bytes": 4744,
-      "sha256": "34dd776dae9297524d3c30f7d5f8069fd64cd6a39b551dd0450ac6cf3d1edb1f"
+      "path": "CONTRIBUTING.md",
+      "size_bytes": 545,
+      "sha256": "b7482252a61abf7f5ed751df99f9a8f537dacbdd8c63dd8a2e61a0f28fa0147c"
     },
     {
-      "path": "test_agentic_handoff.py",
-      "size_bytes": 1949,
-      "sha256": "2d0a69bcdde5145ae3ff59f423ef683568438b9853626549bbb500e1d1de0ffc"
+      "path": "SECURITY.md",
+      "size_bytes": 728,
+      "sha256": "1c91be58f6904681180b887cc599f351de5262e93f595c23792bfcec3c09209e"
+    },
+    {
+      "path": "src/index.ts",
+      "size_bytes": 1186,
+      "sha256": "d55f75e17d3e1512e3b8869c9f83a71fb718540b507eca432ddc0e06a23e55ac"
+    },
+    {
+      "path": "src/tests/temporal.test.ts",
+      "size_bytes": 707,
+      "sha256": "cd916991f43c9b4fdb2298c4cdb3c48e3def0bf52e82974e9e5ae7957acfcd29"
+    },
+    {
+      "path": "src/types/temporal.ts",
+      "size_bytes": 865,
+      "sha256": "52b55046cd570e0e1737ac2cafafd8163fc7e667775691728815e51b750cacc8"
     },
     {
       "path": ".github/ISSUE_TEMPLATE/cross-disciplinary-challenge.yml",
       "size_bytes": 4592,
       "sha256": "19d055fcb7a7d1db0d79e1d250e716d979015be714a5c563c8d2e3ec08f9eb10"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "size_bytes": 657,
+      "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
     },
     {
       "path": ".gitignore",
@@ -324,6 +344,11 @@
       "path": "CRYPTOGRAPHY-LANE-v0.1.md",
       "size_bytes": 6357,
       "sha256": "7e9d0ff5b64289d9c83d43581e20d28092b4ddb51a485426b842a66bd9c7117c"
+    },
+    {
+      "path": "CURRENT-REPOSITORY-STATE-v0.2.md",
+      "size_bytes": 2619,
+      "sha256": "faac3ad7dd3e0b4fd38d1b20d9cac60575b69d7b2722ab2ac9f21b2848fc069a"
     },
     {
       "path": "CURRENT-WORK-INTEGRATION.md",
@@ -741,6 +766,11 @@
       "sha256": "47297033148e95c4ec39fd0d5b122edfd1175f0783dc479bcf789d91e753f313"
     },
     {
+      "path": "scripts/verify-repository-state.js",
+      "size_bytes": 4744,
+      "sha256": "34dd776dae9297524d3c30f7d5f8069fd64cd6a39b551dd0450ac6cf3d1edb1f"
+    },
+    {
       "path": "source-manifest.csv",
       "size_bytes": 2373,
       "sha256": "b469137f63bf6d19f7cb540da29e26b8d884e8f8f5ccbdf8608c85683d453030"
@@ -817,13 +847,13 @@
     },
     {
       "path": "src/review/review-surface.ts",
-      "size_bytes": 7065,
-      "sha256": "eacde95364bdb95dba49673c7c418d23034dbca801c4e86f521281aacbac079b"
+      "size_bytes": 6938,
+      "sha256": "ef8d0405f0e07f482ba1fab402cf1c2856bf2ca22c63cd6729a4019ff58178c2"
     },
     {
       "path": "src/robotics/bounded-kernel.ts",
-      "size_bytes": 6348,
-      "sha256": "0d74f390dbeda542b39fb5a307dc8038c3cf44e15b2be821e10d8bf2f9ce9b83"
+      "size_bytes": 6420,
+      "sha256": "93ef8ee7e079e46f08d4c7328058f483f732971525554568c0934c9c88d394ca"
     },
     {
       "path": "src/robotics/pre-action-gate.ts",
@@ -1207,13 +1237,18 @@
     },
     {
       "path": "src/workflows/switchboard-agent-gate.ts",
-      "size_bytes": 3044,
-      "sha256": "6c6816e1d1b1580b68d036ef0c82626593283c006383c4145f4d77f6455aa00a"
+      "size_bytes": 3112,
+      "sha256": "2f241d2a8c95822a4a3a21fac73be60196583e2096e50d96892b669660f0e417"
     },
     {
       "path": "state-machine.mmd",
       "size_bytes": 635,
       "sha256": "2a384af9b08b4636235b50942b70bb13782639c52910113eb3cff8d7b8d422ac"
+    },
+    {
+      "path": "test_agentic_handoff.py",
+      "size_bytes": 1949,
+      "sha256": "2d0a69bcdde5145ae3ff59f423ef683568438b9853626549bbb500e1d1de0ffc"
     },
     {
       "path": "trust-boundaries.mmd",
@@ -1222,8 +1257,8 @@
     },
     {
       "path": "tsconfig.json",
-      "size_bytes": 218,
-      "sha256": "78d4b850be720d75e1c7968cfb4509ab4bd312728b6db594e943133e23ddcaf0"
+      "size_bytes": 236,
+      "sha256": "dec75eda05135e6339ad48a5929b0754290efcc8c2b8161324f96048a313edb5"
     },
     {
       "path": "visual/README.md",
