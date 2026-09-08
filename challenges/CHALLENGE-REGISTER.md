@@ -21,6 +21,13 @@ A successful defense of A does not establish A -> B.
 | BT-HC-001 | CAN does not, by itself, establish MAY | Capability -> Permission | Open | Human / institutional consequence owner must be identified by challenger | External to tested system | NOT TESTED | OPEN |
 | BT-HC-002 | Credible consequence control requires an external brake | Control claim -> Binding stop authority | Open | Must be identified | Must be outside controlled system if claim survives | NOT TESTED | OPEN |
 | BT-HC-003 | Consequential authority requires identifiable consequence ownership | Disposition authority -> Consequence ownership | Open | Under challenge | Must remain identifiable and external where applicable | NOT TESTED | OPEN |
+| BT-HC-004 | Every reachable consequence path is forced through a revocable gate that can make NO stick | Gate present -> Complete mediation | Observed mediation -> Consequence-path dominance | Must be named per deployment | Independent of executor | NOT TESTED | OPEN |
+
+## Authorization-machinery subchallenge register
+
+The detailed AM-01 through AM-24 defensive attack set is maintained in `AUTHORIZATION-MACHINERY-ADVERSARIAL-BATTERY-v0.1.md`.
+
+The umbrella challenge BT-HC-004 fails if any reproducible AM subchallenge establishes a reachable consequential bypass, authority amplification, revocation failure, unowned consequence, or brake-capture path inside the declared scope.
 
 ## Register rules
 
@@ -31,6 +38,8 @@ A successful defense of A does not establish A -> B.
 5. Every challenge must state falsification conditions.
 6. Uncertainty remains explicit where evidence ends.
 7. Only externally attributable human review may change a challenge from OPEN to a final human disposition.
+8. A local pass does not establish global safety or complete mediation.
+9. UNKNOWN path coverage remains unresolved; it is never silently promoted to covered.
 
 No owner, no brake.
 No ledger, no trust.

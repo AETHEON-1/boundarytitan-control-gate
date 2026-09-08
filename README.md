@@ -53,6 +53,8 @@ It is not limited to AI. It studies how capability becomes access, permission, a
 - `SPECIALIST-LANGUAGE-AUDIT-v0.1.md` — audit terms that hide uncertainty or authority.
 - `OPEN-HANDOFF-TRANSFER-PACKAGE-v0.1.md` — custody and independent-review boundary.
 - `FINAL-SLEDGEHAMMER-BATTERY-REPORT-v0.1.md` — latest adversarial disposition.
+- `AUTHORIZATION-MACHINERY-ADVERSARIAL-BATTERY-v0.1.md` — public defensive challenge battery for bypass, revocation, delegation, composition, tool, identity, brake, and recovery-path failures.
+- `challenges/BT-HC-004-CONSEQUENCE-PATH-DOMINANCE.yaml` — falsifiable umbrella challenge: find one reachable path to consequence that does not have to cross the gate.
 
 ## Minimum kernel
 
