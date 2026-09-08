@@ -6,44 +6,49 @@
   "deployment_authority": false,
   "files": [
     {
+      "path": "STANDARDS-AND-INTEGRATION.md",
+      "size_bytes": 2860,
+      "sha256": "98622d5ee7d4cd26ccab83bcdcb79935b9ab659860ad1e1dd26b982a80bfa0b7"
+    },
+    {
+      "path": "control-event-record.schema.json",
+      "size_bytes": 1823,
+      "sha256": "4207bf26d6cce11631f84d26230a5193dad17836e0e14aff99ecb841b0157222"
+    },
+    {
+      "path": "evaluation-record.schema.json",
+      "size_bytes": 2179,
+      "sha256": "4cc299f1b268eb47fe5b32af428321859317a877688bf5d728b3ec3bdb533ba3"
+    },
+    {
+      "path": "src/tests/standards-integration.test.ts",
+      "size_bytes": 2473,
+      "sha256": "9194b466a9077d36ac08cb17add534933531ce73dc1aa176a3705e36bd042214"
+    },
+    {
+      "path": "src/types/control-event-record.ts",
+      "size_bytes": 894,
+      "sha256": "d165a86af29538a65089790a78c4bd469985c3925eb2bdb63951201976887486"
+    },
+    {
+      "path": "src/types/evaluation-record.ts",
+      "size_bytes": 1620,
+      "sha256": "1a70addd83b6b84ebfafb8bee3958f7e1d18b63516edb6e14b5ecac72f744d22"
+    },
+    {
       "path": ".github/CODEOWNERS",
       "size_bytes": 88,
       "sha256": "c989251892698f69de8bb65a545877f302d5acb4d0e051752b5caebcdb8ad92b"
     },
     {
-      "path": ".github/dependabot.yml",
-      "size_bytes": 101,
-      "sha256": "146fc4a7e29026507034652f344d0f100f70fd1a61e2a9cfa74bbabe38281b43"
-    },
-    {
-      "path": "CONTRIBUTING.md",
-      "size_bytes": 545,
-      "sha256": "b7482252a61abf7f5ed751df99f9a8f537dacbdd8c63dd8a2e61a0f28fa0147c"
-    },
-    {
-      "path": "SECURITY.md",
-      "size_bytes": 728,
-      "sha256": "1c91be58f6904681180b887cc599f351de5262e93f595c23792bfcec3c09209e"
-    },
-    {
-      "path": "src/index.ts",
-      "size_bytes": 1186,
-      "sha256": "d55f75e17d3e1512e3b8869c9f83a71fb718540b507eca432ddc0e06a23e55ac"
-    },
-    {
-      "path": "src/tests/temporal.test.ts",
-      "size_bytes": 707,
-      "sha256": "cd916991f43c9b4fdb2298c4cdb3c48e3def0bf52e82974e9e5ae7957acfcd29"
-    },
-    {
-      "path": "src/types/temporal.ts",
-      "size_bytes": 865,
-      "sha256": "52b55046cd570e0e1737ac2cafafd8163fc7e667775691728815e51b750cacc8"
-    },
-    {
       "path": ".github/ISSUE_TEMPLATE/cross-disciplinary-challenge.yml",
       "size_bytes": 4592,
       "sha256": "19d055fcb7a7d1db0d79e1d250e716d979015be714a5c563c8d2e3ec08f9eb10"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "size_bytes": 101,
+      "sha256": "146fc4a7e29026507034652f344d0f100f70fd1a61e2a9cfa74bbabe38281b43"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -331,6 +336,11 @@
       "sha256": "62b3f4358201c666f6549cf2324f07afd51bce7c9aec653111cd272c6a800791"
     },
     {
+      "path": "CONTRIBUTING.md",
+      "size_bytes": 545,
+      "sha256": "b7482252a61abf7f5ed751df99f9a8f537dacbdd8c63dd8a2e61a0f28fa0147c"
+    },
+    {
       "path": "CONVERSE-EXHAUSTION-WORKFLOW-v0.1.md",
       "size_bytes": 956,
       "sha256": "780978b0ffc53a3fe834f3220e7111f317a872a09e8d7e84e669170416eb0a52"
@@ -554,6 +564,11 @@
       "path": "ROBOTICS-SYSTEM-AUTHORITY-LIFECYCLE.md",
       "size_bytes": 2112,
       "sha256": "9be16d9e48cbf921b682b09e17639b14ce53da22d795e456523221c0c4e10bd7"
+    },
+    {
+      "path": "SECURITY.md",
+      "size_bytes": 728,
+      "sha256": "1c91be58f6904681180b887cc599f351de5262e93f595c23792bfcec3c09209e"
     },
     {
       "path": "SHA256SUMS.txt",
@@ -836,6 +851,11 @@
       "sha256": "5576a9b3f680acd4d196538feaef679d3d80a2b127a11a76ae2e85286941f584"
     },
     {
+      "path": "src/index.ts",
+      "size_bytes": 1457,
+      "sha256": "404ea65e1d965b39f10fc9a59c88c655428f95cde1a9c08c89e59be462475668"
+    },
+    {
       "path": "src/maintenance/zombie-permission-hunter-batch.ts",
       "size_bytes": 596,
       "sha256": "20cf071c08299f22091a902e8e834a2eded0294c122c4ac8619e960d068d932c"
@@ -1011,6 +1031,11 @@
       "sha256": "6e642f1778f05d6affb5a3b503347e6bcffca407f8e0202f727eb556b62706d1"
     },
     {
+      "path": "src/tests/temporal.test.ts",
+      "size_bytes": 707,
+      "sha256": "cd916991f43c9b4fdb2298c4cdb3c48e3def0bf52e82974e9e5ae7957acfcd29"
+    },
+    {
       "path": "src/tests/zombie-permission-hunter-batch.test.ts",
       "size_bytes": 1064,
       "sha256": "3cd20143408f8e6cfebe5e1e31d37a28591f8fb2121ae5fc1e502b43537b11b6"
@@ -1166,6 +1191,11 @@
       "sha256": "45c94ca8a431c8666dc231b1f15409bb4ab583f98267c2261fca72bc5b3620a5"
     },
     {
+      "path": "src/types/temporal.ts",
+      "size_bytes": 865,
+      "sha256": "52b55046cd570e0e1737ac2cafafd8163fc7e667775691728815e51b750cacc8"
+    },
+    {
       "path": "src/types/zombie-permission-hunter-contracts.ts",
       "size_bytes": 2308,
       "sha256": "fbd04982e6aa7fcd4ba9aad7d217e6edf696d36038befbe4ef412d36309d9040"
@@ -1257,8 +1287,8 @@
     },
     {
       "path": "tsconfig.json",
-      "size_bytes": 236,
-      "sha256": "dec75eda05135e6339ad48a5929b0754290efcc8c2b8161324f96048a313edb5"
+      "size_bytes": 263,
+      "sha256": "92ae0627b950d671cb8b5d9321c0132406a2cf7ba8725815e29125ce38ba3ac3"
     },
     {
       "path": "visual/README.md",

@@ -4,12 +4,15 @@ export { checkReceiptCompleteness, deriveReviewStatus, renderReviewSurface, toRe
 export { assessSwitchboardAgentGate } from './workflows/switchboard-agent-gate';
 export { assessBoundedRoboticsKernel } from './robotics/bounded-kernel';
 export { parseUtcTimestamp, isActiveUtcWindow } from './types/temporal';
+export { createEvaluationRecord } from './types/evaluation-record';
 
 export type { CanMayKernelInput, CanMayKernelResult } from './types/can-may-kernel-contracts';
 export type { ConsequenceReceiptV2 } from './types/consequence-receipt-v2-contracts';
 export type { LaneDefinition } from './types/lane-contracts';
 export type { SwitchboardAgentGateResult, SwitchboardAgentRequest } from './types/switchboard-agent-gate-contracts';
 export type { BoundedKernelInput, BoundedKernelResult } from './types/robotics-bounded-kernel-contracts';
+export type { ControlEventRecord, ControlEventType } from './types/control-event-record';
+export type { EvaluationDisposition, EvaluationRecord, EvaluationRecordInput } from './types/evaluation-record';
 
 /** This package produces evidence and routing only; it never grants authority. */
 export const MACHINE_AUTHORITY = false as const;

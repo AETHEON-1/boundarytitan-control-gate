@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://boundarytitan.dev/schemas/evaluation-record.schema.json",
+  "title": "BoundaryTitan Evaluation Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_id", "schema_version", "evaluated_at", "evaluator_id", "scenario_id", "claim", "tested_boundary", "untested_surfaces", "evidence_refs", "event_ids", "first_unsupported_arrow", "inverse_result", "converse_result", "disposition", "open_questions", "required_human_decisions", "human_review_required", "machine_authority", "machine_certification", "machine_closure"],
+  "properties": {
+    "record_id": { "type": "string", "minLength": 1 },
+    "schema_version": { "const": "0.1" },
+    "evaluated_at": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{3})?Z$" },
+    "evaluator_id": { "type": "string", "minLength": 1 },
+    "scenario_id": { "type": "string", "minLength": 1 },
+    "claim": { "type": "string", "minLength": 1 },
+    "tested_boundary": { "type": "array", "items": { "type": "string" } },
+    "untested_surfaces": { "type": "array", "items": { "type": "string" } },
+    "evidence_refs": { "type": "array", "items": { "type": "string" } },
+    "event_ids": { "type": "array", "items": { "type": "string" } },
+    "first_unsupported_arrow": { "type": "string", "minLength": 1 },
+    "inverse_result": { "$ref": "#/$defs/disposition" },
+    "converse_result": { "$ref": "#/$defs/disposition" },
+    "disposition": { "$ref": "#/$defs/disposition" },
+    "consequence_owner_id": { "type": "string", "minLength": 1 },
+    "external_stop_authority_id": { "type": "string", "minLength": 1 },
+    "open_questions": { "type": "array", "items": { "type": "string" } },
+    "required_human_decisions": { "type": "array", "items": { "type": "string" } },
+    "human_review_required": { "const": true },
+    "machine_authority": { "const": false },
+    "machine_certification": { "const": false },
+    "machine_closure": { "const": false }
+  },
+  "$defs": {
+    "disposition": { "enum": ["SUPPORTED_WITHIN_SCOPE", "CONTRADICTED", "INDETERMINATE", "TEST_INVALID", "NOT_TESTED"] }
+  }
+}
