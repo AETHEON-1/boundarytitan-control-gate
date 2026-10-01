@@ -1,75 +1,92 @@
-# Authority Multiplication Harness v0.1
+# Authority Multiplication Harness — v0.4 Synchronization Candidate
 
-Status: IMPLEMENTATION CANDIDATE — BOUNDED, READ-ONLY, NOT EXECUTED HERE
+Status: IMPLEMENTATION SYNCHRONIZATION AGAINST v0.4 — BOUNDED — READ-ONLY — NOT EXECUTED AGAINST A RECIPIENT SPECIMEN
 
-## Purpose
+## Kernel
 
-Turn the existing authorization-machinery attack surfaces into a bounded combinatorial evidence generator.
+```text
+STATE
+→ TRANSITION
+→ AUTHORITY Δ
+→ CAPABILITY Δ
+→ CONSEQUENCE
+→ EVIDENCE
+→ EXTERNAL NO
+```
 
-The harness tests a narrower question:
+This branch replaces the original unordered combination-enumeration assumption with an ordered state-transition slice.
 
-> Can individually available capabilities, permissions, transitions, retries, restarts, delegations, or evidence actions compose into a consequence whose authority is not independently established?
+It does not claim the full v0.4 specification is implemented.
 
-Primary propositions under attack:
+## Implemented in this synchronization slice
+
+- explicit initial AuthorityState;
+- explicit AuthorityGrant records;
+- ordered sequence generation up to a declared depth;
+- transition records containing authority and capability deltas;
+- revocation that may remove MAY while preserving CAN;
+- single-use consumption accounting;
+- candidate composition detection without treating the candidate as an authorization verdict;
+- explicit coverage fields declaring major untested surfaces;
+- fixed Reality Benchmark evidence states only.
+
+## Explicitly NOT implemented yet
+
+- concurrency/interleaving;
+- complete restart/restore semantics;
+- queue/finality semantics;
+- delegation attenuation/subdelegation;
+- identity fork/clone lineage;
+- authority collision/precedence;
+- legitimate amplification rules;
+- negative authority/prohibitions;
+- consequence-equivalence derivation;
+- scale/rate/cumulative consequence;
+- material version-transition semantics;
+- evidence-plane suppression/fabrication;
+- brake-causality proof;
+- automatic counterexample minimization;
+- BCS fixture execution;
+- recipient-specimen execution;
+- independent reproduction.
+
+Those omissions are surfaced in coverage rather than converted into an exhaustion claim.
+
+## Non-monotonicity requirements
+
+The implementation must preserve:
 
 ```text
 CAN ⊬ MAY
-MAY(A) + CAN(B) ⊬ MAY(B)
-MAY(A) + MAY(B) ⊬ MAY(A∘B)
-WAS MAY ⊬ IS MAY
+MAY ⊬ CAN
+MAY(A)+MAY(B) ⊬ MAY(A∘B)
+MAY(A∘B) ⊬ MAY(A) ∧ MAY(B)
+REVOKED may remove MAY while CAN persists
+DID NOT EXECUTE ≠ BLOCKED BY EXTERNAL NO
+RECORDED MAY ≠ MAY
+NO COUNTEREXAMPLE FOUND ≠ EXHAUSTION
 ```
 
-This implementation does not define a universal positive theory of legitimate authority. It preserves the authority-source field so independently grounded rules can be represented and challenged.
+## Falsification boundary
 
-## Boundary
+A clean case in which legitimate consequential MAY arises solely from CAN, with no imported authority source, is not to be repaired by terminology after observation. If independently reproduced, preserve the minimal witness for external adjudication as CONTRADICTED against the claimed scope.
 
-The harness:
+## Separation
 
-- generates bounded combinations of declared primitives;
-- records authority-source lineage;
-- identifies candidate unsupported arrows;
-- records coverage within the declared combinatorial bound;
-- emits evidence states rather than approval;
-- performs no live action and uses no credentials.
+This harness remains separate from the existing Chaos Engine. The Chaos Engine's declaration-validation semantics are unchanged.
 
-It may not:
-
-- authorize execution;
-- infer legitimacy from capability;
-- certify safety;
-- declare global exhaustion;
-- convert a local permission into composed permission;
-- close human or independent review.
-
-## Why this is separate from the Chaos Engine
-
-The existing Chaos Engine is a declaration-validation simulation. It checks scenario completeness and records the expected disposition. It is not an emergent adversarial search engine.
-
-This harness therefore remains a separate object. Passing its tests does not upgrade the meaning of the Chaos Engine and does not establish runtime enforcement.
-
-## First implementation slice
-
-v0.1 deliberately implements only a small deterministic combination generator and two candidate-arrow detectors:
-
-1. capability with no declared authority source;
-2. multiple permission primitives crossing consequence classes.
-
-These are preparation mechanics, not proof that the identified trace is unauthorized in the world.
-
-Future admissible extensions include ordered permutations, t-way coverage, concurrency/interleaving, revocation and restart semantics, authority consumption, identity fork/clone tests, evidence-plane composition, legitimate amplification fixtures, and automatic counterexample minimization.
-
-## Required outside path
+Required outside path:
 
 ```text
-Harness output
+machine search
 → evidence custody
 → independent reproduction
-→ human disposition
-→ external release or stop
+→ human/external adjudication
+→ release or stop
 ```
 
 Machine authority: NONE.
-Deployment authority: NONE.
 Field connection: NOT AUTHORIZED.
+Deployment authority: NONE.
 
-Only Green proceeds. No owner, no brake. No ledger, no trust.
+No owner, no brake. No ledger, no trust.
