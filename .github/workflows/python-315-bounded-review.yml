@@ -1,0 +1,32 @@
+name: Python 3.15 bounded compatibility review
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python-compatibility:
+    name: Python ${{ matrix.python-version }} handoff
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.14', '3.15']
+    steps:
+      - name: Check out reviewed commit
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Record runtime and commit
+        run: |
+          python --version
+          git rev-parse HEAD
+      - name: Run existing bounded handoff tests
+        run: python -m unittest -v test_agentic_handoff.py
