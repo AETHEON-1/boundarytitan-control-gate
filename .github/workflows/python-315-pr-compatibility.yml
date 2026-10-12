@@ -1,0 +1,38 @@
+name: Python 3.15 PR compatibility evidence
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '.github/workflows/python-315-pr-compatibility.yml'
+      - 'test_agentic_handoff.py'
+      - 'BT-AGENTIC-LANE-SAME-BRAIN-DIFFERENT-KEYS-v0.1.1-SPECIALIST-HANDOFF.py'
+
+permissions:
+  contents: read
+
+jobs:
+  python-compatibility:
+    if: github.event.pull_request.number == 45 && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'test/python-315-bounded-review'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.14', '3.15']
+    steps:
+      - name: Check out PR head without persisted credentials
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Record test provenance
+        run: |
+          python --version
+          git rev-parse HEAD
+      - name: Run existing handoff unit tests
+        run: python -m unittest -v test_agentic_handoff.py
