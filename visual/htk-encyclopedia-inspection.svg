@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">HTK to Encyclopedia inspectable authority transition</title>
+<desc id="desc">Human utterance flows into HTK translation, Sigma-2 gap inspection and an Encyclopedia research candidate; an external independent authorization bridge is separated from these research outputs. No machine result authorizes real-world execution.</desc>
+<style>text{font-family:system-ui,Arial,sans-serif;fill:#e7edf5}.bg{fill:#111925}.node{fill:#253750;stroke:#91aec6;stroke-width:2}.archive{fill:#213d3c;stroke:#83bbaa;stroke-width:2}.risk{fill:#4f3036;stroke:#db929a;stroke-width:2}.t{font-size:19px;font-weight:700}.s{font-size:13px}.k{font-size:14px;font-weight:700}.line{stroke:#91aec6;stroke-width:3;fill:none}.held{stroke:#dc929a;stroke-width:3;stroke-dasharray:8 8;fill:none}</style>
+<rect width="1200" height="560" rx="20" class="bg"/>
+<text x="36" y="44" font-size="27" font-weight="700">THE IMPOSSIBLE SYSTEM · HTK INSPECTION</text>
+<text x="36" y="71" class="s">Translation explains the proposed consequence. It cannot authorize it.</text>
+<rect x="35" y="125" width="245" height="115" rx="14" class="node"/>
+<text x="53" y="155" class="t">Original human words</text>
+<text x="53" y="182" class="s">“Send the approved report”</text>
+<text x="53" y="207" class="s">Preserve exact source text</text>
+<rect x="335" y="125" width="245" height="115" rx="14" class="node"/>
+<text x="353" y="155" class="t">HTK interpretation</text>
+<text x="353" y="182" class="s">Draft → outside disclosure</text>
+<text x="353" y="207" class="s">Ambiguity remains visible</text>
+<rect x="635" y="125" width="245" height="115" rx="14" class="risk"/>
+<text x="653" y="155" class="t">Sigma-2 / Raccoon</text>
+<text x="653" y="182" class="s">Who approved? Who stops?</text>
+<text x="653" y="207" class="s">Defeating tests and omissions</text>
+<rect x="935" y="125" width="230" height="115" rx="14" class="archive"/>
+<text x="953" y="155" class="t">Encyclopedia</text>
+<text x="953" y="182" class="s">Frozen candidate record</text>
+<text x="953" y="207" class="s">Linked corrections, no erasure</text>
+<path d="M280 183H330 M580 183H630 M880 183H930" class="line"/>
+<g fill="#91aec6"><path d="M329 183l-12 -7v14z"/><path d="M629 183l-12 -7v14z"/><path d="M929 183l-12 -7v14z"/></g>
+<rect x="335" y="310" width="545" height="90" rx="14" class="risk"/>
+<text x="354" y="340" class="t">R-factor bridge: NOT ESTABLISHED</text>
+<text x="354" y="367" class="s">Authority origin · scope · owner · evidence · independently effective stop</text>
+<path d="M755 240V305" class="held"/>
+<rect x="335" y="449" width="545" height="82" rx="14" fill="#24242a" stroke="#bd888d" stroke-width="2"/>
+<text x="354" y="482" class="t">External human decision + technical enforcement</text>
+<text x="354" y="505" class="s">Not performed · no approval or operational execution implied</text>
+<path d="M607 400V445" class="held"/>
+<text x="35" y="494" class="k">CAN ⊬ MAY</text><text x="35" y="521" class="s">Research continues; consequence remains externally gated.</text>
+</svg>
