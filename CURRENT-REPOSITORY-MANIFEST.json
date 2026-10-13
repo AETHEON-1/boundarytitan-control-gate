@@ -32,8 +32,8 @@
     },
     {
       "path": ".github/workflows/htk-inspection.yml",
-      "size_bytes": 369,
-      "sha256": "f4c7772e5efa2f1e606a696491755f5064c105f729a8ca3a5705f9942fe3612d"
+      "size_bytes": 745,
+      "sha256": "17d674de2244934e01b50d774c9a13c10108c6900db69e8c87225a33c63a71a8"
     },
     {
       "path": ".github/workflows/research-discovery.yml",
@@ -821,6 +821,11 @@
       "sha256": "eb482cc6a964d237d986d5592dfddb3907d6094517362c9b4b9defd4e3424865"
     },
     {
+      "path": "research/fixtures/htk-inspection-v0.1.json",
+      "size_bytes": 638,
+      "sha256": "2d5bc5c18a9e211fefab9a3e001be776d2f4a3c5e3f87f9211c490f9f6f7cdf2"
+    },
+    {
       "path": "scripts/htk-inspector.js",
       "size_bytes": 1999,
       "sha256": "1ba96f6971345df842fd633d91e6c74d3159eff69fc57fa165c6ed1d47671ba5"
@@ -829,6 +834,16 @@
       "path": "scripts/htk-inspector.test.js",
       "size_bytes": 2117,
       "sha256": "83e60751414b4f77135ff950e890f735a7fdb212b929fec30d987cdd9073516d"
+    },
+    {
+      "path": "scripts/htk-to-encyclopedia.js",
+      "size_bytes": 2325,
+      "sha256": "ac87a20fb2bf41a938c7c2a383b6d2c3258a097c91680329fee7ac05f7f96e55"
+    },
+    {
+      "path": "scripts/htk-to-encyclopedia.test.js",
+      "size_bytes": 2027,
+      "sha256": "bafffd8d047bcb6de1a3fd440e513835f41d26f7fa0230a108075c73904e25dc"
     },
     {
       "path": "scripts/research-discovery.js",
@@ -1424,6 +1439,11 @@
       "path": "visual/UNSUPPORTED-ARROW-README.md",
       "size_bytes": 622,
       "sha256": "6e44de52b07f67da99f1e1daaad5597010d8a30254995d7af57df3854356460e"
+    },
+    {
+      "path": "visual/htk-encyclopedia-inspection.svg",
+      "size_bytes": 3151,
+      "sha256": "9f4ac3514fc6a148015e7e9b5c3b037316f1dfbeb52cc14a2d8dbebe568f2c0b"
     },
     {
       "path": "visual/index.html",
