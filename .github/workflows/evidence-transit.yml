@@ -1,0 +1,19 @@
+name: Evidence transit boundary verification
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  transit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run synthetic transport and historical negative tests
+        run: node --test scripts/evidence-transit.test.js scripts/task-replay-ledger.test.js scripts/task-delivery-envelope.test.js scripts/task-to-encyclopedia.test.js
+      - name: Verify repository manifest
+        run: npm run verify:state
