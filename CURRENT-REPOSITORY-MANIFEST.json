@@ -902,8 +902,8 @@
     },
     {
       "path": "scripts/task-delivery-envelope.test.js",
-      "size_bytes": 1645,
-      "sha256": "feef21002ef7a02fb980117a4fabd7cfa210aacaa12db3024001d7ef1706a5cf"
+      "size_bytes": 1735,
+      "sha256": "584a657078b156fcdfde48ba23c5ac9e2914c39749ad9b7ce86b7eb1fc0df606"
     },
     {
       "path": "scripts/task-to-encyclopedia.js",
