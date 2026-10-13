@@ -776,6 +776,11 @@
       "sha256": "47297033148e95c4ec39fd0d5b122edfd1175f0783dc479bcf789d91e753f313"
     },
     {
+      "path": "research/OPEN-WORLD-ARTICLE-TO-TEST-ARCHITECTURE-v0.1.md",
+      "size_bytes": 10230,
+      "sha256": "1b8e0a744c64d639eec70858816d0bd19c87dcebce163ddfc21c73bc0960d848"
+    },
+    {
       "path": "scripts/verify-repository-state.js",
       "size_bytes": 4744,
       "sha256": "34dd776dae9297524d3c30f7d5f8069fd64cd6a39b551dd0450ac6cf3d1edb1f"
