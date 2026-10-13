@@ -846,6 +846,16 @@
       "sha256": "5576a9b3f680acd4d196538feaef679d3d80a2b127a11a76ae2e85286941f584"
     },
     {
+      "path": "src/impossible-loop.test.ts",
+      "size_bytes": 2958,
+      "sha256": "7566c542990c62db368877e503524e40c5bffa4178f751bee7e9c8a8010a730e"
+    },
+    {
+      "path": "src/impossible-loop.ts",
+      "size_bytes": 4360,
+      "sha256": "12c8b24598d4f3f9e21496a9e406cd318d610ad0ca41398f6b1f53d348708e45"
+    },
+    {
       "path": "src/index.ts",
       "size_bytes": 1457,
       "sha256": "404ea65e1d965b39f10fc9a59c88c655428f95cde1a9c08c89e59be462475668"
