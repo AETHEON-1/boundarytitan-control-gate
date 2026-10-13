@@ -881,6 +881,16 @@
       "sha256": "c0392b51d778c523bafce88cecc5af4df823eae4bd0f6a9770a73051db6225fd"
     },
     {
+      "path": "src/sigma2-kernel-forge.test.ts",
+      "size_bytes": 2712,
+      "sha256": "be2ed199960991ef04b7ca1749011f6dad414968bf9b8919d1da09c7f15bf795"
+    },
+    {
+      "path": "src/sigma2-kernel-forge.ts",
+      "size_bytes": 4123,
+      "sha256": "8098573e08ef3a61e0592505108fb7552a9706067122c476bff219c466ac0313"
+    },
+    {
       "path": "src/tests/authority-boundary-invariants.test.ts",
       "size_bytes": 2080,
       "sha256": "d996c7db9009ba99cbfcc872790656e0295e5684035adbe3b49d5a47b85be5f2"
