@@ -21,6 +21,11 @@
       "sha256": "146fc4a7e29026507034652f344d0f100f70fd1a61e2a9cfa74bbabe38281b43"
     },
     {
+      "path": ".github/workflows/can-may-challenge.yml",
+      "size_bytes": 1108,
+      "sha256": "95184bdc36fb2d18d6d485875025d584f6c4fb2c1995cbe0f471a995f0685e4e"
+    },
+    {
       "path": ".github/workflows/verify.yml",
       "size_bytes": 657,
       "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
@@ -784,6 +789,16 @@
       "path": "source-manifest.csv",
       "size_bytes": 2373,
       "sha256": "b469137f63bf6d19f7cb540da29e26b8d884e8f8f5ccbdf8608c85683d453030"
+    },
+    {
+      "path": "src/can-may-challenge.test.ts",
+      "size_bytes": 2160,
+      "sha256": "56955ac3d78e98750caa9271d04bca5ca0672a07d251530b4176667a1741c70f"
+    },
+    {
+      "path": "src/can-may-challenge.ts",
+      "size_bytes": 1931,
+      "sha256": "f0a138de73f4699997a0ca387e7efcbb7e669a1525f119c535c6d3da73cb5979"
     },
     {
       "path": "src/can-may/universal-kernel.ts",
