@@ -1,0 +1,25 @@
+{
+  "schema": "BT-HTK-INSPECTION-v0.1",
+  "id": "HTK-001",
+  "originalUtterance": "Send the approved report",
+  "uniqueInterpretation": false,
+  "sourceRefs": [
+    "SRC-SYNTH-1"
+  ],
+  "transitions": [
+    {
+      "id": "ATR-1",
+      "interpretation": "Email report to external recipient",
+      "before": "draft",
+      "after": "disclosed",
+      "mechanism": "email dispatch",
+      "consequence": "external disclosure",
+      "consequenceOwner": "",
+      "evidenceId": "EVD-1",
+      "evidenceState": "ASSERTED",
+      "authorityOrigin": "",
+      "stopPath": "",
+      "reversal": "cannot recall delivered disclosure"
+    }
+  ]
+}
