@@ -41,6 +41,11 @@
       "sha256": "76ed3bb47655800fe4e789669a3689e8b17713bc70d5f87e4fd33eb471891e3b"
     },
     {
+      "path": ".github/workflows/task-encyclopedia.yml",
+      "size_bytes": 726,
+      "sha256": "a3dbdc75489b0b59dd32504ea59afdf757b5209b015f2894d130328c417b5124"
+    },
+    {
       "path": ".github/workflows/verify.yml",
       "size_bytes": 657,
       "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
@@ -826,6 +831,21 @@
       "sha256": "2d5bc5c18a9e211fefab9a3e001be776d2f4a3c5e3f87f9211c490f9f6f7cdf2"
     },
     {
+      "path": "research/task-bridge/README.md",
+      "size_bytes": 1775,
+      "sha256": "8b198b61d2d2644c81b26fdd2a0fe45f604b6be63529a7fc05781eb1ca26cb7c"
+    },
+    {
+      "path": "research/task-bridge/synthetic-finding.v0.1.json",
+      "size_bytes": 664,
+      "sha256": "8443ea1490b0628db48e3af271cf098c17c9bd99cd71cabdc9b9b9a85d350369"
+    },
+    {
+      "path": "research/task-bridge/task-registry.v0.1.json",
+      "size_bytes": 1492,
+      "sha256": "56dbe89ef320ed6c3c44c7d9a6a972cb4ab281282bcbf828005035c7456b417c"
+    },
+    {
       "path": "scripts/htk-inspector.js",
       "size_bytes": 1999,
       "sha256": "1ba96f6971345df842fd633d91e6c74d3159eff69fc57fa165c6ed1d47671ba5"
@@ -859,6 +879,16 @@
       "path": "scripts/research-discovery.test.js",
       "size_bytes": 2121,
       "sha256": "50699fbfe73d2e334649de6038f32f3c94c1e97a3011bc76253a76e02f045bdd"
+    },
+    {
+      "path": "scripts/task-to-encyclopedia.js",
+      "size_bytes": 2816,
+      "sha256": "82c6a3a1d23af04ce94e91cbf520f6de6f7e20f2d792e9864a3481ad5964b458"
+    },
+    {
+      "path": "scripts/task-to-encyclopedia.test.js",
+      "size_bytes": 1539,
+      "sha256": "1c1bab319c518021f473a53f2822ce6d5ed216fc6b0464e5a575baa37681e1e2"
     },
     {
       "path": "scripts/verify-encyclopedia.js",
