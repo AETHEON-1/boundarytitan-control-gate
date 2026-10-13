@@ -31,6 +31,11 @@
       "sha256": "eb15c874316936002a3567a2b0af446e9f4376d0309a910baee2396c0308941b"
     },
     {
+      "path": ".github/workflows/evidence-transit.yml",
+      "size_bytes": 620,
+      "sha256": "7f143f1997c5063338bb3c044b6b856778699a466d511ed5858c823eec4436b2"
+    },
+    {
       "path": ".github/workflows/htk-inspection.yml",
       "size_bytes": 745,
       "sha256": "17d674de2244934e01b50d774c9a13c10108c6900db69e8c87225a33c63a71a8"
@@ -841,6 +846,11 @@
       "sha256": "2d5bc5c18a9e211fefab9a3e001be776d2f4a3c5e3f87f9211c490f9f6f7cdf2"
     },
     {
+      "path": "research/task-bridge/BIG-PICTURE-ARCHITECTURE-v0.1.md",
+      "size_bytes": 3962,
+      "sha256": "a267f48abc99696f1c6c308596dd350673105ff11b9c16bfee7099a4371ebb36"
+    },
+    {
       "path": "research/task-bridge/LIVE-DELIVERY-TEST-20261013.json",
       "size_bytes": 1774,
       "sha256": "68456cd140d27a13485c1daa64d947c6ef7e368e7f00379eacc43e5819337c67"
@@ -874,6 +884,16 @@
       "path": "research/task-bridge/task-registry.v0.1.json",
       "size_bytes": 1492,
       "sha256": "56dbe89ef320ed6c3c44c7d9a6a972cb4ab281282bcbf828005035c7456b417c"
+    },
+    {
+      "path": "scripts/evidence-transit.js",
+      "size_bytes": 2840,
+      "sha256": "8ffd9dcf1d1fe37b575f3e306d678b65030a0d031c6baa3d1f7a124c95e19169"
+    },
+    {
+      "path": "scripts/evidence-transit.test.js",
+      "size_bytes": 2799,
+      "sha256": "e5bad1df1a1733588a2443d08953a39d8a0cb95632ea0c64684a132862aaa343"
     },
     {
       "path": "scripts/htk-inspector.js",
