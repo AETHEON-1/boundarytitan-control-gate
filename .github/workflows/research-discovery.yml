@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '20'
       - name: Verify challenge runner
-        run: node --test scripts/research-discovery.test.js
+        run: node --test scripts/research-discovery.test.js scripts/research-discovery.negative.test.js
       - name: Generate bounded research dossiers
         run: node scripts/research-discovery.js research/fixtures/can-may-research-input-v0.1.json .research-output/research-challenges.json
       - name: Upload read-only research artifact
