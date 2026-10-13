@@ -1,0 +1,11 @@
+"use strict";
+const test=require("node:test"),assert=require("node:assert/strict");
+const {toEncyclopediaCandidate}=require("./htk-to-encyclopedia");const {validate}=require("./verify-encyclopedia");
+const fixture=()=>({schema:"BT-HTK-INSPECTION-v0.1",id:"HTK-001",originalUtterance:"Send the approved report",uniqueInterpretation:false,sourceRefs:["SRC-SYNTH-1"],transitions:[{id:"ATR-1",interpretation:"Send to outside recipient",before:"draft",after:"disclosed",mechanism:"email",consequence:"disclosure",consequenceOwner:"",evidenceId:"EVD-1",evidenceState:"ASSERTED",authorityOrigin:"",stopPath:"",reversal:"not fully reversible"}]});
+test("candidate conforms to Encyclopedia schema",()=>assert.equal(validate(toEncyclopediaCandidate(fixture())),true));
+test("original wording and ambiguity survive handoff",()=>{const o=toEncyclopediaCandidate(fixture());const d=JSON.parse(o.observations[0].description);assert.equal(d.originalUtterance,fixture().originalUtterance);assert.equal(d.terminalState,"NO UNIQUE INTERPRETATION")});
+test("R-factor evidence gaps survive handoff",()=>{const d=JSON.parse(toEncyclopediaCandidate(fixture()).observations[0].description);assert(d.gaps.some(g=>g.code==="MISSING_AUTHORITYORIGIN"));assert(d.gaps.some(g=>g.code==="MISSING_STOPPATH"))});
+test("archive candidate never grants authorization",()=>{const o=toEncyclopediaCandidate(fixture());assert.equal(o.authorizationGranted,false);assert.equal(o.authorityState,"NOT_ESTABLISHED");assert.equal(o.externalStopState,"NOT_TESTED")});
+test("declared sources are references, not authenticated evidence",()=>{const o=toEncyclopediaCandidate(fixture());assert.equal(o.evidenceState,"NOT TESTED");assert.equal(o.sources[0].type,"declared_source_reference")});
+test("missing original utterance rejected",()=>{const f=fixture();f.originalUtterance="";assert.throws(()=>toEncyclopediaCandidate(f))});
+test("same fixture yields deterministic candidate",()=>assert.deepEqual(toEncyclopediaCandidate(fixture()),toEncyclopediaCandidate(fixture())));
