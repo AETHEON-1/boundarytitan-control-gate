@@ -546,6 +546,11 @@
       "sha256": "1c91be58f6904681180b887cc599f351de5262e93f595c23792bfcec3c09209e"
     },
     {
+      "path": "SELF-FALSIFICATION-AND-INDEPENDENT-CHALLENGE-v0.1.md",
+      "size_bytes": 7422,
+      "sha256": "35d3457876dc48cccd417f95e7959726bf72a3cb482a9360eeaa4ede623b30c7"
+    },
+    {
       "path": "SHA256SUMS.txt",
       "size_bytes": 4844,
       "sha256": "57a0489b0d43bcc544b0a0d5ee113058b2a51e770c3a2c5348b219798467a8a9"
@@ -689,6 +694,11 @@
       "path": "challenges/BT-HC-004-CONSEQUENCE-PATH-DOMINANCE.yaml",
       "size_bytes": 3246,
       "sha256": "b1e83c4beb0f6f99d5467297b0c77622f492d3f30c07bd90b4bc526179ab30ca"
+    },
+    {
+      "path": "challenges/BT-HC-005-FRAMEWORK-SELF-FALSIFICATION.yaml",
+      "size_bytes": 2067,
+      "sha256": "484c14ca700823293d75b24854b4a557ecdcd104ad1feec8f8d7f368cc9e14ab"
     },
     {
       "path": "challenges/CHALLENGE-REGISTER.md",
