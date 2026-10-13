@@ -8,6 +8,8 @@ function ingest(envelope,known=[]){
  if(!registry.tasks.some(x=>x.id===envelope.taskId&&x.enabled))throw Error("Task unknown or disabled");
  if(envelope.output.taskId!==envelope.taskId)throw Error("Task identity mismatch");
  if(digest(envelope.originalOutput)!==envelope.originalOutputSha256)throw Error("Raw output hash mismatch");
+ let parsed;try{parsed=JSON.parse(envelope.originalOutput)}catch{throw Error("Raw output must be JSON")}
+ if(JSON.stringify(parsed)!==JSON.stringify(envelope.output))throw Error("Structured output differs from original");
  if(envelope.deliveryVerified!==false||envelope.authorizationGranted!==false)throw Error("Envelope cannot self-certify delivery or approval");
  const key=envelope.taskId+":"+envelope.taskRunId;
  if(known.includes(key))throw Error("Duplicate delivery");
