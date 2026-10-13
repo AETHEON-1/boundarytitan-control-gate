@@ -1,0 +1,23 @@
+name: Task-to-Encyclopedia bridge
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  task-intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node --test scripts/task-to-encyclopedia.test.js
+      - run: npm run verify:state
+      - run: node scripts/task-to-encyclopedia.js research/task-bridge/synthetic-finding.v0.1.json .research-output/task-archive-candidate.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: task-research-candidate
+          path: .research-output/task-archive-candidate.json
+          retention-days: 30
