@@ -26,6 +26,11 @@
       "sha256": "95184bdc36fb2d18d6d485875025d584f6c4fb2c1995cbe0f471a995f0685e4e"
     },
     {
+      "path": ".github/workflows/e2e-admission.yml",
+      "size_bytes": 604,
+      "sha256": "e77b1c6230903674e017d187acb69ef39b90e12178bc2c2cd837064dd39c0408"
+    },
+    {
       "path": ".github/workflows/encyclopedia.yml",
       "size_bytes": 553,
       "sha256": "eb15c874316936002a3567a2b0af446e9f4376d0309a910baee2396c0308941b"
@@ -851,6 +856,11 @@
       "sha256": "a267f48abc99696f1c6c308596dd350673105ff11b9c16bfee7099a4371ebb36"
     },
     {
+      "path": "research/task-bridge/END-TO-END-TRIAL-v0.1.md",
+      "size_bytes": 1521,
+      "sha256": "92bd8341c6f769ca4696468a52fd9b7a8d63b3fd308dea23a0f3d6de07eafbc1"
+    },
+    {
       "path": "research/task-bridge/LIVE-DELIVERY-TEST-20261013.json",
       "size_bytes": 1774,
       "sha256": "68456cd140d27a13485c1daa64d947c6ef7e368e7f00379eacc43e5819337c67"
@@ -884,6 +894,16 @@
       "path": "research/task-bridge/task-registry.v0.1.json",
       "size_bytes": 1492,
       "sha256": "56dbe89ef320ed6c3c44c7d9a6a972cb4ab281282bcbf828005035c7456b417c"
+    },
+    {
+      "path": "scripts/e2e-admission-gate.js",
+      "size_bytes": 2071,
+      "sha256": "4f3e820ba10bf5915c93d27ec0e87cf7ca5583be1add1c27f801884d94b5a9f8"
+    },
+    {
+      "path": "scripts/e2e-admission-gate.test.js",
+      "size_bytes": 3105,
+      "sha256": "1657cafb89f528959527de2dd79a7fb725b6e96665df4d35aa5a6d16b3ebaf77"
     },
     {
       "path": "scripts/evidence-transit.js",
