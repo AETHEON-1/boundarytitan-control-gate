@@ -831,6 +831,11 @@
       "sha256": "2d5bc5c18a9e211fefab9a3e001be776d2f4a3c5e3f87f9211c490f9f6f7cdf2"
     },
     {
+      "path": "research/task-bridge/LIVE-DELIVERY-TEST-20261013.json",
+      "size_bytes": 1774,
+      "sha256": "68456cd140d27a13485c1daa64d947c6ef7e368e7f00379eacc43e5819337c67"
+    },
+    {
       "path": "research/task-bridge/README.md",
       "size_bytes": 1775,
       "sha256": "8b198b61d2d2644c81b26fdd2a0fe45f604b6be63529a7fc05781eb1ca26cb7c"
