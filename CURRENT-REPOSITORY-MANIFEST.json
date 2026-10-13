@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/research-discovery.yml",
-      "size_bytes": 869,
-      "sha256": "50325973086acb9db8db0feee24b12414afbecf85ec4553df6c731361e51e358"
+      "size_bytes": 913,
+      "sha256": "76ed3bb47655800fe4e789669a3689e8b17713bc70d5f87e4fd33eb471891e3b"
     },
     {
       "path": ".github/workflows/verify.yml",
