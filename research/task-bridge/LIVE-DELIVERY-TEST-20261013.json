@@ -1,0 +1,39 @@
+{
+  "schema": "BT-TASK-DELIVERY-TEST-v0.1",
+  "id": "TASK-LIVE-DELIVERY-20261013-001",
+  "observedDate": "2026-10-13",
+  "state": "INDETERMINATE",
+  "subtests": [
+    {
+      "name": "repo_ci",
+      "state": "SUPPORTED",
+      "evidence": "All five GitHub workflow conclusions successful at a5a0e4a872ac00111ee8c62af5351ded5d714d0b"
+    },
+    {
+      "name": "artifact_generated",
+      "state": "SUPPORTED",
+      "evidence": "Task-to-Encyclopedia bridge run 38459117189 produced artifact 11844647636, sha256:18d2ce404230debf401aa78bcd4afc2ddf6be9979aabbd11de980ae252a8a45c"
+    },
+    {
+      "name": "actual_scheduled_task_output_used",
+      "state": "NOT TESTED",
+      "evidence": "Workflow uses research/task-bridge/synthetic-finding.v0.1.json instead of output of any scheduled task"
+    },
+    {
+      "name": "unattended_task_writes_to_github",
+      "state": "NOT TESTED",
+      "evidence": "No authenticated task-to-GitHub invocation or source task run ID linked to the generated artifact"
+    },
+    {
+      "name": "independent_archive_admission",
+      "state": "NOT TESTED",
+      "evidence": "Workflow uploads candidate; does not admit into frozen Encyclopedia"
+    }
+  ],
+  "firstUnsupportedArrow": "ChatGPT scheduled task run → authenticated GitHub intake; absent delivery and run attestation",
+  "negativeResult": "A passing synthetic CI fixture does not establish live scheduled task delivery",
+  "requiredNextTest": "Obtain an attributable future scheduled task run with source run ID and exact output; use separately admitted scoped transport to upload candidate, independently compare the bytes, and preserve failures including unauthorized writes.",
+  "authorityGranted": false,
+  "publicationAuthorized": false,
+  "externalStopTested": false
+}
