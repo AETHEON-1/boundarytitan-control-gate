@@ -33,7 +33,7 @@
     {
       "path": ".github/workflows/htk-inspection.yml",
       "size_bytes": 745,
-      "sha256": "7e45a9e72ce70b04438b8eb48b667800841c4d0af831e2f4c6087fd36e594aa7"
+      "sha256": "17d674de2244934e01b50d774c9a13c10108c6900db69e8c87225a33c63a71a8"
     },
     {
       "path": ".github/workflows/research-discovery.yml",
