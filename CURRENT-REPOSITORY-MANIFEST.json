@@ -786,6 +786,11 @@
       "sha256": "47297033148e95c4ec39fd0d5b122edfd1175f0783dc479bcf789d91e753f313"
     },
     {
+      "path": "research/RESEARCH-DISCOVERY-ADVERSARIAL-FAILURES-20261013.md",
+      "size_bytes": 1667,
+      "sha256": "95d2c7566449a1b8972ef3defcb712294236a155912ab7aee48ba84f54e69a5d"
+    },
+    {
       "path": "research/fixtures/can-may-research-input-v0.1.json",
       "size_bytes": 842,
       "sha256": "eb482cc6a964d237d986d5592dfddb3907d6094517362c9b4b9defd4e3424865"
@@ -794,6 +799,11 @@
       "path": "scripts/research-discovery.js",
       "size_bytes": 3392,
       "sha256": "8e98693546a0e27c2f0a71ed49139821240f9ae21e17c4097e99ab8700d041aa"
+    },
+    {
+      "path": "scripts/research-discovery.negative.test.js",
+      "size_bytes": 1366,
+      "sha256": "bbac9bf197fa5d017f7727fb5412bdd1ea9e611e82752f58fa780e3908cf340a"
     },
     {
       "path": "scripts/research-discovery.test.js",
