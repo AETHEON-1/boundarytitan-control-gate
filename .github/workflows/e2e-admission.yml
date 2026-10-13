@@ -1,0 +1,18 @@
+name: End-to-end research admission tests
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Synthetic cross-layer and historical negative tests
+        run: node --test scripts/e2e-admission-gate.test.js scripts/evidence-transit.test.js scripts/task-replay-ledger.test.js scripts/task-delivery-envelope.test.js scripts/htk-to-encyclopedia.test.js
+      - run: npm run verify:state
