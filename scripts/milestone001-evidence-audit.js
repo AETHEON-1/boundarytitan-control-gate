@@ -37,7 +37,7 @@ function assess(e){
  }else note("LIVE_DELIVERY_BYTES_NOT_COMPARED","NOT TESTED","Exact scheduled output and matching GitHub receipt not jointly accessible");
  note("INDEPENDENT_ORIGIN_ATTESTATION_MISSING","NOT TESTED","No independently trusted scheduler-origin verification adapter or source proof");
  note("INDEPENDENT_CUSTODY_UNVERIFIED","NOT TESTED","No independently witnessed atomic ledger head or persistent CAS established");
- note("ENCLYCLOPEDIA_ADMISSION_NOT_PERFORMED","NOT TESTED","No human archive-admission record was issued");
+ note("ENCYCLOPEDIA_ADMISSION_NOT_PERFORMED","NOT TESTED","No human archive-admission record was issued");
  const result={schema:"BT-M001-RESULT-v0.1",milestone:"FIRST_AUTHENTIC_RESEARCH_DELIVERY",status:"NOT ESTABLISHED",evidenceState:"INDETERMINATE",taskId:e.task.taskId,reportedLastRunTime:e.task.lastRunTime||null,githubHeadSha:e.github.headSha,githubArtifactId:e.github.artifactId||null,observations,blocking,externalStopTested:false,archiveAdmitted:false,authorizationGranted:false};
  return {...result,resultSha256:cryptoHash(JSON.stringify(result))};
 }
