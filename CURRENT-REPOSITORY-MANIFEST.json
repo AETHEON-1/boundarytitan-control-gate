@@ -31,6 +31,11 @@
       "sha256": "eb15c874316936002a3567a2b0af446e9f4376d0309a910baee2396c0308941b"
     },
     {
+      "path": ".github/workflows/htk-inspection.yml",
+      "size_bytes": 369,
+      "sha256": "f4c7772e5efa2f1e606a696491755f5064c105f729a8ca3a5705f9942fe3612d"
+    },
+    {
       "path": ".github/workflows/research-discovery.yml",
       "size_bytes": 913,
       "sha256": "76ed3bb47655800fe4e789669a3689e8b17713bc70d5f87e4fd33eb471891e3b"
@@ -761,6 +766,11 @@
       "sha256": "abeb522849ec2580368ac2f64d30257426984f97013c2147906f76eb33abe13f"
     },
     {
+      "path": "encyclopedia-of-chaos/HTK-INSPECTION-INTERFACE-v0.1.md",
+      "size_bytes": 2290,
+      "sha256": "e675c1f7012a8361f2e1395340170e4bc92e694f43f6e5a3273839ef440a08fe"
+    },
+    {
       "path": "encyclopedia-of-chaos/README.md",
       "size_bytes": 3438,
       "sha256": "3009f00eb5c845dacaf86063ead9e0cf36f9205c87e3ce0bf7a4f4664a467a16"
@@ -809,6 +819,16 @@
       "path": "research/fixtures/can-may-research-input-v0.1.json",
       "size_bytes": 842,
       "sha256": "eb482cc6a964d237d986d5592dfddb3907d6094517362c9b4b9defd4e3424865"
+    },
+    {
+      "path": "scripts/htk-inspector.js",
+      "size_bytes": 1999,
+      "sha256": "1ba96f6971345df842fd633d91e6c74d3159eff69fc57fa165c6ed1d47671ba5"
+    },
+    {
+      "path": "scripts/htk-inspector.test.js",
+      "size_bytes": 2117,
+      "sha256": "83e60751414b4f77135ff950e890f735a7fdb212b929fec30d987cdd9073516d"
     },
     {
       "path": "scripts/research-discovery.js",
