@@ -1,0 +1,46 @@
+challenge_id: BT-HC-005
+title: Framework self-falsification and independent challenge
+status: PROPOSED
+claim: "Provenance and omission auditing measurably improves consequential decision accuracy, contestability, or independently verified repair over standard review within a declared scope."
+hypotheses:
+  "51": "Independent review finds material incremental benefit at acceptable error, delay, and cost."
+  "50": "No meaningful benefit, or excess unsupported allegations, delay, cost, privacy harm, or false positives."
+pre_registration_required:
+  - case_sampling_frame
+  - primary_outcomes_and_meaningful_effect_thresholds
+  - comparison_arm_and_access_parity
+  - statistical_plan_and_power_rationale
+  - adjudicator_independence_and_conflicts
+  - missing_data_and_exclusion_rules
+  - evidence_custodian_and_hashes
+  - adverse_outcome_tolerances
+  - consequence_owner_and_external_stop_path
+success_exclusions:
+  - more_documents_alone
+  - more_questions_alone
+  - internal_machine_agreement
+  - correction_publication_without_downstream_repair
+defeating_observations:
+  - "Standard review detects the same material defects at lower burden."
+  - "An adequately designed test finds no meaningful incremental benefit."
+  - "The method exceeds pre-registered false allegation, cost, delay, or privacy thresholds."
+invalidity_triggers:
+  - evidence_custody_loss
+  - essential_access_inequality
+  - posthoc_primary_metric_substitution
+  - unresolved_adjudicator_conflict
+  - required_external_stop_failure
+evidence_state: NOT_TESTED
+independent_review: NOT_STARTED
+testing_authorized: false
+publication_authorized: false
+deployment_authorized: false
+doctrine_changed: false
+authority:
+  evidence_custodian: NOT_ASSIGNED
+  independent_reviewer: NOT_ASSIGNED
+  decision_owner: Human BoundaryTitan owner
+  consequence_owner: Human BoundaryTitan owner for repository disposition; per-test owner required for real-world scope
+  external_stop_authority: Human BoundaryTitan owner
+  machine_approval: PROHIBITED
+protocol: SELF-FALSIFICATION-AND-INDEPENDENT-CHALLENGE-v0.1.md
