@@ -1,0 +1,27 @@
+name: Offline research discovery
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 7 * * *'
+permissions:
+  contents: read
+jobs:
+  generate-challenges:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Verify challenge runner
+        run: node --test scripts/research-discovery.test.js
+      - name: Generate bounded research dossiers
+        run: node scripts/research-discovery.js research/fixtures/can-may-research-input-v0.1.json .research-output/research-challenges.json
+      - name: Upload read-only research artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-discovery-proposals
+          path: .research-output/research-challenges.json
+          retention-days: 30
