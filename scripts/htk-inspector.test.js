@@ -1,0 +1,10 @@
+"use strict";
+const test=require("node:test"),assert=require("node:assert/strict");const {inspectHTK}=require("./htk-inspector");
+const fixture=()=>({schema:"BT-HTK-INSPECTION-v0.1",id:"HTK-001",originalUtterance:"Send the approved report",uniqueInterpretation:false,sourceRefs:["SRC-1"],transitions:[{id:"ATR-1",interpretation:"Send email to external recipient",before:"draft",after:"message delivered",mechanism:"email dispatch",consequence:"external disclosure",consequenceOwner:"owner",evidenceId:"EVD-1",evidenceState:"ASSERTED",authorityOrigin:"",stopPath:"",reversal:"delivery not necessarily reversible"}]});
+test("ambiguity is a valid non-execution terminal state",()=>{const r=inspectHTK(fixture());assert.equal(r.terminalState,"NO UNIQUE INTERPRETATION");assert.equal(r.authorizationGranted,false)});
+test("exposes missing external authority and stop",()=>{const r=inspectHTK(fixture());assert(r.gaps.some(x=>x.code==="MISSING_AUTHORITYORIGIN"));assert(r.gaps.some(x=>x.code==="MISSING_STOPPATH"))});
+test("preserves actual words and proposed machine interpretation",()=>{const r=inspectHTK(fixture());assert.equal(r.originalUtterance,"Send the approved report");assert.equal(r.machineInterpretations[0].interpretation,"Send email to external recipient")});
+test("unsupported evidence never promotes",()=>{const r=inspectHTK(fixture());assert(r.gaps.some(x=>x.code==="UNESTABLISHED_EVIDENCE"));assert.equal(r.authorizationGranted,false)});
+test("rejects duplicate transitions",()=>{const f=fixture();f.transitions.push({...f.transitions[0]});assert.throws(()=>inspectHTK(f),/Duplicate/)});
+test("does not confuse complete text fields with tested stop",()=>{const f=fixture();f.uniqueInterpretation=true;f.transitions[0].authorityOrigin="claimed authorization";f.transitions[0].stopPath="claimed stop";f.transitions[0].evidenceState="SUPPORTED";const r=inspectHTK(f);assert.equal(r.externalStopVerified,false);assert.equal(r.authorizationGranted,false)});
+test("source lineage omissions are visible",()=>{const f=fixture();f.sourceRefs=[];assert(inspectHTK(f).gaps.some(x=>x.code==="NO_SOURCE_LINEAGE"))});
