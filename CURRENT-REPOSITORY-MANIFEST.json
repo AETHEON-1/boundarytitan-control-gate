@@ -797,8 +797,8 @@
     },
     {
       "path": "scripts/research-discovery.js",
-      "size_bytes": 3392,
-      "sha256": "8e98693546a0e27c2f0a71ed49139821240f9ae21e17c4097e99ab8700d041aa"
+      "size_bytes": 3665,
+      "sha256": "3faeda7e2773c471ed5ddd48e7541a5f1c2957d512f1da9d900f0dff60737c99"
     },
     {
       "path": "scripts/research-discovery.negative.test.js",
