@@ -51,6 +51,11 @@
       "sha256": "a3dbdc75489b0b59dd32504ea59afdf757b5209b015f2894d130328c417b5124"
     },
     {
+      "path": ".github/workflows/task-replay.yml",
+      "size_bytes": 475,
+      "sha256": "2b3d8d6c92edef1656eae56dc03c3ade5b0b3db629850cff4c5df8fabc534032"
+    },
+    {
       "path": ".github/workflows/verify.yml",
       "size_bytes": 657,
       "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
@@ -846,9 +851,19 @@
       "sha256": "8b198b61d2d2644c81b26fdd2a0fe45f604b6be63529a7fc05781eb1ca26cb7c"
     },
     {
+      "path": "research/task-bridge/REPLAY-TEST-AND-FAILURES-v0.1.md",
+      "size_bytes": 1523,
+      "sha256": "a1328fffd6f97798410aa48019f46be769ffe61e0de93e8cf8cee6bbbae8f631"
+    },
+    {
       "path": "research/task-bridge/TASK-DELIVERY-CONTRACT-v0.1.md",
       "size_bytes": 1753,
       "sha256": "c96f58b897424141d2dddd881438d902af8bcdca7acf32a870427a08ffe914d1"
+    },
+    {
+      "path": "research/task-bridge/empty-replay-ledger.v0.1.json",
+      "size_bytes": 78,
+      "sha256": "14568dd077b00ece394d952d2260e4b6a7b1c6780facfcba76b0407832a3bb42"
     },
     {
       "path": "research/task-bridge/synthetic-finding.v0.1.json",
@@ -904,6 +919,16 @@
       "path": "scripts/task-delivery-envelope.test.js",
       "size_bytes": 1735,
       "sha256": "584a657078b156fcdfde48ba23c5ac9e2914c39749ad9b7ce86b7eb1fc0df606"
+    },
+    {
+      "path": "scripts/task-replay-ledger.js",
+      "size_bytes": 2608,
+      "sha256": "608d4bd68bce96ad4abbb21a7aee65a4dc4ea18f792d23332815a87370f2a4ea"
+    },
+    {
+      "path": "scripts/task-replay-ledger.test.js",
+      "size_bytes": 2314,
+      "sha256": "bbb104a2faed679cf30e3d0a7f0c96fd8b7f4faadb065784faa2c3679514e58d"
     },
     {
       "path": "scripts/task-to-encyclopedia.js",
