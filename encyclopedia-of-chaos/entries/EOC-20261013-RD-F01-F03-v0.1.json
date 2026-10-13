@@ -1,0 +1,92 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261013-RD-F01-F03-v0.1",
+  "recordedDate": "2026-10-13",
+  "kind": "ADVERSARIAL_FINDING_AND_REPAIR",
+  "claim": "Three research-discovery input validation gaps were exposed with negative fixtures and a scoped repair candidate was tested.",
+  "sources": [
+    {
+      "type": "repository",
+      "locator": "scripts/research-discovery.negative.test.js"
+    },
+    {
+      "type": "repository",
+      "locator": "research/RESEARCH-DISCOVERY-ADVERSARIAL-FAILURES-20261013.md"
+    },
+    {
+      "type": "github_actions",
+      "locator": "38456854956"
+    },
+    {
+      "type": "github_actions",
+      "locator": "38457180863"
+    },
+    {
+      "type": "github_actions",
+      "locator": "38457180853"
+    }
+  ],
+  "evidenceState": "SUPPORTED",
+  "observations": [
+    {
+      "id": "OBS-1",
+      "description": "Expanded adversarial workflow returned failure at commit 40f220b22bbfbc4d16d6b1f26874e0d58cb2c016; individual assertions not independently retrieved from CI logs.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "OBS-2",
+      "description": "Offline research discovery and bounded verification workflows both succeeded at repair commit 4883ed37549d0c5821ef4c57987f797a3b2f9c73.",
+      "state": "SUPPORTED"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "NEG-F01",
+      "purpose": "Reject duplicate observation identifiers",
+      "execution": "CI workflow completed; individual log not independently inspected"
+    },
+    {
+      "id": "NEG-F02",
+      "purpose": "Record missing observation set",
+      "execution": "CI workflow completed; individual log not independently inspected"
+    },
+    {
+      "id": "NEG-F03",
+      "purpose": "Never treat stop identifier as verified brake",
+      "execution": "CI workflow completed; individual log not independently inspected"
+    }
+  ],
+  "reproduction": [
+    "node --test scripts/research-discovery.test.js scripts/research-discovery.negative.test.js",
+    "npm run verify:state"
+  ],
+  "environment": "GitHub Actions ubuntu-latest Node 20; specific runtime patch level not independently recorded",
+  "limitations": [
+    "Workflow conclusion is not equivalent to independent replay",
+    "Technical external stop not tested",
+    "Source authenticity and real-world authority not established"
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Improved visibility of malformed research evidence and false stop claims"
+    ],
+    "harmful": [
+      "Past unvalidated inputs may have generated incomplete findings"
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "NOT_ESTABLISHED",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "NOT_STARTED",
+  "authorizationGranted": false,
+  "links": {
+    "parent": null,
+    "supersedes": null,
+    "corrections": []
+  },
+  "reopenConditions": [
+    "Independent test contradicts the result",
+    "New bypass or omission fixture",
+    "Artifact/source provenance changes"
+  ]
+}

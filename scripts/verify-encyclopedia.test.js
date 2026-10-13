@@ -1,0 +1,11 @@
+"use strict";
+const test=require("node:test"),assert=require("node:assert/strict");
+const fs=require("node:fs"),path=require("node:path"),os=require("node:os");
+const {validate,inspectDirectory}=require("./verify-encyclopedia");
+const src=JSON.parse(fs.readFileSync(path.resolve(__dirname,"../encyclopedia-of-chaos/entries/EOC-20261013-RD-F01-F03-v0.1.json"),"utf8"));
+test("seed entry validates",()=>assert.equal(validate(src),true));
+test("rejects approval laundering",()=>assert.throws(()=>validate({...src,authorizationGranted:true}),/authorization/));
+test("rejects invented evidence state",()=>assert.throws(()=>validate({...src,evidenceState:"CERTIFIED"}),/evidence state/));
+test("requires source lineage",()=>assert.throws(()=>validate({...src,sources:[]}),/lineage/));
+test("requires correction linkage",()=>assert.throws(()=>validate({...src,links:{}}),/revision/));
+test("rejects duplicate archive identity",()=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),"eoc-"));try{fs.writeFileSync(path.join(dir,src.id+".json"),JSON.stringify(src));assert.equal(inspectDirectory(dir),1);fs.writeFileSync(path.join(dir,"other.json"),JSON.stringify(src));assert.throws(()=>inspectDirectory(dir),/mismatched/)}finally{fs.rmSync(dir,{recursive:true,force:true})}});
