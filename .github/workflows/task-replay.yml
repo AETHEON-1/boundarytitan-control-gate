@@ -1,0 +1,17 @@
+name: Task replay and failure preservation
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node --test scripts/task-replay-ledger.test.js scripts/task-delivery-envelope.test.js scripts/task-to-encyclopedia.test.js
+      - run: npm run verify:state
