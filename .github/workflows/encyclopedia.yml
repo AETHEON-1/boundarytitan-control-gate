@@ -1,0 +1,21 @@
+name: Encyclopedia of Chaos validation
+on:
+  pull_request:
+  push:
+permissions:
+  contents: read
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate archive records
+        run: node scripts/verify-encyclopedia.js
+      - name: Adversarial archive tests
+        run: node --test scripts/verify-encyclopedia.test.js
+      - name: Verify repository manifest
+        run: npm run verify:state
