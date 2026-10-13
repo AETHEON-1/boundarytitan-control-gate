@@ -776,6 +776,16 @@
       "sha256": "47297033148e95c4ec39fd0d5b122edfd1175f0783dc479bcf789d91e753f313"
     },
     {
+      "path": "research/SPECIALIST-COMPOSITION-BENCH-v0.1.md",
+      "size_bytes": 3073,
+      "sha256": "2bf2e6abc6d081d7db0184b923b10fa9f8259ff55a52687f780e57037113040e"
+    },
+    {
+      "path": "research/SPECIALIST-INSPECTION-QUALITY-GATE-v0.1.md",
+      "size_bytes": 6933,
+      "sha256": "a5af7c4df2304ff13a31cff72e52a055a90b983f0eb56877f7cfa8754fd91e3c"
+    },
+    {
       "path": "scripts/verify-repository-state.js",
       "size_bytes": 4744,
       "sha256": "34dd776dae9297524d3c30f7d5f8069fd64cd6a39b551dd0450ac6cf3d1edb1f"
