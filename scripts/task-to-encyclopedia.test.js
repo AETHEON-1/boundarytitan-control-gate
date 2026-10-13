@@ -1,0 +1,12 @@
+"use strict";
+const test=require("node:test"),assert=require("node:assert/strict"),fixture=require("../research/task-bridge/synthetic-finding.v0.1.json");const {convert,verify}=require("./task-to-encyclopedia");
+const clone=()=>JSON.parse(JSON.stringify(fixture));
+test("produces intact research-only candidate",()=>{const x=convert(clone());assert(verify(x));assert.equal(x.authorizationGranted,false);assert.equal(x.archiveState,"CANDIDATE_NOT_FROZEN")});
+test("preserves negative findings",()=>{const x=clone();x.disposition="NEGATIVE_RESULT";x.failures=["No evidence"];assert.equal(convert(x).failures[0],"No evidence")});
+test("preserves source failure, does not imply no signal",()=>{const x=clone();x.disposition="RETRIEVAL_FAILED";assert.equal(convert(x).disposition,"RETRIEVAL_FAILED")});
+test("rejects inactive or unknown task",()=>{const x=clone();x.taskId="unknown";assert.throws(()=>convert(x),/Unknown/)});
+test("cannot grant authorization",()=>{const x=clone();x.executionAuthorized=true;assert.throws(()=>convert(x),/authorize/)});
+test("cannot grant publication",()=>{const x=clone();x.publicationAuthorized=true;assert.throws(()=>convert(x),/authorize/)});
+test("requires a falsifier",()=>{const x=clone();x.falsifier="";assert.throws(()=>convert(x),/falsifier/)});
+test("tampering with candidate is visible",()=>{const x=convert(clone());x.claim="fabricated";assert.equal(verify(x),false)});
+test("task cannot freeze its own record",()=>{const x=convert(clone());x.archiveState="FROZEN";assert.equal(verify(x),false)});

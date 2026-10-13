@@ -1,0 +1,51 @@
+{
+  "schema": "BT-TASK-ROUTING-v0.1",
+  "observedDate": "2026-10-13",
+  "authority": "RESEARCH_ONLY",
+  "tasks": [
+    {
+      "id": "6a9c5e63cc5881918c926077d66e441c",
+      "title": "Open-World Kernel Scout",
+      "enabled": true,
+      "lane": "OPEN_WORLD_DISCOVERY",
+      "cadence": "HOURLY",
+      "sensitivity": "PUBLIC_RESEARCH"
+    },
+    {
+      "id": "6a9c5ef8e6988191ace958acbb114ba0",
+      "title": "Boundary Integrity Audit",
+      "enabled": true,
+      "lane": "INDEPENDENT_CHALLENGE",
+      "cadence": "WEEKLY",
+      "sensitivity": "PUBLIC_RESEARCH"
+    },
+    {
+      "id": "6ac47458e5c88191a2c234e24339c9a6",
+      "title": "Paid AI Opportunity Scan",
+      "enabled": true,
+      "lane": "PAID_OPPORTUNITIES",
+      "cadence": "DAILY",
+      "sensitivity": "PRIVATE_DECISION_SUPPORT"
+    },
+    {
+      "id": "6aab5dc773a081918cca3243526e6288",
+      "title": "Scam Network Control Watch",
+      "enabled": true,
+      "lane": "SCAM_CONTROL",
+      "cadence": "DAILY",
+      "sensitivity": "ATTRIBUTION_RESTRICTED"
+    },
+    {
+      "id": "6ab47d6b3dc88191ac03a16a446c328b",
+      "title": "BALA Sigma-1 Legal Scout",
+      "enabled": true,
+      "lane": "LEGAL_CONTESTABILITY",
+      "cadence": "DAILY",
+      "sensitivity": "PUBLIC_RESEARCH"
+    }
+  ],
+  "inactiveTaskPolicy": "DO_NOT_REACTIVATE_AUTOMATICALLY",
+  "githubWritePolicy": "RESEARCH_BRANCH_ONLY_WITH_EXPLICIT_OWNER_SCOPE",
+  "archiveAdmission": "HUMAN_REVIEW_REQUIRED",
+  "machineAuthorization": false
+}

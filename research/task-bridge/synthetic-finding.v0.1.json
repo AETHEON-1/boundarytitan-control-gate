@@ -1,0 +1,23 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "SYNTH-001",
+  "observedAt": "2026-10-13",
+  "claim": "A task reported a novel capability without proof of permission",
+  "source": "synthetic:fixture",
+  "disposition": "INCONCLUSIVE",
+  "evidenceState": "NOT TESTED",
+  "falsifier": "Find independently grounded authorization",
+  "firstUnsupportedArrow": "capability to permission",
+  "omissions": [
+    "permission origin"
+  ],
+  "failures": [
+    "not independently tested"
+  ],
+  "rivalHypotheses": [
+    "permission was pre-authorized"
+  ],
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
