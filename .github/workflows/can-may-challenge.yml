@@ -1,0 +1,34 @@
+name: CAN MAY research challenge
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 6 * * *'
+permissions:
+  contents: read
+jobs:
+  challenge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+      - name: Run bounded challenge fixtures
+        run: npm test -- --runInBand --coverage=false can-may-challenge
+      - name: Verify current repository state
+        run: npm run verify:state
+      - name: Publish research-only receipt
+        if: always()
+        run: |
+          mkdir -p challenge-artifacts
+          printf '%s\n' 'RESEARCH_ONLY=true' 'EXECUTION_AUTHORIZED=false' 'INDEPENDENT_EVALUATION=NOT_ESTABLISHED' 'EXTERNAL_STOP=NOT_TESTED' > challenge-artifacts/status.txt
+          git rev-parse HEAD >> challenge-artifacts/status.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: can-may-challenge-receipt
+          path: challenge-artifacts/status.txt
+          retention-days: 30
