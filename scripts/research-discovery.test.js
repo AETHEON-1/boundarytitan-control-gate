@@ -1,0 +1,11 @@
+"use strict";
+const test=require("node:test"),assert=require("node:assert/strict");const {run,verify}=require("./research-discovery");
+const input=()=>({schema:"BT-RESEARCH-INPUT-v0.1",cases:[{id:"C1",source:"synthetic:fixture",claim:"CAN does not entail MAY",rival:"Capability can imply scoped authorization in some system",defeater:"Independent counterexample",baseline:"independent specialist review",transitions:[{id:"E1",from:"model",to:"execution",kind:"execution"}],observations:[{id:"O1",report:"No field observation",state:"NOT_TESTED",provenance:"synthetic"}]}]});
+test("generates bounded challenge dossier",()=>{const x=run(input());assert.equal(x.cases[0].tests.length,5);assert.equal(x.cases[0].authorization,false);assert(verify(x))});
+test("exposes missing authority and stop",()=>{const x=run(input());assert(x.cases[0].gaps.some(g=>g.code==="MISSING_AUTHORITYORIGIN"));assert(x.cases[0].gaps.some(g=>g.code==="MISSING_STOP"))});
+test("self-reported counterexample remains unauthenticated",()=>{const i=input();i.cases[0].observations[0]={id:"O1",report:i.cases[0].defeater,state:"OBSERVED",provenance:"self-assertion"};const c=run(i).cases[0];assert.equal(c.counterexamples[0].status,"COUNTEREXAMPLE_CANDIDATE_UNAUTHENTICATED");assert.equal(c.authorization,false)});
+test("tamper detection",()=>{const x=run(input());x.cases[0].authorization=true;assert.equal(verify(x),false)});
+test("reject duplicate cases",()=>{const i=input();i.cases.push(i.cases[0]);assert.throws(()=>run(i),/duplicate/)});
+test("reject oversized case set",()=>{const i=input();i.cases=Array.from({length:41},(_,j)=>({...i.cases[0],id:"C"+j}));assert.throws(()=>run(i),/bounded/)});
+test("reject duplicate transition IDs",()=>{const i=input();i.cases[0].transitions.push(i.cases[0].transitions[0]);assert.throws(()=>run(i),/transition/)});
+test("complete metadata still gives no permission",()=>{const i=input();Object.assign(i.cases[0].transitions[0],{authorityOrigin:"claim",owner:"operator",scope:"fixture",stop:"button"});const x=run(i);assert.equal(x.cases[0].authorization,false);assert.equal(x.externalStop,"NOT_TESTED")});

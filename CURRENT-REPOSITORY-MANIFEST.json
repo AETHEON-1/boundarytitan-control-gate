@@ -26,6 +26,11 @@
       "sha256": "95184bdc36fb2d18d6d485875025d584f6c4fb2c1995cbe0f471a995f0685e4e"
     },
     {
+      "path": ".github/workflows/research-discovery.yml",
+      "size_bytes": 869,
+      "sha256": "50325973086acb9db8db0feee24b12414afbecf85ec4553df6c731361e51e358"
+    },
+    {
       "path": ".github/workflows/verify.yml",
       "size_bytes": 657,
       "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
@@ -779,6 +784,21 @@
       "path": "package.json",
       "size_bytes": 701,
       "sha256": "47297033148e95c4ec39fd0d5b122edfd1175f0783dc479bcf789d91e753f313"
+    },
+    {
+      "path": "research/fixtures/can-may-research-input-v0.1.json",
+      "size_bytes": 842,
+      "sha256": "eb482cc6a964d237d986d5592dfddb3907d6094517362c9b4b9defd4e3424865"
+    },
+    {
+      "path": "scripts/research-discovery.js",
+      "size_bytes": 3392,
+      "sha256": "8e98693546a0e27c2f0a71ed49139821240f9ae21e17c4097e99ab8700d041aa"
+    },
+    {
+      "path": "scripts/research-discovery.test.js",
+      "size_bytes": 2121,
+      "sha256": "50699fbfe73d2e334649de6038f32f3c94c1e97a3011bc76253a76e02f045bdd"
     },
     {
       "path": "scripts/verify-repository-state.js",

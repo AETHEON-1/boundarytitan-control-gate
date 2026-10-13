@@ -1,0 +1,29 @@
+{
+  "schema": "BT-RESEARCH-INPUT-v0.1",
+  "cases": [
+    {
+      "id": "BT-CAN-MAY-COUNTEREXAMPLE-001",
+      "source": "synthetic:bounded-research-case",
+      "claim": "Capability alone does not establish permission",
+      "rival": "Certain systems may embed the applicable permission in the capability definition",
+      "defeater": "Independent counterexample",
+      "baseline": "competent IAM and authority review",
+      "transitions": [
+        {
+          "id": "tool-to-external",
+          "from": "agent",
+          "to": "consequential-operation",
+          "kind": "execution"
+        }
+      ],
+      "observations": [
+        {
+          "id": "not-tested",
+          "report": "No independent execution or denial test",
+          "state": "NOT_TESTED",
+          "provenance": "synthetic case"
+        }
+      ]
+    }
+  ]
+}
