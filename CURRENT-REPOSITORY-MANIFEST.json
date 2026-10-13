@@ -41,6 +41,11 @@
       "sha256": "76ed3bb47655800fe4e789669a3689e8b17713bc70d5f87e4fd33eb471891e3b"
     },
     {
+      "path": ".github/workflows/task-delivery-contract.yml",
+      "size_bytes": 397,
+      "sha256": "b7f0a4e9fd87d1414806338dcc77cffc0c136eca94e2cd55119c11c72be8f9f4"
+    },
+    {
       "path": ".github/workflows/task-encyclopedia.yml",
       "size_bytes": 726,
       "sha256": "a3dbdc75489b0b59dd32504ea59afdf757b5209b015f2894d130328c417b5124"
@@ -841,6 +846,11 @@
       "sha256": "8b198b61d2d2644c81b26fdd2a0fe45f604b6be63529a7fc05781eb1ca26cb7c"
     },
     {
+      "path": "research/task-bridge/TASK-DELIVERY-CONTRACT-v0.1.md",
+      "size_bytes": 1753,
+      "sha256": "c96f58b897424141d2dddd881438d902af8bcdca7acf32a870427a08ffe914d1"
+    },
+    {
       "path": "research/task-bridge/synthetic-finding.v0.1.json",
       "size_bytes": 664,
       "sha256": "8443ea1490b0628db48e3af271cf098c17c9bd99cd71cabdc9b9b9a85d350369"
@@ -884,6 +894,16 @@
       "path": "scripts/research-discovery.test.js",
       "size_bytes": 2121,
       "sha256": "50699fbfe73d2e334649de6038f32f3c94c1e97a3011bc76253a76e02f045bdd"
+    },
+    {
+      "path": "scripts/task-delivery-envelope.js",
+      "size_bytes": 2098,
+      "sha256": "ec6fa38a7bb00fd0e62e25ee46349c93021d2244f3a6a52ee4ab1881ec45affc"
+    },
+    {
+      "path": "scripts/task-delivery-envelope.test.js",
+      "size_bytes": 1645,
+      "sha256": "feef21002ef7a02fb980117a4fabd7cfa210aacaa12db3024001d7ef1706a5cf"
     },
     {
       "path": "scripts/task-to-encyclopedia.js",
