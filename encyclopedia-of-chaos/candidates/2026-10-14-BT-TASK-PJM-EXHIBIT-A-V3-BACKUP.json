@@ -1,0 +1,67 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-PJM-202-26-50-EXHIBIT-A-V3-BACKUP",
+  "observedAt": "2026-10-14T04:55:20-05:00",
+  "claim": "DOE's public Order 202-26-50 docket now exposes PJM Exhibit A Version 3, submitted October 13, 2026 at 3:15 PM ET. Relative to Version 2, Version 3 appends a backup-resource list with a stated total of 2,175.924 MW and multiple explicit emergency-only/pre-emergency ineligibility limitations. Listing expands the documented option set; it does not establish independent reachability, present availability, dispatch, operation, delivered MW, customer migration, or avoided consequences.",
+  "source": [
+    {
+      "type": "PRIMARY_DOCKET",
+      "title": "DOE Order 202-26-50 docket entry: PJM 202(c) Updated Exhibit A as of October 13 at 3:15 PM ET",
+      "date": "2026-10-13",
+      "url": "https://www.energy.gov/oe/articles/federal-power-act-section-202c-pjm-interconnection-llc-order-no-202-26-50"
+    },
+    {
+      "type": "PRIMARY_FILING",
+      "title": "Exhibit A – Specified Resources (VERSION 3 – submitted October 13, 2026)",
+      "date": "2026-10-13",
+      "url": "https://www.energy.gov/documents/pjms-202c-updated-exhibit-october-13-315-pm-et-202-26-50"
+    },
+    {
+      "type": "PRIOR_LEDGER",
+      "title": "Prior Version 2 candidate",
+      "url": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/71"
+    }
+  ],
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "A corrected authoritative filing or reproducible Version 2-to-Version 3 comparison showing that the appended backup-resource section or its stated 2,175.924 MW total is not new, or that the aggregate has been misread.",
+  "firstUnsupportedArrow": "listed in Exhibit A → independently reachable and presently available → PJM issued an applicable backup-generator instruction → recipient received and acted → unit started and legally interconnected → usable MW reached the grid/load → downstream consequence was avoided",
+  "omissions": [
+    "No complete facility-by-facility Version 2-to-Version 3 reconciliation or independently reproduced row count.",
+    "No Emergency Use of Backup Generator Warning or Action was retrieved with this filing.",
+    "EEA1 is not EEA3; the governing order treats backup generation as a last-resort pathway before EEA3 or during EEA3.",
+    "Many entries state 'Emergency only' and that they cannot participate as pre-emergency assets.",
+    "No evidence of fuel, start success, telemetry, transfer-switch or grid-parallel capability, delivered output, recipient acknowledgement, cost allocation, or permit compliance.",
+    "The 2,175.924 MW figure is the filing's stated aggregate for the appended backup-resource list, not the full Exhibit A total and not verified available capacity.",
+    "The list includes varied facilities; inclusion does not establish a data-center-specific event, customer migration, or restored capacity."
+  ],
+  "failures": [
+    "EXECUTION_OBSERVABILITY_GAP",
+    "INDEPENDENT_REACHABILITY_GAP",
+    "CORRECTION_PROPAGATION_GAP",
+    "UNIT_AND_ROW_RECONCILIATION_GAP"
+  ],
+  "rivalHypotheses": [
+    "PJM assembled a genuinely reachable set of emergency-only assets for last-resort operation.",
+    "The list is precautionary legal inventory and many listed units will never be called.",
+    "A material share of stated MW may be administratively eligible yet physically unavailable, fuel-limited, island-only, or unable to parallel with the grid."
+  ],
+  "consequenceOwner": [
+    "PJM for dispatch or emergency instruction",
+    "EDC/transmission operators for routing and operational coordination",
+    "facility/resource owners for physical execution, fuel, and permit compliance",
+    "DOE for temporary Section 202(c) authority",
+    "human reviewer for admission, publication, or consequential use"
+  ],
+  "nextBoundedMachineMove": "Reconcile every added Version 3 row and unit; retrieve any backup-generator Warning/Action, owner instructions and acknowledgements; seek primary evidence of starts, output, fuel state, transfer-switch/grid-parallel capability, reliance reports, permit status, cost allocation, and later correction propagation.",
+  "priorFindingOrLedger": [
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/71",
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/67"
+  ],
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "deliveryStatus": "REVIEW_ONLY_CANDIDATE",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
