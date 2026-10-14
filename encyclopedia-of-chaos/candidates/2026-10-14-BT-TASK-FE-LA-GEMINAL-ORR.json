@@ -1,0 +1,79 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-FE-LA-GEMINAL-ORR-20261014",
+  "observedAt": "2026-10-14T08:18:39-05:00",
+  "claim": "A Nature Communications paper published 2026-10-14 reports Fe1-La1/NC for acidic oxygen reduction: half-wave potential 0.92 V and TOF 17.3 e− site−1 s−1 versus commercial Pt/C at 0.87 V and 9.9 e− site−1 s−1 under the authors’ comparison; PEMFC cathode reports 56 mA cm−2 at 0.9 V iR-free under H2/O2 and 86% retention after 100 h at 0.67 V. This supports a laboratory catalyst signal, not commercial Pt replacement or practical stack parity.",
+  "source": [
+    {
+      "type": "PRIMARY_PAPER",
+      "title": "Spontaneous ferromagnetic Fe–La geminal atoms with spin and coordination modulation for acidic oxygen reduction",
+      "date": "2026-10-14",
+      "doi": "10.1038/s41467-026-77285-7",
+      "url": "https://www.nature.com/articles/s41467-026-77285-7",
+      "note": "Open-access article; supplementary information and source data linked from article."
+    },
+    {
+      "type": "RELATED_PRIOR_ART_NOT_REPLICATION",
+      "title": "Design of N-Coordinated Dual-Metal Sites for Acidic ORR",
+      "date": "2017-11-21",
+      "doi": "10.1021/jacs.7b10385",
+      "url": "https://doi.org/10.1021/jacs.7b10385",
+      "note": "Related dual-metal ORR prior art, not replication."
+    },
+    {
+      "type": "RELATED_PRIOR_ART_NOT_REPLICATION",
+      "title": "Single-Atom Ce Enables Interfacial Pathway Regulation of Fe2 Atomic Pairs in Alkaline ORR",
+      "date": "2026-09-26",
+      "doi": "10.1021/jacs.6c07837",
+      "url": "https://doi.org/10.1021/jacs.6c07837",
+      "note": "Different catalyst/electrolyte; category convergence only."
+    }
+  ],
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "Independent matched-protocol synthesis fails to reproduce the half-wave-potential advantage, or realistic air-fed PEMFC testing fails on current density, durability or stability.",
+  "firstUnsupportedArrow": "Rotating-electrode activity and short H2/O2 single-cell results → durable, scalable, cost-effective replacement for Pt in practical air-fed stacks.",
+  "omissions": [
+    "No independent replication of the exact Fe–La catalyst located.",
+    "56 mA cm−2 at 0.9 V is one operating point, not commercial power-density parity; H2/O2 is not H2/air.",
+    "100 h with 86% retention is not long-duration stack or start-stop validation.",
+    "Scale-up yield, acid leaching, contaminants, catalyst loading, stack integration, costs and IP/FTO remain unknown."
+  ],
+  "failures": [
+    "INDEPENDENT_REPLICATION_NOT_FOUND",
+    "PRACTICAL_STACK_READINESS_NOT_ESTABLISHED",
+    "LONG_DURATION_DURABILITY_NOT_ESTABLISHED",
+    "IP_FTO_NOT_ASSESSED"
+  ],
+  "rivalHypotheses": [
+    "Fe–La geminal sites and spin ordering cause the improvement.",
+    "Loading, accessible area, support porosity or protocol normalization explain part of the result.",
+    "Fe–N–C sites or secondary phases drive activity; La mainly changes morphology/stability.",
+    "Short H2/O2 cell results may not transfer to air-fed high-current stacks."
+  ],
+  "consequenceOwner": [
+    "Fuel-cell catalyst developers and stack integrators own qualification.",
+    "Human reviewer retains admission, publication and consequential authority."
+  ],
+  "nextBoundedMachineMove": "Audit source data and methods, normalize RDE and cell metrics, then seek independent Fe-only, La-only, Fe–La and Pt/C controls under matched protocols.",
+  "readiness": "Early laboratory proof-of-concept with single-cell demonstration; commercial readiness not established.",
+  "cheapestReversibleValidation": "First reanalyze linked source data and compare same-electrolyte prior art; physical replication requires a qualified electrochemistry lab.",
+  "crossDomainOpportunity": "Potential Pt-lean cathodes and reproducible catalyst benchmarking; no verified paid opening.",
+  "manufacturingRegulatoryEconomic": "Depends on synthesis yield, active-site density, acid stability, MEA compatibility, air-feed performance, stack life, lanthanum supply chain and IP/FTO.",
+  "beneficiariesIncumbentsMissedOpportunities": "Potential beneficiaries are fuel-cell developers; platinum suppliers may be incumbents affected. Missing evidence is standardized current-density and durability comparison.",
+  "priorFindingOrLedger": "UNKNOWN",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "auditChecks": {
+    "omissionsScan": "PERFORMED",
+    "sigma2": "CAN does not grant MAY; human authority remains external",
+    "inverseConverse": "Laboratory activity does not imply practical readiness; practical failure would not erase the narrower measurement",
+    "sourceIndependence": "No independent replication found; related papers are not replications",
+    "correctionPropagation": "NOT TESTED",
+    "duplicateSuppression": "Checked against current candidate set; prior science ledger coverage UNKNOWN"
+  },
+  "deliveryStatus": "REVIEW_ONLY_CANDIDATE",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
