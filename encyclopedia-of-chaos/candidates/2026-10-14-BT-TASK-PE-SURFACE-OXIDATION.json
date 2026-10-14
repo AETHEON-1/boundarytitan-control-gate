@@ -1,0 +1,128 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "observedAt": "2026-10-14T14:11:36-05:00",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "deliveryStatus": "REVIEW_ONLY_CANDIDATE",
+  "executionAuthorized": false,
+  "publicationAuthorized": false,
+  "findingId": "BT-TASK-PE-SURFACE-OXIDATION-PEER-REVIEW-DELTA-20261014",
+  "claim": "Nature published a peer-reviewed report on 2026-10-13 describing selective catalytic oxidation of solid polyethylene at a solid-liquid interface. The authors report surface ketone formation using 0.001 mol% iron catalyst below 80 C, adhesion to glass up to 90-fold above pristine PE, and reported bulk-property retention. The same group's ChemRxiv preprint was public 2026-05-31, so the current delta is peer-reviewed publication, not first disclosure. Independent replication and manufacturing economics are unestablished.",
+  "source": [
+    {
+      "type": "PRIMARY_PEER_REVIEWED_RESEARCH",
+      "title": "Selective, Catalytic Oxidation of Polyethylene Surfaces",
+      "date": "2026-10-13",
+      "url": "https://doi.org/10.1038/s41586-026-11255-3"
+    },
+    {
+      "type": "SAME_LINEAGE_PREPRINT_NOT_INDEPENDENT_REPLICATION",
+      "title": "Selective, Catalytic Oxidation of Polyethylene Surfaces",
+      "date": "2026-05-31",
+      "url": "https://doi.org/10.26434/chemrxiv.15004089/v1"
+    },
+    {
+      "type": "COMPETING_METHOD_NOT_REPLICATION",
+      "title": "Ligand-Controlled Copper Photocatalysis for Polyethylene C-H Oxidation via Coupled Photothermal Activation",
+      "date": "2026-09-02",
+      "url": "https://doi.org/10.1021/acs.macromol.6c01808"
+    },
+    {
+      "type": "RELATED_PRIOR_RESEARCH",
+      "title": "Visible-Light HAT Photocatalysis for Switchable Polyethylene Degradation and C-H Functionalization",
+      "date": "2026-07-10",
+      "url": "https://doi.org/10.1021/acsmacrolett.6c00309"
+    },
+    {
+      "type": "PRIOR_ART_EXAMPLE_NOT_FTO_OPINION",
+      "title": "Process for surface-modifying polypropylene or polyethylene",
+      "date": "1993-10-28",
+      "url": "https://patents.google.com/patent/WO1993020951A1/en"
+    }
+  ],
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "whatChanged": "Peer-reviewed publication became available 2026-10-13; the underlying preprint has been public since 2026-05-31.",
+  "whyNow": "The supplementary methods and peer-review record provide a new checkpoint for independent reproduction, but this is not a newly disclosed discovery.",
+  "whatItEnables": [
+    "Potential adhesion improvement for PE coatings, printing, lamination, composites and bonding while limiting bulk modification.",
+    "Small-coupon validation before scale-up.",
+    "Open comparative benchmarking against conventional surface treatments."
+  ],
+  "readiness": "Laboratory demonstration; independent replication and production readiness not established.",
+  "falsifier": "Independent labs fail to reproduce surface ketone formation and adhesion gains across PE grades, or gains disappear under aging/humidity/abrasion or track roughness/chain scission rather than the proposed chemistry.",
+  "firstUnsupportedArrow": "Laboratory surface oxidation and adhesion → reproducibility across PE grades and recycled feedstocks → durable high-throughput process beating corona/flame/plasma/primer alternatives on cost → commercial-scale benefit.",
+  "omissions": [
+    "Same-lineage preprint predates journal publication by over four months.",
+    "No independent replication identified.",
+    "Full supplementary reaction recipe, oxidant, solvent recovery, residence time and waste stream were not independently audited in this run.",
+    "Up-to-90-fold adhesion is a maximum laboratory comparison, not a universal effect size.",
+    "Long-term durability, feedstock variability, process throughput and total cost remain unknown.",
+    "Existing corona, flame, plasma, primer, ozone and photocatalytic routes are competitors.",
+    "Limited prior-art search is not a freedom-to-operate opinion; no patent specific to this exact method was verified.",
+    "Food-contact, medical and recycling compatibility are not established.",
+    "No verified paid opening identified."
+  ],
+  "failures": [
+    "INDEPENDENT_REPLICATION_NOT_FOUND",
+    "FULL_SUPPLEMENTARY_METHOD_AUDIT_PENDING",
+    "SCALE_AND_THROUGHPUT_NOT_TESTED",
+    "LONG_TERM_DURABILITY_NOT_INDEPENDENTLY_TESTED",
+    "FREEDOM_TO_OPERATE_NOT_ASSESSED",
+    "COMMERCIAL_COST_NOT_ESTABLISHED"
+  ],
+  "rivalHypotheses": [
+    "Surface ketone formation drives the adhesion gain while bulk properties remain substantially unchanged.",
+    "Roughness, wetting changes, chain scission or other oxidation products explain some of the gain.",
+    "The effect depends strongly on crystallinity, additives, solvent swelling, film thickness and surface accessibility.",
+    "Established high-throughput surface treatments may remain cheaper despite lower peak adhesion in the reported comparison.",
+    "Alternative copper-photocatalytic or ozone routes may outperform this method for some feedstocks with different safety and chain-integrity tradeoffs."
+  ],
+  "crossDomainOpportunity": "Open standardized coupon benchmarking for adhesion, surface chemistry, aging and recycled-PE compatibility; possible contract testing, not a verified paid opening.",
+  "realWorldConstraints": [
+    "Solid-liquid interface uniformity and treatment of complex geometries.",
+    "Oxidant handling, solvent recovery, washing, catalyst removal and effluent management.",
+    "Throughput and cost relative to established treatments.",
+    "Variation across LDPE, HDPE, LLDPE, UHMWPE, additives and post-consumer contamination.",
+    "Durability and downstream adhesive/coating compatibility.",
+    "Residue/migration requirements for food-contact or medical uses.",
+    "Potential conflict between stronger bonding and recyclability/delamination needs."
+  ],
+  "manufacturingRegulatoryEconomicImplications": "Potential value only where durable adhesion and bulk-property retention justify a wet-chemical step. Cost, throughput, waste treatment, durability, product qualification and application-specific residues must be established. No regulatory status, patent ownership or FTO is established.",
+  "beneficiariesIncumbentsMissedOpportunities": {
+    "potentialBeneficiaries": [
+      "polyethylene converters",
+      "coatings, inks, laminates and adhesive formulators",
+      "polymer characterization labs",
+      "recycled-PE bonding researchers"
+    ],
+    "incumbents": [
+      "corona/flame/plasma equipment suppliers",
+      "primer and adhesion-promoter suppliers",
+      "polyolefin surface-modification licensors"
+    ],
+    "missedOpportunity": "Compare the method blindly against conventional treatments on common and recycled PE grades, including aging and total process cost, before scale-up claims."
+  },
+  "consequenceOwner": [
+    "Independent polymer labs: replication and measurement validation.",
+    "Manufacturers: product qualification and process safety.",
+    "Legal/IP specialists: patentability and FTO assessment.",
+    "Human reviewer: candidate admission and consequential-use authority."
+  ],
+  "nextBoundedMachineMove": "Retrieve and parse the complete supplementary methods and peer-review file; map exact catalyst/oxidant/solvent conditions and controls; build a prior-art matrix; define a blinded small-coupon protocol with surface chemistry, adhesion, aging and bulk-property endpoints. No reagents purchased and no experiment executed in this run.",
+  "priorFindingOrLedger": "UNKNOWN",
+  "sourceIndependence": "The ChemRxiv preprint and Nature paper share one research lineage. Recent copper-photocatalytic and HAT papers are competing approaches, not direct replication.",
+  "auditChecks": {
+    "omissionsScan": "Reviewed disclosure timing, controls, surface/bulk distinction, durability, economics, safety, prior art, IP and application qualification; full supplementary extraction remains pending.",
+    "sigma2": "Research and candidate preparation are permitted; experiments, procurement, licensing, product claims, publication and commercial action are not authorized.",
+    "inverseConverse51_50": [
+      "Reported adhesion does not prove ketone chemistry uniquely caused the gain without matched controls.",
+      "Strong adhesion under laboratory conditions does not imply durable production performance.",
+      "PE surface oxidation does not imply economic advantage for every grade or process."
+    ],
+    "sourceIndependence": "No independent replication found; competing methods support the broader field, not this exact result.",
+    "correctionPropagation": "No downstream correction or consequence-repair chain identified.",
+    "duplicateSuppression": "Searched accessible BoundaryTitan branch and PR titles for this exact PE surface-oxidation finding; no matching candidate found. Broader PE modification literature is prior art/context, not a duplicate."
+  }
+}
