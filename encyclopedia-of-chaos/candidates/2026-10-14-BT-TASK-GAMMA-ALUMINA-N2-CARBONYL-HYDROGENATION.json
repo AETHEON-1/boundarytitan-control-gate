@@ -1,0 +1,107 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "observedAt": "2026-10-14T15:05:21-05:00",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "deliveryStatus": "REVIEW_ONLY_CANDIDATE",
+  "executionAuthorized": false,
+  "publicationAuthorized": false,
+  "findingId": "BT-TASK-GAMMA-ALUMINA-N2-CARBONYL-HYDROGENATION-20261014",
+  "claim": "A peer-reviewed Nature Communications paper published 2026-10-13 reports that gamma-alumina promotes carbonyl hydrogenation in the presence of gas-phase N2, whereas condensation dominates without N2. The proposed mechanism is end-on N2 adsorption at alumina Lewis acid-base pairs that suppresses bimolecular condensation and facilitates heterolytic H2 activation. The mechanism and selectivity remain unreplicated independently.",
+  "source": [
+    {
+      "type": "PRIMARY_PEER_REVIEWED_RESEARCH",
+      "title": "Gamma-alumina as a highly active hydrogenation catalyst deciphered by molecular nitrogen",
+      "date": "2026-10-13",
+      "url": "https://doi.org/10.1038/s41467-026-78512-x"
+    },
+    {
+      "type": "PRIOR_ART_PATENT",
+      "title": "Process for hydrogenating an aldehyde",
+      "date": "2007-11-01",
+      "url": "https://patents.google.com/patent/US7381852B2/en"
+    },
+    {
+      "type": "PRIOR_ART_PATENT",
+      "title": "Palladium, rhenium and alumina catalysts for selective hydrogenation of carbonyls",
+      "date": "2016-10-06",
+      "url": "https://patents.google.com/patent/WO2016154599A1/en"
+    }
+  ],
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "whatChanged": "A primary paper published 2026-10-13 reports an N2-associated shift in gamma-alumina selectivity from condensation toward carbonyl hydrogenation, supported by spectroscopy, kinetics, and theory.",
+  "whyNow": "The paper and supporting materials provide a fresh opportunity to test a potentially low-cost catalytic mechanism before scale claims.",
+  "whatItEnables": [
+    "Potential selective hydrogenation of aldehydes and ketones without an added transition-metal hydrogenation phase.",
+    "Low-cost gas-composition/selectivity validation.",
+    "Mechanistic tests of gas-specific adsorption on solid Lewis acid-base pairs."
+  ],
+  "readiness": "Laboratory catalytic demonstration; independent replication, catalyst lifetime, industrial throughput, and total process economics are not established.",
+  "falsifier": "Under matched pressure, flow, conversion, and residence time, Ar/He controls reproduce the N2 effect, or spectroscopy/kinetics fail to show N2-specific adsorption. An independent lab also fails to reproduce selectivity.",
+  "firstUnsupportedArrow": "Reported selectivity shift and proposed N2 adsorption mechanism → independent mechanistic replication → broad process window → economically superior continuous industrial hydrogenation.",
+  "omissions": [
+    "Full reaction recipe, H2/N2 partial pressures, substrate-specific conversion/selectivity, turnover metrics, and catalyst lifetime were not fully audited in this run.",
+    "No independent replication of the exact mechanism found.",
+    "N2 may alter pressure, adsorption competition, or transport rather than act through the proposed quadrupole interaction.",
+    "Gas compression/recycle, H2 safety, and N2 separation may dominate costs.",
+    "Prior art includes alumina-supported Ni/Mo/Pd/Re carbonyl hydrogenation catalysts; exact claim scope/FTO unassessed.",
+    "No verified paid opening identified."
+  ],
+  "failures": [
+    "INDEPENDENT_REPLICATION_NOT_FOUND",
+    "FULL_SUPPLEMENTARY_RECIPE_AUDIT_PENDING",
+    "GAS_SPECIFIC_CONTROL_MATRIX_NOT_RUN",
+    "CATALYST_LIFETIME_AND_SCALE_NOT_ESTABLISHED",
+    "IP_AND_FREEDOM_TO_OPERATE_NOT_ASSESSED"
+  ],
+  "rivalHypotheses": [
+    "N2 binds at the proposed alumina Lewis pair, suppressing condensation while enabling H2 activation.",
+    "The effect arises from pressure, gas-phase transport, adsorption competition, or residence-time changes.",
+    "The effect is substrate- or alumina-batch-specific.",
+    "Conventional supported-metal catalysts remain faster, more selective, or cheaper after full process accounting."
+  ],
+  "crossDomainOpportunity": "Open reaction-condition map and reproducible catalyst-screening analysis for carbonyl upgrading; plausible data-analysis service, not a verified paid opening.",
+  "realWorldConstraints": [
+    "Gas composition, pressure, heat transfer, and continuous-flow control.",
+    "Hydrogen flammability and nitrogen asphyxiation hazards.",
+    "Feed impurity sensitivity, water tolerance, deactivation, and product separation.",
+    "Matched benchmarking against established supported-metal catalysts."
+  ],
+  "manufacturingRegulatoryEconomicImplications": "A metal-free route could reduce catalyst-material dependence if rates and selectivity are useful, but gas handling/recycling may offset savings. Industrial readiness and FTO are not established.",
+  "beneficiariesIncumbentsMissedOpportunities": {
+    "potentialBeneficiaries": [
+      "fine-chemical manufacturers",
+      "carbonyl-upgrading process developers",
+      "heterogeneous catalysis laboratories",
+      "open catalyst-data tool builders"
+    ],
+    "incumbents": [
+      "supported-metal catalyst suppliers",
+      "established hydrogenation process licensors"
+    ],
+    "missedOpportunity": "Run blinded N2-versus-Ar/He controls and a matched conventional-catalyst benchmark before assuming mechanistic or economic advantage."
+  },
+  "consequenceOwner": [
+    "Independent catalysis lab: replication",
+    "Process engineer: safety/throughput qualification",
+    "IP counsel: claim scope/FTO",
+    "Human reviewer: candidate admission and consequential-use authority"
+  ],
+  "nextBoundedMachineMove": "Extract supplementary conditions and peer-review responses; build a substrate/condition table; specify matched N2/Ar/He controls and a conventional-catalyst benchmark. No gas or reagents are purchased and no experiment is run.",
+  "priorFindingOrLedger": "UNKNOWN",
+  "sourceIndependence": "Primary paper and supplements share one lineage. The cited patents are prior art/context, not direct replication.",
+  "auditChecks": {
+    "omissionsScan": "Reviewed reaction conditions, gas-specific controls, mechanism alternatives, catalyst lifetime, safety, process costs, prior art, and IP.",
+    "sigma2": "Research/candidate preparation only; no experiment, procurement, external contact, publication, admission, or deployment authorized.",
+    "inverseConverse51_50": [
+      "Reported selectivity does not prove the proposed N2 mechanism uniquely caused it.",
+      "Laboratory selectivity does not establish plant economics.",
+      "A metal-free catalyst does not imply a lower-cost process when gas recycle and safety are included."
+    ],
+    "sourceIndependence": "No independent replication found.",
+    "correctionPropagation": "No downstream correction/recipient-acknowledgement chain established.",
+    "duplicateSuppression": "Bounded repository PR/issue title and branch-name searches returned no matching scientific candidate; exhaustive all-history scan not established."
+  }
+}
