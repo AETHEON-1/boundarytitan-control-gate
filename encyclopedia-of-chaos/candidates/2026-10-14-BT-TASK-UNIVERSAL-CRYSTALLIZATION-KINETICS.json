@@ -1,0 +1,85 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-UNIVERSAL-CRYSTALLIZATION-KINETICS-20261014",
+  "observedAt": "2026-10-14T17:06:00-05:00",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "claim": "A Nature Communications paper published 2026-10-14 reports time-defined mechanically induced nucleation and a dimensionless model for crystallization across selected solution-processed perovskites, an organic semiconductor, and NaH2PO4. Selected FET demonstrations report improved mobility with controlled morphology; product-scale outcomes are not demonstrated.",
+  "source": [
+    {
+      "type": "PRIMARY_PAPER",
+      "date": "2026-10-14",
+      "url": "https://doi.org/10.1038/s41467-026-78354-7"
+    },
+    {
+      "type": "DATA_REPOSITORY_AS_DECLARED_BY_PAPER",
+      "date": "2026-10-14",
+      "url": "https://doi.org/10.17617/3.S597NE"
+    },
+    {
+      "type": "PRIOR_ART_CONTEXT",
+      "date": "2011",
+      "url": "https://patents.google.com/patent/US20110300718A1/en"
+    },
+    {
+      "type": "PRIOR_ART_CONTEXT",
+      "date": "2007",
+      "url": "https://patents.google.com/patent/WO2007001294A1/en"
+    }
+  ],
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "whatChanged": "New version-of-record paper links timed induced nucleation, morphology regimes, and domain-growth modeling across selected materials.",
+  "whyNow": "Primary article, supplementary movies, and source-data links are newly available; computational reproduction is cheaper than immediate lab work.",
+  "whatItEnables": [
+    "Open model reproduction",
+    "Blinded image-analysis benchmark",
+    "Potential thin-film process optimization"
+  ],
+  "readiness": "Peer-reviewed laboratory study; exact-method independent replication and manufacturing-scale performance not established.",
+  "falsifier": "A blinded independent reanalysis or protocol-matched replication fails to reproduce normalized growth curves or morphology windows on held-out conditions, or the mobility advantage disappears under device/contact-resistance controls.",
+  "firstUnsupportedArrow": "Reported model and selected FET outcomes → independent replication → robust large-area manufacturing → improved product yield and economics.",
+  "omissions": [
+    "Model scope depends on evaporation-governed concentration change and mass-transfer-limited growth.",
+    "Manual ROI and tunable image-processing thresholds require frozen, sensitivity-tested reanalysis.",
+    "A laboratory mobility gain is not product efficiency, stability, yield, or cost evidence.",
+    "Broad crystallization-control prior art exists; novelty and freedom to operate are unassessed.",
+    "No independent replication of the exact TDIN model found in the bounded search."
+  ],
+  "failures": [
+    "INDEPENDENT_REPLICATION_NOT_FOUND_IN_BOUNDED_SEARCH",
+    "PUBLISHER_SOURCE_DATA_DIRECT_DOWNLOAD_BLOCKED; separate RETRIEVAL_FAILED candidate",
+    "SCALE_UP_AND_IP_NOT_ESTABLISHED"
+  ],
+  "rivalHypotheses": [
+    "Timed nucleation thresholds causally drive the morphology regimes.",
+    "The apparent universality is limited to evaporation- and diffusion-controlled systems.",
+    "Scratching changes wetting, thickness, defects, or evaporation beyond the proposed mechanism.",
+    "Device geometry, contact resistance, or image-analysis choices partly explain mobility differences."
+  ],
+  "crossDomainOpportunity": "Open-source pipeline for source tables and microscopy movies, fixed segmentation, dimensionless-model fitting, and process sensitivity; any paid service remains speculative.",
+  "consequenceOwner": [
+    "Independent computational reviewer",
+    "Thin-film laboratory if later replication is justified",
+    "Process engineer",
+    "IP counsel",
+    "Human owner"
+  ],
+  "nextBoundedMachineMove": "Retrieve and hash source files through an approved route; freeze ROI/threshold rules; reproduce growth curves and fit statistics; test held-out conditions. No experiment, purchase, contact, publication, or deployment.",
+  "priorFindingOrLedger": "UNKNOWN; bounded default-branch and PR-title searches found no matching candidate, but all-history search was not exhaustive.",
+  "auditChecks": {
+    "omissionsScan": "Model scope, image-analysis flexibility, data access, sample/material generality, scale-up, EHS, prior art, and product-readiness gaps recorded.",
+    "sigma2": "Research intake only; executionAuthorized:false; publicationAuthorized:false.",
+    "inverseConverse51_50": [
+      "Model fit does not prove universal applicability.",
+      "Morphology change does not prove commercial device improvement.",
+      "Public data declaration does not prove bytes were retrieved or independently reproduced."
+    ],
+    "sourceIndependence": "Paper and linked data are author-origin; independent replication not found.",
+    "correctionPropagation": "No correction notice found in bounded publisher check; exhaustive monitoring not established.",
+    "duplicateSuppression": "Bounded code/PR searches only; full branch/history search not established."
+  },
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
