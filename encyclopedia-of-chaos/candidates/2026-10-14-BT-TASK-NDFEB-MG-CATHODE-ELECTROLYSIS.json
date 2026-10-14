@@ -1,0 +1,115 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "observedAt": "2026-10-14T15:05:21-05:00",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "deliveryStatus": "REVIEW_ONLY_CANDIDATE",
+  "executionAuthorized": false,
+  "publicationAuthorized": false,
+  "findingId": "BT-TASK-NDFEB-MG-CATHODE-ELECTROLYSIS-20261014",
+  "claim": "A peer-reviewed Nature Communications paper published 2026-10-13 reports molten-salt electrolysis using end-of-life NdFeB magnet anodes and a consumable solid magnesium cathode at 548–650 °C and 0.75–3 A/cm². The paper reports selective neodymium dissolution, in-situ Mg–Nd alloy formation, average current efficiency of 98.4%, and modeled LCA/techno-economic outcomes. The reported 3000 A cost is a scale scenario, not evidence that a 3000 A industrial plant was operated.",
+  "source": [
+    {
+      "type": "PRIMARY_PEER_REVIEWED_RESEARCH",
+      "title": "Securing critical rare-earth supply through end-of-life NdFeB magnets recycling via molten salt electrolysis with consumable Mg-cathode",
+      "date": "2026-10-13",
+      "url": "https://doi.org/10.1038/s41467-026-78305-2"
+    },
+    {
+      "type": "PRIOR_ART_PROCESS",
+      "title": "Electrolytic process for producing neodymium metal or neodymium metal alloys",
+      "date": "1992-05-19",
+      "url": "https://patents.google.com/patent/US5118396A/en"
+    },
+    {
+      "type": "PRIOR_ART_RECYCLING_ROUTE",
+      "title": "An Ex-ante LCA Study of Rare Earth Extraction from NdFeB Magnet Scrap Using Molten Salt Electrolysis",
+      "date": "2018-11-07",
+      "url": "https://doi.org/10.1007/s40831-018-0198-9"
+    },
+    {
+      "type": "RELATED_PATENT_FAMILY_NOT_FTO_OPINION",
+      "title": "Process for the selective recovery of rare earth elements from Nd-Fe-B magnet waste based on electrolysis",
+      "date": "2024-02-21",
+      "url": "https://patents.google.com/patent/EP3795704B1/en"
+    }
+  ],
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "whatChanged": "A primary paper and supporting data became publicly accessible 2026-10-13, reporting a potentially consequential route combining end-of-life magnet feed, a consumable solid Mg cathode, and high reported current efficiency.",
+  "whyNow": "The paper supplies a fresh data/peer-review checkpoint for mass/charge-balance and process-model auditing before costly scale-up.",
+  "whatItEnables": [
+    "Potential direct recovery of neodymium-bearing alloy from end-of-life NdFeB magnets.",
+    "Reproducible open mass-balance, energy, consumables, and sensitivity models for comparing recycling routes.",
+    "Targeted tests of feedstock tolerance and magnesium recovery before pilot investment."
+  ],
+  "readiness": "Laboratory process demonstration with modeled LCA/TEA; independent replication and industrial operation are not established.",
+  "falsifier": "Independent mass and charge balances fail on heterogeneous end-of-life magnet feed, or transparent sensitivity analysis shows Mg recovery, salt loss, electricity, separation, contamination, or capital costs erase the modeled advantage.",
+  "firstUnsupportedArrow": "Laboratory electrolysis metrics plus modeled LCA/TEA → repeatable operation on variable scrap → verified 3000 A plant performance → durable cost and emissions advantage.",
+  "omissions": [
+    "The 3000 A cost is a model scenario, not a demonstrated industrial plant.",
+    "No independent replication of the exact solid-Mg-cathode route was found.",
+    "Full LCA/TEA sensitivity assumptions have not been independently reimplemented.",
+    "Feedstock variability, coatings, impurities, Mg recovery, salt lifetime, corrosion, and product purity remain scale constraints.",
+    "Prior art includes rare-earth electrolysis into Mg-based cathodes and other NdFeB recycling routes; patentability/FTO are not established.",
+    "No verified paid opening identified."
+  ],
+  "failures": [
+    "INDEPENDENT_REPLICATION_NOT_FOUND",
+    "3000A_SCALE_SCENARIO_NOT_A_PLANT_DEMONSTRATION",
+    "FULL_LCA_TEA_SENSITIVITY_REIMPLEMENTATION_PENDING",
+    "REAL_FEEDSTOCK_VARIABILITY_NOT_INDEPENDENTLY_TESTED",
+    "IP_AND_FREEDOM_TO_OPERATE_NOT_ASSESSED"
+  ],
+  "rivalHypotheses": [
+    "The high current efficiency and direct alloy capture are reproducible and reduce losses versus conventional chloride electrolysis.",
+    "The advantage depends on idealized feedstock, favorable Mg recovery, salt reuse, or energy assumptions.",
+    "Existing hydrometallurgical, hydrogen-decrepitation, or other electrochemical routes may outperform for some scrap streams.",
+    "The LCA benefit is sensitive to electricity mix, heat source, and system boundaries."
+  ],
+  "crossDomainOpportunity": "Open-source process model and feedstock-screening tool comparing mass balance, electricity, salt/Mg recovery, emissions, and costs; plausible analytical service, not a verified paid opening.",
+  "realWorldConstraints": [
+    "High-temperature molten salts and corrosion-resistant cell materials.",
+    "Safe handling of molten Mg and alloy separation.",
+    "Continuous feed/product withdrawal, salt management, and impurity control.",
+    "Electricity/heat source, utilization, capex, and downstream purification."
+  ],
+  "manufacturingRegulatoryEconomicImplications": "Potential strategic value in circular rare-earth supply, but the modeled cost and environmental advantages depend on scale, energy mix, feedstock logistics, Mg recovery, and downstream purification. No FTO conclusion is supported.",
+  "beneficiariesIncumbentsMissedOpportunities": {
+    "potentialBeneficiaries": [
+      "NdFeB magnet recyclers",
+      "wind and EV motor remanufacturers",
+      "rare-earth metal producers",
+      "metallurgical process-modeling specialists"
+    ],
+    "incumbents": [
+      "primary rare-earth refiners",
+      "hydrometallurgical recyclers",
+      "existing molten-salt electrolysis operators"
+    ],
+    "missedOpportunity": "Independently reproduce mass/charge balance and sensitivity analysis using heterogeneous scrap assumptions before scale-up claims."
+  },
+  "consequenceOwner": [
+    "Independent metallurgy laboratory: replication",
+    "Recycling operator: feedstock/process qualification",
+    "LCA/TEA auditor: model verification",
+    "IP counsel: claim scope/FTO",
+    "Human reviewer: candidate admission and consequential-use authority"
+  ],
+  "nextBoundedMachineMove": "Retrieve supplementary tables/source data; rebuild mass/charge balance and the 3000 A scenario with explicit uncertainty for electricity, Mg recovery, salt losses, impurities, purification, and utilization. No materials are purchased and no experiment is run.",
+  "priorFindingOrLedger": "UNKNOWN",
+  "sourceIndependence": "The primary article and its supplements share one lineage. The 1992 patent and 2018 LCA are prior art/context, not independent replication.",
+  "auditChecks": {
+    "omissionsScan": "Reviewed scale-scenario versus plant distinction, mass/charge balance, feedstock variability, energy, Mg/salt recovery, prior art, IP, and commercial assumptions.",
+    "sigma2": "Research/candidate preparation only; no experiment, procurement, publication, admission, or deployment authorized.",
+    "inverseConverse51_50": [
+      "High reported current efficiency does not establish industrial yield.",
+      "Modeled 3000 A economics do not prove a plant ran at that scale.",
+      "Lower modeled emissions do not establish advantage under every electricity mix."
+    ],
+    "sourceIndependence": "No independent replication of the exact process found.",
+    "correctionPropagation": "No downstream correction/recipient-acknowledgement chain established.",
+    "duplicateSuppression": "Bounded repository PR/issue title and branch-name searches returned no matching scientific candidate; exhaustive all-history scan not established."
+  }
+}
