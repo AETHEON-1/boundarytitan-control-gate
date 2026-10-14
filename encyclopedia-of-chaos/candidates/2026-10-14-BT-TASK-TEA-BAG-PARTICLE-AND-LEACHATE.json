@@ -1,0 +1,105 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "observedAt": "2026-10-14T12:08:14-05:00",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "deliveryStatus": "REVIEW_ONLY_CANDIDATE",
+  "executionAuthorized": false,
+  "publicationAuthorized": false,
+  "findingId": "BT-TASK-TEA-BAG-PARTICLE-AND-LEACHATE-DELTA-20261014",
+  "claim": "A primary npj Science of Food paper published 2026-10-13 reports a controlled 95°C, 3-minute brewing comparison across 14 bagged-tea and 14 bulk-tea brands. It reports 555–2,498 microplastic particles per cup for the tested polymeric bags versus 0.3–2.4 for bulk tea infusions, and reports BPA intake from bagged tea reaching 21.7% of the EFSA tolerable daily intake; its modeled cumulative hazard index remained below 1. This adds a new brand-specific dataset and chemical-leaching measurements to an already established literature on tea-bag particle release. It does not establish clinical harm or universal exposure rates.",
+  "source": [
+    {
+      "type": "PRIMARY_RESEARCH",
+      "title": "Microplastic release from plastic tea bags versus bulk tea and migration of bisphenol A and plasticizer esters",
+      "date": "2026-10-13",
+      "url": "https://www.nature.com/articles/s41538-026-01175-x"
+    },
+    {
+      "type": "RELATED_PRIOR_SYSTEMATIC_REVIEW_NOT_REPLICATION_OF_THIS_DATASET",
+      "title": "Tea bags as hidden source of micro- and nanoplastics: a systematic review for food safety",
+      "date": "2026",
+      "url": "https://doi.org/10.1016/j.crfs.2026.101425"
+    },
+    {
+      "type": "RELATED_PRIOR_RESEARCH",
+      "title": "Evolution of Microplastics Released from Tea Bags into Water",
+      "date": "2025-10-07",
+      "url": "https://doi.org/10.3390/polym17192700"
+    }
+  ],
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "whatChanged": "A new primary dataset compares 14 polymeric bagged-tea brands with 14 bulk-tea brands and jointly measures particles, BPA and phthalate-esters in the resulting infusions.",
+  "whyNow": "The primary paper was published 2026-10-13. The actionable delta is its brand-specific particle counts and chemical-leaching measurements, not discovery of tea-bag microplastic release itself.",
+  "whatItEnables": [
+    "Independent replication of a food-contact packaging test protocol.",
+    "Comparison of particle release and chemical migration across packaging materials and brewing conditions.",
+    "A reproducible quality-assurance workflow if analytical methods and blanks are standardized."
+  ],
+  "readiness": "Laboratory measurement and modeled exposure estimate; consumer-health effects and universal brand-level outcomes are not established.",
+  "falsifier": "Independent laboratories using procedural blanks, water controls, polymer-matched bag controls, validated recovery and prespecified size cutoffs fail to reproduce the large bagged-versus-bulk difference or cannot attribute the reported BPA/PAE measurements to the bag material.",
+  "firstUnsupportedArrow": "Reported particle counts and chemical migration in a 28-brand laboratory sample → typical consumer exposure across markets and brewing habits → biologically meaningful harm → justified regulatory or product intervention.",
+  "omissions": [
+    "The study sampled 14 bagged and 14 bulk brands; this is not a representative survey of every market or product.",
+    "The full procedural-blank, recovery, particle-size-cutoff and source-attribution details were not independently re-audited in this run.",
+    "Particle counts depend strongly on detection method, minimum size, handling and contamination control.",
+    "A 2026 systematic review of 19 studies reports that standardized quantification methods and human-health risk assessment remain gaps.",
+    "The reported hazard index was below 1; BPA reaching 21.7% of a tolerable daily intake is not itself proof of harm or a threshold exceedance.",
+    "The study's measurements do not establish absorption, tissue dose, clinical outcome or universal exposure reduction from switching products.",
+    "No patent, commercial testing demand or paid opening was verified."
+  ],
+  "failures": [
+    "INDEPENDENT_REPLICATION_NOT_FOUND",
+    "FULL_CONTAMINATION_CONTROL_AUDIT_PENDING",
+    "HEALTH_OUTCOME_NOT_TESTED",
+    "MARKET_GENERALIZABILITY_NOT_ESTABLISHED"
+  ],
+  "rivalHypotheses": [
+    "Polymeric tea-bag materials are a major source of the particles measured under the study's brewing conditions.",
+    "Some fraction of measured particles may reflect water, laboratory handling, airborne contamination or differences in detection thresholds.",
+    "Particle counts vary by bag polymer, weave, age, brewing agitation and temperature; brand-specific values may not generalize.",
+    "Chemical migration may be material-dependent and need not track particle release or predict biological risk."
+  ],
+  "crossDomainOpportunity": "A standardized, open protocol for food-contact packaging migration tests and independent QA reporting; possible lab-validation service, not a verified paid opening.",
+  "realWorldConstraints": [
+    "ATR-FTIR and GC-MS/MS require specialized equipment and trained operators.",
+    "Inter-laboratory particle counts may not be comparable without common blanks, size cutoffs and recovery controls.",
+    "Packaging composition may be undisclosed or mixed-material.",
+    "Health interpretation requires toxicological evidence beyond particle counts and modeled intake."
+  ],
+  "manufacturingRegulatoryEconomicImplications": "The results may inform packaging QA and future standards if independently reproduced. No regulatory violation, clinical harm or universal product defect is established by this study alone.",
+  "beneficiariesIncumbentsMissedOpportunities": {
+    "potentialBeneficiaries": [
+      "food-contact packaging laboratories",
+      "tea and packaging quality teams",
+      "standardization researchers"
+    ],
+    "incumbents": [
+      "existing polymeric tea-bag suppliers and food-contact testing providers"
+    ],
+    "missedOpportunity": "Reproduce the counts with matched blanks and material characterization before using the result for product or health claims."
+  },
+  "consequenceOwner": [
+    "Independent analytical labs own method validation.",
+    "Food manufacturers and packaging suppliers own product-specific quality controls.",
+    "Regulators own any formal standard-setting decisions.",
+    "Human reviewer retains candidate admission and consequential-use authority."
+  ],
+  "nextBoundedMachineMove": "Inspect supplementary methods for blanks, recovery, polymer identification, size cutoff and brand composition; compare with the 2026 systematic review; define a blinded inter-lab replication protocol; do not infer clinical harm from the reported counts.",
+  "priorFindingOrLedger": "UNKNOWN",
+  "sourceIndependence": "The systematic review and older studies establish prior evidence for tea-bag particle release but do not independently reproduce this paper's 2026 brand-level counts or BPA/PAE results.",
+  "auditChecks": {
+    "omissionsScan": "Completed; sample representativeness, contamination controls, detection limits, health inference, regulatory implications and economic claims recorded.",
+    "sigma2": "CAN permits evidence analysis and candidate preparation; it does not authorize product accusations, purchases, publication or regulatory action.",
+    "inverseConverse51_50": [
+      "Forward: the study reports particles and chemical migration under defined brewing conditions; health outcomes remain untested.",
+      "Inverse: detecting particles in an infusion does not uniquely identify the bag as their source without validated controls.",
+      "Converse: a polymeric bag does not imply a specific particle count, chemical dose or clinically meaningful harm."
+    ],
+    "sourceIndependence": "No independent replication of this exact dataset found; prior review supports the broader phenomenon only.",
+    "correctionPropagation": "No product recall, regulatory action or downstream correction chain established.",
+    "duplicateSuppression": "Existing literature already documents tea-bag particle release; candidate is limited to the new brand-specific and BPA/PAE dataset, not the established general phenomenon."
+  }
+}
