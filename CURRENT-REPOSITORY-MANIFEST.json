@@ -477,8 +477,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 3808,
-      "sha256": "b7d5f5d59b62beb22336a2b617891b114d47fc78b54e174a6fe96e0dcacde90a"
+      "size_bytes": 4672,
+      "sha256": "451e2da86cf9136cbba53ae55c69143389255d9875f7aff7529e261eb5dd72d8"
     },
     {
       "path": "RELEASE_CANDIDATE_CHECKS.json",
@@ -1319,6 +1319,11 @@
       "path": "visual/index.html",
       "size_bytes": 4483,
       "sha256": "a39ecb286832edfcbe9c5f764bd94c698044cec05eca7c31758bca1eda786a85"
+    },
+    {
+      "path": "visual/specialists.html",
+      "size_bytes": 8481,
+      "sha256": "41bbde19b3c74879ca1f82e7f87691e5d22ad33be88c6a556e1cefa3e6d3959e"
     },
     {
       "path": "visual/unsupported-arrow.html",
