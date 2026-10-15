@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>BoundaryTitan | Specialist Workbench</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#19242d;background:#f3f5f6;line-height:1.55}*{box-sizing:border-box}body{margin:0}a{color:#174f80;text-underline-offset:3px}a:focus-visible{outline:3px solid #b42b32;outline-offset:4px}header,main,footer{max-width:1050px;margin:auto;padding:24px}header{padding-top:44px}h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.12;margin:.4rem 0}h2{font-size:1.35rem}h3{font-size:1.05rem}.eyebrow{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}.intro{font-size:1.12rem;max-width:70ch}.notice{border-left:5px solid #a32930;padding:12px 18px;background:#fff;margin-top:22px}.nav{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}.nav a{background:#fff;border:1px solid #bac6cc;border-radius:7px;padding:9px 13px;font-weight:600}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}.card{background:white;border:1px solid #cbd3d8;border-radius:10px;padding:20px}.card h3{margin-top:0}.card p{margin-bottom:8px}.meta{font-size:.9rem;color:#45535e}table{width:100%;border-collapse:collapse;background:white}th,td{border-bottom:1px solid #cbd3d8;padding:11px;text-align:left;vertical-align:top}th{background:#e8edf0}code,pre{background:#e5ebee;border-radius:4px}code{padding:2px 4px}pre{padding:15px;overflow-x:auto}pre code{padding:0}.table-scroll{overflow-x:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:15px;top:10px;background:white;padding:12px;z-index:5}footer{border-top:1px solid #cbd3d8;margin-top:25px}small{font-size:.9rem}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}@media(max-width:600px){header,main,footer{padding:16px}.table-scroll{overflow-wrap:anywhere}th,td{padding:8px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+<div class="eyebrow">BoundaryTitan · Public specialist access</div>
+<h1>Find the unsupported arrow.</h1>
+<p class="intro">Inspect a claim. Reproduce its evidence. Show where it fails. This is a read-only entry point to a public research repository, not a live control console.</p>
+<div class="notice"><strong>State: Research / YELLOW for operational acceptance.</strong> Software tests do not establish physical containment, legal compliance, or permission to deploy. This page grants no authority and executes no tools.</div>
+<nav class="nav" aria-label="Page sections"><a href="#understand">Understand</a><a href="#explore">Explore</a><a href="#test">Test</a><a href="#challenge">Challenge</a><a href="#evidence">Evidence</a></nav>
+</header>
+<main id="main">
+<section id="understand" aria-labelledby="understand-title"><h2 id="understand-title">1. Understand the boundary</h2><p><strong>CAN ⊬ MAY.</strong> A system's ability to produce an output or perform an action does not, by itself, establish permission or authority to impose a consequence.</p><p>BoundaryTitan tests transitions between capability, permission, action, consequence, evidence and human decision. It does not claim that every proposed control is necessary, sufficient or independently verified.</p><p><a href="../SPECIALIST-OUTREACH-README.md">Read the specialist introduction</a> · <a href="../01-PROJECT-CONSTITUTION.md">Project constitution</a> · <a href="../14-USER-WORKFLOWS-AND-UI.md">UI and workflow specification</a></p></section>
+<section id="explore" aria-labelledby="explore-title"><h2 id="explore-title">2. Explore by specialist discipline</h2><div class="grid">
+<article class="card"><h3>Robotics and mechanical safety</h3><p>Stop paths, inertia, gravity, residual energy, alternate motion paths.</p><p><a href="../workshops/fr001/specialist-matrix.md">Discipline matrix</a> · <a href="../workshops/fr001/claim-register.md">Claim register</a></p></article>
+<article class="card"><h3>Security and identity</h3><p>Delegation, stale grants, replay, bypass, restart and revoked authority.</p><p><a href="../AUTHORIZATION-MACHINERY-ADVERSARIAL-BATTERY-v0.1.md">Adversarial battery</a></p></article>
+<article class="card"><h3>Evidence and audit</h3><p>Provenance, independent measurement, contradictory findings, invalid tests.</p><p><a href="../workshops/fr001/evidence-contract.md">Evidence contract</a> · <a href="index.html">Existing state inspector</a></p></article>
+<article class="card"><h3>Legal, human factors and operations</h3><p>Consequences, duty, effective human refusal, accessibility and recourse.</p><p><a href="../SPECIALIST-OUTREACH-README.md">Cross-domain handoff</a> · <a href="../workshops/fr001/review-template.md">Review template</a></p></article>
+<article class="card"><h3>Independent adversarial review</h3><p>Challenge the method itself: hidden premises, circular tests, simpler alternatives.</p><p><a href="../challenges/BT-HC-004-CONSEQUENCE-PATH-DOMINANCE.yaml">Consequence-path challenge</a></p></article>
+</div></section>
+<section id="test" aria-labelledby="test-title"><h2 id="test-title">3. Reproduce the software baseline</h2><p>Requirements: Git, Node.js and npm compatible with the repository lockfile, and Python 3. The commands below are read-only verification of a local checkout after dependency installation; they do not operate hardware.</p>
+<pre><code>git clone https://github.com/AETHEON-1/boundarytitan-control-gate.git
+cd boundarytitan-control-gate
+npm ci
+npm run typecheck
+npm test -- --coverage=false
+npm run test:python
+npm run verify:state</code></pre>
+<p class="meta">Pin a commit SHA before claiming reproduction. CI is evidence for the tested commit only. The repository's latest <a href="https://github.com/AETHEON-1/boundarytitan-control-gate/actions">GitHub Actions history</a> is the live source for run status; this static page makes no live-status claim.</p></section>
+<section id="challenge" aria-labelledby="challenge-title"><h2 id="challenge-title">4. Challenge a claim</h2><div class="grid">
+<article class="card"><h3>Report a counterexample</h3><p>Identify the exact claim, evidence, first unsupported arrow, falsifier, and consequence.</p><p><a href="https://github.com/AETHEON-1/boundarytitan-control-gate/issues/new/choose">Open a GitHub challenge</a></p></article>
+<article class="card"><h3>Propose a correction</h3><p>Keep the old failure and its lineage visible. New tests should include negative cases.</p><p><a href="../CONTRIBUTING.md">Contribution guidance</a> · <a href="https://github.com/AETHEON-1/boundarytitan-control-gate/pulls">Pull requests</a></p></article>
+</div><p>Suggested minimum submission: claim ID, reproduction steps, expected versus observed behavior, source/version, counterevidence, and what result would change your conclusion. Do not include secrets, personal data or unsafe live-system instructions.</p></section>
+<section id="evidence" aria-labelledby="evidence-title"><h2 id="evidence-title">5. Inspect evidence and limits</h2><div class="table-scroll"><table><caption>What the public repository can and cannot currently establish</caption><thead><tr><th>Object</th><th>What can be inspected</th><th>What is not established</th></tr></thead><tbody>
+<tr><td>Repository checks</td><td>Source, automated tests, workflow logs, tracked-tree manifest</td><td>Correctness beyond tested cases or release authorization</td></tr>
+<tr><td>FR-001 software assessment</td><td>Candidate rules, negative tests, claim register</td><td>Physical stopping, energy isolation or deployed enforcement</td></tr>
+<tr><td>Earlier FR-001 simulations</td><td>Handoff descriptions and declared limitations</td><td>Independent reproduction until original artifacts are imported</td></tr>
+<tr><td>Specialist findings</td><td>Submitted issues, pull requests, evidence records</td><td>Consensus, certification or automatic acceptance</td></tr>
+</tbody></table></div><p><a href="../workshops/fr001/README.md">FR-001 handoff</a> · <a href="../CURRENT-REPOSITORY-MANIFEST.json">Repository manifest</a> · <a href="../25-KNOWN-LIMITATIONS.md">Known limitations</a></p></section>
+</main>
+<footer><small>Public inspection is not operational approval. The machine may prepare evidence; the human owner retains acceptance authority. Only GREEN proceeds. No owner, no brake. No ledger, no trust.</small></footer>
+</body></html>
