@@ -1,0 +1,31 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "OWKS-PJM-LOCAL-WARNING-END-TIMES-20261015-0009-EDT",
+  "observedAt": "2026-10-15T00:09:35-04:00",
+  "claim": "PJM's official Emergency Procedures dashboard now displays end times for previously unresolved Dominion Post Contingency Local Load Relief Warnings: Message 105574 ended at 23:32 EDT on October 14, 2026, and Message 105567 ended at 23:33 EDT. The same snapshot also displays 23:33 EDT end times for Messages 105569 and 105570. These are posting-state corrections only; they do not establish recipient acknowledgement, physical constraint resolution, customer consequence repair, or complete correction propagation.",
+  "source": "https://emergencyprocedures.pjm.com/ep/pages/dashboard.jsf",
+  "disposition": "CORRECTION",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "A later authoritative PJM record withdraws or corrects the displayed end times, or a preserved primary snapshot shows that the prior unresolved baseline already contained these end times.",
+  "firstUnsupportedArrow": "Displayed PJM end time -> recipient acknowledgement -> operational release -> measured physical relief -> downstream consequence reconciliation",
+  "omissions": [
+    "No recipient acknowledgement record was retrieved.",
+    "No measured post-warning facility loading or voltage record was retrieved.",
+    "No evidence establishes that every downstream system propagated the release.",
+    "No customer-impact or restoration record was retrieved.",
+    "The exact edit/posting time for each end-time field is not exposed by the dashboard.",
+    "No preserved raw prior snapshot for Message 105567 was available in the repository intake."
+  ],
+  "failures": [],
+  "rivalHypotheses": [
+    "The end times were entered contemporaneously after operators released the warnings.",
+    "The end times existed earlier but were omitted from a prior summary or inaccessible dashboard view.",
+    "The public dashboard changed after an internal operational release without exposing the propagation interval."
+  ],
+  "priorFindingOrLedger": "UNKNOWN",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
