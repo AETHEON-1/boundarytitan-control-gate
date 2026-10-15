@@ -22,8 +22,8 @@
     },
     {
       "path": ".github/workflows/verify.yml",
-      "size_bytes": 657,
-      "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
+      "size_bytes": 792,
+      "sha256": "719e6c0802ac758a15349ed3f40502b271f6a2cbfc006925aaa1ed9ae13ddfcc"
     },
     {
       "path": ".gitignore",
@@ -779,6 +779,11 @@
       "path": "scripts/verify-repository-state.js",
       "size_bytes": 4744,
       "sha256": "34dd776dae9297524d3c30f7d5f8069fd64cd6a39b551dd0450ac6cf3d1edb1f"
+    },
+    {
+      "path": "scripts/verify-specialist-entry.js",
+      "size_bytes": 2157,
+      "sha256": "b492b26dfdbba4426fed4ae48d73d62cc1cf2a1715320169dec6bef2bc1fa02b"
     },
     {
       "path": "source-manifest.csv",
