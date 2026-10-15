@@ -1,5 +1,11 @@
 # BoundaryTitan Control Gate
 
+> **Current public research repository:** The historical architecture release-candidate text below describes an earlier package, not current operational authorization. The current tree is a software research and adversarial-verification workspace. No physical containment, deployment or independent certification is established.
+>
+> **Specialist entry:** [Open the read-only specialist workbench](visual/specialists.html) · [Specialist outreach](SPECIALIST-OUTREACH-README.md) · [FR-001 review packet](workshops/fr001/README.md) · [Report a counterexample](https://github.com/AETHEON-1/boundarytitan-control-gate/issues/new/choose).
+>
+> **Quick verification:** `npm ci && npm run typecheck && npm test -- --coverage=false && npm run test:python && npm run verify:state`. Record the exact commit SHA. A passing run is bounded software evidence, not permission.
+
 Architecture Specification v1.0 — Release Candidate 1
 
 Status: HUMAN-APPROVED ARCHITECTURE BASELINE — RELEASE CANDIDATE — NOT YET PUBLISHED  
