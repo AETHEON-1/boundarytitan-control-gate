@@ -1,0 +1,39 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-IL10R-NHP-BOUNDED-NEGATIVE-SAFETY-20261014",
+  "observedAt": "2026-10-14T21:41:08-05:00",
+  "claim": "The same study reports no significant dose-dependent IL-18 elevation or hematological abnormalities for the humanized msIL-10R agonist in cynomolgus monkeys at tested doses up to 100 mg/kg under reported conditions. Bounded preclinical negative result, not proof of human safety.",
+  "source": "https://www.nature.com/articles/s41586-026-11176-1",
+  "disposition": "NEGATIVE_RESULT",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "Source data or replication shows relevant IL-18 elevation, cytopenias or related toxicity at the reported exposure.",
+  "firstUnsupportedArrow": "No specified toxicity signal in tested NHPs -> no clinically important toxicity in humans or chronic dosing.",
+  "omissions": [
+    "Animal sample size/power require audit; no human or chronic-dose evidence."
+  ],
+  "failures": [
+    "HUMAN_SAFETY_NOT_TESTED",
+    "LONG_TERM_SAFETY_NOT_ESTABLISHED"
+  ],
+  "rivalHypotheses": [
+    "Study may be underpowered for uncommon toxicity.",
+    "Safety window may depend on species or schedule."
+  ],
+  "whatChanged": "Preserves absence of specified toxicity signals separately from general safety claims.",
+  "whyNow": "Same-day primary paper reports high-dose NHP observations that are easy to overgeneralize.",
+  "whatItEnables": "A precise safety hypothesis for replication and dose-duration testing.",
+  "readiness": "Animal observation only.",
+  "constraints": "Endpoint, dose, duration, detection limit and sample size determine interpretation.",
+  "crossDomainOpportunity": "Reusable preclinical safety table distinguishing non-detection from proof of absence.",
+  "consequenceOwner": [
+    "Study sponsor/toxicology team",
+    "Human reviewer"
+  ],
+  "nextBoundedMachineMove": "Extract dose, duration, group size, IL-18 and hematology data; preserve detection limits.",
+  "priorFindingOrLedger": "BT-TASK-IL10R-MYELOID-SELECTIVE-AGONIST-20261014",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
