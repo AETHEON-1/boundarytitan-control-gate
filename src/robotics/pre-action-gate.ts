@@ -7,6 +7,22 @@ export function assessRoboticsPreAction(proposal: RoboticsMotionProposal, contex
   const reasons: string[] = [];
   const unknowns = [...context.world_state.unknowns];
   const decisions: string[] = [];
+  if (unknowns.length) reasons.push('World state contains unresolved unknowns.');
+  const asOfMs = Date.parse(context.as_of);
+  const observedMs = Date.parse(context.world_state.observed_at);
+  if (!Number.isFinite(asOfMs) || !Number.isFinite(observedMs) || observedMs > asOfMs) {
+    reasons.push('World-state timestamps are invalid or future-dated.');
+  } else if (observedMs < asOfMs) {
+    reasons.push('World-state observation predates the decision; freshness is not established.');
+  }
+  for (const [label, value, unit] of [
+    ['force', proposal.planned_force, 'N'],
+    ['speed', proposal.planned_speed, 'm/s'],
+    ['energy', proposal.planned_energy, 'J'],
+  ] as const) {
+    const numeric = value.endsWith(unit) && /^(?:0|[1-9]\\d*)(?:\\.\\d+)?$/.test(value.slice(0, -unit.length)) ? Number(value.slice(0, -unit.length)) : NaN;
+    if (!Number.isFinite(numeric) || numeric < 0) reasons.push('Planned ' + label + ' must be a nonnegative quantity in ' + unit + '.');
+  }
   let evidenceState: RoboticsEvidenceState = 'SUPPORTED';
 
   if (context.world_state.sensor_conflicts.length) {

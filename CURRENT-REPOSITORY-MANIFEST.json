@@ -872,8 +872,8 @@
     },
     {
       "path": "src/robotics/pre-action-gate.ts",
-      "size_bytes": 3540,
-      "sha256": "e49f9f091355a325579194e6b5b9e68ce74b64a9ba517e4790dafd542b00e185"
+      "size_bytes": 4521,
+      "sha256": "808ad7cbfbf474c661062e7f9ffaec84af36d054e4c52be75190ffd07f1d49b5"
     },
     {
       "path": "src/robotics/system-lifecycle.ts",
@@ -987,8 +987,8 @@
     },
     {
       "path": "src/tests/robotics-pre-action-gate.test.ts",
-      "size_bytes": 2410,
-      "sha256": "ad80d7fcc760c2865c35e35c3bf6f6079d607a1d1f8d3c4dafe512e71afb6dba"
+      "size_bytes": 4334,
+      "sha256": "016426cb70988f2637ba63ba229bc052279d2a324f558f85c62a660fa31facee"
     },
     {
       "path": "src/tests/robotics-specialist-handoff-battery.test.ts",
@@ -1349,6 +1349,36 @@
       "path": "visual/visual-state.test.ts",
       "size_bytes": 2506,
       "sha256": "50acceaffc9cc7c75aadd4af3029ec5e17a15f2a93678f6284244a6d827c17ad"
+    },
+    {
+      "path": "workshops/fr001/CI-VERIFICATION-2026-10-15.md",
+      "size_bytes": 2992,
+      "sha256": "91f252ab07a7c2658b0c6381c658781da21bfa6ce879df81aef0693b812c71f1"
+    },
+    {
+      "path": "workshops/fr001/README.md",
+      "size_bytes": 3468,
+      "sha256": "2f25be21ee36476d0399e978ed6c0f74ad57f6b6940e6e2031bc8fe3edbe26bc"
+    },
+    {
+      "path": "workshops/fr001/claim-register.md",
+      "size_bytes": 3754,
+      "sha256": "180e141617e6c987e0585fca45cd7f6f16e80576c4a34d4834a785f9f784f090"
+    },
+    {
+      "path": "workshops/fr001/evidence-contract.md",
+      "size_bytes": 2942,
+      "sha256": "6dae7d640dc0c57b318fb626dc74bcd9b220118ddc21ee10b57288606fcdab15"
+    },
+    {
+      "path": "workshops/fr001/review-template.md",
+      "size_bytes": 1343,
+      "sha256": "f7b24b21a1b983da05983fae40e8bbfc0f5806dea8d73f51fe448392e3f01bcf"
+    },
+    {
+      "path": "workshops/fr001/specialist-matrix.md",
+      "size_bytes": 3544,
+      "sha256": "04af76ac35aa8dae99fc58ded97fd6d0846278abc7fda8fdf6a7d30eb27d7ffe"
     }
   ]
 }

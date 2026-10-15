@@ -35,4 +35,33 @@ describe('robotics pre-action boundary', () => {
     expect(result.motion_authority_granted).toBe(false);
     expect(result.human_translation_key.next_permitted_step).toContain('Human review');
   });
+  it('holds on unresolved world-state unknowns even with other conditions nominal', () => {
+    const result = assessRoboticsPreAction({ ...proposal, reversibility: 'REVERSIBLE', planned_energy: '5J' }, {
+      ...context,
+      world_state: { ...context.world_state, occlusions: [], unknowns: ['unmeasured payload mass'], independent_measurement_ids: ['metrology-01'] },
+      stop_state: { ...context.stop_state, residual_energy_state: 'CONTROLLED', measured_stop_latency_ms: 40, maximum_allowed_stop_latency_ms: 100 },
+      human_release_present: true, permission_valid: true,
+    });
+    expect(result.gate_state).toBe('HOLD');
+    expect(result.reasons).toContain('World state contains unresolved unknowns.');
+    expect(result.motion_authority_granted).toBe(false);
+  });
+
+  it('holds on stale world observation even when other fields are nominal', () => {
+    const result = assessRoboticsPreAction({ ...proposal, reversibility: 'REVERSIBLE', planned_energy: '5J' }, {
+      ...context,
+      world_state: { ...context.world_state, occlusions: [], unknowns: [], independent_measurement_ids: ['metrology-01'], observed_at: '2026-08-20T23:59:59Z' },
+      stop_state: { ...context.stop_state, residual_energy_state: 'CONTROLLED', measured_stop_latency_ms: 40, maximum_allowed_stop_latency_ms: 100 },
+      human_release_present: true, permission_valid: true,
+    });
+    expect(result.gate_state).toBe('HOLD');
+    expect(result.reasons).toContain('World-state observation predates the decision; freshness is not established.');
+  });
+
+  it('rejects unknown energy and negative force quantities', () => {
+    const result = assessRoboticsPreAction({ ...proposal, reversibility: 'REVERSIBLE', planned_force: '-2N' }, context);
+    expect(result.reasons).toContain('Planned force must be a nonnegative quantity in N.');
+    expect(result.reasons).toContain('Planned energy must be a nonnegative quantity in J.');
+  });
+
 });
