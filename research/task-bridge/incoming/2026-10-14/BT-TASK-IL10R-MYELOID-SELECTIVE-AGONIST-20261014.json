@@ -1,0 +1,41 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-IL10R-MYELOID-SELECTIVE-AGONIST-20261014",
+  "observedAt": "2026-10-14T21:41:08-05:00",
+  "claim": "Nature (2026-10-14) reports a tetravalent nanobody IL-10R agonist designed for myeloid-selective signalling via receptor geometry/TYK2 dependence. Humanized mouse models showed anti-inflammatory effects; a humanized construct had ~8-day terminal half-life and >3-week TNF suppression after one dose in cynomolgus monkeys. Preclinical only.",
+  "source": "https://www.nature.com/articles/s41586-026-11176-1",
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "Independent human-donor assays or repeat NHP studies show material T-cell activation or hematologic toxicity at myeloid-suppressive exposure.",
+  "firstUnsupportedArrow": "Preclinical cell selectivity and animal tolerability -> safe, effective durable treatment in humans.",
+  "omissions": [
+    "Independent replication and human efficacy absent; chronic dosing, infection risk, immunogenicity, cost and IP unknown.",
+    "Sample-size/subgroup audit required."
+  ],
+  "failures": [
+    "INDEPENDENT_REPLICATION_NOT_ESTABLISHED",
+    "HUMAN_OUTCOME_NOT_TESTED"
+  ],
+  "rivalHypotheses": [
+    "Selectivity may depend on receptor abundance and inflammatory state.",
+    "Durability may partly reflect exposure rather than geometry."
+  ],
+  "whatChanged": "New primary preclinical paper with source data and a receptor-geometry approach to separate myeloid suppression from T-cell stimulation.",
+  "whyNow": "Version of record published 2026-10-14; no prior candidate for this result found in checked bundles.",
+  "whatItEnables": "Testable strategy for cell-selective cytokine receptor agonism.",
+  "readiness": "Preclinical animal models; no human efficacy established.",
+  "constraints": "Biologic manufacturing and clinical development dominate feasibility; no commercial cost data.",
+  "crossDomainOpportunity": "Open analysis of receptor density, pSTAT3 dose-response and cell selectivity; no paid opening verified.",
+  "consequenceOwner": [
+    "Study sponsor",
+    "Clinical/regulatory teams",
+    "Human reviewer"
+  ],
+  "nextBoundedMachineMove": "Reproduce source-data plots; audit dose-response, donor selectivity, receptor density and NHP tables.",
+  "priorFindingOrLedger": "UNKNOWN",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
