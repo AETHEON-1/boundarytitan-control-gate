@@ -1316,6 +1316,11 @@
       "sha256": "4a47655aedb029e5ef2e174014011da6850d4cb055b93667eb5c67e908a66b8b"
     },
     {
+      "path": "visual/SPECIALIST-ACCEPTANCE-CHECKLIST.md",
+      "size_bytes": 3603,
+      "sha256": "0f66729dc3cc1fe955ea0ebfbc424bfe1e97065481a4de005df1407966a6df56"
+    },
+    {
       "path": "visual/UNSUPPORTED-ARROW-README.md",
       "size_bytes": 622,
       "sha256": "6e44de52b07f67da99f1e1daaad5597010d8a30254995d7af57df3854356460e"
