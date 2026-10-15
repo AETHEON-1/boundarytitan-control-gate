@@ -26,5 +26,7 @@ jobs:
         run: npm test -- --coverage=false
       - name: Run Python handoff tests
         run: npm run test:python
+      - name: Verify specialist entry navigation and static accessibility markers
+        run: node scripts/verify-specialist-entry.js
       - name: Verify repository state
         run: npm run verify:state
