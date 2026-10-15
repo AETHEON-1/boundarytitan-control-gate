@@ -20,7 +20,7 @@ export function assessRoboticsPreAction(proposal: RoboticsMotionProposal, contex
     ['speed', proposal.planned_speed, 'm/s'],
     ['energy', proposal.planned_energy, 'J'],
   ] as const) {
-    const numeric = value.endsWith(unit) ? Number(value.slice(0, -unit.length)) : NaN;
+    const numeric = value.endsWith(unit) && /^(?:0|[1-9]\\d*)(?:\\.\\d+)?$/.test(value.slice(0, -unit.length)) ? Number(value.slice(0, -unit.length)) : NaN;
     if (!Number.isFinite(numeric) || numeric < 0) reasons.push('Planned ' + label + ' must be a nonnegative quantity in ' + unit + '.');
   }
   let evidenceState: RoboticsEvidenceState = 'SUPPORTED';
