@@ -1,0 +1,42 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "OWKS-MULTI-LI-CLUSTERING-EVIDENCE-STATE-20261015-0615-CDT",
+  "observedAt": "2026-10-15T06:15:37-05:00",
+  "claim": "Nature published a peer-reviewed evidence package on October 14, 2026 reporting that a machine-learned force field, NMR, Raman, bulk-property measurements, electrochemical data, and quantum calculations are consistent with multi-Li+ complexes without bound anions in LiPF6/ethylene-carbonate electrolytes; the model assigns about 23% of Li+ to multi-Li+ complexes at 0.5 M and more than 68% at 2 M. The publication is a new evidence state, not a new underlying observation: a ChemRxiv preprint existed in September 2025. The public peer-review file also preserves unresolved objections that frozen-state NMR is not direct proof, the phenomenon may overlap prior ion-aggregate literature, and generality beyond one electrolyte system is untested. No device-level performance improvement is established.",
+  "source": "https://www.nature.com/articles/s41586-026-11138-7 ; https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-11138-7/MediaObjects/41586_2026_11138_MOESM2_ESM.pdf ; https://chemrxiv.org/doi/10.26434/chemrxiv-2025-ndqzk",
+  "disposition": "INCONCLUSIVE",
+  "evidenceState": "INDETERMINATE",
+  "falsifier": "Independent ambient- or operando-temperature measurements using direct Li-Li/connectivity-sensitive methods across multiple common electrolyte chemistries fail to detect the predicted multi-Li+ population or show that the apparent population is explained by freezing, spectral deconvolution, or model-force-field artifacts.",
+  "firstUnsupportedArrow": "Model-and-frozen-spectroscopy consistency in LiPF6/EC -> stable ambient multi-Li+ population -> controllable interphase/reduction pathway -> improved full-cell lifetime, safety, or charge rate -> manufacturable economic benefit",
+  "omissions": [
+    "No independent replication was retrieved.",
+    "The central quantitative population estimates depend on a machine-learned force field and geometric cluster definitions.",
+    "The principal system is LiPF6 in ethylene carbonate; generality across mixed-solvent commercial electrolytes is not established.",
+    "The rapid-freezing assumption remains material even after added controls.",
+    "No full-cell lifetime, fast-charge, safety, formation-yield, or manufacturing-cost benefit was demonstrated.",
+    "No scale-up, regulatory, prior-art, freedom-to-operate, or commercial feasibility analysis was retrieved.",
+    "The Nature publication is a new peer-reviewed evidence state; the underlying preprint claim dates to September 2025."
+  ],
+  "failures": [
+    "The Nature article body returned a retrieval error in the public retriever.",
+    "The final supplementary PDF exceeded the retriever size limit.",
+    "The ChemRxiv landing page returned HTTP 403; its existence and date were corroborated through search metadata and the Nature peer-review record."
+  ],
+  "rivalHypotheses": [
+    "Multi-Li+ complexes are real ambient species whose population rises with salt concentration and affects reduction chemistry.",
+    "The apparent clusters are mainly artifacts of the learned force field, cluster cutoffs, frozen-state trapping, or spectral deconvolution.",
+    "The structures are established ion aggregates or higher-order coordination complexes under different terminology rather than a distinct discovery.",
+    "The species exist but are transient spectators with no controllable effect on practical cell performance."
+  ],
+  "whatItEnables": "If independently validated, cluster population could become a mechanistic design variable for electrolyte formulation, interphase control, and reduction-potential prediction rather than relying only on bulk salt concentration.",
+  "practicalReadiness": "Mechanism-discovery stage; not application-ready.",
+  "crossDomainOpportunity": "The combined ML-force-field plus freeze-quench spectroscopy workflow may transfer to other concentrated ionic liquids and catalytic solvent systems, but that transfer is not yet validated.",
+  "consequenceOwner": "Electrolyte and cell developers retain authority over formulation changes; journal editors and authors own correction of the scientific record; independent laboratories own replication claims.",
+  "nextBoundedMachineMove": "Perform a versioned, text-level comparison of the September 2025 ChemRxiv manuscript with the October 2026 Version of Record and enumerate which new controls changed quantitative claims; then search for independent ambient-temperature Li-sensitive replication before any application inference.",
+  "priorFindingOrLedger": "UNKNOWN",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
