@@ -1354,6 +1354,31 @@
       "path": "visual/visual-state.test.ts",
       "size_bytes": 2506,
       "sha256": "50acceaffc9cc7c75aadd4af3029ec5e17a15f2a93678f6284244a6d827c17ad"
+    },
+    {
+      "path": "workshops/fr001/README.md",
+      "size_bytes": 3468,
+      "sha256": "2f25be21ee36476d0399e978ed6c0f74ad57f6b6940e6e2031bc8fe3edbe26bc"
+    },
+    {
+      "path": "workshops/fr001/claim-register.md",
+      "size_bytes": 3754,
+      "sha256": "180e141617e6c987e0585fca45cd7f6f16e80576c4a34d4834a785f9f784f090"
+    },
+    {
+      "path": "workshops/fr001/evidence-contract.md",
+      "size_bytes": 2942,
+      "sha256": "6dae7d640dc0c57b318fb626dc74bcd9b220118ddc21ee10b57288606fcdab15"
+    },
+    {
+      "path": "workshops/fr001/review-template.md",
+      "size_bytes": 1343,
+      "sha256": "f7b24b21a1b983da05983fae40e8bbfc0f5806dea8d73f51fe448392e3f01bcf"
+    },
+    {
+      "path": "workshops/fr001/specialist-matrix.md",
+      "size_bytes": 3544,
+      "sha256": "04af76ac35aa8dae99fc58ded97fd6d0846278abc7fda8fdf6a7d30eb27d7ffe"
     }
   ]
 }
