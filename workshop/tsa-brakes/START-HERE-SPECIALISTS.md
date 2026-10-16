@@ -10,6 +10,9 @@ This folder is a cross-disciplinary research workbench, not a deployable safety 
 4. Read [SPECIALIST-CLEAN-ROOM.md](SPECIALIST-CLEAN-ROOM.md) for independent-review separation; [OPEN-SIGMA-2-QUESTIONS.md](OPEN-SIGMA-2-QUESTIONS.md) for unresolved authority questions.
 5. Review the source and run only sandbox tests on a disposable environment.
 
+## Final Sigma-2 specialist handoff
+Read [Sigma-2 Specialist Handoff](SIGMA-2-SPECIALIST-HANDOFF.md) for HTK explanation, observed CI split, new adversarial counterexamples, geometric authority map, and 16 open specialist questions. Run [authority-crossing.adversarial.test.mjs](authority-crossing.adversarial.test.mjs) with the Node battery; these are bounded demonstrations, not independent real-world stop evidence.
+
 ## Omission and unknown-unknown challenge
 Before proposing approval, independently attack the [36 overlooked failure hypotheses and omission protocol](UNKNOWN-UNKNOWNS-CHALLENGE-BATTERY.md). The list is intentionally non-exhaustive; specialists must contribute defeating observations that are absent from it. Treat untested questions as NOT TESTED, not as successful brakes.
 
