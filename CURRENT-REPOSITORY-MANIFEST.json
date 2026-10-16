@@ -1371,6 +1371,11 @@
       "sha256": "5c99706e2dd68a28d7c95e24d667f055ad900e3194760a265c3d1207af412f5a"
     },
     {
+      "path": "workshop/tsa-brakes/ENCYCLOPEDIA-OF-CHAOS-THREE-AUTHORITY-2026-10-16.md",
+      "size_bytes": 4661,
+      "sha256": "87028ecb3c4b985456051bee04044e89e1243b4f9bce6d4042c599d990e951e0"
+    },
+    {
       "path": "workshop/tsa-brakes/EXTERNAL-STOP-TOOLBOX.md",
       "size_bytes": 6835,
       "sha256": "2ea1f4d5807c5e3c8bc622201ba4f75957c4189e7f0a50abf9b9e7e13d2eb5c8"
@@ -1417,8 +1422,8 @@
     },
     {
       "path": "workshop/tsa-brakes/THREE-AUTHORITY-SEPARATION-REGISTER.md",
-      "size_bytes": 6067,
-      "sha256": "b69ece4860b4f96ace44bc4a0965e09d524835f4a033e27baddb89381bfdbb56"
+      "size_bytes": 6616,
+      "sha256": "15d954ae37a063a9c306007fb5ed6164996eec4d588c2d9c54c16ed1faca9ddc"
     },
     {
       "path": "workshop/tsa-brakes/THREE-SURFACE-CONTINUITY.md",
@@ -1527,8 +1532,8 @@
     },
     {
       "path": "workshop/tsa-brakes/three_process_lab.py",
-      "size_bytes": 4559,
-      "sha256": "dc12fd00725746d3b820dff2b017635e2b11cfc06b948c32daaa5643d1fcfc96"
+      "size_bytes": 5178,
+      "sha256": "4469b9697d4e8b32dd7472a1bc9a22ba5f3bc7ff0a3a4eaba4101091a1368246"
     },
     {
       "path": "workshop/tsa-brakes/transactional_brake.py",
