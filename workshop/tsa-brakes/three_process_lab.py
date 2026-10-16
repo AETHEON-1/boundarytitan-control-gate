@@ -27,6 +27,7 @@ def witness_server(owner_conn,resource_conn,path):
                 except EOFError:
                     alive=False
                     break
+                op=q['op']
                 if conn is resource_conn and op!='check':
                     ans={'ok':False,'reason':'RESOURCE_CANNOT_MUTATE_WITNESS'}
                 elif conn is owner_conn and op=='check':
