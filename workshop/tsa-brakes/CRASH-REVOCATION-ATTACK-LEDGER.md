@@ -20,15 +20,14 @@ The crash suite launches a fresh Python interpreter and calls `os._exit(79)` at 
 | CR-04 | Crash after witness STOP COMMIT, before resource stop update | Resource still shows open but witness denies stale commit. | SUPPORTED in local subprocess fixture |
 | CR-05 | Crash after resource STOP COMMIT | Stop remains effective after restart. | SUPPORTED in local subprocess fixture |
 | CR-06 | Owner invokes fail-closed reconcile after CR-01 | Incomplete task is tombstoned; same ID cannot be reauthorized; new human-owned task ID required. | SUPPORTED in local subprocess fixture |
-| CR-07 | Crash after witness reconcile commit, before resource commit | Unresolved partial reconciliation and possible stale resource state; witness-side denial remains the intended guard. | NOT TESTED |
+| CR-07 | Crash after witness reconcile commit, before resource commit | Resource may remain stale-open, but witness denial persists; a second reconcile closes it. | SUPPORTED in local subprocess fixture |
 | CR-08 | Storage loss, rollback or admin tampering on witness and resource together | Same administrator can restore or rewrite both. | NOT TESTED |
 | CR-09 | Real downstream effect after SQLite transaction | An external effect may continue despite successful SQLite stop. | NOT TESTED |
 | CR-10 | OS power loss, filesystem durability, fsync behavior | Process exit is not evidence of physical durability. | NOT TESTED |
 | CR-11 | Concurrent stop during commit with measured ordering | Existing races test counts but not full linearization trace or stop latency. | NOT TESTED |
 | CR-12 | Attacker-controlled fault hook | Fault injection is a privileged test seam and must never be reachable through requester interface. | NOT TESTED under hostile OS control |
 
-## Repair
-`Brake.reconcile()` is a privileged fail-closed reconciliation operation. It acquires witness then resource write locks and quarantines witness-only enrollment by closing its tombstone, never restoring MAY. It also closes resource-only tasks and propagates stopped witness state into the resource when possible. **It does not make two databases atomic.** It must not be exposed on the requester endpoint. Failures, inaccessible stores, and uncertain history require external human disposition.
+| CR-13 | Delete witness tombstone while resource task exists | Commit denied because witness absent; privileged reconcile closes resource and creates closed witness tombstone. | SUPPORTED in local subprocess fixture; not adversarial OS isolation |\n\n## Repair\n`Brake.reconcile()` is a privileged fail-closed reconciliation operation. It acquires witness then resource write locks and quarantines witness-only enrollment by closing its tombstone, never restoring MAY. It also closes resource-only tasks and propagates stopped witness state into the resource when possible. **It does not make two databases atomic.** It must not be exposed on the requester endpoint. Failures, inaccessible stores, and uncertain history require external human disposition.
 
 ## What remains broken or unproven
 - No independent administrative control over resource, witness, or effect oracle.
