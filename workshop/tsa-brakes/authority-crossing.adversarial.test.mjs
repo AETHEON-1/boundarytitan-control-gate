@@ -46,7 +46,7 @@ test('ADVERSARIAL A2: stale same-file resource instances overwrite prior effect'
   } finally { rmSync(dir,{recursive:true,force:true}); }
 });
 
-test('ADVERSARIAL A3: task-local issuer interface can mint authority without external approval', () => {
+test('ADVERSARIAL A3: task-local issuer interface can mint authority without external approval', async () => {
   const b=createBrake({clock:()=>1,observe:()=>{},effect:async()=>true});
   assert.equal(typeof b.authorize,'function');
   b.authorize({taskId:'self',principal:'p',actions:['write'],resources:['r'],maxCommits:1,deadline:10});
