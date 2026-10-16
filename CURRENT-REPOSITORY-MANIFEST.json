@@ -1362,8 +1362,8 @@
     },
     {
       "path": "workshop/tsa-brakes/CRASH-REVOCATION-ATTACK-LEDGER.md",
-      "size_bytes": 5102,
-      "sha256": "8b7eb2f37e4cf928edee98be58f4d8392f2d9664ad4b12d168c8ceabdfbea8d0"
+      "size_bytes": 5356,
+      "sha256": "850de6a00762f2156baeea326e02d7e8a7c75866be5e335b263cd79ab85102d8"
     },
     {
       "path": "workshop/tsa-brakes/DURABLE-RECOVERY-ATTACK-LEDGER.md",
@@ -1487,8 +1487,8 @@
     },
     {
       "path": "workshop/tsa-brakes/test_crash_boundaries.py",
-      "size_bytes": 4259,
-      "sha256": "2815cea5a81e9415c7f8e00efff078f02e6266235e83709dc38cb3c881a122be"
+      "size_bytes": 5480,
+      "sha256": "0b4a4d872afff56d8d67f5cacd90e378293d9142fb9fd6a36460e7650d37d948"
     },
     {
       "path": "workshop/tsa-brakes/test_process_boundary.py",
