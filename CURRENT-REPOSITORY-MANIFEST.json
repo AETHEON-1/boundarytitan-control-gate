@@ -1419,6 +1419,81 @@
       "path": "workshop/tsa-brakes/UNKNOWN-UNKNOWNS-CHALLENGE-BATTERY.md",
       "size_bytes": 7141,
       "sha256": "16c5e52b7558fe951fc0b99cff661d956bae4414f02dd446851dbe94d0fa49e8"
+    },
+    {
+      "path": "workshop/tsa-brakes/authority-crossing.adversarial.test.mjs",
+      "size_bytes": 2795,
+      "sha256": "e61c5d70e507c17e919b5ba0a1f6364089dd35092c3e2349939e2941d6e18f3d"
+    },
+    {
+      "path": "workshop/tsa-brakes/authority-crypto.mjs",
+      "size_bytes": 1252,
+      "sha256": "a0f7927052e87ea0cf9eef9ef15cb0648ad98f0d0b3c450ccf49cb7ad3f31981"
+    },
+    {
+      "path": "workshop/tsa-brakes/brake.mjs",
+      "size_bytes": 4438,
+      "sha256": "53f0125a96bb771e0a936e23ce2d18fabc0a4d63312457470e1c7a24570a3436"
+    },
+    {
+      "path": "workshop/tsa-brakes/brake.test.mjs",
+      "size_bytes": 3977,
+      "sha256": "c53eb0ca5e7fbdff1c3880edf10c17f1d17b15c91c20f969b8ee7da523be585d"
+    },
+    {
+      "path": "workshop/tsa-brakes/clean-room.test.mjs",
+      "size_bytes": 1679,
+      "sha256": "5ba42276c8d454edf159e7e2abb28925bfe197b7ee7d7c48d303b4d0e2b7fb70"
+    },
+    {
+      "path": "workshop/tsa-brakes/durable-resource.mjs",
+      "size_bytes": 2743,
+      "sha256": "1d5e024b494306b0bc3c78f214a635b3ef9a0fd8ba8285da48c01dca18754821"
+    },
+    {
+      "path": "workshop/tsa-brakes/durable-resource.test.mjs",
+      "size_bytes": 3154,
+      "sha256": "11993835da686dd808ea41e73852f8ed75e9048be74da9a22fd04c162a85ef29"
+    },
+    {
+      "path": "workshop/tsa-brakes/isolated-service.mjs",
+      "size_bytes": 3623,
+      "sha256": "ad7aec7dc1bbf4df214be125aa82798dbea444ef882006cf3d5743fa3c5feea0"
+    },
+    {
+      "path": "workshop/tsa-brakes/isolated-service.test.mjs",
+      "size_bytes": 3806,
+      "sha256": "86b91f070cfce0ba06ec1b6c25e15044e0d2f532df5f182ea5f8b734174d444d"
+    },
+    {
+      "path": "workshop/tsa-brakes/resource_boundary.py",
+      "size_bytes": 2546,
+      "sha256": "93d5f5bb9aa014ba3cb12fdf0549590d1c93fa940b80ee68a65fb0eaa408080d"
+    },
+    {
+      "path": "workshop/tsa-brakes/stop-drill.mjs",
+      "size_bytes": 2595,
+      "sha256": "be66a20a3a95b4d2567d32c64d307c49fa303abe364eb24f9fea46d8f6bc4f5d"
+    },
+    {
+      "path": "workshop/tsa-brakes/stop-drill.test.mjs",
+      "size_bytes": 2120,
+      "sha256": "4dd9e10ca8e08bf69e6ee775b152e91949ac14efe57b0ea9ed6f7f524096a016"
+    },
+    {
+      "path": "workshop/tsa-brakes/test_process_boundary.py",
+      "size_bytes": 4537,
+      "sha256": "01730fe158990d7e6d7c630aa7c538e5d3d7a2235dce4c7d02ee05670a074163"
+    },
+    {
+      "path": "workshop/tsa-brakes/test_resource_boundary.py",
+      "size_bytes": 2617,
+      "sha256": "128500d9739119e540473481b02ec9c7e647728f7cce49c733a566d50d34ee94"
+    },
+    {
+      "path": "workshop/tsa-brakes/test_transactional_brake.py",
+      "size_bytes": 2140,
+      "sha256": "65d40f2438c020a17bbf8fff2fc5f3e4b365ea4d87c6935e92bb9662d0a40e4a"
     }
   ]
 }
