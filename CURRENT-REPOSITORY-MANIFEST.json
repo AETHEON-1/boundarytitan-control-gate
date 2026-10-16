@@ -21,6 +21,11 @@
       "sha256": "146fc4a7e29026507034652f344d0f100f70fd1a61e2a9cfa74bbabe38281b43"
     },
     {
+      "path": ".github/workflows/boundary-engineering-sandbox.yml",
+      "size_bytes": 921,
+      "sha256": "a45ef4883f933b5c7778d75903ca3b4593839c207f7021c5897e54577a454b4a"
+    },
+    {
       "path": ".github/workflows/verify.yml",
       "size_bytes": 657,
       "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
@@ -477,8 +482,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 3808,
-      "sha256": "b7d5f5d59b62beb22336a2b617891b114d47fc78b54e174a6fe96e0dcacde90a"
+      "size_bytes": 4460,
+      "sha256": "278f04a84851a3a423da934731eaf122652dbf7695734ae7c5bf3b11449f7481"
     },
     {
       "path": "RELEASE_CANDIDATE_CHECKS.json",
@@ -1349,6 +1354,71 @@
       "path": "visual/visual-state.test.ts",
       "size_bytes": 2506,
       "sha256": "50acceaffc9cc7c75aadd4af3029ec5e17a15f2a93678f6284244a6d827c17ad"
+    },
+    {
+      "path": "workshop/tsa-brakes/10-OF-10-BUILDOUT-REGISTER.md",
+      "size_bytes": 5199,
+      "sha256": "5089e2f5e3c6956f6284572c249c61015be5a26f3e6bbcb9aac98933b10f8c70"
+    },
+    {
+      "path": "workshop/tsa-brakes/DURABLE-RECOVERY-ATTACK-LEDGER.md",
+      "size_bytes": 3827,
+      "sha256": "5c99706e2dd68a28d7c95e24d667f055ad900e3194760a265c3d1207af412f5a"
+    },
+    {
+      "path": "workshop/tsa-brakes/EXTERNAL-STOP-TOOLBOX.md",
+      "size_bytes": 6835,
+      "sha256": "2ea1f4d5807c5e3c8bc622201ba4f75957c4189e7f0a50abf9b9e7e13d2eb5c8"
+    },
+    {
+      "path": "workshop/tsa-brakes/ISOLATION-ATTACK-LEDGER.md",
+      "size_bytes": 4203,
+      "sha256": "344268ef09c8f83b4529070bfff0193403290e1a743e338c54e6ab99a7565451"
+    },
+    {
+      "path": "workshop/tsa-brakes/OPEN-SIGMA-2-QUESTIONS.md",
+      "size_bytes": 2983,
+      "sha256": "4298daada96b722a92930af93a71e6db6c291ca89eeff8b71bcb786d9c4ed015"
+    },
+    {
+      "path": "workshop/tsa-brakes/README.md",
+      "size_bytes": 5831,
+      "sha256": "19e06c31681aace029717967b2d449f5f9677a22de31eafb2e0b37e31722c57e"
+    },
+    {
+      "path": "workshop/tsa-brakes/SIGMA-2-SPECIALIST-HANDOFF.md",
+      "size_bytes": 7280,
+      "sha256": "b902bb97d06b46bbb34880ad0d7a5d478879bba81b7fc2ac191a671d6630c472"
+    },
+    {
+      "path": "workshop/tsa-brakes/SPECIALIST-CHALLENGE-INTAKE.md",
+      "size_bytes": 3037,
+      "sha256": "cd6cd5c137a301384c61ed89f4ec9e534ef3e0ddf555d201c46a30bcbbb55e7b"
+    },
+    {
+      "path": "workshop/tsa-brakes/SPECIALIST-CLEAN-ROOM.md",
+      "size_bytes": 2422,
+      "sha256": "45951d5d6182ebfc90b044664831959726a73d811c5a529ed70955c721ba5992"
+    },
+    {
+      "path": "workshop/tsa-brakes/START-HERE-SPECIALISTS.md",
+      "size_bytes": 5272,
+      "sha256": "a541c01b5441dde8ee239c71ff13f1b5f1e50d1378247ce66403d73ac37166ca"
+    },
+    {
+      "path": "workshop/tsa-brakes/THREE-SURFACE-CONTINUITY.md",
+      "size_bytes": 4580,
+      "sha256": "2e44be1106c1c365926cb8c0e541e08fb6aa0f571e9767c8e08a12cbbd84088e"
+    },
+    {
+      "path": "workshop/tsa-brakes/TRANSACTIONAL-ATTACK-LEDGER.md",
+      "size_bytes": 3269,
+      "sha256": "408fe517f909ce096ade1a4bf1a399accd16e1e4b595598e46c2f45096bc7e76"
+    },
+    {
+      "path": "workshop/tsa-brakes/UNKNOWN-UNKNOWNS-CHALLENGE-BATTERY.md",
+      "size_bytes": 7141,
+      "sha256": "16c5e52b7558fe951fc0b99cff661d956bae4414f02dd446851dbe94d0fa49e8"
     }
   ]
 }
