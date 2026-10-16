@@ -22,8 +22,8 @@
     },
     {
       "path": ".github/workflows/boundary-engineering-sandbox.yml",
-      "size_bytes": 946,
-      "sha256": "8d78dc2566503c0e3b25e6c651cfa2a54e59c19bc98d197ec69d8146351adf62"
+      "size_bytes": 981,
+      "sha256": "3c757ca241bfb09b82f451d929f0f40f207f94cd2c5cf92d79035715febe6800"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -1411,6 +1411,11 @@
       "sha256": "52c6a963482e516b1bbc9563e3ed8f04ffe95e9a4f34d662467e9c1aa3701728"
     },
     {
+      "path": "workshop/tsa-brakes/THREE-AUTHORITY-COMPROMISE-TEST.md",
+      "size_bytes": 6158,
+      "sha256": "faf2ca6a6f8c818117917342635d47a58660fa26b73336e2645d69818280b424"
+    },
+    {
       "path": "workshop/tsa-brakes/THREE-SURFACE-CONTINUITY.md",
       "size_bytes": 4580,
       "sha256": "2e44be1106c1c365926cb8c0e541e08fb6aa0f571e9767c8e08a12cbbd84088e"
@@ -1499,6 +1504,11 @@
       "path": "workshop/tsa-brakes/test_resource_boundary.py",
       "size_bytes": 2617,
       "sha256": "128500d9739119e540473481b02ec9c7e647728f7cce49c733a566d50d34ee94"
+    },
+    {
+      "path": "workshop/tsa-brakes/test_three_authority_compromise.py",
+      "size_bytes": 5408,
+      "sha256": "aa992fd884f623a2984d84b2514257655e55981ccc7dff41973d317225288718"
     },
     {
       "path": "workshop/tsa-brakes/test_transactional_brake.py",
