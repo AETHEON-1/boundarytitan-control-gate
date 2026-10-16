@@ -22,8 +22,8 @@
     },
     {
       "path": ".github/workflows/boundary-engineering-sandbox.yml",
-      "size_bytes": 921,
-      "sha256": "a45ef4883f933b5c7778d75903ca3b4593839c207f7021c5897e54577a454b4a"
+      "size_bytes": 946,
+      "sha256": "8d78dc2566503c0e3b25e6c651cfa2a54e59c19bc98d197ec69d8146351adf62"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -1361,6 +1361,11 @@
       "sha256": "5089e2f5e3c6956f6284572c249c61015be5a26f3e6bbcb9aac98933b10f8c70"
     },
     {
+      "path": "workshop/tsa-brakes/CRASH-REVOCATION-ATTACK-LEDGER.md",
+      "size_bytes": 5102,
+      "sha256": "8b7eb2f37e4cf928edee98be58f4d8392f2d9664ad4b12d168c8ceabdfbea8d0"
+    },
+    {
       "path": "workshop/tsa-brakes/DURABLE-RECOVERY-ATTACK-LEDGER.md",
       "size_bytes": 3827,
       "sha256": "5c99706e2dd68a28d7c95e24d667f055ad900e3194760a265c3d1207af412f5a"
@@ -1402,8 +1407,8 @@
     },
     {
       "path": "workshop/tsa-brakes/START-HERE-SPECIALISTS.md",
-      "size_bytes": 5272,
-      "sha256": "a541c01b5441dde8ee239c71ff13f1b5f1e50d1378247ce66403d73ac37166ca"
+      "size_bytes": 5675,
+      "sha256": "52c6a963482e516b1bbc9563e3ed8f04ffe95e9a4f34d662467e9c1aa3701728"
     },
     {
       "path": "workshop/tsa-brakes/THREE-SURFACE-CONTINUITY.md",
@@ -1481,6 +1486,11 @@
       "sha256": "4dd9e10ca8e08bf69e6ee775b152e91949ac14efe57b0ea9ed6f7f524096a016"
     },
     {
+      "path": "workshop/tsa-brakes/test_crash_boundaries.py",
+      "size_bytes": 4259,
+      "sha256": "2815cea5a81e9415c7f8e00efff078f02e6266235e83709dc38cb3c881a122be"
+    },
+    {
       "path": "workshop/tsa-brakes/test_process_boundary.py",
       "size_bytes": 4537,
       "sha256": "01730fe158990d7e6d7c630aa7c538e5d3d7a2235dce4c7d02ee05670a074163"
@@ -1497,8 +1507,8 @@
     },
     {
       "path": "workshop/tsa-brakes/transactional_brake.py",
-      "size_bytes": 4053,
-      "sha256": "7bb801174575e83f4a09b097d5c33fbda35b245956caceae1a12d8672f56a5f0"
+      "size_bytes": 6839,
+      "sha256": "9f6046949f8ca63dbbddc985c2400541eea3c2f9b2627c0e1704d6d2e53c1a9b"
     },
     {
       "path": "workshops/fr001/README.md",
