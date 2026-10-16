@@ -22,8 +22,8 @@
     },
     {
       "path": ".github/workflows/boundary-engineering-sandbox.yml",
-      "size_bytes": 981,
-      "sha256": "3c757ca241bfb09b82f451d929f0f40f207f94cd2c5cf92d79035715febe6800"
+      "size_bytes": 1007,
+      "sha256": "ec2b609c8d603cdcce924c3eebdb965abe4f18e93c772e6c19ba24fabf865991"
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -1416,6 +1416,11 @@
       "sha256": "faf2ca6a6f8c818117917342635d47a58660fa26b73336e2645d69818280b424"
     },
     {
+      "path": "workshop/tsa-brakes/THREE-AUTHORITY-SEPARATION-REGISTER.md",
+      "size_bytes": 6067,
+      "sha256": "b69ece4860b4f96ace44bc4a0965e09d524835f4a033e27baddb89381bfdbb56"
+    },
+    {
       "path": "workshop/tsa-brakes/THREE-SURFACE-CONTINUITY.md",
       "size_bytes": 4580,
       "sha256": "2e44be1106c1c365926cb8c0e541e08fb6aa0f571e9767c8e08a12cbbd84088e"
@@ -1511,9 +1516,19 @@
       "sha256": "aa992fd884f623a2984d84b2514257655e55981ccc7dff41973d317225288718"
     },
     {
+      "path": "workshop/tsa-brakes/test_three_process_lab.py",
+      "size_bytes": 3095,
+      "sha256": "a169d4d3d178322e18ac0d98368259565c678fb27c0b079e198e5ce4acd05fea"
+    },
+    {
       "path": "workshop/tsa-brakes/test_transactional_brake.py",
       "size_bytes": 2140,
       "sha256": "65d40f2438c020a17bbf8fff2fc5f3e4b365ea4d87c6935e92bb9662d0a40e4a"
+    },
+    {
+      "path": "workshop/tsa-brakes/three_process_lab.py",
+      "size_bytes": 4559,
+      "sha256": "dc12fd00725746d3b820dff2b017635e2b11cfc06b948c32daaa5643d1fcfc96"
     },
     {
       "path": "workshop/tsa-brakes/transactional_brake.py",
