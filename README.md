@@ -1,6 +1,6 @@
 # BoundaryTitan Control Gate
 
-> **Current Boundary Engineering workbench (YELLOW, draft, unmerged):** [Specialist start guide](workshop/tsa-brakes/START-HERE-SPECIALISTS.md) · [10/10 buildout register](workshop/tsa-brakes/10-OF-10-BUILDOUT-REGISTER.md) · [External stop toolbox](workshop/tsa-brakes/EXTERNAL-STOP-TOOLBOX.md). These are experimental sandbox specimens, not operational stopping systems. Independent reproduction, evidence custody, and deployment authorization remain pending. The historical release-candidate status below applies to the architecture baseline, not to these specimens.
+> **Current Boundary Engineering workbench (YELLOW, draft, unmerged):** [Specialist start guide](workshop/tsa-brakes/START-HERE-SPECIALISTS.md) · [10/10 buildout register](workshop/tsa-brakes/10-OF-10-BUILDOUT-REGISTER.md) · [Three-surface continuity](workshop/tsa-brakes/THREE-SURFACE-CONTINUITY.md) · [External stop toolbox](workshop/tsa-brakes/EXTERNAL-STOP-TOOLBOX.md). These are experimental sandbox specimens, not operational stopping systems. Independent reproduction, evidence custody, and deployment authorization remain pending. The historical release-candidate status below applies to the architecture baseline, not to these specimens.
 
 
 Architecture Specification v1.0 — Release Candidate 1
