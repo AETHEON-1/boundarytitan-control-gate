@@ -1372,8 +1372,8 @@
     },
     {
       "path": "workshop/tsa-brakes/ENCYCLOPEDIA-OF-CHAOS-THREE-AUTHORITY-2026-10-16.md",
-      "size_bytes": 4661,
-      "sha256": "87028ecb3c4b985456051bee04044e89e1243b4f9bce6d4042c599d990e951e0"
+      "size_bytes": 4975,
+      "sha256": "1cb06a614a1fabc2ba4371adfceb2f421bb3136afa8a71852dfaee6f4e4d72dd"
     },
     {
       "path": "workshop/tsa-brakes/EXTERNAL-STOP-TOOLBOX.md",
@@ -1532,8 +1532,8 @@
     },
     {
       "path": "workshop/tsa-brakes/three_process_lab.py",
-      "size_bytes": 5178,
-      "sha256": "4469b9697d4e8b32dd7472a1bc9a22ba5f3bc7ff0a3a4eaba4101091a1368246"
+      "size_bytes": 5579,
+      "sha256": "49202aeca50d0a5715c2267c83f3d18406bdbcbfa4e2b6d4289c47abde23c22a"
     },
     {
       "path": "workshop/tsa-brakes/transactional_brake.py",
