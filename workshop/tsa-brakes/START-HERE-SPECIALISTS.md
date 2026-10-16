@@ -10,6 +10,9 @@ This folder is a cross-disciplinary research workbench, not a deployable safety 
 4. Read [SPECIALIST-CLEAN-ROOM.md](SPECIALIST-CLEAN-ROOM.md) for independent-review separation; [OPEN-SIGMA-2-QUESTIONS.md](OPEN-SIGMA-2-QUESTIONS.md) for unresolved authority questions.
 5. Review the source and run only sandbox tests on a disposable environment.
 
+## Omission and unknown-unknown challenge
+Before proposing approval, independently attack the [36 overlooked failure hypotheses and omission protocol](UNKNOWN-UNKNOWNS-CHALLENGE-BATTERY.md). The list is intentionally non-exhaustive; specialists must contribute defeating observations that are absent from it. Treat untested questions as NOT TESTED, not as successful brakes.
+
 ## Test map
 | Area | Specimen | Tests | What it does not establish |
 |---|---|---|---|
