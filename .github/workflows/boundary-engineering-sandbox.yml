@@ -1,0 +1,31 @@
+name: Boundary Engineering sandbox regression
+on:
+  pull_request:
+    paths:
+      - 'workshop/tsa-brakes/**'
+      - '.github/workflows/boundary-engineering-sandbox.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  node-reference-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Node sandbox battery
+        run: node --test workshop/tsa-brakes/*.test.mjs
+  sqlite-reference-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: SQLite sandbox battery
+        working-directory: workshop/tsa-brakes
+        run: python -m unittest -v test_transactional_brake.py test_process_boundary.py test_resource_boundary.py test_crash_boundaries.py test_three_authority_compromise.py test_three_process_lab.py

@@ -21,6 +21,11 @@
       "sha256": "146fc4a7e29026507034652f344d0f100f70fd1a61e2a9cfa74bbabe38281b43"
     },
     {
+      "path": ".github/workflows/boundary-engineering-sandbox.yml",
+      "size_bytes": 1007,
+      "sha256": "ec2b609c8d603cdcce924c3eebdb965abe4f18e93c772e6c19ba24fabf865991"
+    },
+    {
       "path": ".github/workflows/verify.yml",
       "size_bytes": 657,
       "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
@@ -477,8 +482,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 3808,
-      "sha256": "b7d5f5d59b62beb22336a2b617891b114d47fc78b54e174a6fe96e0dcacde90a"
+      "size_bytes": 4460,
+      "sha256": "278f04a84851a3a423da934731eaf122652dbf7695734ae7c5bf3b11449f7481"
     },
     {
       "path": "RELEASE_CANDIDATE_CHECKS.json",
@@ -1349,6 +1354,216 @@
       "path": "visual/visual-state.test.ts",
       "size_bytes": 2506,
       "sha256": "50acceaffc9cc7c75aadd4af3029ec5e17a15f2a93678f6284244a6d827c17ad"
+    },
+    {
+      "path": "workshop/tsa-brakes/10-OF-10-BUILDOUT-REGISTER.md",
+      "size_bytes": 5199,
+      "sha256": "5089e2f5e3c6956f6284572c249c61015be5a26f3e6bbcb9aac98933b10f8c70"
+    },
+    {
+      "path": "workshop/tsa-brakes/CRASH-REVOCATION-ATTACK-LEDGER.md",
+      "size_bytes": 5356,
+      "sha256": "850de6a00762f2156baeea326e02d7e8a7c75866be5e335b263cd79ab85102d8"
+    },
+    {
+      "path": "workshop/tsa-brakes/DURABLE-RECOVERY-ATTACK-LEDGER.md",
+      "size_bytes": 3827,
+      "sha256": "5c99706e2dd68a28d7c95e24d667f055ad900e3194760a265c3d1207af412f5a"
+    },
+    {
+      "path": "workshop/tsa-brakes/ENCYCLOPEDIA-OF-CHAOS-THREE-AUTHORITY-2026-10-16.md",
+      "size_bytes": 4975,
+      "sha256": "1cb06a614a1fabc2ba4371adfceb2f421bb3136afa8a71852dfaee6f4e4d72dd"
+    },
+    {
+      "path": "workshop/tsa-brakes/EXTERNAL-STOP-TOOLBOX.md",
+      "size_bytes": 6835,
+      "sha256": "2ea1f4d5807c5e3c8bc622201ba4f75957c4189e7f0a50abf9b9e7e13d2eb5c8"
+    },
+    {
+      "path": "workshop/tsa-brakes/ISOLATION-ATTACK-LEDGER.md",
+      "size_bytes": 4203,
+      "sha256": "344268ef09c8f83b4529070bfff0193403290e1a743e338c54e6ab99a7565451"
+    },
+    {
+      "path": "workshop/tsa-brakes/OPEN-SIGMA-2-QUESTIONS.md",
+      "size_bytes": 2983,
+      "sha256": "4298daada96b722a92930af93a71e6db6c291ca89eeff8b71bcb786d9c4ed015"
+    },
+    {
+      "path": "workshop/tsa-brakes/README.md",
+      "size_bytes": 5831,
+      "sha256": "19e06c31681aace029717967b2d449f5f9677a22de31eafb2e0b37e31722c57e"
+    },
+    {
+      "path": "workshop/tsa-brakes/SIGMA-2-SPECIALIST-HANDOFF.md",
+      "size_bytes": 7280,
+      "sha256": "b902bb97d06b46bbb34880ad0d7a5d478879bba81b7fc2ac191a671d6630c472"
+    },
+    {
+      "path": "workshop/tsa-brakes/SPECIALIST-CHALLENGE-INTAKE.md",
+      "size_bytes": 3037,
+      "sha256": "cd6cd5c137a301384c61ed89f4ec9e534ef3e0ddf555d201c46a30bcbbb55e7b"
+    },
+    {
+      "path": "workshop/tsa-brakes/SPECIALIST-CLEAN-ROOM.md",
+      "size_bytes": 2422,
+      "sha256": "45951d5d6182ebfc90b044664831959726a73d811c5a529ed70955c721ba5992"
+    },
+    {
+      "path": "workshop/tsa-brakes/START-HERE-SPECIALISTS.md",
+      "size_bytes": 5675,
+      "sha256": "52c6a963482e516b1bbc9563e3ed8f04ffe95e9a4f34d662467e9c1aa3701728"
+    },
+    {
+      "path": "workshop/tsa-brakes/THREE-AUTHORITY-COMPROMISE-TEST.md",
+      "size_bytes": 6158,
+      "sha256": "faf2ca6a6f8c818117917342635d47a58660fa26b73336e2645d69818280b424"
+    },
+    {
+      "path": "workshop/tsa-brakes/THREE-AUTHORITY-SEPARATION-REGISTER.md",
+      "size_bytes": 6616,
+      "sha256": "15d954ae37a063a9c306007fb5ed6164996eec4d588c2d9c54c16ed1faca9ddc"
+    },
+    {
+      "path": "workshop/tsa-brakes/THREE-SURFACE-CONTINUITY.md",
+      "size_bytes": 4580,
+      "sha256": "2e44be1106c1c365926cb8c0e541e08fb6aa0f571e9767c8e08a12cbbd84088e"
+    },
+    {
+      "path": "workshop/tsa-brakes/TRANSACTIONAL-ATTACK-LEDGER.md",
+      "size_bytes": 3269,
+      "sha256": "408fe517f909ce096ade1a4bf1a399accd16e1e4b595598e46c2f45096bc7e76"
+    },
+    {
+      "path": "workshop/tsa-brakes/UNKNOWN-UNKNOWNS-CHALLENGE-BATTERY.md",
+      "size_bytes": 7141,
+      "sha256": "16c5e52b7558fe951fc0b99cff661d956bae4414f02dd446851dbe94d0fa49e8"
+    },
+    {
+      "path": "workshop/tsa-brakes/authority-crossing.adversarial.test.mjs",
+      "size_bytes": 2795,
+      "sha256": "e61c5d70e507c17e919b5ba0a1f6364089dd35092c3e2349939e2941d6e18f3d"
+    },
+    {
+      "path": "workshop/tsa-brakes/authority-crypto.mjs",
+      "size_bytes": 1252,
+      "sha256": "a0f7927052e87ea0cf9eef9ef15cb0648ad98f0d0b3c450ccf49cb7ad3f31981"
+    },
+    {
+      "path": "workshop/tsa-brakes/brake.mjs",
+      "size_bytes": 4438,
+      "sha256": "53f0125a96bb771e0a936e23ce2d18fabc0a4d63312457470e1c7a24570a3436"
+    },
+    {
+      "path": "workshop/tsa-brakes/brake.test.mjs",
+      "size_bytes": 3977,
+      "sha256": "c53eb0ca5e7fbdff1c3880edf10c17f1d17b15c91c20f969b8ee7da523be585d"
+    },
+    {
+      "path": "workshop/tsa-brakes/clean-room.test.mjs",
+      "size_bytes": 1679,
+      "sha256": "5ba42276c8d454edf159e7e2abb28925bfe197b7ee7d7c48d303b4d0e2b7fb70"
+    },
+    {
+      "path": "workshop/tsa-brakes/durable-resource.mjs",
+      "size_bytes": 2743,
+      "sha256": "1d5e024b494306b0bc3c78f214a635b3ef9a0fd8ba8285da48c01dca18754821"
+    },
+    {
+      "path": "workshop/tsa-brakes/durable-resource.test.mjs",
+      "size_bytes": 3154,
+      "sha256": "11993835da686dd808ea41e73852f8ed75e9048be74da9a22fd04c162a85ef29"
+    },
+    {
+      "path": "workshop/tsa-brakes/isolated-service.mjs",
+      "size_bytes": 3623,
+      "sha256": "ad7aec7dc1bbf4df214be125aa82798dbea444ef882006cf3d5743fa3c5feea0"
+    },
+    {
+      "path": "workshop/tsa-brakes/isolated-service.test.mjs",
+      "size_bytes": 3806,
+      "sha256": "86b91f070cfce0ba06ec1b6c25e15044e0d2f532df5f182ea5f8b734174d444d"
+    },
+    {
+      "path": "workshop/tsa-brakes/resource_boundary.py",
+      "size_bytes": 2546,
+      "sha256": "93d5f5bb9aa014ba3cb12fdf0549590d1c93fa940b80ee68a65fb0eaa408080d"
+    },
+    {
+      "path": "workshop/tsa-brakes/stop-drill.mjs",
+      "size_bytes": 2595,
+      "sha256": "be66a20a3a95b4d2567d32c64d307c49fa303abe364eb24f9fea46d8f6bc4f5d"
+    },
+    {
+      "path": "workshop/tsa-brakes/stop-drill.test.mjs",
+      "size_bytes": 2120,
+      "sha256": "4dd9e10ca8e08bf69e6ee775b152e91949ac14efe57b0ea9ed6f7f524096a016"
+    },
+    {
+      "path": "workshop/tsa-brakes/test_crash_boundaries.py",
+      "size_bytes": 5480,
+      "sha256": "0b4a4d872afff56d8d67f5cacd90e378293d9142fb9fd6a36460e7650d37d948"
+    },
+    {
+      "path": "workshop/tsa-brakes/test_process_boundary.py",
+      "size_bytes": 4537,
+      "sha256": "01730fe158990d7e6d7c630aa7c538e5d3d7a2235dce4c7d02ee05670a074163"
+    },
+    {
+      "path": "workshop/tsa-brakes/test_resource_boundary.py",
+      "size_bytes": 2617,
+      "sha256": "128500d9739119e540473481b02ec9c7e647728f7cce49c733a566d50d34ee94"
+    },
+    {
+      "path": "workshop/tsa-brakes/test_three_authority_compromise.py",
+      "size_bytes": 5408,
+      "sha256": "aa992fd884f623a2984d84b2514257655e55981ccc7dff41973d317225288718"
+    },
+    {
+      "path": "workshop/tsa-brakes/test_three_process_lab.py",
+      "size_bytes": 3095,
+      "sha256": "a169d4d3d178322e18ac0d98368259565c678fb27c0b079e198e5ce4acd05fea"
+    },
+    {
+      "path": "workshop/tsa-brakes/test_transactional_brake.py",
+      "size_bytes": 2140,
+      "sha256": "65d40f2438c020a17bbf8fff2fc5f3e4b365ea4d87c6935e92bb9662d0a40e4a"
+    },
+    {
+      "path": "workshop/tsa-brakes/three_process_lab.py",
+      "size_bytes": 5579,
+      "sha256": "49202aeca50d0a5715c2267c83f3d18406bdbcbfa4e2b6d4289c47abde23c22a"
+    },
+    {
+      "path": "workshop/tsa-brakes/transactional_brake.py",
+      "size_bytes": 6839,
+      "sha256": "9f6046949f8ca63dbbddc985c2400541eea3c2f9b2627c0e1704d6d2e53c1a9b"
+    },
+    {
+      "path": "workshops/fr001/README.md",
+      "size_bytes": 3468,
+      "sha256": "2f25be21ee36476d0399e978ed6c0f74ad57f6b6940e6e2031bc8fe3edbe26bc"
+    },
+    {
+      "path": "workshops/fr001/claim-register.md",
+      "size_bytes": 3754,
+      "sha256": "180e141617e6c987e0585fca45cd7f6f16e80576c4a34d4834a785f9f784f090"
+    },
+    {
+      "path": "workshops/fr001/evidence-contract.md",
+      "size_bytes": 2942,
+      "sha256": "6dae7d640dc0c57b318fb626dc74bcd9b220118ddc21ee10b57288606fcdab15"
+    },
+    {
+      "path": "workshops/fr001/review-template.md",
+      "size_bytes": 1343,
+      "sha256": "f7b24b21a1b983da05983fae40e8bbfc0f5806dea8d73f51fe448392e3f01bcf"
+    },
+    {
+      "path": "workshops/fr001/specialist-matrix.md",
+      "size_bytes": 3544,
+      "sha256": "04af76ac35aa8dae99fc58ded97fd6d0846278abc7fda8fdf6a7d30eb27d7ffe"
     }
   ]
 }
