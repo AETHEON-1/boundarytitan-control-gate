@@ -16,29 +16,39 @@ def db(path):
     c.execute('PRAGMA synchronous=FULL')
     return c
 
-def witness_server(conn,path):
+def witness_server(owner_conn,resource_conn,path):
     c=db(path)
     c.execute('CREATE TABLE IF NOT EXISTS grants(task TEXT PRIMARY KEY,epoch INTEGER,stopped INTEGER)')
     try:
-        while True:
-            try: q=conn.recv()
-            except EOFError: break
-            op=q['op']
-            if op=='register':
-                try:
-                    c.execute('INSERT INTO grants VALUES(?,1,0)',(q['task'],))
-                    ans={'ok':True}
-                except sqlite3.IntegrityError: ans={'ok':False,'reason':'REUSE'}
-            elif op=='stop':
-                c.execute('UPDATE grants SET stopped=1,epoch=epoch+1 WHERE task=?',(q['task'],))
-                ans={'ok':True}
-            elif op=='check':
-                row=c.execute('SELECT epoch,stopped FROM grants WHERE task=?',(q['task'],)).fetchone()
-                ans={'ok':bool(row and row[0]==q['epoch'] and not row[1])}
-            elif op=='shutdown': ans={'ok':True};conn.send(ans);break
-            else: ans={'ok':False,'reason':'DENIED'}
-            conn.send(ans)
-    finally: c.close();conn.close()
+        alive=True
+        while alive:
+            for conn in wait([owner_conn,resource_conn]):
+                try:q=conn.recv()
+                except EOFError:
+                    alive=False
+                    break
+                if conn is resource_conn and op!='check':
+                    ans={'ok':False,'reason':'RESOURCE_CANNOT_MUTATE_WITNESS'}
+                elif conn is owner_conn and op=='check':
+                    ans={'ok':False,'reason':'OWNER_CHECK_NOT_EXPOSED'}
+                elif op=='register':
+                    try:
+                        c.execute('INSERT INTO grants VALUES(?,1,0)',(q['task'],))
+                        ans={'ok':True}
+                    except sqlite3.IntegrityError:ans={'ok':False,'reason':'REUSE'}
+                elif op=='stop':
+                    cur=c.execute('UPDATE grants SET stopped=1,epoch=epoch+1 WHERE task=?',(q['task'],))
+                    ans={'ok':cur.rowcount==1}
+                elif op=='check':
+                    row=c.execute('SELECT epoch,stopped FROM grants WHERE task=?',(q['task'],)).fetchone()
+                    ans={'ok':bool(row and row[0]==q['epoch'] and not row[1])}
+                elif op=='shutdown' and conn is owner_conn:
+                    conn.send({'ok':True})
+                    alive=False
+                    break
+                else:ans={'ok':False,'reason':'DENIED'}
+                conn.send(ans)
+    finally: c.close();owner_conn.close();resource_conn.close()
 
 def observer_server(conn,path):
     c=db(path)
@@ -93,9 +103,9 @@ def launch(root):
     os.makedirs(root,exist_ok=True)
     wc,ws=mp.Pipe();rc,rw=mp.Pipe();oc,osv=mp.Pipe();ro,ors=mp.Pipe();rr,rs=mp.Pipe()
     processes=[
-        mp.Process(target=witness_server,args=(ws,os.path.join(root,'witness.db'))),
+        mp.Process(target=witness_server,args=(ws,rc,os.path.join(root,'witness.db'))),
         mp.Process(target=observer_server,args=(osv,os.path.join(root,'observer.db'))),
         mp.Process(target=resource_server,args=(rs,rw,ors,os.path.join(root,'resource.db')))]
     for p in processes:p.start()
-    for c in (ws,osv,rs,rw,ors):c.close()
+    for c in (ws,rc,osv,rs,rw,ors):c.close()
     return processes,Endpoint(wc),Endpoint(oc),Endpoint(rr),os.path.join(root,'resource.db'),os.path.join(root,'observer.db')
