@@ -51,22 +51,30 @@ def witness_server(owner_conn,resource_conn,path):
                 conn.send(ans)
     finally: c.close();owner_conn.close();resource_conn.close()
 
-def observer_server(conn,path):
+def observer_server(owner_conn,resource_conn,path):
     c=db(path)
     c.execute('CREATE TABLE IF NOT EXISTS receipts(token TEXT PRIMARY KEY,task TEXT)')
     try:
-        while True:
-            try: q=conn.recv()
-            except EOFError: break
-            if q['op']=='append':
-                c.execute('INSERT OR IGNORE INTO receipts VALUES(?,?)',(q['token'],q['task']))
-                ans={'ok':True}
-            elif q['op']=='read':
-                ans={'ok':True,'receipts':c.execute('SELECT token FROM receipts ORDER BY token').fetchall()}
-            elif q['op']=='shutdown': conn.send({'ok':True});break
-            else: ans={'ok':False}
-            conn.send(ans)
-    finally:c.close();conn.close()
+        alive=True
+        while alive:
+            for conn in wait([owner_conn,resource_conn]):
+                try:q=conn.recv()
+                except EOFError:
+                    alive=False
+                    break
+                op=q['op']
+                if conn is resource_conn and op=='append':
+                    c.execute('INSERT OR IGNORE INTO receipts VALUES(?,?)',(q['token'],q['task']))
+                    ans={'ok':True}
+                elif conn is owner_conn and op=='read':
+                    ans={'ok':True,'receipts':c.execute('SELECT token FROM receipts ORDER BY token').fetchall()}
+                elif conn is owner_conn and op=='shutdown':
+                    conn.send({'ok':True})
+                    alive=False
+                    break
+                else:ans={'ok':False,'reason':'ROLE_DENIED'}
+                conn.send(ans)
+    finally:c.close();owner_conn.close();resource_conn.close()
 
 def resource_server(requester,witness,observer,path):
     c=db(path)
@@ -105,8 +113,8 @@ def launch(root):
     wc,ws=mp.Pipe();rc,rw=mp.Pipe();oc,osv=mp.Pipe();ro,ors=mp.Pipe();rr,rs=mp.Pipe()
     processes=[
         mp.Process(target=witness_server,args=(ws,rc,os.path.join(root,'witness.db'))),
-        mp.Process(target=observer_server,args=(osv,os.path.join(root,'observer.db'))),
+        mp.Process(target=observer_server,args=(osv,ro,os.path.join(root,'observer.db'))),
         mp.Process(target=resource_server,args=(rs,rw,ors,os.path.join(root,'resource.db')))]
     for p in processes:p.start()
-    for c in (ws,rc,osv,rs,rw,ors):c.close()
+    for c in (ws,rc,osv,ro,rs,rw,ors):c.close()
     return processes,Endpoint(wc),Endpoint(oc),Endpoint(rr),os.path.join(root,'resource.db'),os.path.join(root,'observer.db')
