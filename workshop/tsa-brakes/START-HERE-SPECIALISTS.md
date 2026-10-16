@@ -10,6 +10,9 @@ This folder is a cross-disciplinary research workbench, not a deployable safety 
 4. Read [SPECIALIST-CLEAN-ROOM.md](SPECIALIST-CLEAN-ROOM.md) for independent-review separation; [OPEN-SIGMA-2-QUESTIONS.md](OPEN-SIGMA-2-QUESTIONS.md) for unresolved authority questions.
 5. Review the source and run only sandbox tests on a disposable environment.
 
+## Crash-point falsification and repair
+Read [Crash / Revocation Attack Ledger](CRASH-REVOCATION-ATTACK-LEDGER.md) and run [subprocess crash tests](test_crash_boundaries.py). Witness-first enrollment is not a distributed atomic commit: hard kill can strand an enrolled witness without a resource task. Owner-only reconciliation quarantines that state, it does not grant MAY or prove power-loss safety.
+
 ## Final Sigma-2 specialist handoff
 Read [Sigma-2 Specialist Handoff](SIGMA-2-SPECIALIST-HANDOFF.md) for HTK explanation, observed CI split, new adversarial counterexamples, geometric authority map, and 16 open specialist questions. Run [authority-crossing.adversarial.test.mjs](authority-crossing.adversarial.test.mjs) with the Node battery; these are bounded demonstrations, not independent real-world stop evidence.
 
