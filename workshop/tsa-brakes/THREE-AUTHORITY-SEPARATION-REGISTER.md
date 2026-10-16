@@ -55,3 +55,6 @@ Record exact SHA, OS/Python/SQLite versions, CI job, actor privileges, stop line
 First implement and validate independent identity and privilege separation in an approved disposable multi-account lab. Next replace voluntary resource event reporting with an independently captured consequence. Then build a resource-side stop protocol with bounded leases/fencing or transaction-level authority checks, and run crash/revocation races. Finally commission a blind external specialist to find missing failure paths. Infrastructure provisioning, credentials, external connections, deployment, and independent acceptance require separate human authorization.
 
 **No independent external stop demonstrated. CAN ⊬ MAY.**
+
+## Closing-cycle finding: IPC integration failure
+The first three-process specimen connected the resource witness-check channel to an unserved pipe. The CI SQLite job did not complete promptly. The corrective descendant routes the resource and owner channels to the witness server, with owner-only authority mutations. Preserve this defect as EOC-TA-05, not as a passing stop-path result. See [candidate Encyclopedia of Chaos entry](ENCYCLOPEDIA-OF-CHAOS-THREE-AUTHORITY-2026-10-16.md). Current CI for the corrected SHA must be checked separately.
