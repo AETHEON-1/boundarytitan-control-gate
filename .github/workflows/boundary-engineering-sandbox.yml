@@ -28,4 +28,4 @@ jobs:
           python-version: '3.12'
       - name: SQLite sandbox battery
         working-directory: workshop/tsa-brakes
-        run: python -m unittest -v test_transactional_brake.py test_process_boundary.py test_resource_boundary.py test_crash_boundaries.py
+        run: python -m unittest -v test_transactional_brake.py test_process_boundary.py test_resource_boundary.py test_crash_boundaries.py test_three_authority_compromise.py
