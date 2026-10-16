@@ -15,13 +15,13 @@ The requester API denied revoked actions. But the resource operator could write 
 | EOC-TA-03 | Evidence erasure | Shared-host administrator deletes resource effect and observer receipt; both readers return empty. | CONTRADICTED for independent custody |
 | EOC-TA-04 | Observer blind spot | Direct DB bypass is not automatically forwarded to polling/voluntary observer. | CONTRADICTED for complete capture |
 | EOC-TA-05 | Three-process IPC miswiring | Resource check used an IPC channel without a witness receiver; CI SQLite job remained in progress while Node succeeded. | CONTRADICTED for initial integration; repair committed, validation pending |
-| EOC-TA-06 | TOCTOU between witness YES and resource COMMIT | Independent witness check precedes uncoordinated resource commit; revocation may race after check. | INDETERMINATE pending deterministic schedule |
+| EOC-TA-08 | Observer resource-append IPC also unserved | Resource waited on a channel without an observer receiver. Corrected observer service to multiplex owner-read and resource-append channels; validation pending. | CONTRADICTED for initial integration |\n| EOC-TA-06 | TOCTOU between witness YES and resource COMMIT | Independent witness check precedes uncoordinated resource commit; revocation may race after check. | INDETERMINATE pending deterministic schedule |
 | EOC-TA-07 | Single host principal controls all three stores | OS-admin isolation, independent keys, and independently governed evidence not implemented. | NOT TESTED as independent separation |
 
 ## Corrective descendants
 - CR-01: owner-only `Brake.reconcile()` closes incomplete witness-only tasks. Quarantine is not a distributed transaction.
 - TA-02/03: tests deliberately demonstrate direct resource and evidence bypass. They remain expected negative controls, not resolved vulnerabilities.
-- TA-05: `three_process_lab.py` now routes both owner and resource witness channels into `witness_server` and restricts mutation operations to the owner channel. Verify exact latest SHA in CI before claiming correction.
+- TA-05/08: `three_process_lab.py` now routes owner and resource channels into both `witness_server` and `observer_server`, with role-restricted operations. Verify exact latest SHA in CI before claiming correction. Verify exact latest SHA in CI before claiming correction.
 - Proposed but NOT IMPLEMENTED: separate cloud/IAM administration, resource commitment fencing, independent consequence sink and independently protected evidence custody.
 
 ## Omitted/remaining attack surfaces
