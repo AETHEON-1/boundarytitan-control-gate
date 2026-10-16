@@ -23,6 +23,7 @@ b=Brake(r,w,fault_hook=kill)
 if action=='register': b.register('task',budget=2)
 elif action=='stop': b.stop('task')
 elif action=='commit': b.commit('task','crash-token')
+elif action=='reconcile': b.reconcile()
 else: raise RuntimeError(action)
 b.close()
 '''
@@ -85,6 +86,31 @@ class CrashBoundaryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'TASK_ID_REUSE'):
             b.register('task')
         b.close()
+    def test_crash_during_reconcile_is_fail_closed_and_retryable(self):
+        self.init()
+        self.child('stop','stop_after_witness_commit')
+        self.child('reconcile','reconcile_after_witness_commit')
+        b=Brake(self.r,self.w)
+        with self.assertRaisesRegex(ValueError,'STOPPED_OR_STALE'):
+            b.commit('task','late')
+        self.assertEqual(b.reconcile(),('task',))
+        self.assertEqual(b.r.execute('SELECT closed FROM tasks WHERE id=?',('task',)).fetchone(),(1,))
+        self.assertEqual(self.effect_count(),0)
+        b.close()
+
+    def test_missing_witness_row_quarantines_resource_without_regrant(self):
+        self.init()
+        with sqlite3.connect(self.w) as db:
+            db.execute('DELETE FROM tombstones WHERE id=?',('task',))
+        b=Brake(self.r,self.w)
+        with self.assertRaisesRegex(ValueError,'STOPPED_OR_STALE'):
+            b.commit('task','late')
+        self.assertEqual(b.reconcile(),('task',))
+        self.assertEqual(b.r.execute('SELECT closed FROM tasks WHERE id=?',('task',)).fetchone(),(1,))
+        with self.assertRaisesRegex(ValueError,'TASK_ID_REUSE'):
+            b.register('task')
+        b.close()
+
     def test_registration_cross_store_partial_commit_is_exposed(self):
         self.child('register','register_after_witness_commit')
         b=Brake(self.r,self.w)
