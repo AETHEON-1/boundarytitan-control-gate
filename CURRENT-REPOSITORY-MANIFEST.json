@@ -771,6 +771,11 @@
       "sha256": "9b7712f90728905c6bd4d46d2c1d5a038aeb750c920ff29ee93cc3bd9f5056e6"
     },
     {
+      "path": "encyclopedia-of-chaos/entries/EOC-20261016-EXTERNAL-INTAKE-FAILURES-v0.1.json",
+      "size_bytes": 8862,
+      "sha256": "fd60fff6ec890fa10bdf2a9ee32a7577bdafcd1eec1ce444cced5971da658480"
+    },
+    {
       "path": "evaluation-record.schema.json",
       "size_bytes": 2179,
       "sha256": "4cc299f1b268eb47fe5b32af428321859317a877688bf5d728b3ec3bdb533ba3"

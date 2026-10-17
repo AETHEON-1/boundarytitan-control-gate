@@ -1,0 +1,174 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261016-EXTERNAL-INTAKE-FAILURES-v0.1",
+  "recordedDate": "2026-10-16",
+  "kind": "EVIDENCE_INTAKE_FAILURE_AND_REPAIR",
+  "claim": "PR #85's initial intake omitted the required current-tree inventory update; CI detected ten unlisted files. A manifest-only correction preceded successful checks and human-approved merge. Earlier candidate falsifiers also required correction. External experimental failures remain author-reported, not independently reproduced.",
+  "sources": [
+    {
+      "type": "github_pr",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/85"
+    },
+    {
+      "type": "repository_commit",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/commit/18d1f9f749c14f19eb0c327011c6adc2b097ee32"
+    },
+    {
+      "type": "github_actions",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39002644405/job/117308621289"
+    },
+    {
+      "type": "repository_commit",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/commit/b11c21b2d7c326dcdfcda31963fc4f2f98fb90c6"
+    },
+    {
+      "type": "github_check",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/runs/117308850719"
+    },
+    {
+      "type": "github_check",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/runs/117308846019"
+    },
+    {
+      "type": "repository_commit",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/commit/80aff487e17c31765094d198711669fc2ecdf86b"
+    },
+    {
+      "type": "primary_preprint",
+      "locator": "https://arxiv.org/html/2609.21284v1"
+    },
+    {
+      "type": "primary_preprint",
+      "locator": "https://arxiv.org/html/2610.15991v1"
+    },
+    {
+      "type": "primary_preprint",
+      "locator": "https://arxiv.org/html/2609.02866v1"
+    },
+    {
+      "type": "primary_financial_record",
+      "locator": "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+    }
+  ],
+  "evidenceState": "SUPPORTED",
+  "observations": [
+    {
+      "id": "FAIL-INVENTORY",
+      "description": "Initial verify:state log listed the five added research candidates/README and five existing workshops/fr001 documents as absent from the current manifest. New intake files caused five omissions; the FR-001 omissions predated this change.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "REPAIR-INVENTORY",
+      "description": "b11c21b changes only CURRENT-REPOSITORY-MANIFEST.json, adding 50 lines for ten file records. Follow-up check IDs 117308850719 and 117308846019 both returned success. Failure remains in the historical CI log.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "VERIFY-LIMIT",
+      "description": "Initial job log showed typecheck success, 112 JavaScript tests and 3 Python tests passing before inventory failure. Successful JSON parsing and content readback had not established full repository-check success; that check was discovered only after the user approved merge.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "CORRECT-FALSIFIERS",
+      "description": "Preserved corrections: another architecture working does not refute a bounded failure in a specified specimen; a future weak quarter does not falsify historical accounting; the 30% AI-capex haircut is not a proven upper bound.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "EXT-ROOT",
+      "description": "2609.21284v1 reports scheduled late effects under cancellation/cut-only runs and rejection with sink fencing. This record preserves a source claim, not a new execution.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "EXT-RECEIPT",
+      "description": "2610.15991v1 reports receiver persistence coexisting with stale gateway effects during selective non-delivery. Separately provisioned runs are repeatability, not independently administered validation.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "EXT-FRONTIER",
+      "description": "2609.02866v1 reports effects surviving provider-visible completion across six paths. Policy-relative failure need not imply violation of a provider contract.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "FINANCIAL-BOUNDARY",
+      "description": "TSMC candidate distinguishes reported current cash conversion from future durability and investment return. No trade or independently audited financial conclusion is established.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "MERGE",
+      "description": "Human owner approved PR #85; GitHub returned merged=true at 80aff487e17c31765094d198711669fc2ecdf86b after repaired checks succeeded. Merge did not convert candidates into independent verification.",
+      "state": "SUPPORTED"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "NEG-INVENTORY",
+      "purpose": "Detect files omitted from current inventory",
+      "execution": "Historical CI log inspected: verify:state failed with ten named omissions."
+    },
+    {
+      "id": "POS-REPAIR",
+      "purpose": "Reconcile inventory without changing verifier or runtime",
+      "execution": "Two follow-up verify checks returned success; correction diff inspected. Full test suite was not independently replayed in this session."
+    },
+    {
+      "id": "DEFEAT-REPAIR",
+      "purpose": "Challenge apparent repair with byte mismatch or remaining unlisted files",
+      "execution": "Not separately executed as a new adversarial mutation. Existing verifier ran in CI."
+    },
+    {
+      "id": "EXT-REPRODUCTION",
+      "purpose": "Independently reproduce external author-reported effect failures under frozen configurations",
+      "execution": "NOT PERFORMED. Source inspection only."
+    },
+    {
+      "id": "AUTHORITY-TEST",
+      "purpose": "Establish independently administered effect and stop authority",
+      "execution": "NOT PERFORMED; remains outside archive admission."
+    }
+  ],
+  "reproduction": [
+    "At 18d1f9f749c14f19eb0c327011c6adc2b097ee32: npm ci && npm run typecheck && npm test -- --coverage=false && npm run test:python && npm run verify:state",
+    "At b11c21b2d7c326dcdfcda31963fc4f2f98fb90c6: repeat repository verification and compare the manifest-only diff",
+    "External reproductions require separately pinned artifacts, resource-side evidence, declared workloads and authority; no executable external test recipe validated here."
+  ],
+  "environment": "Historical inspected CI: GitHub Actions Linux; Node 20.20.2, npm 10.8.2. Workflow actions emitted Node 20 deprecation warnings. Independent custody and external operational stop paths not tested.",
+  "limitations": [
+    "SUPPORTED describes the inspected intake failure/repair record and existence of source reports, not validation of all source conclusions.",
+    "Default-branch searches and open PR titles did not exhaust all unmerged branch content.",
+    "Original task-run ID/digest and raw publisher snapshot hashes were not recovered.",
+    "Conference wording, author independence, conceptual provenance and independent external replication remain unresolved.",
+    "CI dependency audit printed vulnerability warnings; no dependency remediation or vulnerability validation was undertaken by this evidence-only change.",
+    "The initial handoff should have included full CI status before asking for approval. Local data checks were narrower than merge readiness.",
+    "Git history is a comparison anchor; administrator-proof append-only custody has not been established."
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Preserving failures and corrections prevents later successful checks from erasing the initial omission."
+    ],
+    "harmful": [
+      "An unchecked inventory or overbroad falsifier can make evidence intake appear more complete than it is."
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "Human owner authorized preservation and approved PR #85 merge; this proposed archive entry grants no downstream authority.",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "NOT_STARTED",
+  "authorizationGranted": false,
+  "links": {
+    "parent": null,
+    "supersedes": null,
+    "corrections": [],
+    "relatedPullRequests": [
+      85,
+      84,
+      82
+    ]
+  },
+  "reopenConditions": [
+    "Committed file bytes or CI records contradict this account",
+    "A missing path, source correction or duplicate changes the evidence state",
+    "Independent reproduction contradicts an external experimental result",
+    "Independent custody or authority evidence becomes available"
+  ],
+  "humanReview": "Human explicitly requested Encyclopedia documentation and failure preservation; this entry is a review proposal until admitted.",
+  "scope": "Evidence-intake and CI failures; no doctrinal reopening, experiment execution, deployment or scientific certification."
+}
