@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-2026-10-13-PJM-105563-105564",
+  "observedAt": "2026-10-13T17:27:29-04:00",
+  "claim": "PJM extended its Maximum Generation Emergency/Load Management Alert (NERC EEA 1) through the October 14, 2026 operating day and separately identified a reliability need to utilize the Exhibit A resources covered by DOE Order 202-26-50 on October 14. The notice does not itself direct full-load operation; individual resources remain subject to PJM commitment and dispatch instructions.",
+  "source": {
+    "type": "PRIMARY_OPERATOR_POSTINGS",
+    "publisher": "PJM Interconnection",
+    "title": "Emergency Procedures Postings — Messages 105563 and 105564",
+    "url": "https://emergencyprocedures.pjm.com/ep/pages/dashboard.jsf",
+    "sourceDate": "2026-10-13",
+    "retrievedAt": "2026-10-13T17:27:29-04:00",
+    "records": [
+      {
+        "messageId": "105563",
+        "effectiveStart": "2026-10-14T00:01:00-04:00",
+        "effectiveEnd": "2026-10-14T23:59:00-04:00"
+      },
+      {
+        "messageId": "105564",
+        "effectiveStart": "2026-10-13T16:48:00-04:00",
+        "operatingDay": "2026-10-14"
+      }
+    ]
+  },
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "A corrected or withdrawn PJM primary posting showing that EEA 1 does not apply on October 14, or that PJM did not identify a reliability need for the Exhibit A resources on that operating day, would contradict this finding. Actual dispatch and output remain separately untested.",
+  "firstUnsupportedArrow": "Identified reliability need and EEA 1 posture -> resource-specific commitment or dispatch -> resource availability and execution -> delivered megawatts -> avoided reliability consequence.",
+  "omissions": [
+    "No resource-specific October 14 commitment or dispatch record is included.",
+    "No required, scheduled or delivered megawatts are stated.",
+    "The notice does not establish maximum-output or full-load operation.",
+    "No Emergency Use of Back-Up Generator Warning or Action is shown in the retrieved posting.",
+    "Backup-generator independent reachability, fuel, emissions, start success and delivered power remain unknown.",
+    "Ultimate operating, environmental and rate-recovery cost allocation remains unknown.",
+    "No release, cancellation or de-escalation record for the October 13 demand-response actions is included."
+  ],
+  "failures": [
+    "Public postings do not expose unit-level dispatch instructions or execution telemetry.",
+    "No DOE daily resource report or verified delivered-capacity record was retrieved."
+  ],
+  "rivalHypotheses": [
+    "The October 14 notices reflect genuine anticipated scarcity requiring additional out-of-market resource use.",
+    "The notices are precautionary continuity measures issued because tight capacity remains plausible, without proving that the resources will be committed or needed.",
+    "Resource availability, forecast changes or imports may remove the operational need before individual dispatch occurs."
+  ],
+  "priorFindingReference": {
+    "findingId": "BT-TASK-2026-10-13-PJM-105562",
+    "reviewArtifact": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/65",
+    "relationship": "Earlier October 13 mandatory Quick_30 demand-response dispatch candidate; not evidence of October 14 resource execution."
+  },
+  "executionAuthorized": false,
+  "publicationAuthorized": false,
+  "humanDispositionRequired": true,
+  "repositoryState": "REVIEW_ONLY_CANDIDATE",
+  "notes": [
+    "This candidate records announced operating posture and identified need, not completed dispatch, backup-generator use, restored capacity or avoided outage.",
+    "CAN prepare and test the candidate; MAY to admit, merge, publish or act remains external."
+  ]
+}
