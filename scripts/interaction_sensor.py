@@ -14,9 +14,6 @@ ENDPOINTS = {
     "stargazers": "/repos/{repo}/stargazers?per_page=100",
     "forks": "/repos/{repo}/forks?per_page=100&sort=newest",
     "issues": "/repos/{repo}/issues?state=all&sort=updated&direction=desc&per_page=100",
-    "discussions": "/repos/{repo}/discussions",
-    "views": "/repos/{repo}/traffic/views",
-    "clones": "/repos/{repo}/traffic/clones",
 }
 def collect(repo, token, opener=urllib.request.urlopen):
     if not token:
@@ -28,7 +25,7 @@ def collect(repo, token, opener=urllib.request.urlopen):
                   "Snapshot, not an exhaustive event ledger; list endpoints return first 100 only.",
                   "Traffic covers GitHub's limited recent window; no visitor identities.",
                   "Artifact retention is finite; durable independent custody not established.",
-                  "No external notification channel configured; GitHub Actions status is observable.",
+                  "External notification handled by separately administered ChatGPT task monitor.",
                   "No automated technical-challenge classification or event deduplication."
               ]}
     for key, path in ENDPOINTS.items():
