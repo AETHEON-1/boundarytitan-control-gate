@@ -1,0 +1,36 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "observedAt": "2026-10-17T04:27:17.391Z",
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false,
+  "archiveAdmission": "PENDING_HUMAN_REVIEW",
+  "independentReproduction": "NOT_PERFORMED",
+  "findingId": "BT-OWKS-20261016-TSMC-CASH-CONVERSION",
+  "lane": "Necessity and consequence / semiconductor financial evidence",
+  "source": "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+  "sourceDate": "2026-10-15",
+  "claim": "TSMC's unaudited Q3 2026 statement reports revenue NT$1,494,243 million, operating income NT$876,445 million, operating cash NT$919,776 million and PP&E purchases NT$443,206 million. The defined subtraction is NT$476,570 million. Its presentation assigns 68% of revenue to HPC.",
+  "sourceLocator": "Financial Statements pp. 2 and 4; Presentation p. 6 (printed slide 5); Earnings Release date",
+  "falsifier": "A corrected filing or source-level reconciliation establishes that these values, period, units or subtraction were wrong. Later weak results challenge a durability hypothesis, not the historical quarter.",
+  "firstUnsupportedArrow": "Current cash conversion → durable AI-specific demand → sustained margins → attractive investment return.",
+  "omissions": [
+    "HPC includes more than AI",
+    "Unaudited statements; no independent financial audit performed here",
+    "Customer concentration, cancellation terms and valuation not assessed",
+    "30% capex scenario is not a forecast or established upper bound"
+  ],
+  "failures": [
+    "Prior proposed falsifier conflated historical accounting with future durability"
+  ],
+  "rivalHypotheses": [
+    "Cyclical peak or non-AI HPC contributes materially",
+    "Customer commitments defer contraction",
+    "Other parties absorb losses while this supplier remains profitable"
+  ],
+  "correction": "Withdraw 'upper-bound' characterization of the earlier 30% haircut: fixed costs, elasticity and timing prevent proving that bound."
+}

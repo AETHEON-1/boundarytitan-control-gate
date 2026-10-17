@@ -1,0 +1,34 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "observedAt": "2026-10-17T04:27:17.391Z",
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false,
+  "archiveAdmission": "PENDING_HUMAN_REVIEW",
+  "independentReproduction": "NOT_PERFORMED",
+  "findingId": "BT-OWKS-20261016-ROOT-QUIESCENCE",
+  "lane": "Agentic Systems / temporal residual authorization",
+  "source": "https://arxiv.org/html/2609.21284v1",
+  "sourceDate": "2026-09-18",
+  "claim": "Zhu and Wang report a provider-free suite matching 17/17 registered outcomes and a separate checker rejecting 44/44 altered traces. Cancellation-only and cut-only runs accepted a scheduled late effect; cut-plus-fence runs rejected it.",
+  "sourceLocator": "Abstract; sections 7–8",
+  "falsifier": "Under the same frozen manifest, workload, ordering and implementation, an independent reproduction fails to recover the reported cut-only acceptance or observes retired-root acceptance after the corresponding fence. Diagnose implementation or protocol mismatch before generalizing.",
+  "firstUnsupportedArrow": "Provider-free registered paths → equivalent enforcement across separately administered real providers.",
+  "omissions": [
+    "Peer review and independent replication not established",
+    "Conceptual relationship to BoundaryTitan unknown",
+    "Coverage excludes undisclosed carriers and does not establish rollback or business completion"
+  ],
+  "failures": [
+    "Reported cancellation/cut-only late-effect acceptance; not reproduced here"
+  ],
+  "rivalHypotheses": [
+    "The difference depends on the harness",
+    "A system without pre-authorized carriers may enforce at issuance alone"
+  ],
+  "correction": "A different architecture where cut-only works does not refute this bounded reported execution."
+}

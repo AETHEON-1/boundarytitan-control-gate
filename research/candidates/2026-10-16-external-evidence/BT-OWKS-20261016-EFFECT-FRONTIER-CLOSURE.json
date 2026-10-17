@@ -1,0 +1,36 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "observedAt": "2026-10-17T04:27:17.391Z",
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false,
+  "archiveAdmission": "PENDING_HUMAN_REVIEW",
+  "independentReproduction": "NOT_PERFORMED",
+  "findingId": "BT-OWKS-20261016-EFFECT-FRONTIER-CLOSURE",
+  "lane": "Agentic Systems / compositional residual authorization",
+  "source": "https://arxiv.org/html/2609.02866v1",
+  "sourceDate": "2026-09-02",
+  "claim": "Santos-Grueiro reports six controlled paths: GitHub moved-head merges 25/25; Kubernetes mutation 25/25 and RBAC 30/30; NATS duplicate effects 10/10 and callbacks after purge 30/30; Kafka append after ACL deletion 10/10. Corresponding repairs reduced each tested forbidden-effect count to zero.",
+  "sourceLocator": "Section V, Table III",
+  "falsifier": "Independent frozen reproduction fails to recover a specific base-path effect, or its corresponding Bind, Re-enter or Fence repair permits that forbidden effect while preserving the same application policy and required authorized work.",
+  "firstUnsupportedArrow": "Six registered paths → complete production path coverage or independently administered enforcement.",
+  "omissions": [
+    "Independent replication and peer review not established",
+    "GitHub 25-pair result uses REST replay; only one additional MCP end-to-end run",
+    "Kafka scope is fixed-set synchronous nontransactional writes",
+    "No production prevalence, universal closure or provider misconduct established"
+  ],
+  "failures": [
+    "Reported post-completion effects on six paths; not reproduced here"
+  ],
+  "rivalHypotheses": [
+    "Adapters or scheduling influence the outcome",
+    "Other interfaces expose stronger atomic controls",
+    "Omitted paths defeat broader closure"
+  ],
+  "correction": "Provider completion may satisfy its own contract while failing a stronger application policy; do not equate this with provider misconduct."
+}
