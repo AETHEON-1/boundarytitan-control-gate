@@ -776,6 +776,31 @@
       "sha256": "47297033148e95c4ec39fd0d5b122edfd1175f0783dc479bcf789d91e753f313"
     },
     {
+      "path": "research/candidates/2026-10-16-external-evidence/BT-OWKS-20261016-C3-C5-REVOCATION-GAP.json",
+      "size_bytes": 2124,
+      "sha256": "5afceae5834d854c4a2927dd27e5a2a290dff662fe53a72d1d46c8ad672b1961"
+    },
+    {
+      "path": "research/candidates/2026-10-16-external-evidence/BT-OWKS-20261016-EFFECT-FRONTIER-CLOSURE.json",
+      "size_bytes": 2115,
+      "sha256": "6b3236a136ff70d89f1d17ff1301f672a08be0a32fdfefa2edbdab78bf549819"
+    },
+    {
+      "path": "research/candidates/2026-10-16-external-evidence/BT-OWKS-20261016-ROOT-QUIESCENCE.json",
+      "size_bytes": 1949,
+      "sha256": "440c47af184a2e58775b2a81dc72cc4b49bbf3ca67a3e9aae580c7e7ecab0d6c"
+    },
+    {
+      "path": "research/candidates/2026-10-16-external-evidence/BT-OWKS-20261016-TSMC-CASH-CONVERSION.json",
+      "size_bytes": 2160,
+      "sha256": "0904cdf882d692392f1ad61507a2beeee0b72b60623a39d1925e95c12633f935"
+    },
+    {
+      "path": "research/candidates/2026-10-16-external-evidence/README.md",
+      "size_bytes": 4401,
+      "sha256": "5214e3f37a24494825ee41674d9b1afdc94a5c4d50665e5751e7fae9e286198c"
+    },
+    {
       "path": "scripts/verify-repository-state.js",
       "size_bytes": 4744,
       "sha256": "34dd776dae9297524d3c30f7d5f8069fd64cd6a39b551dd0450ac6cf3d1edb1f"
@@ -1349,6 +1374,31 @@
       "path": "visual/visual-state.test.ts",
       "size_bytes": 2506,
       "sha256": "50acceaffc9cc7c75aadd4af3029ec5e17a15f2a93678f6284244a6d827c17ad"
+    },
+    {
+      "path": "workshops/fr001/README.md",
+      "size_bytes": 3468,
+      "sha256": "2f25be21ee36476d0399e978ed6c0f74ad57f6b6940e6e2031bc8fe3edbe26bc"
+    },
+    {
+      "path": "workshops/fr001/claim-register.md",
+      "size_bytes": 3754,
+      "sha256": "180e141617e6c987e0585fca45cd7f6f16e80576c4a34d4834a785f9f784f090"
+    },
+    {
+      "path": "workshops/fr001/evidence-contract.md",
+      "size_bytes": 2942,
+      "sha256": "6dae7d640dc0c57b318fb626dc74bcd9b220118ddc21ee10b57288606fcdab15"
+    },
+    {
+      "path": "workshops/fr001/review-template.md",
+      "size_bytes": 1343,
+      "sha256": "f7b24b21a1b983da05983fae40e8bbfc0f5806dea8d73f51fe448392e3f01bcf"
+    },
+    {
+      "path": "workshops/fr001/specialist-matrix.md",
+      "size_bytes": 3544,
+      "sha256": "04af76ac35aa8dae99fc58ded97fd6d0846278abc7fda8fdf6a7d30eb27d7ffe"
     }
   ]
 }
