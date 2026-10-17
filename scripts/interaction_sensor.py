@@ -11,7 +11,6 @@ from datetime import datetime, timezone
 BASE = "https://api.github.com"
 ENDPOINTS = {
     "repository": "/repos/{repo}",
-    "stargazers": "/repos/{repo}/stargazers?per_page=100",
     "forks": "/repos/{repo}/forks?per_page=100&sort=newest",
     "issues": "/repos/{repo}/issues?state=all&sort=updated&direction=desc&per_page=100",
 }
@@ -23,7 +22,7 @@ def collect(repo, token, opener=urllib.request.urlopen):
     report = {"schema": "bt.interaction.snapshot.v1", "collected_at": datetime.now(timezone.utc).isoformat(),
               "repository": repo, "evidence": {}, "failures": [], "limitations": [
                   "Snapshot, not an exhaustive event ledger; list endpoints return first 100 only.",
-                  "Traffic covers GitHub's limited recent window; no visitor identities.",
+                  "Stars are aggregate counts only; individual stargazer identities are not collected. Views and clones are not collected.",
                   "Artifact retention is finite; durable independent custody not established.",
                   "External notification handled by separately administered ChatGPT task monitor.",
                   "No automated technical-challenge classification or event deduplication."
