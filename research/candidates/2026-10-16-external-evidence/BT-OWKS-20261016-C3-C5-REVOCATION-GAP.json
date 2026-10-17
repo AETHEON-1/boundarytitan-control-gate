@@ -1,0 +1,35 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "observedAt": "2026-10-17T04:27:17.391Z",
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false,
+  "archiveAdmission": "PENDING_HUMAN_REVIEW",
+  "independentReproduction": "NOT_PERFORMED",
+  "findingId": "BT-OWKS-20261016-C3-C5-REVOCATION-GAP",
+  "lane": "Agentic Systems / temporal residual authorization",
+  "source": "https://arxiv.org/html/2610.15991v1",
+  "sourceDate": "2026-10-11",
+  "claim": "Liu, Yu and Zhang report two separately provisioned 16-host AWS executions. Selective receiver-to-gateway non-delivery allowed 112/225 calls and effects per block despite durable revocation receipt; normal and recovery phases produced zero effects. Each execution used 30 blocks.",
+  "sourceLocator": "Sections 3.4 and 4.1, Table 2",
+  "falsifier": "An independent reproduction preserving the signed revocation, blocked handoff, gateway membership, workload, barrier and resource-side observation fails to reproduce stale-authority effects; or resource-side evidence contradicts the reported counts.",
+  "firstUnsupportedArrow": "Repeated controlled deployments → prevalence or enforcement effectiveness in independently operated production systems.",
+  "omissions": [
+    "Same runtime and protocol in both topologies; repeatability is not independent replication",
+    "Conference wording appears in the manuscript; acceptance and peer-review status not independently verified",
+    "Independent issuer/resource/evidence administration not established",
+    "Finite paths and windows; no production incidence estimate"
+  ],
+  "failures": [
+    "Reported persisted-but-not-enforced revocation gap; not reproduced here"
+  ],
+  "rivalHypotheses": [
+    "Behavior depends on authored adapters",
+    "Other deployments fail closed earlier"
+  ],
+  "correction": "Successful revocation in another deployment does not falsify this configuration. Separate protocol generalization from reproduction."
+}
