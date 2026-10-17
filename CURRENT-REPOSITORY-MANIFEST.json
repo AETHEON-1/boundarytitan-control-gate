@@ -22,8 +22,8 @@
     },
     {
       "path": ".github/workflows/verify.yml",
-      "size_bytes": 657,
-      "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
+      "size_bytes": 792,
+      "sha256": "719e6c0802ac758a15349ed3f40502b271f6a2cbfc006925aaa1ed9ae13ddfcc"
     },
     {
       "path": ".gitignore",
@@ -477,8 +477,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 3808,
-      "sha256": "b7d5f5d59b62beb22336a2b617891b114d47fc78b54e174a6fe96e0dcacde90a"
+      "size_bytes": 4672,
+      "sha256": "451e2da86cf9136cbba53ae55c69143389255d9875f7aff7529e261eb5dd72d8"
     },
     {
       "path": "RELEASE_CANDIDATE_CHECKS.json",
@@ -746,6 +746,11 @@
       "sha256": "abeb522849ec2580368ac2f64d30257426984f97013c2147906f76eb33abe13f"
     },
     {
+      "path": "encyclopedia-of-chaos/EC-2026-10-15-SPECIALIST-ACCESS.md",
+      "size_bytes": 5386,
+      "sha256": "29dbf281051a482a81f9a5cd5f002b6a4f1f79ff6c1110fbcbd1e6bbf0ddb321"
+    },
+    {
       "path": "evaluation-record.schema.json",
       "size_bytes": 2179,
       "sha256": "4cc299f1b268eb47fe5b32af428321859317a877688bf5d728b3ec3bdb533ba3"
@@ -804,6 +809,11 @@
       "path": "scripts/verify-repository-state.js",
       "size_bytes": 4744,
       "sha256": "34dd776dae9297524d3c30f7d5f8069fd64cd6a39b551dd0450ac6cf3d1edb1f"
+    },
+    {
+      "path": "scripts/verify-specialist-entry.js",
+      "size_bytes": 2157,
+      "sha256": "b492b26dfdbba4426fed4ae48d73d62cc1cf2a1715320169dec6bef2bc1fa02b"
     },
     {
       "path": "source-manifest.csv",
@@ -1336,6 +1346,11 @@
       "sha256": "4a47655aedb029e5ef2e174014011da6850d4cb055b93667eb5c67e908a66b8b"
     },
     {
+      "path": "visual/SPECIALIST-ACCEPTANCE-CHECKLIST.md",
+      "size_bytes": 3603,
+      "sha256": "0f66729dc3cc1fe955ea0ebfbc424bfe1e97065481a4de005df1407966a6df56"
+    },
+    {
       "path": "visual/UNSUPPORTED-ARROW-README.md",
       "size_bytes": 622,
       "sha256": "6e44de52b07f67da99f1e1daaad5597010d8a30254995d7af57df3854356460e"
@@ -1344,6 +1359,11 @@
       "path": "visual/index.html",
       "size_bytes": 4483,
       "sha256": "a39ecb286832edfcbe9c5f764bd94c698044cec05eca7c31758bca1eda786a85"
+    },
+    {
+      "path": "visual/specialists.html",
+      "size_bytes": 8481,
+      "sha256": "41bbde19b3c74879ca1f82e7f87691e5d22ad33be88c6a556e1cefa3e6d3959e"
     },
     {
       "path": "visual/unsupported-arrow.html",
