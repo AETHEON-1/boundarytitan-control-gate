@@ -26,3 +26,7 @@ New tests: `test_halt_denies_queued_commit_and_new_issue` and `test_halt_survive
 The general bounded-verification workflow failed due manifest drift. Do not claim overall repository CI green from AGAT success. Rebuild and review the manifest under repository procedures separately, without suppressing failure history.
 
 CAN ⊬ MAY. Maximize CAN. Keep MAY outside.
+
+## Preserved regression: failed first STOP CI build
+
+GitHub Actions run [39067145088](https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39067145088) failed after STOP state gained a third SQLite column (`halted`) while initialization still used `INSERT OR IGNORE INTO state VALUES (1,0)`. Worker startup raised `sqlite3.OperationalError: table state has 3 columns but 2 values were supplied`. This is an initialization failure, not proof of a bypass. The separate bounded verification run [39067145094](https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39067145094) also failed and remains separate. Repair commit `e24cab4e9cee9480b7131613b2fc2e6c935e1983` names columns explicitly: `INSERT OR IGNORE INTO state (id, epoch, halted) VALUES (1, 0, 0)`. Re-run outcomes must be recorded separately; do not retroactively convert the failed run to PASS.
