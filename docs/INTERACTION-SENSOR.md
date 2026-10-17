@@ -1,28 +1,30 @@
-# BoundaryTitan Interaction Sensor: draft implementation
+# BoundaryTitan Interaction Sensor
 
-State: PROPOSED / UNMERGED / NOT ACTIVE. Owner: BoundaryTitan human repository owner.
-Scope: GitHub-hosted, read-only observations. No authority or correctness conclusions.
+State: MERGED INTO MAIN; scheduled collection configured; first successful run NOT YET VERIFIED.
+Owner: human BoundaryTitan repository owner. Scope: read-only observation only.
 
-## Operation
-A scheduled (13:17 UTC daily) or manually dispatched workflow uses the ephemeral GITHUB_TOKEN to read public repository counters, recent stars/forks/issues, discussions, and traffic. A JSON snapshot is uploaded as a 90-day Actions artifact. Failure of any endpoint fails the workflow while retaining a report where artifact upload runs; no silent success. Note: GitHub's discussions REST route may return 404 or 410 on unsupported configurations; this remains an explicit failure until independently handled. Traffic endpoints may require elevated repository access beyond the workflow token. Treat those as known integration risks, not evidence of zero activity.
+## Operational configuration
+- GitHub Actions: .github/workflows/interaction-sensor.yml
+- Schedule: daily 13:17 UTC; manual workflow_dispatch is also configured.
+- Collector: scripts/interaction_sensor.py, with fixture tests at tests/test_interaction_sensor.py.
+- Endpoints: repository counts, first-page stargazers, forks and issues (issues includes PR metadata). Discussion, views and clones are not collected by the native workflow.
+- Output: interaction-report.json uploaded as a workflow artifact, nominal retention 90 days. The upload step runs even after preceding step failure.
+- Separate ChatGPT hourly Open-World Kernel Scout monitors material external GitHub interactions and PR/workflow status; weekly Boundary Integrity Audit reviews monitoring failures and evidence continuity. This is not guaranteed instantaneous alert delivery.
 
-## Gaps and threats
-- No email/push alert or daily digest yet; no independent notification owner.
-- No historical comparison or deduplication; counts are not identities or proof of adoption.
-- Pagination only covers 100 most recent records. Clones/views have a limited rolling window.
-- Workflow and artifacts share GitHub administration; no independent evidence custody or brake.
-- Forked PRs must never run submitted code with elevated permissions.
-- The workflow can be disabled, delayed, or deleted; missing runs are unknown, not zero.
-- No hidden visitor identity is available from GitHub.
-- The API failure ledger records errors, but artifact upload itself may fail.
+## Verification still required
+1. Open Actions > Interaction sensor (read-only) > Run workflow, or wait for scheduled execution.
+2. Inspect fixture-test and collector job logs, result status, JSON artifact and API failures.
+3. Independently verify next scheduled run; check delayed/missing runs and artifact retention.
+4. Check notifications are enabled and delivered for material external events in the existing monitor.
+5. Test 403, 404, 429, malformed JSON, timeout, missing run and lost artifact; record contradictions.
+6. Validate baseline comparison, event deduplication and independent evidence custody separately.
 
-## Acceptance tests before activation
-1. Run collector with fixture responses and forced 403/404/429/timeout; require explicit failures.
-2. Confirm least-privilege permissions and absence of write tokens.
-3. Confirm first snapshot and artifact are readable by the human owner.
-4. Test skipped scheduled run and retention expiration.
-5. Establish an independent digest destination and verify delivery, then compare consecutive snapshots.
-6. Review notification volume and separate signal from inference.
+## Limitations
+- The workflow is a snapshot, not a complete event ledger; first 100 items per list.
+- No anonymous visitor identities. No clone/view metrics in the native collector.
+- No automatic issue/PR response, repository writes, or authorization.
+- A successful job is not independent proof of completeness, accuracy or delivery.
+- GitHub administration controls both workflow and artifacts; external stop/custody remains unproven.
+- Missing activity evidence is not evidence of zero activity.
 
-No deployment, merging, publishing, or operational trust is implied by this draft.
-CAN does not entail MAY. The owner retains final admission and stop authority.
+CAN ⊬ MAY. No owner, no brake. No ledger, no trust.
