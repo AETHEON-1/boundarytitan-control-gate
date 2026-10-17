@@ -1,0 +1,37 @@
+name: AGAT synthetic laboratory
+on:
+  pull_request:
+    paths:
+      - 'experiments/agat/**'
+      - '.github/workflows/agat-lab.yml'
+  push:
+    branches:
+      - 'experiment/agat-isolated-lab-v0'
+    paths:
+      - 'experiments/agat/**'
+      - '.github/workflows/agat-lab.yml'
+permissions:
+  contents: read
+jobs:
+  synthetic-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Execute AGAT synthetic tests
+        run: |
+          mkdir -p agat-evidence
+          python -m unittest discover -s experiments/agat -p 'test_*.py' -v 2>&1 | tee agat-evidence/unittest.log
+          test ${PIPESTATUS[0]} -eq 0
+      - name: Preserve test log regardless of outcome
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agat-test-evidence
+          path: agat-evidence/
+          retention-days: 90
