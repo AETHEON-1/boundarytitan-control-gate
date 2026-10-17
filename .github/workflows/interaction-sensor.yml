@@ -17,12 +17,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Run fixture tests
+        run: python -m unittest discover -s tests -p 'test_interaction_sensor.py'
       - name: Collect public interaction evidence
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPOSITORY: ${{ github.repository }}
         run: python scripts/interaction_sensor.py
       - name: Retain report artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: interaction-evidence-${{ github.run_id }}
