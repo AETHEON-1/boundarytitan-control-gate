@@ -1,0 +1,82 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261017-SENSOR-ENV-CORRECTION-v0.1",
+  "recordedDate": "2026-10-17",
+  "kind": "APPEND_ONLY_METADATA_CORRECTION",
+  "claim": "The sensor failure entry's environment description incorrectly inherited local brake-fixture details. The inspected sensor execution was a GitHub-hosted workflow configured for Python 3.12, not the local spawned brake experiment.",
+  "sources": [
+    {
+      "type": "repository_commit",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/6083b7fb9cc9b0e614c7aa5e46f5887578aaa363/encyclopedia-of-chaos/entries/EOC-20261017-INTERACTION-SENSOR-FAILURES-v0.1.json"
+    },
+    {
+      "type": "workflow",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/33b3df7208c224cd0477beb541ed0e8f12afc514/.github/workflows/interaction-sensor.yml"
+    },
+    {
+      "type": "github_actions",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39038591178/job/117413307372"
+    }
+  ],
+  "evidenceState": "CONTRADICTED",
+  "observations": [
+    {
+      "id": "ENV-1",
+      "description": "Prior sensor entry copied 'Local Python 3.12 spawn processes; no independent administration or external resource. GitHub observations via connected API.' This mixes the brake experiment environment with the monitored sensor's execution environment.",
+      "state": "CONTRADICTED"
+    },
+    {
+      "id": "ENV-2",
+      "description": "Corrected monitored environment: GitHub Actions ubuntu-latest runner with setup-python configured for Python 3.12. The review used GitHub API job/log/artifact metadata. No local sensor execution or independent custody is claimed.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "SCOPE",
+      "description": "Correction changes environment attribution only. Historical two HTTP403 failures, scope reduction and manual success remain separately supported; scheduled reliability and delivery remain unobserved.",
+      "state": "SUPPORTED"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "METADATA-CROSSCHECK",
+      "purpose": "Separate review environment, brake environment and sensor execution environment",
+      "execution": "Inspected pinned entry, workflow and job lineage; no new sensor or brake experiment run."
+    },
+    {
+      "id": "SCHEMA-BOUNDARY",
+      "purpose": "Test whether valid structure prevents copied semantic error",
+      "execution": "Earlier validator accepted the wrong description. Shape validation did not detect the provenance mismatch."
+    }
+  ],
+  "reproduction": [
+    "Compare the prior sensor entry environment field against the pinned interaction-sensor workflow and successful job log."
+  ],
+  "environment": "Read-only GitHub API/source review; monitored run on GitHub-hosted Ubuntu with Python 3.12 configured.",
+  "limitations": [
+    "Runner image and runtime versions may change; this is a historical attribution correction.",
+    "No new scheduled execution, artifact-byte hashing, delivery verification or independent custody.",
+    "Original entry preserved; consumer must follow the linked correction rather than treating chronology as authority."
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Correct attribution helps successors distinguish monitored execution from analyst test environment."
+    ],
+    "harmful": [
+      "Copied environment metadata could suggest testing not actually performed."
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "Human approved review and corrective preparation; archive admission remains pending.",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "NOT_STARTED",
+  "authorizationGranted": false,
+  "links": {
+    "parent": "EOC-20261017-INTERACTION-SENSOR-FAILURES-v0.1",
+    "supersedes": null,
+    "corrections": []
+  },
+  "reopenConditions": [
+    "Pinned workflow or job evidence contradicts corrected attribution",
+    "A reproducible source-to-entry mismatch changes other findings"
+  ]
+}

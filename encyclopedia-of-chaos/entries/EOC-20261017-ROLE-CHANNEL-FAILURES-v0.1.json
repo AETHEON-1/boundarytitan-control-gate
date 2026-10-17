@@ -1,0 +1,111 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "recordedDate": "2026-10-17",
+  "kind": "ADVERSARIAL_FAILURE_AND_CORRECTIVE_PREPARATION",
+  "evidenceState": "SUPPORTED",
+  "environment": "Local Python 3.12 spawn processes; no independent administration or external resource. GitHub observations via connected API.",
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Inspectably preserved failures and narrower corrective preparation."
+    ],
+    "harmful": [
+      "Test success could be mistaken for independent authority or complete monitoring."
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "Human approved preparation and preservation; archive admission and deployment separate.",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "NOT_STARTED",
+  "authorizationGranted": false,
+  "links": {
+    "parent": null,
+    "supersedes": null,
+    "corrections": []
+  },
+  "reopenConditions": [
+    "Independent evidence contradicts a recorded observation",
+    "Threat model, revocation contract, custody or source changes",
+    "Previously omitted path becomes reachable"
+  ],
+  "id": "EOC-20261017-ROLE-CHANNEL-FAILURES-v0.1",
+  "claim": "Pinned PR88 attacks reproduced locally. Corrective development separated channel roles and explicit revocation operations, then exposed and repaired witness-loss crash and unsafe object decoding; no independent administrative brake was established.",
+  "sources": [
+    {
+      "type": "github_pr",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/88"
+    },
+    {
+      "type": "repository_commit",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/commit/9ccc53ed09015121e13460099daf32c8d4dea8b7"
+    },
+    {
+      "type": "repository_commit",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/commit/5a440ad9c6ff4fe0396eecf400fb0e49e985e22e"
+    },
+    {
+      "type": "github_pr",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/91"
+    }
+  ],
+  "observations": [
+    {
+      "id": "B1",
+      "description": "Original source fetched unchanged and rerun: 17 total tests, 16 pass, one identity-suspension assertion fails. Two passing adversarial tests demonstrate authorization minting and witness fabrication.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "B2",
+      "description": "Original revoke invalidates old epochs but permits fresh grants. Corrective fixture separately names invalidate_grants, suspend_identity and resume_identity; no deployment policy chosen.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "B3",
+      "description": "First corrective draft: witness termination caused a resource BrokenPipeError after in-memory effect recording while nine tests returned success. Snapshot and stderr preserved.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "B4",
+      "description": "Next corrective specimen: requester-supplied pickled marker executed on receipt before role checking. Inert local marker success preserved.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "B5",
+      "description": "Final JSON-byte transport denies the previous marker. Witness loss explicitly retains a committed-effect/unknown-witness state. Ten local tests pass; not independent replication.",
+      "state": "SUPPORTED"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "ORIGINAL-ATTACK",
+      "purpose": "Repeat same pinned failure specimen",
+      "execution": "EXECUTED locally: 16/17 pass, one policy-dependent fail; successful attacks remain failures of containment."
+    },
+    {
+      "id": "WITNESS-LOSS",
+      "purpose": "Detect effect despite missing witness",
+      "execution": "EXECUTED: crash in first draft; final version preserves effect and unknown witness."
+    },
+    {
+      "id": "PICKLE-MARKER",
+      "purpose": "Detect execution before role checks",
+      "execution": "EXECUTED: marker present in intermediate specimen; absent after JSON repair."
+    },
+    {
+      "id": "INDEPENDENT-ADMIN",
+      "purpose": "Protect issuer/resource/witness from controller compromise",
+      "execution": "NOT TESTED; no separate administrative credentials."
+    }
+  ],
+  "reproduction": [
+    "See pinned corrective PR README and evidence/original-reproduction.json for exact source SHA, commands, hashes and logs.",
+    "python3 -m unittest -v test_brake_roles.py from corrective fixture directory."
+  ],
+  "limitations": [
+    "Same assistant and host, not independent replication.",
+    "Controller owns all handles; issuer and resource checks share a process.",
+    "No durable recovery, distributed race, partition, separate credentials, external resource observation or alternate-path completeness.",
+    "Malformed/oversized JSON may terminate service; no general denial-of-service or hostile-host containment claim.",
+    "Historical corrective core specimens/logs preserved; complete intermediate test-module versions were not preserved, only their hashes. Final test source preserved.",
+    "No universal revoke policy chosen and no live system connected."
+  ]
+}
