@@ -1,0 +1,66 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-PJM-LARGE-LOAD-BACKUP-NOT-USED-20261013",
+  "observedAt": "2026-10-14T05:42:24-05:00",
+  "claim": "PJM's October 13, 2026 official operations update states that PJM had not had to make use of Large Load backup generation to date. This primary negative evidence is stronger than absence from the emergency-postings page and blocks any inference that DOE Order 202-26-50, Exhibit A expansion, or advance coordination had already resulted in PJM-directed Large Load backup generation by the article's reporting cutoff.",
+  "source": [
+    {
+      "type": "PRIMARY_OPERATOR_STATEMENT",
+      "title": "Operations Update: PJM Extends Maximum Generation Alert to Oct. 14, Calls on Demand Response",
+      "date": "2026-10-13",
+      "url": "https://insidelines.pjm.com/operations-update-extends-maximum-generation-alert-calls-on-demand-response/"
+    },
+    {
+      "type": "PRIMARY_LIVE_STATUS",
+      "title": "PJM Emergency Procedures – Postings",
+      "accessed": "2026-10-14T05:42:24-05:00",
+      "url": "https://emergencyprocedures.pjm.com/ep/pages/dashboard.jsf"
+    },
+    {
+      "type": "PRIOR_LEDGER",
+      "title": "PJM Exhibit A Version 3 backup-resource expansion candidate",
+      "url": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/73"
+    }
+  ],
+  "disposition": "NEGATIVE_RESULT",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "A corrected PJM statement or attributable operational record showing that PJM directed or relied on Large Load backup generation before the operations update's reporting cutoff.",
+  "firstUnsupportedArrow": "DOE authority and backup-resource listing → independently reachable backup resource → PJM instruction → recipient receipt and action → generator operation → measured usable relief",
+  "omissions": [
+    "The article gives no exact cutoff timestamp for 'to date.'",
+    "The statement concerns PJM use of Large Load backup generation; it does not establish whether customers self-generated independently or migrated workload.",
+    "It does not resolve use of DOE-listed generating units, emissions-limited operation, or other demand response.",
+    "It does not establish independent reachability, fuel, start readiness, interconnection, telemetry, recipient acknowledgement, or cost allocation for listed backup resources.",
+    "It does not prove that no backup-generator Warning or Action occurred after publication.",
+    "No facility-level instruction, acknowledgement, start, output, or correction-propagation ledger was retrieved."
+  ],
+  "failures": [
+    "TEMPORAL_CUTOFF_UNSPECIFIED",
+    "INDEPENDENT_REACHABILITY_NOT_TESTED",
+    "FACILITY_LEVEL_EXECUTION_NOT_OBSERVED",
+    "POST_PUBLICATION_STATE_UNKNOWN"
+  ],
+  "rivalHypotheses": [
+    "PJM had legal authority and a prepared inventory but did not need to activate Large Load backup generation before the reporting cutoff.",
+    "Some listed backup resources may have operated for owner purposes without constituting PJM-directed use.",
+    "PJM may later issue a Warning or Action as October 14 conditions develop."
+  ],
+  "consequenceOwner": [
+    "PJM for any backup-generator Warning, Action, dispatch, and release",
+    "utilities and Curtailment Service Providers for routing applicable instructions",
+    "Large Load/resource owners for receipt, physical execution, fuel, and permit compliance",
+    "DOE for temporary Section 202(c) authority",
+    "human reviewer for admission, publication, and consequential use"
+  ],
+  "nextBoundedMachineMove": "Continue checking the primary emergency-postings page and DOE docket for a backup-generator Warning/Action, corrected operator statement, facility instruction, acknowledgement, start/output record, reliance report, or later explicit no-use statement. Preserve the article's unspecified temporal cutoff.",
+  "priorFindingOrLedger": [
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/73",
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/67"
+  ],
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "deliveryStatus": "REVIEW_ONLY_CANDIDATE",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
