@@ -1,0 +1,33 @@
+name: Interaction sensor (read-only)
+on:
+  schedule:
+    - cron: '17 13 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+  actions: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run fixture tests
+        run: python -m unittest discover -s tests -p 'test_interaction_sensor.py'
+      - name: Collect public interaction evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: python scripts/interaction_sensor.py
+      - name: Retain report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: interaction-evidence-${{ github.run_id }}
+          path: interaction-report.json
+          retention-days: 90
