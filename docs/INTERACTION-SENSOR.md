@@ -1,6 +1,6 @@
 # BoundaryTitan Interaction Sensor
 
-State: MERGED INTO MAIN; first two manually dispatched runs FAILED on stargazers HTTP 403; aggregate-count repair committed; post-repair run NOT YET VERIFIED.
+State: MERGED INTO MAIN; two manual HTTP-403 failures preserved; post-repair manual run 39038591178 VERIFIED from job logs and artifact metadata. Scheduled execution and notification delivery NOT YET OBSERVED.
 Owner: human BoundaryTitan repository owner. Scope: read-only observation only.
 
 ## Operational configuration
@@ -35,3 +35,9 @@ CAN ⊬ MAY. No owner, no brake. No ledger, no trust.
 - Repair: remove individual-stargazer listing from required endpoints, retain aggregate stargazers_count from repository metadata; no elevated token permissions. Fixture updated to assert no stargazer request.
 - Loss: cannot identify individual stargazers; aggregate count does not establish who starred or why. This is a declared scope reduction, not a successful individual-stargazer test.
 - Required disposition: rerun workflow, verify successful tests, collection, artifact and next scheduled execution. Do not certify from code changes alone.
+
+## Verified manual receipt and pending schedule (2026-10-17)
+- Successful manual run: https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39038591178 at 33b3df7208c224cd0477beb541ed0e8f12afc514; tests, collection and upload succeeded. Artifact 12102548377; GitHub-reported digest sha256:9b077d60e9dfbece76f454e25ae77d032f96871b9bc352192a5a3106d7146a09. Metadata/logs inspected, artifact bytes not independently downloaded or custodied in this review.
+- Retrieved run list: two failed and one successful manual workflow_dispatch runs; no schedule event observed. Next nominal cron occurrence after merge: 2026-10-18 13:17 UTC / 08:17 CDT. GitHub may delay/skip scheduled execution; do not infer reliability from configuration.
+- Verify event=schedule, commit, fixture/collector/upload steps, artifact contents/digest and recipient delivery separately. If no run appears, record UNKNOWN; do not fabricate zero activity. This review did not add a reminder or broaden a monitor.
+- PR #89's stale unmerged description was corrected, preserving the earlier wording in its dated correction account.
