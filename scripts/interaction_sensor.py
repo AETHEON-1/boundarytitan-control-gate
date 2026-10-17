@@ -51,7 +51,17 @@ def collect(repo, token, opener=urllib.request.urlopen):
             else:
                 raise ValueError("Unexpected response shape")
             report["evidence"][key] = data
-        except (urllib.error.HTTPError, urllib.error.URLError, ValueError, TimeoutError) as exc:
+        except urllib.error.HTTPError as exc:
+            # Retain safe diagnostic metadata, never authorization headers.
+            headers = exc.headers or {}
+            report["failures"].append({
+                "endpoint": key, "error": str(exc), "http_status": exc.code,
+                "rate_limit_remaining": headers.get("X-RateLimit-Remaining"),
+                "rate_limit_reset": headers.get("X-RateLimit-Reset"),
+                "retry_after": headers.get("Retry-After"),
+                "github_request_id": headers.get("X-GitHub-Request-Id"),
+            })
+        except (urllib.error.URLError, ValueError, TimeoutError) as exc:
             report["failures"].append({"endpoint": key, "error": str(exc)})
     return report
 
