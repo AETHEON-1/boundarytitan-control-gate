@@ -13,7 +13,7 @@ import unittest
 def gate_worker(path, conn):
     db = sqlite3.connect(path)
     db.execute("CREATE TABLE IF NOT EXISTS state (id INTEGER PRIMARY KEY CHECK(id=1), epoch INTEGER NOT NULL, halted INTEGER NOT NULL DEFAULT 0)")
-    db.execute("INSERT OR IGNORE INTO state VALUES (1,0)")
+    db.execute("INSERT OR IGNORE INTO state (id, epoch, halted) VALUES (1, 0, 0)")
     db.execute("CREATE TABLE IF NOT EXISTS permits (nonce TEXT PRIMARY KEY, subject TEXT, action TEXT, epoch INTEGER, used INTEGER DEFAULT 0)")
     db.commit()
     while True:
