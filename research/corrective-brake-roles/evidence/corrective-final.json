@@ -1,0 +1,11 @@
+{
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_authorized_effect_matches_separate_witness (test_brake_roles.RoleTests.test_authorized_effect_matches_separate_witness) ... ok\ntest_invalidate_old_grant_allows_new_grant (test_brake_roles.RoleTests.test_invalidate_old_grant_allows_new_grant) ... ok\ntest_observer_cannot_fabricate_witness (test_brake_roles.RoleTests.test_observer_cannot_fabricate_witness) ... ok\ntest_replay_and_mutation_rejected (test_brake_roles.RoleTests.test_replay_and_mutation_rejected) ... ok\ntest_requester_cannot_mint_or_administer (test_brake_roles.RoleTests.test_requester_cannot_mint_or_administer) ... ok\ntest_resource_loss_does_not_claim_no_effect (test_brake_roles.RoleTests.test_resource_loss_does_not_claim_no_effect) ... ok\ntest_suspension_requires_issuer_resume (test_brake_roles.RoleTests.test_suspension_requires_issuer_resume) ... ok\ntest_trusted_controller_can_still_issue_authority (test_brake_roles.RoleTests.test_trusted_controller_can_still_issue_authority) ... ok\ntest_untrusted_serialized_object_is_never_executed (test_brake_roles.RoleTests.test_untrusted_serialized_object_is_never_executed) ... ok\ntest_witness_loss_preserves_committed_effect (test_brake_roles.RoleTests.test_witness_loss_preserves_committed_effect) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.608s\n\nOK\n",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "files": {
+    "test_brake_roles.py": "3e9d11ebb35103c101b44a54d514322b9144b5449de2e2aa04d43afbc34391c4",
+    "brake_roles.py": "e4323cefc8608d8691b5bcba327e0ab492bbd04e4c26f3e7fffffab1624e2bca",
+    "probe_pickle.py": "4e904ca95911a933c999a55ca019ee71730ae2c6117d60cfcd1e95859425142d"
+  }
+}
