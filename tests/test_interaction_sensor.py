@@ -24,8 +24,20 @@ class SensorTests(unittest.TestCase):
         def opener(request, timeout):
             raise urllib.error.HTTPError(request.full_url, 403, "Forbidden", {}, None)
         r = collect("example/repo", "fixture", opener)
-        self.assertEqual(len(r["failures"]), 4)
+        self.assertEqual(len(r["failures"]), 3)
         self.assertEqual(r["evidence"], {})
+    def test_aggregate_stars_without_stargazer_endpoint(self):
+        requested = []
+        def opener(request, timeout):
+            requested.append(request.full_url)
+            if request.full_url.endswith("/repos/example/repo"):
+                return FakeResponse({"stargazers_count": 7, "forks_count": 0, "open_issues_count": 0})
+            return FakeResponse([])
+        r = collect("example/repo", "fixture", opener)
+        self.assertEqual(r["evidence"]["repository"]["stargazers_count"], 7)
+        self.assertFalse(any("/stargazers" in url for url in requested))
+        self.assertEqual(r["failures"], [])
+
     def test_missing_token_rejected(self):
         with self.assertRaises(ValueError):
             collect("example/repo", "")
