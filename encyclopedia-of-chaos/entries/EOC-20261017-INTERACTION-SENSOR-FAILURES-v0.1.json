@@ -1,0 +1,118 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "recordedDate": "2026-10-17",
+  "kind": "MONITORING_FAILURE_SCOPE_REDUCTION_AND_RECEIPT",
+  "evidenceState": "SUPPORTED",
+  "environment": "Local Python 3.12 spawn processes; no independent administration or external resource. GitHub observations via connected API.",
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Inspectably preserved failures and narrower corrective preparation."
+    ],
+    "harmful": [
+      "Test success could be mistaken for independent authority or complete monitoring."
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "Human approved preparation and preservation; archive admission and deployment separate.",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "NOT_STARTED",
+  "authorizationGranted": false,
+  "links": {
+    "parent": null,
+    "supersedes": null,
+    "corrections": []
+  },
+  "reopenConditions": [
+    "Independent evidence contradicts a recorded observation",
+    "Threat model, revocation contract, custody or source changes",
+    "Previously omitted path becomes reachable"
+  ],
+  "id": "EOC-20261017-INTERACTION-SENSOR-FAILURES-v0.1",
+  "claim": "Repository sensor failures and scope reduction preserved. One repaired manual snapshot succeeded; no scheduled execution, notification delivery or independent custody was established.",
+  "sources": [
+    {
+      "type": "github_pr",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/89"
+    },
+    {
+      "type": "github_actions",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39038065304"
+    },
+    {
+      "type": "github_actions",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39038239661"
+    },
+    {
+      "type": "github_actions",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39038448692"
+    },
+    {
+      "type": "github_actions",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39038591178"
+    },
+    {
+      "type": "github_artifact",
+      "locator": "https://api.github.com/repos/AETHEON-1/boundarytitan-control-gate/actions/artifacts/12102548377"
+    }
+  ],
+  "observations": [
+    {
+      "id": "S1",
+      "description": "Run 39038065304 passed typecheck/Jest/Python then failed inventory: five missing files including interaction workflow, docs, collector, test and pre-existing reality benchmark note.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "S2",
+      "description": "Manual runs 39038239661 and 39038448692 failed collection on stargazers HTTP 403. Tests and artifact uploads succeeded. Exact restriction remains unknown; primary rate exhaustion not supported by recorded remaining budget.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "S3",
+      "description": "Repair removed individual-stargazer collection and retained aggregate count. This is scope reduction, not a passing individual-identity retrieval test.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "S4",
+      "description": "Run 39038591178 at 33b3df7 passed tests, collection and upload. Artifact metadata reports digest sha256:9b077d60e9dfbece76f454e25ae77d032f96871b9bc352192a5a3106d7146a09. Job logs and metadata inspected; artifact bytes not independently downloaded.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "S5",
+      "description": "Retrieved run list contained only three manual events. Schedule is daily 13:17 UTC; next nominal run after merge October 18, 08:17 CDT. A future configured run is not an observed success.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "S6",
+      "description": "PR89 stale NOT MERGED OR ACTIVE body corrected under explicit human authorization; original wording preserved in this record. Documentation correction proposed separately.",
+      "state": "SUPPORTED"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "SENSOR-FAILURES",
+      "purpose": "Preserve initial and endpoint failure lineage",
+      "execution": "Historical job logs inspected; no old workflow rerun."
+    },
+    {
+      "id": "MANUAL-RECEIPT",
+      "purpose": "Verify existing successful manual run",
+      "execution": "Step conclusions, printed report and artifact metadata inspected."
+    },
+    {
+      "id": "SCHEDULE-DELIVERY",
+      "purpose": "Verify scheduled execution, retained artifact and notification delivery separately",
+      "execution": "NOT OBSERVED. Next run is future relative to this record."
+    }
+  ],
+  "reproduction": [
+    "Inspect pinned run jobs, logs and artifact metadata; compare event, head SHA, collection time and endpoint failure list.",
+    "After nominal schedule, retrieve event=schedule run and inspect steps/artifact/delivery independently; record UNKNOWN if missing."
+  ],
+  "limitations": [
+    "Only first-page supported API surfaces; discussions, traffic and individual star identities absent.",
+    "No automatic historical comparison or deduplication established.",
+    "No scheduled execution or notification delivery observed.",
+    "GitHub controls execution and artifact custody; retained digest is reported metadata, not independent custody.",
+    "No new monitor, schedule, elevated token or live operational action created."
+  ]
+}
