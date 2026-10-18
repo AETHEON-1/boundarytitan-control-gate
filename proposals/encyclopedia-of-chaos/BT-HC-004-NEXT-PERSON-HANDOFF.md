@@ -10,7 +10,7 @@
 2. Read `challenges/BT-HC-004-CONSEQUENCE-PATH-DOMINANCE.yaml`.
 3. Read `AUTHORIZATION-MACHINERY-ADVERSARIAL-BATTERY-v0.1.md`, especially AM-01, AM-05, AM-06, AM-16, AM-17, AM-20, AM-21.
 4. Read `CURRENT-REPOSITORY-STATE-v0.2.md`; it is a historical snapshot, not a fresh verification of this branch.
-5. Review the two source artifacts generated in the conversation, `brake_connectivity_local_model_result.json` and `BT-HC-004-local-falsification-ledger-002.json`. **They are not attached to this Git branch.** Request the originals before relying on their exact bytes.
+5. Review the two source artifacts under `proposals/encyclopedia-of-chaos/evidence/`: `brake_connectivity_local_model_result.json` and `BT-HC-004-local-falsification-ledger-002.json`. Both are now committed on this staging branch. Recompute hashes and compare with the original conversation files if independent byte-for-byte custody is required.
 
 ## What we know
 
