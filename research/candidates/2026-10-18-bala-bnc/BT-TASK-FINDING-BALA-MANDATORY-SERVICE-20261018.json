@@ -1,0 +1,60 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6ab47d6b3dc88191ac03a16a446c328b",
+  "findingId": "BALA-S1-BNC-MANDATORY-SERVICE-20261018",
+  "observedAt": "2026-10-18",
+  "observedAtPrecision": "DATE_ONLY",
+  "source": [
+    {
+      "type": "ORIGINAL_COURT_ORDER",
+      "name": "U.S. Bankruptcy Court S.D. Florida Administrative Order 2026-06",
+      "date": "2026-10-16",
+      "url": "https://www.flsb.uscourts.gov/sites/flsb/files/documents/news/AO_2026-06_Order_Regarding_Bankruptcy_Noticing_Center_Service_Interruption.pdf"
+    },
+    {
+      "type": "CONTRARY_COURT_ORDER",
+      "name": "U.S. Bankruptcy Court S.D. Indiana General Order 26-0004",
+      "date": "2026-10-16",
+      "url": "https://www.insb.uscourts.gov/sites/insb/files/26-0004.pdf"
+    }
+  ],
+  "claim": "S.D. Florida AO 2026-06 requires certain court-notice service by designated trustees, debtors' counsel, and unrepresented debtors; for cases filed from October 7, 2026, the commencement/§341 notice must be mailed within three days of the later of the order or clerk's issuance. It requires certificates of service, allows fee-based PACER access to a creditor matrix (with quarterly sub-$30 fee waiver), warns matrices may omit EBN/NCRS addresses, and does not extend statutory or rule deadlines. Unlike Indiana's elective substitute service, this is a mandatory temporary reallocation of service duties, including to some unrepresented parties. No inability to comply or prejudice is established.",
+  "disposition": "MATERIAL_OMITTED_PROCEDURAL_ACCESS_COST_DELTA",
+  "evidenceState": "SIGNED_COURT_ORDER_VERIFIED; COST_AMOUNT_AND_EFFECT_UNVERIFIED; NOT_NEW_INCIDENT; ORDER_DATED_2026-10-16",
+  "falsifier": "A superseding order removing the duty, proof that an allegedly affected party was not covered, or evidence of a timely alternative court-directed service path would defeat an asserted burden in that specific case; independently verified inability to comply and consequent missed service would substantiate rather than merely hypothesize the access gap.",
+  "firstUnsupportedArrow": "Court assigns substitute notice responsibility -> unrepresented debtor can obtain complete recipient information and perform timely legally sufficient service",
+  "rivalHypotheses": [
+    "PACER fee waivers and clerk guidance make substitute notice feasible in many cases.",
+    "Already completed lawful service avoids duplicate service.",
+    "Court may designate another responsible entity on motion or sua sponte.",
+    "Recipient omissions may be corrected through non-BNC records.",
+    "The rule's compliance burden does not translate into material practical exclusion for a particular party."
+  ],
+  "omissions": [
+    "Original October 16 Florida order was not analyzed in prior October 17 BALA candidate; coverage omission retained.",
+    "No paid PACER access, individual case docket, recipient list, personal information or live service attempted.",
+    "No actual cost, mail expense, ability-to-pay, failed deadline, motion for relief or recipient prejudice verified.",
+    "No independent verification of updated 2026 PACER fee rules beyond text of court order.",
+    "No restoration/backlog reconciliation verified.",
+    "Exact observation time not captured."
+  ],
+  "failures": [
+    "PREVIOUS_SCOUT_OMISSION_S_D_FLORIDA_AO_2026_06",
+    "MANDATORY_SERVICE_ACCESS_COST_UNMEASURED",
+    "RECIPIENT_COMPLETENESS_UNVERIFIED",
+    "DOWNSTREAM_SERVICE_AND_REMEDY_UNVERIFIED"
+  ],
+  "negativeResults": [
+    "CM/ECF continued functioning; lawful NEF service may obviate duplicate notice.",
+    "Order provides relief pathways and instructions for unrepresented parties; it does not prove universal exclusion.",
+    "Mandatory duty is not equivalent to evidence of nonperformance.",
+    "No operative amendment to federal evidence rules or criminal discovery rules inferred."
+  ],
+  "costBearer": "Temporary service labor, mailing, and PACER access fall initially on the designated responsible party unless court relief changes allocation; exact amounts and ultimate legal cost allocation unverified.",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "archiveAdmission": "PENDING_HUMAN_REVIEW",
+  "independentCustody": "NOT_ESTABLISHED",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
