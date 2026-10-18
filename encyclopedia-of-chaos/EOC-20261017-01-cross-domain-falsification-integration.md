@@ -28,3 +28,15 @@ EOC-F06: Independent brake, physical stop, and third-party reproduction remain N
 7. No merge, publication, deployment, or certification follows from this record.
 
 CAN ⊬ MAY. Freeze the evidence; never freeze the search.
+
+## CI evidence addendum: latest verified branch run
+Workflow: https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39085701369
+Commit: b0596e048afcdd2cac38fd7e692fce2517850037
+Job: 117551679822. Overall: FAILURE.
+- npm ci: completed; npm audit reported **35 vulnerabilities (3 moderate, 31 high, 1 critical)**. This is an install-time advisory report, not proof of exploitability. Earlier repository-state notes claiming zero known vulnerabilities are historical and contradicted by this run.
+- TypeScript typecheck: PASS.
+- Jest: **36 suites / 112 tests PASS**. These are existing tests, not executions of CD-01..CD-10.
+- Python handoff: **3 tests PASS**.
+- `npm run verify:state`: FAIL (exit 1). Raw verifier listed README.md hash drift and eight missing tracked files: `.github/workflows/interaction-sensor.yml`, `docs/INTERACTION-SENSOR.md`, `docs/research/CROSS-DOMAIN-FALSIFICATION-SPECIALIST-ENTRYPOINT-v0.1.md`, `docs/research/SPECIALIST-HANDOFF-AND-FAILURE-TRANSFER-20261017.md`, `encyclopedia-of-chaos/EOC-20261017-01-cross-domain-falsification-integration.md`, `encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md`, `scripts/interaction_sensor.py`, `tests/test_interaction_sensor.py`.
+- GitHub Actions warned that Node.js 20 is deprecated and checkout/setup-node v4 were forced to Node 24. Record for future action upgrades; not the direct failure in this run.
+Disposition: CI RED; manifest custody unresolved; dependency audit needs triage. No manifest auto-repair performed. No deployment or merge authorized.
