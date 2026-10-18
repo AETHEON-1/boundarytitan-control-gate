@@ -1,0 +1,79 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6ab47d6b3dc88191ac03a16a446c328b",
+  "findingId": "BALA-S1-BNC-STAY-STATUTE-RIVAL-20261018",
+  "observedAt": "2026-10-18",
+  "observedAtPrecision": "DATE_ONLY; exact time not recorded",
+  "source": [
+    {
+      "type": "ORIGINAL_COURT_ORDER",
+      "name": "U.S. Bankruptcy Court E.D. Texas General Order 26-2",
+      "date": "2026-10-14",
+      "url": "https://www.txeb.uscourts.gov/sites/txeb/files/G.O.26-2.pdf"
+    },
+    {
+      "type": "FEDERAL_STATUTE",
+      "name": "11 U.S.C. § 362(c)(3)(A)-(B), U.S. Government Publishing Office",
+      "date": "2024 code edition; current applicability not independently checked against 2026 amendments",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title11/html/USCODE-2024-title11-chap3-subchapIV-sec362.htm"
+    },
+    {
+      "type": "PRIOR_CONTRARY_JUDICIAL_OPINION",
+      "name": "Capital One Auto Finance v. Cowley, 374 B.R. 601 (W.D. Tex. 2006), No. EP-06-CA-239-PRM",
+      "date": "2006-12-28",
+      "url": "https://openjurist.org/374/br/601/capital-one-auto-finance-v-cowley"
+    },
+    {
+      "type": "PRIOR_CONTRARY_JUDICIAL_OPINION",
+      "name": "In re Morgan, Case 25-30792, Doc 19 (Bankr. N.D. Ohio)",
+      "date": "2025-06-23",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ohnb-3_25-bk-30792/pdf/USCOURTS-ohnb-3_25-bk-30792-0.pdf"
+    },
+    {
+      "type": "SUPREME_COURT_OPINION",
+      "name": "Law v. Siegel, 571 U.S. 415 (2014)",
+      "date": "2014-03-04",
+      "url": "https://supreme.justia.com/cases/federal/us/571/415/"
+    }
+  ],
+  "claim": "E.D. Texas General Order 26-2, signed October 14, 2026, orders a further 30 days of automatic stay for specified cases filed on or after September 14 with a motion under §362(c)(3)(B), to permit hearing after BNC notice interruption. Section 362(c)(3)(B) ordinarily requires a noticed hearing completed within the initial 30-day period. Earlier judicial decisions construe that deadline strictly. The order's applicability and legal basis against the statute and prior cases are a genuine rival-authority question, NOT an established invalidity finding or verified case-level harm.",
+  "disposition": "MATERIAL_OMITTED_PRIMARY_AUTHORITY_AND_RIVAL_LAW",
+  "evidenceState": "ORIGINAL_ORDER_AND_STATUTORY_TEXT_VERIFIED; LEGAL_VALIDITY_UNRESOLVED; NOT_NEW_INCIDENT; NOT_NEW_2026-10-18_ORDER",
+  "falsifier": "A controlling appellate opinion, statutory exception or binding authority authorizing the specific temporary extension would defeat a broad claim that the order lacks authority. Conversely, a case-specific vacatur, appellate ruling, or judicial clarification restricting the order would materially change the evidence state.",
+  "firstUnsupportedArrow": "General order continuing the stay for 30 additional days -> legally effective stay continuation in every affected case despite §362(c)(3)(B)'s hearing timing condition",
+  "rivalHypotheses": [
+    "Order rests on a legally available emergency or equitable procedural basis not established by current record.",
+    "General order is effective for particular cases where statutory prerequisites were already satisfied.",
+    "Earlier cases address post-expiration individual orders and may be distinguishable from a timely district-wide order.",
+    "Strict statutory deadline and Supreme Court limits on §105(a) constrain or defeat extension in some cases.",
+    "The stay's termination scope as to debtor, debtor property, and estate property varies with unresolved jurisprudential splits."
+  ],
+  "omissions": [
+    "Original order dated October 14 was omitted from the October 17 BALA finding: preserved as a prior-scout coverage failure, not new issuance.",
+    "No E.D. Texas case-level docket, hearing date, stay enforcement, appeal, modification or actual adverse effect examined.",
+    "No controlling Fifth Circuit ruling specifically resolving validity of this October 2026 order located.",
+    "No independently verified 2026 statutory amendment sweep; statute sourced to official 2024 code edition.",
+    "Potential difference between injunction under §105 and statutory stay under §362 remains unresolved.",
+    "No determination whether all covered motions were filed within the initial 30 days or hearing timely completed.",
+    "Exact observation time not captured."
+  ],
+  "failures": [
+    "PREVIOUS_SCOUT_OMISSION_E_D_TEXAS_GO_26_2",
+    "STATUTORY_VS_GENERAL_ORDER_AUTHORITY_NOT_RESOLVED",
+    "CASE_LEVEL_EFFECT_AND_REMEDY_NOT_VERIFIED",
+    "INDEPENDENT_LEGAL_SPECIALIST_REVIEW_NOT_PERFORMED"
+  ],
+  "negativeResults": [
+    "No new BNC incident established; original outage already recorded.",
+    "No judicial finding that GO 26-2 is invalid located in this bounded pass.",
+    "No automatic inference that every case covered by GO 26-2 has an unlawful stay.",
+    "No proof of prejudice to debtor or creditor from the general order."
+  ],
+  "costBearer": "Debtors and creditors may bear litigation, notice, monitoring, or challenge costs; no case-level amounts or legally assigned reimbursement verified.",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "archiveAdmission": "PENDING_HUMAN_REVIEW",
+  "independentCustody": "NOT_ESTABLISHED",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
