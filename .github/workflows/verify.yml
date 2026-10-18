@@ -38,6 +38,8 @@ jobs:
           path: npm-audit-report.json
           retention-days: 30
           if-no-files-found: error
+      - name: Remove transient audit file before tracked-tree verification
+        run: rm npm-audit-report.json
       - name: Typecheck
         run: npm run typecheck
       - name: Run Jest

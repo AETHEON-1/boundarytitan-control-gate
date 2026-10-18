@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/verify.yml",
-      "size_bytes": 1311,
-      "sha256": "d14caf4473af769dd011d0ceebd880eca4d8f69c9aa5128b05a145d019612714"
+      "size_bytes": 1424,
+      "sha256": "3566499c20e84399f2c76abab6d9533826af8c0da5204d0d1af0dc8907174441"
     },
     {
       "path": ".gitignore",
@@ -767,8 +767,8 @@
     },
     {
       "path": "encyclopedia-of-chaos/EOC-20261017-01-cross-domain-falsification-integration.md",
-      "size_bytes": 6250,
-      "sha256": "4be8d03810ba6e50eaf7119f92896d59b205678c153a750ff4f4871bc29eb028"
+      "size_bytes": 7910,
+      "sha256": "a1cbd17c2d209eac1d66463b74334308dc3192bc170f5515052557620dd9955b"
     },
     {
       "path": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md",
