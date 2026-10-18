@@ -23,8 +23,8 @@ jobs:
       - name: Capture npm advisory report (diagnostic only)
         shell: bash
         run: |
-          npm audit --json > npm-audit-report.json
-          status=$?
+          status=0
+          npm audit --json > npm-audit-report.json || status=$?
           echo "npm audit exit code: $status (diagnostic, not a security gate)"
           if [ ! -s npm-audit-report.json ]; then
             echo "Audit report missing or empty" >&2
