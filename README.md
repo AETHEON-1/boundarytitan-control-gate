@@ -80,3 +80,7 @@ Typecheck and local tests are structural evidence only. They do not establish le
 Run the read-only repository-state check with `npm run verify:state`. It checks
 the current tracked-tree ledger and confirms that the RC1 release artifacts are
 explicitly historical rather than current authorization.
+
+## Open cross-domain challenge (draft)
+
+- `docs/research/CROSS-DOMAIN-FALSIFICATION-SPECIALIST-ENTRYPOINT-v0.1.md` — proposed delta-only human and specialist challenge specifications. NOT TESTED. Reuse existing AM cases and AGAT tests; do not treat documentation as verification.

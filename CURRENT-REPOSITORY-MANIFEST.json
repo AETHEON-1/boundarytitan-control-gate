@@ -21,9 +21,14 @@
       "sha256": "146fc4a7e29026507034652f344d0f100f70fd1a61e2a9cfa74bbabe38281b43"
     },
     {
+      "path": ".github/workflows/interaction-sensor.yml",
+      "size_bytes": 937,
+      "sha256": "24e1adb7755e130b6e739c7e8dee9a9bb19ff218791ed4573252c348b10118f6"
+    },
+    {
       "path": ".github/workflows/verify.yml",
-      "size_bytes": 657,
-      "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
+      "size_bytes": 1424,
+      "sha256": "3566499c20e84399f2c76abab6d9533826af8c0da5204d0d1af0dc8907174441"
     },
     {
       "path": ".gitignore",
@@ -477,8 +482,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 3808,
-      "sha256": "b7d5f5d59b62beb22336a2b617891b114d47fc78b54e174a6fe96e0dcacde90a"
+      "size_bytes": 4091,
+      "sha256": "c03b72f9382a30567e835678045539dd15d7756ce2a389476d982a9ed644ec54"
     },
     {
       "path": "RELEASE_CANDIDATE_CHECKS.json",
@@ -746,6 +751,31 @@
       "sha256": "abeb522849ec2580368ac2f64d30257426984f97013c2147906f76eb33abe13f"
     },
     {
+      "path": "docs/INTERACTION-SENSOR.md",
+      "size_bytes": 3316,
+      "sha256": "7dc069d4d3cd322c2b3f5744e98fa051adf001719898f4479ff11fd27a5f1839"
+    },
+    {
+      "path": "docs/research/CROSS-DOMAIN-FALSIFICATION-SPECIALIST-ENTRYPOINT-v0.1.md",
+      "size_bytes": 8359,
+      "sha256": "d893922c42f398ba954d23c712ba4bd5b293c905942ada9f55ebbcf371247803"
+    },
+    {
+      "path": "docs/research/SPECIALIST-HANDOFF-AND-FAILURE-TRANSFER-20261017.md",
+      "size_bytes": 5046,
+      "sha256": "853e8ce700a0879571f69703dfb9521662f52a4d3758977b1cbef9aa0d644966"
+    },
+    {
+      "path": "encyclopedia-of-chaos/EOC-20261017-01-cross-domain-falsification-integration.md",
+      "size_bytes": 7910,
+      "sha256": "a1cbd17c2d209eac1d66463b74334308dc3192bc170f5515052557620dd9955b"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md",
+      "size_bytes": 4281,
+      "sha256": "863e6656f3a08a21d804a5f457fa4ebefc312dd0c1daa485ee20dd328f7b9acf"
+    },
+    {
       "path": "evaluation-record.schema.json",
       "size_bytes": 2179,
       "sha256": "4cc299f1b268eb47fe5b32af428321859317a877688bf5d728b3ec3bdb533ba3"
@@ -799,6 +829,11 @@
       "path": "research/candidates/2026-10-16-external-evidence/README.md",
       "size_bytes": 4401,
       "sha256": "5214e3f37a24494825ee41674d9b1afdc94a5c4d50665e5751e7fae9e286198c"
+    },
+    {
+      "path": "scripts/interaction_sensor.py",
+      "size_bytes": 4039,
+      "sha256": "150e09c976013126779980525e7c921ce843add6540f658a086ffb1037a4f311"
     },
     {
       "path": "scripts/verify-repository-state.js",
@@ -1319,6 +1354,11 @@
       "path": "test_agentic_handoff.py",
       "size_bytes": 1949,
       "sha256": "2d0a69bcdde5145ae3ff59f423ef683568438b9853626549bbb500e1d1de0ffc"
+    },
+    {
+      "path": "tests/test_interaction_sensor.py",
+      "size_bytes": 2094,
+      "sha256": "ddc1f1df4f65327fbc9b66ab76dd1931dab7b562f7cee9b3a472bd87a985fbc7"
     },
     {
       "path": "trust-boundaries.mmd",
