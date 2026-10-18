@@ -20,6 +20,24 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Capture npm advisory report (diagnostic only)
+        shell: bash
+        run: |
+          npm audit --json > npm-audit-report.json
+          status=$?
+          echo "npm audit exit code: $status (diagnostic, not a security gate)"
+          if [ ! -s npm-audit-report.json ]; then
+            echo "Audit report missing or empty" >&2
+            exit 1
+          fi
+          exit 0
+      - name: Preserve npm advisory report
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-audit-${{ github.sha }}
+          path: npm-audit-report.json
+          retention-days: 30
+          if-no-files-found: error
       - name: Typecheck
         run: npm run typecheck
       - name: Run Jest

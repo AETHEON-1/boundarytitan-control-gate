@@ -27,3 +27,14 @@ F-20261017-05 | Manifest drift risk | README and research files changed; state v
 Keep failed or inconclusive outcomes. A human may decide whether to merge, but may not retroactively turn NOT TESTED into PASS.
 
 CAN ⊬ MAY. Freeze evidence; never freeze the search.
+
+## Superseding evidence checkpoint (2026-10-17)
+The earlier open entries remain intact as historical evidence, but their current state has changed:
+- F-20261017-01: RESOLVED. Canonical existing location verified: `encyclopedia-of-chaos/`. Earlier guessed paths were wrong.
+- F-20261017-05: RESOLVED at commit `5ea7ad42618688bd07baf76ebe85eeb16f8a5f6b`. [PR run 39085924168](https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39085924168) and [push run 39085920700](https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39085920700) both concluded SUCCESS, including repository-state verification. Earlier failed runs remain preserved.
+- Security: PARTIAL TRIAGE. `package.json` declares seven direct devDependencies; all 287 non-root entries in `package-lock.json` have `dev: true`. The historical `npm ci` output reported 35 advisories (3 moderate, 31 high, 1 critical). Dev-only classification does not establish non-exploitability, because CI installs and runs development tools. Advisory-level package identification, fix ranges, reachable build/CI paths, and remediation decisions remain OPEN.
+- An explicit diagnostic npm audit capture has been added to CI for subsequent runs; audit collection is nonblocking and **does not constitute a security gate or security PASS**. Retrieve the complete report artifact and perform advisory-by-advisory triage.
+- PR #95 was observed as open, non-draft on the GitHub API at this checkpoint, contrary to the earlier draft instruction. This observation does not change the human MERGE HOLD. Do not merge without a new explicit decision.
+- All CD-01..CD-10 remain NOT TESTED. Independent consequence brake remains NOT ESTABLISHED.
+
+After this documentation change, rerun CI and verify the manifest against the new commit. Freeze earlier evidence; never replace RED history with GREEN claims.
