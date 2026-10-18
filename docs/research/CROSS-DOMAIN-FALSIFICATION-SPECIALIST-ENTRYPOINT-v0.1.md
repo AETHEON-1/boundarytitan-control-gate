@@ -21,7 +21,7 @@ CD-06 | SUCCESSFUL UNAUTHORIZED ACTION | A prohibited action benefits the affect
 CD-07 | FRAMEWORK COUNTERMODEL | Challenger defines MAY in a credible rival model and identifies any hidden premises. Record the strongest case even if the original kernel survives in a narrower form.
 CD-08 | REVIEWER CAPTURE | Evaluator has reputational or institutional incentives to reject a counterexample. Compare blinded evidence review with declared conflict-of-interest review.
 CD-09 | NEGATIVE-SPACE AUDIT | Find cases the taxonomy cannot classify without inventing new categories; retain unresolved cases and alternate explanations.
-CD-10 | INDEPENDENT ORACLE CAPTURE | Evidence source and claimed verifier share an operator, update channel, credentials, or recovery path. Compare the result against a separately controlled observation. Existing evidence-tamper tests cover log mutation; this case targets shared *institutional and infrastructure* control.
+CD-10 | REVIEWER DISAGREEMENT | Two independently appointed human reviewers disagree about evidence admissibility or normative disposition. Preserve both reasons and an appeal route; do not silently select the preferred reviewer. Unlike AM-20 this concerns disagreement about legitimacy, not brake dependency.
 
 ## Minimal demonstration protocol
 1. Freeze exact claim, version, meaning of CAN/MAY, threat model, protected consequence, jurisdiction where relevant, and what would falsify it.
@@ -45,7 +45,7 @@ H-CD-06: Would you call the same act authorized if it failed instead of succeede
 H-CD-07: What right do you possess without asking an institution first?
 H-CD-08: Which belief about your own authority could evidence overturn?
 H-CD-09: Can you name a case your preferred framework cannot classify?
-H-CD-10: Who independently checks the person who checks you?
+H-CD-10: When independent reviewers disagree, who can settle the dispute and on what grounds?
 These prompts are **scenario seeds**, not a validated survey or scored test. Participants may answer UNKNOWN, CONTEXT DEPENDENT, or REJECT PREMISE. No participant is scored for agreeing with CAN ⊬ MAY.
 
 ## Specialist handoff
@@ -59,3 +59,6 @@ Choose one CD ID, identify the strongest counterexample and first unsupported in
 - No counterexample has been accepted or rejected by this document.
 
 CAN ⊬ MAY. Maximize CAN; keep MAY outside. Freeze evidence; never freeze the search.
+
+## Deduplication notes from repository tree inventory
+The complete main-branch Git tree was enumerated (311 entries, non-truncated). Existing Sigma-2 workflow and its tests already ask who can deny, revoke, verify, and stop; do not restate those as new questionnaire findings. BT-BCS-CAN-MAY-001 includes owner conflicts, ineffective human denial, appeal, and emergency authority; CD-01/CD-04/CD-08 require a narrower **behavioral or normative** test before admission. AM-19 already tests ownerless consequence; CD-02 specifically targets *passive default choice*, not missing owner. AM-20 already tests brake dependency; CD-10 instead targets independent reviewer disagreement. AM-21 tests ledger suppression, not institutional conflict of interest. This inventory is structural, not a complete semantic proof of no duplication.
