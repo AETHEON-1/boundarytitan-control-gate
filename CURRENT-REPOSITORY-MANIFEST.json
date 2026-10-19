@@ -26,6 +26,11 @@
       "sha256": "95184bdc36fb2d18d6d485875025d584f6c4fb2c1995cbe0f471a995f0685e4e"
     },
     {
+      "path": ".github/workflows/encyclopedia.yml",
+      "size_bytes": 553,
+      "sha256": "eb15c874316936002a3567a2b0af446e9f4376d0309a910baee2396c0308941b"
+    },
+    {
       "path": ".github/workflows/research-discovery.yml",
       "size_bytes": 913,
       "sha256": "76ed3bb47655800fe4e789669a3689e8b17713bc70d5f87e4fd33eb471891e3b"
@@ -756,6 +761,21 @@
       "sha256": "abeb522849ec2580368ac2f64d30257426984f97013c2147906f76eb33abe13f"
     },
     {
+      "path": "encyclopedia-of-chaos/README.md",
+      "size_bytes": 3438,
+      "sha256": "3009f00eb5c845dacaf86063ead9e0cf36f9205c87e3ce0bf7a4f4664a467a16"
+    },
+    {
+      "path": "encyclopedia-of-chaos/entries/EOC-20261013-RD-F01-F03-v0.1.json",
+      "size_bytes": 2976,
+      "sha256": "9b7712f90728905c6bd4d46d2c1d5a038aeb750c920ff29ee93cc3bd9f5056e6"
+    },
+    {
+      "path": "encyclopedia-of-chaos/entries/EOC-20261019-MANIFEST-REPAIR-ENFORCEMENT-GAP-v0.1.json",
+      "size_bytes": 8896,
+      "sha256": "4ab07158dee6593c88a592f7ce7ed71a8f36282476321ce7f40d60fb87e7d549"
+    },
+    {
       "path": "evaluation-record.schema.json",
       "size_bytes": 2179,
       "sha256": "4cc299f1b268eb47fe5b32af428321859317a877688bf5d728b3ec3bdb533ba3"
@@ -809,6 +829,16 @@
       "path": "scripts/research-discovery.test.js",
       "size_bytes": 2121,
       "sha256": "50699fbfe73d2e334649de6038f32f3c94c1e97a3011bc76253a76e02f045bdd"
+    },
+    {
+      "path": "scripts/verify-encyclopedia.js",
+      "size_bytes": 1828,
+      "sha256": "c857069b12bc7a3c0de59ebaea8de0a0278522ba6b24837f5b8e0e99e2f11b4a"
+    },
+    {
+      "path": "scripts/verify-encyclopedia.test.js",
+      "size_bytes": 1266,
+      "sha256": "83e786c65fab8c85cf9e5dc06ebcf3d9ab2175a2f61c3004ab39e9c90f4767e3"
     },
     {
       "path": "scripts/verify-repository-state.js",
