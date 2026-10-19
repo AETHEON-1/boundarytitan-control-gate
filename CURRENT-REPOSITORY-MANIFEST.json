@@ -816,6 +816,26 @@
       "sha256": "5214e3f37a24494825ee41674d9b1afdc94a5c4d50665e5751e7fae9e286198c"
     },
     {
+      "path": "research/evidence/github-actions-39339420855-job-118356964497.log",
+      "size_bytes": 20279,
+      "sha256": "1586e2c9a9035c94997a5880ff04fd4e335bfb9f6ba543405cf5011202f4e9c5"
+    },
+    {
+      "path": "research/global-signal-adversarial-2026-10-19.md",
+      "size_bytes": 3782,
+      "sha256": "47b453e72239d15b1be0c008c732f99273e1a0f1e2e7e621813d159677f7d2a0"
+    },
+    {
+      "path": "research/global-signal-pinned-ci-results-2026-10-19.md",
+      "size_bytes": 3334,
+      "sha256": "2002f91e21bf5961c89380cad9edb0cb6f790c2c1dfb6bea1ac014b09cff2b45"
+    },
+    {
+      "path": "research/global-signal-verification-attempt-2026-10-19.md",
+      "size_bytes": 1955,
+      "sha256": "2e8a151d966e8bdf8a0c3bfd3c916b398089a97819e95443012c2b581527db59"
+    },
+    {
       "path": "research/quora-lane/RESPONSE-RECONCILIATION-v0.1.md",
       "size_bytes": 4067,
       "sha256": "77abaf043739d9ae7e94b3d24e18596e3dbb354e4abd6eae000bf8837c66003f"
@@ -829,6 +849,11 @@
       "path": "scripts/interaction_sensor.py",
       "size_bytes": 4039,
       "sha256": "150e09c976013126779980525e7c921ce843add6540f658a086ffb1037a4f311"
+    },
+    {
+      "path": "scripts/run-pinned-global-signal-verification.sh",
+      "size_bytes": 1138,
+      "sha256": "339fca6f5004f748cc4b7957bb23399826e27ba94967c87d06b7e2cbf091310c"
     },
     {
       "path": "scripts/verify-repository-state.js",
