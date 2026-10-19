@@ -21,6 +21,11 @@
       "sha256": "146fc4a7e29026507034652f344d0f100f70fd1a61e2a9cfa74bbabe38281b43"
     },
     {
+      "path": ".github/workflows/interaction-sensor.yml",
+      "size_bytes": 937,
+      "sha256": "24e1adb7755e130b6e739c7e8dee9a9bb19ff218791ed4573252c348b10118f6"
+    },
+    {
       "path": ".github/workflows/verify.yml",
       "size_bytes": 657,
       "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
@@ -746,6 +751,16 @@
       "sha256": "abeb522849ec2580368ac2f64d30257426984f97013c2147906f76eb33abe13f"
     },
     {
+      "path": "docs/INTERACTION-SENSOR.md",
+      "size_bytes": 3316,
+      "sha256": "7dc069d4d3cd322c2b3f5744e98fa051adf001719898f4479ff11fd27a5f1839"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md",
+      "size_bytes": 4281,
+      "sha256": "863e6656f3a08a21d804a5f457fa4ebefc312dd0c1daa485ee20dd328f7b9acf"
+    },
+    {
       "path": "evaluation-record.schema.json",
       "size_bytes": 2179,
       "sha256": "4cc299f1b268eb47fe5b32af428321859317a877688bf5d728b3ec3bdb533ba3"
@@ -799,6 +814,21 @@
       "path": "research/candidates/2026-10-16-external-evidence/README.md",
       "size_bytes": 4401,
       "sha256": "5214e3f37a24494825ee41674d9b1afdc94a5c4d50665e5751e7fae9e286198c"
+    },
+    {
+      "path": "research/quora-lane/RESPONSE-RECONCILIATION-v0.1.md",
+      "size_bytes": 4067,
+      "sha256": "77abaf043739d9ae7e94b3d24e18596e3dbb354e4abd6eae000bf8837c66003f"
+    },
+    {
+      "path": "research/repository-integrity/MANIFEST-FAILURE-REPAIR-20261019.md",
+      "size_bytes": 3177,
+      "sha256": "ae8dfed4c64aa77d0d19bdba5a94b89cd4fe787f9d6d8e58a69a214c845daf80"
+    },
+    {
+      "path": "scripts/interaction_sensor.py",
+      "size_bytes": 4039,
+      "sha256": "150e09c976013126779980525e7c921ce843add6540f658a086ffb1037a4f311"
     },
     {
       "path": "scripts/verify-repository-state.js",
@@ -1319,6 +1349,11 @@
       "path": "test_agentic_handoff.py",
       "size_bytes": 1949,
       "sha256": "2d0a69bcdde5145ae3ff59f423ef683568438b9853626549bbb500e1d1de0ffc"
+    },
+    {
+      "path": "tests/test_interaction_sensor.py",
+      "size_bytes": 2094,
+      "sha256": "ddc1f1df4f65327fbc9b66ab76dd1931dab7b562f7cee9b3a472bd87a985fbc7"
     },
     {
       "path": "trust-boundaries.mmd",
