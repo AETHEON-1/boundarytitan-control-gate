@@ -1,0 +1,167 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261019-MANIFEST-REPAIR-ENFORCEMENT-GAP-v0.1",
+  "recordedDate": "2026-10-19",
+  "kind": "REPOSITORY_FAILURE_REPAIR_AND_UNTESTED_CONTROL",
+  "claim": "Six current-tree manifest omissions caused a post-push verification failure on main. Human-approved PR98 repaired the inventory and retained failure evidence; the resulting main verification passed. Main remained unprotected and PR99's preventive-control proposal remained unimplemented.",
+  "sources": [
+    {
+      "type": "repository_commit",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/commit/035f631d579446ad57f9eea9a29c05aa3204f963"
+    },
+    {
+      "type": "github_actions",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39266576760/job/118107600115"
+    },
+    {
+      "type": "earlier_failure",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39038065304"
+    },
+    {
+      "type": "github_pr",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/98"
+    },
+    {
+      "type": "repair_commit",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/commit/07a7fd08fec56390b9709f5e67a34163a1dd99f8"
+    },
+    {
+      "type": "merged_main",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/commit/2e3296cad8d0b8416b336d0b6fd973264243f6ad"
+    },
+    {
+      "type": "github_actions",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39293440956/job/118199793913"
+    },
+    {
+      "type": "branch_observation",
+      "locator": "https://api.github.com/repos/AETHEON-1/boundarytitan-control-gate/branches/main"
+    },
+    {
+      "type": "proposal_only",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/99"
+    },
+    {
+      "type": "historical_guidance",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/035f631d579446ad57f9eea9a29c05aa3204f963/CURRENT-REPOSITORY-STATE-v0.2.md"
+    },
+    {
+      "type": "preserved_receipt",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/07a7fd08fec56390b9709f5e67a34163a1dd99f8/research/repository-integrity/MANIFEST-FAILURE-REPAIR-20261019.md"
+    }
+  ],
+  "evidenceState": "SUPPORTED",
+  "observations": [
+    {
+      "id": "M1-FAILED",
+      "description": "At 035f631d, inspected CI passed typecheck, 36 Jest suites/112 tests and three Python tests; inventory verification then failed on six exact paths. The change had already reached main.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "M2-OMISSIONS",
+      "description": "Absent paths: .github/workflows/interaction-sensor.yml; docs/INTERACTION-SENSOR.md; encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md; research/quora-lane/RESPONSE-RECONCILIATION-v0.1.md; scripts/interaction_sensor.py; tests/test_interaction_sensor.py. Five non-Quora omissions predated the latest Quora commit.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "M3-REPAIR",
+      "description": "PR98 added inventory records for six existing files plus a failure receipt. Diff: only current manifest and new receipt, 70 additions, zero deletions. No source/test/workflow or branch-policy modification.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "M4-APPROVAL",
+      "description": "Human agreed after a scoped review-and-merge recommendation. Reviewed head 07a7fd08 was merged as 2e3296ca; GitHub returned merged=true. Approval concerned inventory repair, not branch-rule implementation or archive admission.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "M5-MAIN-CHECK",
+      "description": "Post-merge job 118199793913 passed all existing stages; log reports 286 repository files with current ledger matching. This is CI execution evidence within the same GitHub trust domain, not independent specialist verification.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "M6-NO-PREVENTION",
+      "description": "After repair, main endpoint still returned protected=false and required-status enforcement off. Existing September guidance already named protected-branch enforcement unresolved; this observation does not claim a new contradiction in that guidance.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "M7-PROPOSAL",
+      "description": "PR99 remained draft/unmerged and was retargeted to main after PR98 merge. No branch settings were applied, no denial tests executed and no independent stop authority established.",
+      "state": "SUPPORTED"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "NEG-INVENTORY",
+      "purpose": "Detect omitted tracked file inventory",
+      "execution": "Historical failed CI log inspected; deterministic missing-path diagnostics retained."
+    },
+    {
+      "id": "POS-REPAIR",
+      "purpose": "Confirm repaired inventory at resulting main SHA",
+      "execution": "Post-merge CI job inspected: typecheck, 112 Jest tests, three Python tests and verify:state passed."
+    },
+    {
+      "id": "NEG-FORBIDDEN-PUSH",
+      "purpose": "Demonstrate preventive refusal with failed/missing/stale checks",
+      "execution": "NOT TESTED. PR99 contains a disposable-branch test proposal only."
+    },
+    {
+      "id": "BYPASS-REVIEW",
+      "purpose": "Test administrators, apps, check producer and skipped-check edge",
+      "execution": "NOT TESTED. Effective bypass inventory and independent administration remain unresolved."
+    },
+    {
+      "id": "DEFEAT-REPAIR",
+      "purpose": "Challenge manifest byte correspondence at pinned repaired commit",
+      "execution": "New inventory bytes/digests were locally computed, committed contents read back exactly and CI verifier succeeded. Independent clean-checkout reproduction not performed."
+    }
+  ],
+  "reproduction": [
+    "At 035f631d579446ad57f9eea9a29c05aa3204f963 run npm ci, npm run typecheck, npm test -- --coverage=false, npm run test:python and npm run verify:state; preserve the expected final failure.",
+    "Repeat at 2e3296cad8d0b8416b336d0b6fd973264243f6ad and compare manifest diagnostics to job 118199793913.",
+    "Read effective main rule configuration separately. Branch denial experiments are unexecuted and require separate scoped authorization."
+  ],
+  "environment": "GitHub Actions ubuntu-latest, workflow configured for Node 20; Python handoff runner available on hosted image. Logs/source/API inspected by the same assistant; no external execution custody.",
+  "limitations": [
+    "Supported scope is the inspected failure, repair, merge and check lineage; passing checks do not establish safety or complete integrity.",
+    "The manifest inventories file bytes, not truth, legitimate authority, independent custody or pre-consequence enforcement.",
+    "Main protected=false/off is the observed branch response; organization-wide policy was not independently audited.",
+    "Old release snapshots and historical failure records were retained; this entry is not a retrospective declaration that earlier states were valid.",
+    "The earlier inventory failure precedes the October 19 GitHub service incident; the latter is not its established cause.",
+    "No author, reviewer or check-producer independence established. The same owner can change checks and rules.",
+    "No workflow dispatch, live resource test, branch-policy change, deployment or archive admission occurred in this preservation action."
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Corrected inventory and preserved lineage help successors distinguish repair from enforcement."
+    ],
+    "harmful": [
+      "Treating CI detection as a preventive gate may allow invalid states to become current."
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "Michael J. Cates / human BoundaryTitan owner approved PR98 merge. PR99 implementation and this archive admission remain separate decisions.",
+  "externalStopState": "BRANCH_ENFORCEMENT_NOT_ESTABLISHED; denial tests NOT TESTED.",
+  "specialistReview": "NOT_STARTED",
+  "authorizationGranted": false,
+  "links": {
+    "parent": null,
+    "supersedes": null,
+    "corrections": [],
+    "relatedPullRequests": [
+      86,
+      91,
+      92,
+      98,
+      99
+    ]
+  },
+  "reopenConditions": [
+    "Clean reproduction contradicts failure or repaired byte correspondence",
+    "An observed forbidden branch update succeeds despite a claimed preventive rule",
+    "Policy, check producer, workflow, bypass actor or administrative custody changes",
+    "Independent source or reviewer supplies contrary evidence"
+  ],
+  "firstUnsupportedArrow": "Post-push failure detection or repaired inventory → invalid branch transition prevented.",
+  "humanDisposition": "PENDING_ARCHIVE_REVIEW",
+  "sigmaLine": "The ledger was repaired. The gate was not installed."
+}
