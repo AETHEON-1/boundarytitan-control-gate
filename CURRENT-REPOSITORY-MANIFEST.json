@@ -821,6 +821,11 @@
       "sha256": "77abaf043739d9ae7e94b3d24e18596e3dbb354e4abd6eae000bf8837c66003f"
     },
     {
+      "path": "research/repository-integrity/BRANCH-ENFORCEMENT-PROPOSAL-20261019.md",
+      "size_bytes": 4814,
+      "sha256": "5b2d42ca3055cabe8f7ab9057694bd8836c5a3c9a5109de75fca871d5cb79de4"
+    },
+    {
       "path": "research/repository-integrity/MANIFEST-FAILURE-REPAIR-20261019.md",
       "size_bytes": 3177,
       "sha256": "ae8dfed4c64aa77d0d19bdba5a94b89cd4fe787f9d6d8e58a69a214c845daf80"
