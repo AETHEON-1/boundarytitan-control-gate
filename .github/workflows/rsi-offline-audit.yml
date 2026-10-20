@@ -29,10 +29,10 @@ jobs:
                   print('RSI-MANIFEST-RECEIPT', len(b), hashlib.sha256(b).hexdigest(), name)
           PY
       - name: Run deterministic four-role unit tests
-        run: python3 -m unittest -v research/rsi/BT-RSI-001/test_runner.py
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_runner.py
       - name: Run cross-process negative control
-        run: python3 -m unittest -v research/rsi/BT-RSI-001/test_cross_process.py
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_cross_process.py
       - name: Run isolated custodian OS-permission test
-        run: sudo python3 -m unittest -v research/rsi/BT-RSI-001/test_custodian.py
+        run: cd research/rsi/BT-RSI-001 && sudo python3 -m unittest -v test_custodian.py
       - name: Verify repository state
         run: node scripts/verify-repository-state.js
