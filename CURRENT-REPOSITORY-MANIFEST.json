@@ -11,19 +11,24 @@
       "sha256": "c989251892698f69de8bb65a545877f302d5acb4d0e051752b5caebcdb8ad92b"
     },
     {
-      "path": ".github/ISSUE_TEMPLATE/cross-disciplinary-challenge.yml",
-      "size_bytes": 4592,
-      "sha256": "19d055fcb7a7d1db0d79e1d250e716d979015be714a5c563c8d2e3ec08f9eb10"
-    },
-    {
       "path": ".github/dependabot.yml",
       "size_bytes": 101,
       "sha256": "146fc4a7e29026507034652f344d0f100f70fd1a61e2a9cfa74bbabe38281b43"
     },
     {
+      "path": ".github/ISSUE_TEMPLATE/cross-disciplinary-challenge.yml",
+      "size_bytes": 4592,
+      "sha256": "19d055fcb7a7d1db0d79e1d250e716d979015be714a5c563c8d2e3ec08f9eb10"
+    },
+    {
       "path": ".github/workflows/interaction-sensor.yml",
       "size_bytes": 937,
       "sha256": "24e1adb7755e130b6e739c7e8dee9a9bb19ff218791ed4573252c348b10118f6"
+    },
+    {
+      "path": ".github/workflows/rsi-offline-audit.yml",
+      "sha256": "7b2484bbe50e7964e2b8fc3445513d339e5b7ef518affa09f17ce507ede5caab",
+      "size_bytes": 662
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -201,9 +206,19 @@
       "sha256": "3291c8820dd4b0cd65915345b2f64306c6bf139723719923c20eac4dadbf0352"
     },
     {
+      "path": "AGENTS.md",
+      "sha256": "62c9187125fb4fbbc423d418071d74e52a872fcbf3f74566559f221f9e458217",
+      "size_bytes": 1791
+    },
+    {
       "path": "APPROVAL_RECORD.md",
       "size_bytes": 994,
       "sha256": "3efb1c0eaafaaae2224a48ce5aa22d0f022a4bcec694d806a04ebb6102300d43"
+    },
+    {
+      "path": "audit-event.schema.json",
+      "size_bytes": 1006,
+      "sha256": "d49b8bf63cbcaefd1a07ea1b0d993ca2fa77e6c5d9c6bb5e54d94668c47a1a00"
     },
     {
       "path": "AUTHORITY-RESOLVER-AND-CRYPTOGRAPHIC-FAILURE-STATE-REGISTER-v0.1.md",
@@ -244,6 +259,11 @@
       "path": "BOUNDED-CASE-STUDY-INDEX-v0.1.md",
       "size_bytes": 3447,
       "sha256": "6611409b96ad89e27fc67de651a638caa422e9358603506b4bf8e3910940d81e"
+    },
+    {
+      "path": "bounded-case-study-index.v0.1.json",
+      "size_bytes": 2436,
+      "sha256": "f98d9d3efca686609cfd67959973bd4a4953f355bc9ab9912a3076de6ae40113"
     },
     {
       "path": "BOUNDED-CASE-STUDY-WORKFLOW-v0.1.md",
@@ -291,6 +311,66 @@
       "sha256": "a392f88f03a3ab2e8b32cc111a7da772eb77612f6d106c3f368964342fc391a3"
     },
     {
+      "path": "challenges/BT-HC-001-CAN-MAY.yaml",
+      "size_bytes": 2606,
+      "sha256": "e012bebaa359209bf8efd9809884790177cb9b5dfed9981aefa1ea78a4c83fe6"
+    },
+    {
+      "path": "challenges/BT-HC-002-EXTERNAL-BRAKE.yaml",
+      "size_bytes": 2784,
+      "sha256": "fa2992deb90bbc6f83ea0c61105fd20075c82f74febbe21e20c3b7ea229457c3"
+    },
+    {
+      "path": "challenges/BT-HC-003-CONSEQUENCE-OWNERSHIP.yaml",
+      "size_bytes": 2994,
+      "sha256": "060b8c5f89ab20979c9d19baf4cbd0091a284ac69f1efbedc42c980ed7c4c9c7"
+    },
+    {
+      "path": "challenges/BT-HC-004-CONSEQUENCE-PATH-DOMINANCE.yaml",
+      "size_bytes": 3246,
+      "sha256": "b1e83c4beb0f6f99d5467297b0c77622f492d3f30c07bd90b4bc526179ab30ca"
+    },
+    {
+      "path": "challenges/CHALLENGE-REGISTER.md",
+      "size_bytes": 2575,
+      "sha256": "91cd16b2df865fb1fe8e024d2b8e94b36d183d765ac1a07e9d32a082f2ee429b"
+    },
+    {
+      "path": "challenges/challenge-template.yaml",
+      "size_bytes": 817,
+      "sha256": "279ac29133ebb68fff10ccca853b2f0c6b47ff52775304cbccfb607facb7ece1"
+    },
+    {
+      "path": "challenges/examples/example-model-output-to-consequence.yaml",
+      "size_bytes": 2192,
+      "sha256": "9af70bf10d65866fe57a5adde854caef020331f7be8b00afeb0232aedeef6bcb"
+    },
+    {
+      "path": "challenges/README.md",
+      "size_bytes": 1612,
+      "sha256": "d6943eda710fb1a74faa3640478e78999b0c02c21cce168ba7d1a6ec376104c9"
+    },
+    {
+      "path": "challenges/SPECIALIST-HANDOFF-LEDGER.md",
+      "size_bytes": 2292,
+      "sha256": "228bcd059c4ade7fcf0b8f758edaaa003260c5b507d236bf69af934da9040968"
+    },
+    {
+      "path": "challenges/SPECIALIST-HANDOFF-PROTOCOL.md",
+      "size_bytes": 4052,
+      "sha256": "b53e76bd752f285a78fe955f48d05eac34166e72d22a5cb6325f98478fe426eb"
+    },
+    {
+      "path": "challenges/specialist-handoff-template.yaml",
+      "size_bytes": 1007,
+      "sha256": "0814cb44c8358db824110c1f45821c12ecab37b43d9f6d7431101010e83b67f4"
+    },
+    {
+      "path": "challenges/SPECIALIST-INVITATION.md",
+      "size_bytes": 1999,
+      "sha256": "4e78e129655d62c129061a4d569d811a39bad10f8558f5d544422422f6f1cff5"
+    },
+    {
       "path": "CHANGELOG.md",
       "size_bytes": 978,
       "sha256": "a7ca1afe11be4713a895e9f721e523d714c0a1cd28649228e418ab58756d2955"
@@ -311,6 +391,11 @@
       "sha256": "84a03e661521101de8b69ee7801221c9f000c62ad7bec81988eed0d709a64d35"
     },
     {
+      "path": "consequence-receipt.schema.json",
+      "size_bytes": 3503,
+      "sha256": "e71aacb1b140b1303cec51cfb815f5a75bfaa52c15a43b858253029a9bcc04bd"
+    },
+    {
       "path": "CONSTRAINT-PRECEDES-CAPABILITY-DOCTRINE-v0.1.md",
       "size_bytes": 965,
       "sha256": "62b3f4358201c666f6549cf2324f07afd51bce7c9aec653111cd272c6a800791"
@@ -319,6 +404,16 @@
       "path": "CONTRIBUTING.md",
       "size_bytes": 545,
       "sha256": "b7482252a61abf7f5ed751df99f9a8f537dacbdd8c63dd8a2e61a0f28fa0147c"
+    },
+    {
+      "path": "control-event-record.schema.json",
+      "size_bytes": 1823,
+      "sha256": "4207bf26d6cce11631f84d26230a5193dad17836e0e14aff99ecb841b0157222"
+    },
+    {
+      "path": "control-sequence.mmd",
+      "size_bytes": 249,
+      "sha256": "abeb522849ec2580368ac2f64d30257426984f97013c2147906f76eb33abe13f"
     },
     {
       "path": "CONVERSE-EXHAUSTION-WORKFLOW-v0.1.md",
@@ -346,6 +441,16 @@
       "sha256": "31ce2b447f80919dc33c6889be03646088b276b20081aad609d6f0b811f6a294"
     },
     {
+      "path": "docs/INTERACTION-SENSOR.md",
+      "size_bytes": 3316,
+      "sha256": "7dc069d4d3cd322c2b3f5744e98fa051adf001719898f4479ff11fd27a5f1839"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md",
+      "size_bytes": 4281,
+      "sha256": "863e6656f3a08a21d804a5f457fa4ebefc312dd0c1daa485ee20dd328f7b9acf"
+    },
+    {
       "path": "END-TO-END-REVIEW-STATUS-v0.1.md",
       "size_bytes": 2387,
       "sha256": "9335b248b75dcc59cbfd43f40786b9d846169b412a0396b107fbaf3860b6ca17"
@@ -356,9 +461,19 @@
       "sha256": "c49206348dae9c5059056612e9d01963f6f14fdde28ebb9428f4c96ce68fd4ae"
     },
     {
+      "path": "evaluation-record.schema.json",
+      "size_bytes": 2179,
+      "sha256": "4cc299f1b268eb47fe5b32af428321859317a877688bf5d728b3ec3bdb533ba3"
+    },
+    {
       "path": "EVIDENCE-AISI-UNSANCTIONED-AGENT-BEHAVIOUR-2026-08-04.md",
       "size_bytes": 1870,
       "sha256": "d950a27825bdde402c269be7df45efa1b0d5de692cc8c39a6d2e3fc46747ae04"
+    },
+    {
+      "path": "examples/review-packet.html",
+      "size_bytes": 1360,
+      "sha256": "fa4dd680da8f66ef2560b9c3078ad043a7934b89e24cfafd89aea575542c6ef9"
     },
     {
       "path": "FIFTY-ONE-FIFTY-WORKFLOW-v0.1.md",
@@ -456,6 +571,26 @@
       "sha256": "ec5cec09c000d945bf86e909ae7d90d118d120a70bf9b419d9874b938eeb0718"
     },
     {
+      "path": "operational-guidance.schema.json",
+      "size_bytes": 2223,
+      "sha256": "b4f6a568e78d219deb42514fb516b710eab54bcfacae47f88874cf65b9388201"
+    },
+    {
+      "path": "owner-role.schema.json",
+      "size_bytes": 1107,
+      "sha256": "8e576c689a0dab9c0375949c25c73426c7923e5e6996ca2190de46f05a740d68"
+    },
+    {
+      "path": "package-lock.json",
+      "size_bytes": 141504,
+      "sha256": "377bf3bc80d081c2c21ef1f6f4848c02ba0afe1f8a1e345f9fc9e993244a1d56"
+    },
+    {
+      "path": "package.json",
+      "size_bytes": 701,
+      "sha256": "47297033148e95c4ec39fd0d5b122edfd1175f0783dc479bcf789d91e753f313"
+    },
+    {
       "path": "PHASE1-SCHEMA-GAP-NOTES.md",
       "size_bytes": 492,
       "sha256": "9e2d22c20d6a09cf9f1e228a503ba462cd6229abb2fbb7b557276527aeea87cf"
@@ -511,286 +646,6 @@
       "sha256": "1a10828b4a55e44ff35061b122d9fffc92eff4621541d09c08ca408cf84670c0"
     },
     {
-      "path": "REVIEW-SURFACE-BOUNDARY.md",
-      "size_bytes": 743,
-      "sha256": "2395e260b3e6ffdcc33d95766f5e87a9c594cadb1de8c79e97ae5ceb90c0ca60"
-    },
-    {
-      "path": "REVIEW-SURFACE-HTK.md",
-      "size_bytes": 951,
-      "sha256": "b39ab6e344900852bb299a282d2d2bb948928ecfe3ea2bc4686d39266b0fcd14"
-    },
-    {
-      "path": "ROBOTICS-BOUNDED-KERNEL-v0.1.md",
-      "size_bytes": 1727,
-      "sha256": "520db228811045786028fc134d3f40d582a150aec2ee1b986c9122da99e0ef8f"
-    },
-    {
-      "path": "ROBOTICS-MINIMUM-KERNEL.md",
-      "size_bytes": 3106,
-      "sha256": "dff7a5874763f15a9f32c8b7af07760979b3a52f9db0df6cd989499897fb5504"
-    },
-    {
-      "path": "ROBOTICS-PRE-ACTION-PROTOTYPE.md",
-      "size_bytes": 1456,
-      "sha256": "5ce690f631c6b55508544481cccdb5d308f7e224bf26e0d692aa0087ca272521"
-    },
-    {
-      "path": "ROBOTICS-SPECIALIST-HANDOFF-TEST-BATTERY-v0.1.md",
-      "size_bytes": 1588,
-      "sha256": "e30801e81fda272cbb1b307b19e172ef9f025d5565d40c75c1fde35e6b21fb04"
-    },
-    {
-      "path": "ROBOTICS-SYSTEM-AUTHORITY-LIFECYCLE.md",
-      "size_bytes": 2112,
-      "sha256": "9be16d9e48cbf921b682b09e17639b14ce53da22d795e456523221c0c4e10bd7"
-    },
-    {
-      "path": "SECURITY.md",
-      "size_bytes": 728,
-      "sha256": "1c91be58f6904681180b887cc599f351de5262e93f595c23792bfcec3c09209e"
-    },
-    {
-      "path": "SHA256SUMS.txt",
-      "size_bytes": 4844,
-      "sha256": "57a0489b0d43bcc544b0a0d5ee113058b2a51e770c3a2c5348b219798467a8a9"
-    },
-    {
-      "path": "SIGMA-1-OPTIMIZATION-PASS-v0.1.md",
-      "size_bytes": 946,
-      "sha256": "e6887957730b95f292541d5278480fac379b3e7eaf467cc3990e56585181d543"
-    },
-    {
-      "path": "SIGMA-TWO-DIAGONAL-WORKFLOW-v0.1.md",
-      "size_bytes": 1167,
-      "sha256": "22f19f28fafc57228da6ba0989c7f2f836ca00c37a46e5228079bbd1d03bf1a5"
-    },
-    {
-      "path": "SLEDGEHAMMER-WORKFLOW-v0.1.md",
-      "size_bytes": 3698,
-      "sha256": "3dfcf19ca029e2bfa79a4e68f5c77f5663e023f034026bb5a3699ed7e3732870"
-    },
-    {
-      "path": "SPECIALIST-HANDOFF-PR8-PR11-v0.1.md",
-      "size_bytes": 3208,
-      "sha256": "92cfc4e831c3b1832c2fe1f95b1387827c708fd6e67f2d5e98877b8179ff4481"
-    },
-    {
-      "path": "SPECIALIST-HANDOFF-READINESS.md",
-      "size_bytes": 895,
-      "sha256": "9bc8615b37b414e97df1254f4a9bbe9d69ed162007a12ef74e5a5f7ea187061d"
-    },
-    {
-      "path": "SPECIALIST-HANDOFF-v0.1.md",
-      "size_bytes": 3854,
-      "sha256": "cfdb0415da8386d05c90a6ac24ae6a1a2eb140fc8a3b51c28934a868294ae06e"
-    },
-    {
-      "path": "SPECIALIST-LANGUAGE-AUDIT-v0.1.md",
-      "size_bytes": 3656,
-      "sha256": "79a06fd3296fcb8b98a80bd63c4e84525b1376d1c9709bfdc06e5e92e5f2930e"
-    },
-    {
-      "path": "SPECIALIST-OUTREACH-README.md",
-      "size_bytes": 6338,
-      "sha256": "3161fe38c79e3f72683dfab1c7c98424a05017a41daf95274dc179db512b7f14"
-    },
-    {
-      "path": "SPECIALIST-TITLE-AND-MISSING-ARROW-INDEX-v0.1.md",
-      "size_bytes": 12214,
-      "sha256": "d7a596643af00335be1385a4ff06f72bcfa548c45a5a04a08d2a3f640a481e87"
-    },
-    {
-      "path": "STANDARDS-AND-INTEGRATION.md",
-      "size_bytes": 2860,
-      "sha256": "98622d5ee7d4cd26ccab83bcdcb79935b9ab659860ad1e1dd26b982a80bfa0b7"
-    },
-    {
-      "path": "STATE-RECONCILIATION-v1.1.md",
-      "size_bytes": 2359,
-      "sha256": "bcc8d27148d709a35058b0d6c716051d8f0e822c466233aac94799eb34910ba8"
-    },
-    {
-      "path": "STATUS.md",
-      "size_bytes": 1353,
-      "sha256": "2f242eaf8edc150499f00e7632e56862c7147f3e27721ba4d90d7a24f6c9e850"
-    },
-    {
-      "path": "SWITCHBOARD-AGENT-GATE-v0.1.md",
-      "size_bytes": 902,
-      "sha256": "1c78fab727a2c103d531f3cf23d972a0e3b290d89a8c0175fd45175ad72b41c9"
-    },
-    {
-      "path": "TERMINOLOGY-ENCYCLOPEDIA-ARCHITECTURE-v0.1.md",
-      "size_bytes": 6764,
-      "sha256": "08b2f4fc6070f8d2a3eb0a3c26f39b955301cb7d7b441477d0ad77b5ab27a193"
-    },
-    {
-      "path": "TEST-BOUNDARY-CONTROL-GAP-v0.1.md",
-      "size_bytes": 1860,
-      "sha256": "8b433781847b65b6dbd34c41f1282f61747411c1a98d6bb052cf2acb838400cb"
-    },
-    {
-      "path": "TEST-RESULT-ONLY-v0.1.md",
-      "size_bytes": 1003,
-      "sha256": "33799b10e68b5b60e0303713bdb17b4f7de0df3a6dd8ca3b3b8f4c20a83a3de1"
-    },
-    {
-      "path": "THERMODYNAMIC-REGULATION-METHOD-v0.1.md",
-      "size_bytes": 5442,
-      "sha256": "ec87cad34933080b58026eb5e7dbb335ee6c74f2f026963bda8733e67dcfa288"
-    },
-    {
-      "path": "VERSION",
-      "size_bytes": 11,
-      "sha256": "8e3ccfbe492191dbb919be7b4ef3d93bd88f92b1d99532b25ba19c5ad9f1f722"
-    },
-    {
-      "path": "VISUAL-PROTOTYPE-APPROVAL.md",
-      "size_bytes": 1147,
-      "sha256": "f2e203560789e06f97ea7ea7efd6fc214500f3f0c6453d9cc361e10fa18c0f4d"
-    },
-    {
-      "path": "VISUAL-REPRESENTATION-CONTRACT-v0.1.md",
-      "size_bytes": 5823,
-      "sha256": "67ad0adb4189b21a68e787b96a3a07dcba09a53b39be2d45eb952c022419b5b0"
-    },
-    {
-      "path": "WEAKNESS-PRESERVATION-AND-DESIGN-v0.1.md",
-      "size_bytes": 3265,
-      "sha256": "e7b6fd94bd08308606ced5b6a8960f61fa3789ea33144c9a37f39aa30ab4fd51"
-    },
-    {
-      "path": "ZOMBIE-PERMISSION-HUNTER-PROTOTYPE.md",
-      "size_bytes": 1166,
-      "sha256": "d4daf315fc853377c65fcf7c94e6631858631edb33b4a08e9c52fcc4cf224294"
-    },
-    {
-      "path": "audit-event.schema.json",
-      "size_bytes": 1006,
-      "sha256": "d49b8bf63cbcaefd1a07ea1b0d993ca2fa77e6c5d9c6bb5e54d94668c47a1a00"
-    },
-    {
-      "path": "bounded-case-study-index.v0.1.json",
-      "size_bytes": 2436,
-      "sha256": "f98d9d3efca686609cfd67959973bd4a4953f355bc9ab9912a3076de6ae40113"
-    },
-    {
-      "path": "challenges/BT-HC-001-CAN-MAY.yaml",
-      "size_bytes": 2606,
-      "sha256": "e012bebaa359209bf8efd9809884790177cb9b5dfed9981aefa1ea78a4c83fe6"
-    },
-    {
-      "path": "challenges/BT-HC-002-EXTERNAL-BRAKE.yaml",
-      "size_bytes": 2784,
-      "sha256": "fa2992deb90bbc6f83ea0c61105fd20075c82f74febbe21e20c3b7ea229457c3"
-    },
-    {
-      "path": "challenges/BT-HC-003-CONSEQUENCE-OWNERSHIP.yaml",
-      "size_bytes": 2994,
-      "sha256": "060b8c5f89ab20979c9d19baf4cbd0091a284ac69f1efbedc42c980ed7c4c9c7"
-    },
-    {
-      "path": "challenges/BT-HC-004-CONSEQUENCE-PATH-DOMINANCE.yaml",
-      "size_bytes": 3246,
-      "sha256": "b1e83c4beb0f6f99d5467297b0c77622f492d3f30c07bd90b4bc526179ab30ca"
-    },
-    {
-      "path": "challenges/CHALLENGE-REGISTER.md",
-      "size_bytes": 2575,
-      "sha256": "91cd16b2df865fb1fe8e024d2b8e94b36d183d765ac1a07e9d32a082f2ee429b"
-    },
-    {
-      "path": "challenges/README.md",
-      "size_bytes": 1612,
-      "sha256": "d6943eda710fb1a74faa3640478e78999b0c02c21cce168ba7d1a6ec376104c9"
-    },
-    {
-      "path": "challenges/SPECIALIST-HANDOFF-LEDGER.md",
-      "size_bytes": 2292,
-      "sha256": "228bcd059c4ade7fcf0b8f758edaaa003260c5b507d236bf69af934da9040968"
-    },
-    {
-      "path": "challenges/SPECIALIST-HANDOFF-PROTOCOL.md",
-      "size_bytes": 4052,
-      "sha256": "b53e76bd752f285a78fe955f48d05eac34166e72d22a5cb6325f98478fe426eb"
-    },
-    {
-      "path": "challenges/SPECIALIST-INVITATION.md",
-      "size_bytes": 1999,
-      "sha256": "4e78e129655d62c129061a4d569d811a39bad10f8558f5d544422422f6f1cff5"
-    },
-    {
-      "path": "challenges/challenge-template.yaml",
-      "size_bytes": 817,
-      "sha256": "279ac29133ebb68fff10ccca853b2f0c6b47ff52775304cbccfb607facb7ece1"
-    },
-    {
-      "path": "challenges/examples/example-model-output-to-consequence.yaml",
-      "size_bytes": 2192,
-      "sha256": "9af70bf10d65866fe57a5adde854caef020331f7be8b00afeb0232aedeef6bcb"
-    },
-    {
-      "path": "challenges/specialist-handoff-template.yaml",
-      "size_bytes": 1007,
-      "sha256": "0814cb44c8358db824110c1f45821c12ecab37b43d9f6d7431101010e83b67f4"
-    },
-    {
-      "path": "consequence-receipt.schema.json",
-      "size_bytes": 3503,
-      "sha256": "e71aacb1b140b1303cec51cfb815f5a75bfaa52c15a43b858253029a9bcc04bd"
-    },
-    {
-      "path": "control-event-record.schema.json",
-      "size_bytes": 1823,
-      "sha256": "4207bf26d6cce11631f84d26230a5193dad17836e0e14aff99ecb841b0157222"
-    },
-    {
-      "path": "control-sequence.mmd",
-      "size_bytes": 249,
-      "sha256": "abeb522849ec2580368ac2f64d30257426984f97013c2147906f76eb33abe13f"
-    },
-    {
-      "path": "docs/INTERACTION-SENSOR.md",
-      "size_bytes": 3316,
-      "sha256": "7dc069d4d3cd322c2b3f5744e98fa051adf001719898f4479ff11fd27a5f1839"
-    },
-    {
-      "path": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md",
-      "size_bytes": 4281,
-      "sha256": "863e6656f3a08a21d804a5f457fa4ebefc312dd0c1daa485ee20dd328f7b9acf"
-    },
-    {
-      "path": "evaluation-record.schema.json",
-      "size_bytes": 2179,
-      "sha256": "4cc299f1b268eb47fe5b32af428321859317a877688bf5d728b3ec3bdb533ba3"
-    },
-    {
-      "path": "examples/review-packet.html",
-      "size_bytes": 1360,
-      "sha256": "fa4dd680da8f66ef2560b9c3078ad043a7934b89e24cfafd89aea575542c6ef9"
-    },
-    {
-      "path": "operational-guidance.schema.json",
-      "size_bytes": 2223,
-      "sha256": "b4f6a568e78d219deb42514fb516b710eab54bcfacae47f88874cf65b9388201"
-    },
-    {
-      "path": "owner-role.schema.json",
-      "size_bytes": 1107,
-      "sha256": "8e576c689a0dab9c0375949c25c73426c7923e5e6996ca2190de46f05a740d68"
-    },
-    {
-      "path": "package-lock.json",
-      "size_bytes": 141504,
-      "sha256": "377bf3bc80d081c2c21ef1f6f4848c02ba0afe1f8a1e345f9fc9e993244a1d56"
-    },
-    {
-      "path": "package.json",
-      "size_bytes": 701,
-      "sha256": "47297033148e95c4ec39fd0d5b122edfd1175f0783dc479bcf789d91e753f313"
-    },
-    {
       "path": "research/candidates/2026-10-16-external-evidence/BT-OWKS-20261016-C3-C5-REVOCATION-GAP.json",
       "size_bytes": 2124,
       "sha256": "5afceae5834d854c4a2927dd27e5a2a290dff662fe53a72d1d46c8ad672b1961"
@@ -826,6 +681,86 @@
       "sha256": "ae8dfed4c64aa77d0d19bdba5a94b89cd4fe787f9d6d8e58a69a214c845daf80"
     },
     {
+      "path": "research/rsi/BT-RSI-001/AGENT-ROSTER-v0.1.md",
+      "sha256": "37277989b76d352b563383761457c585b23fdbf6039650da24c8586716f74932",
+      "size_bytes": 1667
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/CROSS-PROCESS-FAILURE.md",
+      "sha256": "f5578ce2d754b4ca24ea02cd310a88bd4bc20778889b311f7d5196f66e8588c5",
+      "size_bytes": 993
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/EXECUTION-README.md",
+      "sha256": "4a9a16f15fbaf2a5e8df2c0e5eef51446b6b68ad352126a4420e53d3e4c16f7c",
+      "size_bytes": 1303
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/gate_service.py",
+      "sha256": "292aad726ed6d6e2f1c17f2971d536661a3f2dbac7058b1e0673fa8dc7266d25",
+      "size_bytes": 1182
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/INTEGRATION-AUDIT-v0.1.md",
+      "sha256": "40972fdf0d5dffc4974ee37b7a9913a44a11dba9e9ac7a5c89a6f5d5ade4af7b",
+      "size_bytes": 2877
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/runner.py",
+      "sha256": "07090daa91cda7dbc6408e236f41a4efe03d8e34c35369e7a5a7a42905866b50",
+      "size_bytes": 3394
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_cross_process.py",
+      "sha256": "44660bfa2bc0b02231ff8c9a24c09dce5ea28311e7d8bce0bf830df668d09b48",
+      "size_bytes": 1591
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_runner.py",
+      "sha256": "e27a6c36936b19784791d8c66552a104ac21a0c6d32503d4a591d0f674469285",
+      "size_bytes": 1515
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/worker_process.py",
+      "sha256": "25af6085185ccb0a7cdbdc07ce233aa84b325891261a611a83b36f6557578f9e",
+      "size_bytes": 1829
+    },
+    {
+      "path": "REVIEW-SURFACE-BOUNDARY.md",
+      "size_bytes": 743,
+      "sha256": "2395e260b3e6ffdcc33d95766f5e87a9c594cadb1de8c79e97ae5ceb90c0ca60"
+    },
+    {
+      "path": "REVIEW-SURFACE-HTK.md",
+      "size_bytes": 951,
+      "sha256": "b39ab6e344900852bb299a282d2d2bb948928ecfe3ea2bc4686d39266b0fcd14"
+    },
+    {
+      "path": "ROBOTICS-BOUNDED-KERNEL-v0.1.md",
+      "size_bytes": 1727,
+      "sha256": "520db228811045786028fc134d3f40d582a150aec2ee1b986c9122da99e0ef8f"
+    },
+    {
+      "path": "ROBOTICS-MINIMUM-KERNEL.md",
+      "size_bytes": 3106,
+      "sha256": "dff7a5874763f15a9f32c8b7af07760979b3a52f9db0df6cd989499897fb5504"
+    },
+    {
+      "path": "ROBOTICS-PRE-ACTION-PROTOTYPE.md",
+      "size_bytes": 1456,
+      "sha256": "5ce690f631c6b55508544481cccdb5d308f7e224bf26e0d692aa0087ca272521"
+    },
+    {
+      "path": "ROBOTICS-SPECIALIST-HANDOFF-TEST-BATTERY-v0.1.md",
+      "size_bytes": 1588,
+      "sha256": "e30801e81fda272cbb1b307b19e172ef9f025d5565d40c75c1fde35e6b21fb04"
+    },
+    {
+      "path": "ROBOTICS-SYSTEM-AUTHORITY-LIFECYCLE.md",
+      "size_bytes": 2112,
+      "sha256": "9be16d9e48cbf921b682b09e17639b14ce53da22d795e456523221c0c4e10bd7"
+    },
+    {
       "path": "scripts/interaction_sensor.py",
       "size_bytes": 4039,
       "sha256": "150e09c976013126779980525e7c921ce843add6540f658a086ffb1037a4f311"
@@ -836,9 +771,64 @@
       "sha256": "34dd776dae9297524d3c30f7d5f8069fd64cd6a39b551dd0450ac6cf3d1edb1f"
     },
     {
+      "path": "SECURITY.md",
+      "size_bytes": 728,
+      "sha256": "1c91be58f6904681180b887cc599f351de5262e93f595c23792bfcec3c09209e"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "size_bytes": 4844,
+      "sha256": "57a0489b0d43bcc544b0a0d5ee113058b2a51e770c3a2c5348b219798467a8a9"
+    },
+    {
+      "path": "SIGMA-1-OPTIMIZATION-PASS-v0.1.md",
+      "size_bytes": 946,
+      "sha256": "e6887957730b95f292541d5278480fac379b3e7eaf467cc3990e56585181d543"
+    },
+    {
+      "path": "SIGMA-TWO-DIAGONAL-WORKFLOW-v0.1.md",
+      "size_bytes": 1167,
+      "sha256": "22f19f28fafc57228da6ba0989c7f2f836ca00c37a46e5228079bbd1d03bf1a5"
+    },
+    {
+      "path": "SLEDGEHAMMER-WORKFLOW-v0.1.md",
+      "size_bytes": 3698,
+      "sha256": "3dfcf19ca029e2bfa79a4e68f5c77f5663e023f034026bb5a3699ed7e3732870"
+    },
+    {
       "path": "source-manifest.csv",
       "size_bytes": 2373,
       "sha256": "b469137f63bf6d19f7cb540da29e26b8d884e8f8f5ccbdf8608c85683d453030"
+    },
+    {
+      "path": "SPECIALIST-HANDOFF-PR8-PR11-v0.1.md",
+      "size_bytes": 3208,
+      "sha256": "92cfc4e831c3b1832c2fe1f95b1387827c708fd6e67f2d5e98877b8179ff4481"
+    },
+    {
+      "path": "SPECIALIST-HANDOFF-READINESS.md",
+      "size_bytes": 895,
+      "sha256": "9bc8615b37b414e97df1254f4a9bbe9d69ed162007a12ef74e5a5f7ea187061d"
+    },
+    {
+      "path": "SPECIALIST-HANDOFF-v0.1.md",
+      "size_bytes": 3854,
+      "sha256": "cfdb0415da8386d05c90a6ac24ae6a1a2eb140fc8a3b51c28934a868294ae06e"
+    },
+    {
+      "path": "SPECIALIST-LANGUAGE-AUDIT-v0.1.md",
+      "size_bytes": 3656,
+      "sha256": "79a06fd3296fcb8b98a80bd63c4e84525b1376d1c9709bfdc06e5e92e5f2930e"
+    },
+    {
+      "path": "SPECIALIST-OUTREACH-README.md",
+      "size_bytes": 6338,
+      "sha256": "3161fe38c79e3f72683dfab1c7c98424a05017a41daf95274dc179db512b7f14"
+    },
+    {
+      "path": "SPECIALIST-TITLE-AND-MISSING-ARROW-INDEX-v0.1.md",
+      "size_bytes": 12214,
+      "sha256": "d7a596643af00335be1385a4ff06f72bcfa548c45a5a04a08d2a3f640a481e87"
     },
     {
       "path": "src/can-may/universal-kernel.ts",
@@ -1341,9 +1331,34 @@
       "sha256": "2f241d2a8c95822a4a3a21fac73be60196583e2096e50d96892b669660f0e417"
     },
     {
+      "path": "STANDARDS-AND-INTEGRATION.md",
+      "size_bytes": 2860,
+      "sha256": "98622d5ee7d4cd26ccab83bcdcb79935b9ab659860ad1e1dd26b982a80bfa0b7"
+    },
+    {
       "path": "state-machine.mmd",
       "size_bytes": 635,
       "sha256": "2a384af9b08b4636235b50942b70bb13782639c52910113eb3cff8d7b8d422ac"
+    },
+    {
+      "path": "STATE-RECONCILIATION-v1.1.md",
+      "size_bytes": 2359,
+      "sha256": "bcc8d27148d709a35058b0d6c716051d8f0e822c466233aac94799eb34910ba8"
+    },
+    {
+      "path": "STATUS.md",
+      "size_bytes": 1353,
+      "sha256": "2f242eaf8edc150499f00e7632e56862c7147f3e27721ba4d90d7a24f6c9e850"
+    },
+    {
+      "path": "SWITCHBOARD-AGENT-GATE-v0.1.md",
+      "size_bytes": 902,
+      "sha256": "1c78fab727a2c103d531f3cf23d972a0e3b290d89a8c0175fd45175ad72b41c9"
+    },
+    {
+      "path": "TERMINOLOGY-ENCYCLOPEDIA-ARCHITECTURE-v0.1.md",
+      "size_bytes": 6764,
+      "sha256": "08b2f4fc6070f8d2a3eb0a3c26f39b955301cb7d7b441477d0ad77b5ab27a193"
     },
     {
       "path": "test_agentic_handoff.py",
@@ -1351,9 +1366,24 @@
       "sha256": "2d0a69bcdde5145ae3ff59f423ef683568438b9853626549bbb500e1d1de0ffc"
     },
     {
+      "path": "TEST-BOUNDARY-CONTROL-GAP-v0.1.md",
+      "size_bytes": 1860,
+      "sha256": "8b433781847b65b6dbd34c41f1282f61747411c1a98d6bb052cf2acb838400cb"
+    },
+    {
+      "path": "TEST-RESULT-ONLY-v0.1.md",
+      "size_bytes": 1003,
+      "sha256": "33799b10e68b5b60e0303713bdb17b4f7de0df3a6dd8ca3b3b8f4c20a83a3de1"
+    },
+    {
       "path": "tests/test_interaction_sensor.py",
       "size_bytes": 2094,
       "sha256": "ddc1f1df4f65327fbc9b66ab76dd1931dab7b562f7cee9b3a472bd87a985fbc7"
+    },
+    {
+      "path": "THERMODYNAMIC-REGULATION-METHOD-v0.1.md",
+      "size_bytes": 5442,
+      "sha256": "ec87cad34933080b58026eb5e7dbb335ee6c74f2f026963bda8733e67dcfa288"
     },
     {
       "path": "trust-boundaries.mmd",
@@ -1366,6 +1396,26 @@
       "sha256": "92ae0627b950d671cb8b5d9321c0132406a2cf7ba8725815e29125ce38ba3ac3"
     },
     {
+      "path": "VERSION",
+      "size_bytes": 11,
+      "sha256": "8e3ccfbe492191dbb919be7b4ef3d93bd88f92b1d99532b25ba19c5ad9f1f722"
+    },
+    {
+      "path": "VISUAL-PROTOTYPE-APPROVAL.md",
+      "size_bytes": 1147,
+      "sha256": "f2e203560789e06f97ea7ea7efd6fc214500f3f0c6453d9cc361e10fa18c0f4d"
+    },
+    {
+      "path": "VISUAL-REPRESENTATION-CONTRACT-v0.1.md",
+      "size_bytes": 5823,
+      "sha256": "67ad0adb4189b21a68e787b96a3a07dcba09a53b39be2d45eb952c022419b5b0"
+    },
+    {
+      "path": "visual/index.html",
+      "size_bytes": 4483,
+      "sha256": "a39ecb286832edfcbe9c5f764bd94c698044cec05eca7c31758bca1eda786a85"
+    },
+    {
       "path": "visual/README.md",
       "size_bytes": 707,
       "sha256": "4a47655aedb029e5ef2e174014011da6850d4cb055b93667eb5c67e908a66b8b"
@@ -1374,11 +1424,6 @@
       "path": "visual/UNSUPPORTED-ARROW-README.md",
       "size_bytes": 622,
       "sha256": "6e44de52b07f67da99f1e1daaad5597010d8a30254995d7af57df3854356460e"
-    },
-    {
-      "path": "visual/index.html",
-      "size_bytes": 4483,
-      "sha256": "a39ecb286832edfcbe9c5f764bd94c698044cec05eca7c31758bca1eda786a85"
     },
     {
       "path": "visual/unsupported-arrow.html",
@@ -1411,9 +1456,9 @@
       "sha256": "50acceaffc9cc7c75aadd4af3029ec5e17a15f2a93678f6284244a6d827c17ad"
     },
     {
-      "path": "workshops/fr001/README.md",
-      "size_bytes": 3468,
-      "sha256": "2f25be21ee36476d0399e978ed6c0f74ad57f6b6940e6e2031bc8fe3edbe26bc"
+      "path": "WEAKNESS-PRESERVATION-AND-DESIGN-v0.1.md",
+      "size_bytes": 3265,
+      "sha256": "e7b6fd94bd08308606ced5b6a8960f61fa3789ea33144c9a37f39aa30ab4fd51"
     },
     {
       "path": "workshops/fr001/claim-register.md",
@@ -1426,6 +1471,11 @@
       "sha256": "6dae7d640dc0c57b318fb626dc74bcd9b220118ddc21ee10b57288606fcdab15"
     },
     {
+      "path": "workshops/fr001/README.md",
+      "size_bytes": 3468,
+      "sha256": "2f25be21ee36476d0399e978ed6c0f74ad57f6b6940e6e2031bc8fe3edbe26bc"
+    },
+    {
       "path": "workshops/fr001/review-template.md",
       "size_bytes": 1343,
       "sha256": "f7b24b21a1b983da05983fae40e8bbfc0f5806dea8d73f51fe448392e3f01bcf"
@@ -1434,6 +1484,11 @@
       "path": "workshops/fr001/specialist-matrix.md",
       "size_bytes": 3544,
       "sha256": "04af76ac35aa8dae99fc58ded97fd6d0846278abc7fda8fdf6a7d30eb27d7ffe"
+    },
+    {
+      "path": "ZOMBIE-PERMISSION-HUNTER-PROTOTYPE.md",
+      "size_bytes": 1166,
+      "sha256": "d4daf315fc853377c65fcf7c94e6631858631edb33b4a08e9c52fcc4cf224294"
     }
   ]
 }
