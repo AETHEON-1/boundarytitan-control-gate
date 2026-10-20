@@ -691,6 +691,21 @@
       "size_bytes": 993
     },
     {
+      "path": "research/rsi/BT-RSI-001/custodian_service.py",
+      "size_bytes": 1980,
+      "sha256": "c050585b8ff92e43be46044d75e2da76408477512b5741505e4f452c7da5a4c4"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/custodian_worker.py",
+      "size_bytes": 1280,
+      "sha256": "ac4cabb6818a5b86da5ad3defcbefe7cd53f7a11197c6d56e4ebad10e793313c"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/CUSTODIAN-ISOLATION.md",
+      "size_bytes": 1092,
+      "sha256": "c07780df1e1a4ce43ecfe7bf885d0cd9e3f3296ec60facf793fd036e6b212fe7"
+    },
+    {
       "path": "research/rsi/BT-RSI-001/EXECUTION-README.md",
       "sha256": "4a9a16f15fbaf2a5e8df2c0e5eef51446b6b68ad352126a4420e53d3e4c16f7c",
       "size_bytes": 1303
@@ -714,6 +729,11 @@
       "path": "research/rsi/BT-RSI-001/test_cross_process.py",
       "sha256": "44660bfa2bc0b02231ff8c9a24c09dce5ea28311e7d8bce0bf830df668d09b48",
       "size_bytes": 1591
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_custodian.py",
+      "size_bytes": 2302,
+      "sha256": "ae2d77cab5b4e02c2a6bd8346a3a752e6cd162f1dd64334edf811ce3eefdee62"
     },
     {
       "path": "research/rsi/BT-RSI-001/test_runner.py",
