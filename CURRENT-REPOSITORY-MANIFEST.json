@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/rsi-offline-audit.yml",
-      "sha256": "28262cd1d6ae2ea0567d9a0df96369b13a671b4e713ae671a25b951de2665d8a",
-      "size_bytes": 2414
+      "sha256": "ed47e94955b4a01caa711cdf37bcac098eb86ee2ae46bf7e52ee4777ab08c74c",
+      "size_bytes": 2579
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -726,6 +726,16 @@
       "sha256": "89008816d3f04c9094379f48299d8b5306a076ee0b694e6db434967b236411c4"
     },
     {
+      "path": "research/rsi/BT-RSI-001/consequence_path_battery.py",
+      "size_bytes": 3137,
+      "sha256": "e76565f02558a5d2f3c826beed183a3f154fd049db847c8b9ddf278f86e28273"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/CONSEQUENCE-PATH-BATTERY.md",
+      "size_bytes": 1860,
+      "sha256": "8b6d96b9569e72eaab8330d3eaf5a8cb8d7a74528d4d8d0e6b70130404271c24"
+    },
+    {
       "path": "research/rsi/BT-RSI-001/CROSS-PROCESS-FAILURE.md",
       "sha256": "495b63279301bb0a78edf33fbc399efcb4dabdce45cd6f8808fd2bbfbfa20647",
       "size_bytes": 993
@@ -799,6 +809,11 @@
       "path": "research/rsi/BT-RSI-001/test_completion_extinction.py",
       "size_bytes": 808,
       "sha256": "5e6e48757c0789979094b9623a7cbb9dcc5dd68476930109b016dca6e332162d"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_consequence_path_battery.py",
+      "size_bytes": 1476,
+      "sha256": "b08330425276bc8c7d98a0b187537e4c48c46604cf520e1f98dd0d682f0d8f62"
     },
     {
       "path": "research/rsi/BT-RSI-001/test_cross_process.py",
