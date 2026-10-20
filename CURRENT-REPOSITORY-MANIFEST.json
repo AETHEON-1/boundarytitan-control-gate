@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/rsi-offline-audit.yml",
-      "sha256": "e6840ea4ae419ef07f768033659e4b2cce82b0a3ee78909bde9a2df0729a67c8",
-      "size_bytes": 2905
+      "sha256": "acb6704e9e11e2f4129d87ccdfe4effb71bad8c8643ac130bc25334590e320b6",
+      "size_bytes": 3060
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -736,6 +736,26 @@
       "sha256": "8b6d96b9569e72eaab8330d3eaf5a8cb8d7a74528d4d8d0e6b70130404271c24"
     },
     {
+      "path": "research/rsi/BT-RSI-001/cross_language_contract.js",
+      "size_bytes": 973,
+      "sha256": "6ffa88ae5bbf45c8536e128d5c65b41698ed258c9580351eab471e9de9d18456"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/cross_language_contract.py",
+      "size_bytes": 552,
+      "sha256": "beed0570d3355462708b9f1ac6c249d8109fc53a50ceb831aadb5a3bc788a97c"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/cross_language_vectors.json",
+      "size_bytes": 2707,
+      "sha256": "71e9d84cebad861bc778ca23a18d93f3093f5a2477872afaf47ff056fa377ad4"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/CROSS-DOMAIN-ARROW-MAP.md",
+      "size_bytes": 7391,
+      "sha256": "214cc6ae380ba5cf893d236236ce7c5af4e6d0bb014fc433a1d350120fa0e8c6"
+    },
+    {
       "path": "research/rsi/BT-RSI-001/CROSS-PROCESS-FAILURE.md",
       "sha256": "495b63279301bb0a78edf33fbc399efcb4dabdce45cd6f8808fd2bbfbfa20647",
       "size_bytes": 993
@@ -834,6 +854,11 @@
       "path": "research/rsi/BT-RSI-001/test_consequence_path_battery.py",
       "size_bytes": 1476,
       "sha256": "b08330425276bc8c7d98a0b187537e4c48c46604cf520e1f98dd0d682f0d8f62"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_cross_language_contract.py",
+      "size_bytes": 792,
+      "sha256": "d085a625f113249ba054ca6bb38060c99d370a5a3ea98c8d0a9bd91d3192fbce"
     },
     {
       "path": "research/rsi/BT-RSI-001/test_cross_process.py",
