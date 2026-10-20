@@ -46,5 +46,7 @@ jobs:
         run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_authority_transition_ledger.py
       - name: Full consequence path adversarial negative controls
         run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_consequence_path_battery.py
+      - name: OS resource boundary and separate registry receipt tests
+        run: cd research/rsi/BT-RSI-001 && sudo python3 -m unittest -v test_resource_boundary.py
       - name: Verify repository state
         run: node scripts/verify-repository-state.js
