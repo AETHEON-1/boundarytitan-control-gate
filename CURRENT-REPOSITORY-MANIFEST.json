@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/rsi-offline-audit.yml",
-      "sha256": "e652eaababfcc5635f8ff1466839a9e42c0fcf1fa99aff4b40b1ddbf741c65d1",
-      "size_bytes": 1878
+      "sha256": "ac9daefba054ad1cdf2520a6ec0d3468fe4503ba20dbdf8969291161368b661a",
+      "size_bytes": 2056
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -696,6 +696,16 @@
       "sha256": "43c4535a936f5862588d3e6235916b800f5906d70eb4bd664bb027f210fd4311"
     },
     {
+      "path": "research/rsi/BT-RSI-001/completion_extinction.py",
+      "size_bytes": 3620,
+      "sha256": "d4105308c24f2179a2acf85adae616e7e61796d95ffd6fe393989bc2b961f201"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/COMPLETION-EXTINCTION.md",
+      "size_bytes": 1318,
+      "sha256": "9fe019c6274aba9a2f9caa9d2f787df72b4a2c8e99be171caa9538e8837ef86c"
+    },
+    {
       "path": "research/rsi/BT-RSI-001/CROSS-PROCESS-FAILURE.md",
       "sha256": "495b63279301bb0a78edf33fbc399efcb4dabdce45cd6f8808fd2bbfbfa20647",
       "size_bytes": 993
@@ -749,6 +759,11 @@
       "path": "research/rsi/BT-RSI-001/test_chaos_agent.py",
       "size_bytes": 1082,
       "sha256": "64d35835dd66b71e887dcf47c63676355f2195bf67e2ddf47ae8383d8ea5b5ea"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_completion_extinction.py",
+      "size_bytes": 808,
+      "sha256": "5e6e48757c0789979094b9623a7cbb9dcc5dd68476930109b016dca6e332162d"
     },
     {
       "path": "research/rsi/BT-RSI-001/test_cross_process.py",
