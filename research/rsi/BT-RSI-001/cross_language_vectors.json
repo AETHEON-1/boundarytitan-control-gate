@@ -1,0 +1,95 @@
+{
+  "schema": "BT-RSI-009/v1",
+  "cases": [
+    {
+      "id": "complete-synthetic",
+      "record": {
+        "evidence_source": "source-1",
+        "rule_source": "policy-1",
+        "jurisdiction": "synthetic",
+        "decision_owner": "human-1",
+        "consequence_owner": "human-2",
+        "execution_authority": "custodian-1",
+        "stop_authority": "human-3",
+        "appeal_path": "review-1",
+        "evidence_state": "SUPPORTED"
+      },
+      "expected": true
+    },
+    {
+      "id": "missing-consequence-owner",
+      "record": {
+        "evidence_source": "source-1",
+        "rule_source": "policy-1",
+        "jurisdiction": "synthetic",
+        "decision_owner": "human-1",
+        "consequence_owner": "",
+        "execution_authority": "custodian-1",
+        "stop_authority": "human-3",
+        "appeal_path": "review-1",
+        "evidence_state": "SUPPORTED"
+      },
+      "expected": false
+    },
+    {
+      "id": "machine-appoints-itself",
+      "record": {
+        "evidence_source": "source-1",
+        "rule_source": "policy-1",
+        "jurisdiction": "synthetic",
+        "decision_owner": "AI",
+        "consequence_owner": "human-2",
+        "execution_authority": "custodian-1",
+        "stop_authority": "human-3",
+        "appeal_path": "review-1",
+        "evidence_state": "SUPPORTED"
+      },
+      "expected": false
+    },
+    {
+      "id": "invalid-evidence-state",
+      "record": {
+        "evidence_source": "source-1",
+        "rule_source": "policy-1",
+        "jurisdiction": "synthetic",
+        "decision_owner": "human-1",
+        "consequence_owner": "human-2",
+        "execution_authority": "custodian-1",
+        "stop_authority": "human-3",
+        "appeal_path": "review-1",
+        "evidence_state": "CERTIFIED"
+      },
+      "expected": false
+    },
+    {
+      "id": "missing-appeal",
+      "record": {
+        "evidence_source": "source-1",
+        "rule_source": "policy-1",
+        "jurisdiction": "synthetic",
+        "decision_owner": "human-1",
+        "consequence_owner": "human-2",
+        "execution_authority": "custodian-1",
+        "stop_authority": "human-3",
+        "appeal_path": "",
+        "evidence_state": "INDETERMINATE"
+      },
+      "expected": false
+    },
+    {
+      "id": "contradicted-not-permission",
+      "record": {
+        "evidence_source": "source-1",
+        "rule_source": "policy-1",
+        "jurisdiction": "synthetic",
+        "decision_owner": "human-1",
+        "consequence_owner": "human-2",
+        "execution_authority": "custodian-1",
+        "stop_authority": "human-3",
+        "appeal_path": "review-1",
+        "evidence_state": "CONTRADICTED"
+      },
+      "expected": true
+    }
+  ]
+}

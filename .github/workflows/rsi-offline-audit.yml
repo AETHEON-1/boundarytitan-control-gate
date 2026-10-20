@@ -1,0 +1,58 @@
+name: RSI isolated offline audit
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'research/rsi/**'
+      - 'AGENTS.md'
+      - '.github/workflows/rsi-offline-audit.yml'
+      - 'CURRENT-REPOSITORY-MANIFEST.json'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Record pinned checkout and exact RSI file hashes
+        run: |
+          git rev-parse HEAD
+          python3 - <<'PY'
+          import hashlib, pathlib, subprocess
+          files = subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          for name in sorted(filter(None, files)):
+              if name == 'AGENTS.md' or name == '.github/workflows/rsi-offline-audit.yml' or name.startswith('research/rsi/'):
+                  b = pathlib.Path(name).read_bytes()
+                  print('RSI-MANIFEST-RECEIPT', len(b), hashlib.sha256(b).hexdigest(), name)
+          PY
+      - name: Run deterministic four-role unit tests
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_runner.py
+      - name: Run cross-process negative control
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_cross_process.py
+      - name: Run isolated custodian OS-permission test
+        run: cd research/rsi/BT-RSI-001 && sudo python3 -m unittest -v test_custodian.py
+      - name: Run successor revocation and fault injection tests
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_successor_revocation.py test_chaos_agent.py
+      - name: Detect deliberately vulnerable stale-grant gate
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_vulnerable_gate_negative_control.py
+      - name: Test completion-triggered authority extinction and negative control
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_completion_extinction.py
+      - name: Sigma-2 human authority mapping and omissions battery
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_adversarial_omissions.py
+      - name: Durable closure, authenticated fixture identity and concurrent ledger battery
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_authority_transition_ledger.py
+      - name: Full consequence path adversarial negative controls
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_consequence_path_battery.py
+      - name: OS resource boundary and separate registry receipt tests
+        run: cd research/rsi/BT-RSI-001 && sudo python3 -m unittest -v test_resource_boundary.py
+      - name: Specialist-knowledge adversary battery
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_specialist_knowledge_adversary.py
+      - name: Cross-language authority metadata contract
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_cross_language_contract.py
+      - name: Deterministic swarm composition negative controls
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_swarm_composition.py
+      - name: Verify repository state
+        run: node scripts/verify-repository-state.js
