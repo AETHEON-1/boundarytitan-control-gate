@@ -1,0 +1,24 @@
+name: RSI isolated offline audit
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'research/rsi/**'
+      - 'AGENTS.md'
+      - '.github/workflows/rsi-offline-audit.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Print bounded scope
+        run: |
+          echo "BT-RSI-001: offline read-only checks; no model service or credentials."
+          echo "CAN does not imply MAY."
+      - name: Verify repository state (failure preserved)
+        run: node scripts/verify-repository-state.js
