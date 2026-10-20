@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/rsi-offline-audit.yml",
-      "sha256": "023c50b86a219b7b5163a2bef0da8d67fd71b8e3116b6f0455bceac438bb9a97",
-      "size_bytes": 1529
+      "sha256": "bf26659e92b39edc2d78b548ee3125763593457255f035b0b617f70a5f301254",
+      "size_bytes": 1709
     },
     {
       "path": ".github/workflows/verify.yml",
