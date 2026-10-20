@@ -732,8 +732,8 @@
     },
     {
       "path": "research/rsi/BT-RSI-001/test_custodian.py",
-      "size_bytes": 2302,
-      "sha256": "c3cca50c6d88aa4c23795e4b0277635e1a73123eb77f228b30fe22c3942dc6b9"
+      "size_bytes": 2606,
+      "sha256": "dd632f598cebaae947f02229dce91ff2a5f867ce0c27ee35c4977522618e2834"
     },
     {
       "path": "research/rsi/BT-RSI-001/test_runner.py",
