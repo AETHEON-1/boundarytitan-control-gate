@@ -6,6 +6,7 @@ on:
       - 'research/rsi/**'
       - 'AGENTS.md'
       - '.github/workflows/rsi-offline-audit.yml'
+      - 'CURRENT-REPOSITORY-MANIFEST.json'
 permissions:
   contents: read
 jobs:
@@ -16,9 +17,22 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Print bounded scope
+      - name: Record pinned checkout and exact RSI file hashes
         run: |
-          echo "BT-RSI-001: offline read-only checks; no model service or credentials."
-          echo "CAN does not imply MAY."
-      - name: Verify repository state (failure preserved)
+          git rev-parse HEAD
+          python3 - <<'PY'
+          import hashlib, pathlib, subprocess
+          files = subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          for name in sorted(filter(None, files)):
+              if name == 'AGENTS.md' or name == '.github/workflows/rsi-offline-audit.yml' or name.startswith('research/rsi/'):
+                  b = pathlib.Path(name).read_bytes()
+                  print('RSI-MANIFEST-RECEIPT', len(b), hashlib.sha256(b).hexdigest(), name)
+          PY
+      - name: Run deterministic four-role unit tests
+        run: python3 -m unittest -v research/rsi/BT-RSI-001/test_runner.py
+      - name: Run cross-process negative control
+        run: python3 -m unittest -v research/rsi/BT-RSI-001/test_cross_process.py
+      - name: Run isolated custodian OS-permission test
+        run: sudo python3 -m unittest -v research/rsi/BT-RSI-001/test_custodian.py
+      - name: Verify repository state
         run: node scripts/verify-repository-state.js
