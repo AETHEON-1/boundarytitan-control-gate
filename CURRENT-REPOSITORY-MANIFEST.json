@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/rsi-offline-audit.yml",
-      "sha256": "a63cd7bf1829aa57a975a559a5be61efddead2072ed9316e3c41534d75426b84",
-      "size_bytes": 2220
+      "sha256": "28262cd1d6ae2ea0567d9a0df96369b13a671b4e713ae671a25b951de2665d8a",
+      "size_bytes": 2414
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -691,6 +691,16 @@
       "size_bytes": 1667
     },
     {
+      "path": "research/rsi/BT-RSI-001/authority_transition_ledger.py",
+      "size_bytes": 4510,
+      "sha256": "1df892a6229a9100912088a2286883c95683b1334a2504ef120ddecfaad9de30"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/AUTHORITY-TRANSITION-LEDGER.md",
+      "size_bytes": 2371,
+      "sha256": "7d746f0ccd680a9975dd8aa067a276f727bc60bb5b70f4d271f3c5f743b7cf7a"
+    },
+    {
       "path": "research/rsi/BT-RSI-001/chaos_agent.py",
       "size_bytes": 1945,
       "sha256": "8ae0ff2baea91f282b73a7c41940d97718b9d6f7dbf461810d98a37d0543fcbe"
@@ -774,6 +784,11 @@
       "path": "research/rsi/BT-RSI-001/test_adversarial_omissions.py",
       "size_bytes": 1546,
       "sha256": "1587a72b4a14de23db5320996619b45b9848789fc917b8f7a068bc7abf3de16b"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_authority_transition_ledger.py",
+      "size_bytes": 3365,
+      "sha256": "f2e476a94b2d9f0d37b867869b7fc5f6708ddd484fb1527011498f4e784c9d19"
     },
     {
       "path": "research/rsi/BT-RSI-001/test_chaos_agent.py",
