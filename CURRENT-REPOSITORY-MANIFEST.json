@@ -207,7 +207,7 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "62c9187125fb4fbbc423d418071d74e52a872fcbf3f74566559f221f9e458217",
+      "sha256": "6af738e829fe1565fb30cee9e4336422006e7c3ad1c036c96601e5ee08153e9b",
       "size_bytes": 1791
     },
     {
@@ -682,67 +682,67 @@
     },
     {
       "path": "research/rsi/BT-RSI-001/AGENT-ROSTER-v0.1.md",
-      "sha256": "37277989b76d352b563383761457c585b23fdbf6039650da24c8586716f74932",
+      "sha256": "85be0ec35c3e5e46df8caf7ba8d6747b2ecee95bb181b5a7c1b42b195f1e25e0",
       "size_bytes": 1667
     },
     {
       "path": "research/rsi/BT-RSI-001/CROSS-PROCESS-FAILURE.md",
-      "sha256": "f5578ce2d754b4ca24ea02cd310a88bd4bc20778889b311f7d5196f66e8588c5",
+      "sha256": "495b63279301bb0a78edf33fbc399efcb4dabdce45cd6f8808fd2bbfbfa20647",
       "size_bytes": 993
     },
     {
       "path": "research/rsi/BT-RSI-001/custodian_service.py",
       "size_bytes": 1980,
-      "sha256": "c050585b8ff92e43be46044d75e2da76408477512b5741505e4f452c7da5a4c4"
+      "sha256": "d4768a9a9efe10e03e4ed4e189c4b6e996706c7bd7f12e45d915f90ab5585fe3"
     },
     {
       "path": "research/rsi/BT-RSI-001/custodian_worker.py",
       "size_bytes": 1280,
-      "sha256": "ac4cabb6818a5b86da5ad3defcbefe7cd53f7a11197c6d56e4ebad10e793313c"
+      "sha256": "1d2b3d791144fe05b0f3b11988ce2195a0435dca7e2c689cbb5499430af10665"
     },
     {
       "path": "research/rsi/BT-RSI-001/CUSTODIAN-ISOLATION.md",
       "size_bytes": 1092,
-      "sha256": "c07780df1e1a4ce43ecfe7bf885d0cd9e3f3296ec60facf793fd036e6b212fe7"
+      "sha256": "92b744f977f657cc9858e46635e6e543b2b8f3fcd01c50bcf21681f9c1836981"
     },
     {
       "path": "research/rsi/BT-RSI-001/EXECUTION-README.md",
-      "sha256": "4a9a16f15fbaf2a5e8df2c0e5eef51446b6b68ad352126a4420e53d3e4c16f7c",
+      "sha256": "b3c9314e64cbb13dd1cc2c685e0c31e9b7d2194aedb15b037ba609d6a526bf58",
       "size_bytes": 1303
     },
     {
       "path": "research/rsi/BT-RSI-001/gate_service.py",
-      "sha256": "292aad726ed6d6e2f1c17f2971d536661a3f2dbac7058b1e0673fa8dc7266d25",
+      "sha256": "9815672e40f86264c1c14f2389f19dac103b63022dcc5ad642abb5a79efde5cf",
       "size_bytes": 1182
     },
     {
       "path": "research/rsi/BT-RSI-001/INTEGRATION-AUDIT-v0.1.md",
-      "sha256": "40972fdf0d5dffc4974ee37b7a9913a44a11dba9e9ac7a5c89a6f5d5ade4af7b",
+      "sha256": "9a302b051a5f101d151075e3d700f4028d29b6eefc592c74e502598fdb1d5f15",
       "size_bytes": 2877
     },
     {
       "path": "research/rsi/BT-RSI-001/runner.py",
-      "sha256": "07090daa91cda7dbc6408e236f41a4efe03d8e34c35369e7a5a7a42905866b50",
+      "sha256": "d4bd3a72867eb5bfa4de808d34c351054224c2a10a1ef4b821168dc7027ba704",
       "size_bytes": 3394
     },
     {
       "path": "research/rsi/BT-RSI-001/test_cross_process.py",
-      "sha256": "44660bfa2bc0b02231ff8c9a24c09dce5ea28311e7d8bce0bf830df668d09b48",
+      "sha256": "bd77105d924137bd43d7ba0d243220fe047ba78709e092a005706be507f8c854",
       "size_bytes": 1591
     },
     {
       "path": "research/rsi/BT-RSI-001/test_custodian.py",
       "size_bytes": 2302,
-      "sha256": "ae2d77cab5b4e02c2a6bd8346a3a752e6cd162f1dd64334edf811ce3eefdee62"
+      "sha256": "c3cca50c6d88aa4c23795e4b0277635e1a73123eb77f228b30fe22c3942dc6b9"
     },
     {
       "path": "research/rsi/BT-RSI-001/test_runner.py",
-      "sha256": "e27a6c36936b19784791d8c66552a104ac21a0c6d32503d4a591d0f674469285",
+      "sha256": "d62fd883314442cc2998ba3ff3046cc9d998fb35f5d1253dba3d1e7b620a09a4",
       "size_bytes": 1515
     },
     {
       "path": "research/rsi/BT-RSI-001/worker_process.py",
-      "sha256": "25af6085185ccb0a7cdbdc07ce233aa84b325891261a611a83b36f6557578f9e",
+      "sha256": "93b830017c7f1a615c55aecd4ac20b7869f0cc597c2d38657bfc7b42f11de28d",
       "size_bytes": 1829
     },
     {
