@@ -36,5 +36,7 @@ jobs:
         run: cd research/rsi/BT-RSI-001 && sudo python3 -m unittest -v test_custodian.py
       - name: Run successor revocation and fault injection tests
         run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_successor_revocation.py test_chaos_agent.py
+      - name: Detect deliberately vulnerable stale-grant gate
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_vulnerable_gate_negative_control.py
       - name: Verify repository state
         run: node scripts/verify-repository-state.js
