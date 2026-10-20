@@ -50,5 +50,7 @@ jobs:
         run: cd research/rsi/BT-RSI-001 && sudo python3 -m unittest -v test_resource_boundary.py
       - name: Specialist-knowledge adversary battery
         run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_specialist_knowledge_adversary.py
+      - name: Cross-language authority metadata contract
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_cross_language_contract.py
       - name: Verify repository state
         run: node scripts/verify-repository-state.js
