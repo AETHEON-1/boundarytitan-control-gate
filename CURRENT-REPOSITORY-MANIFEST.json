@@ -686,6 +686,16 @@
       "size_bytes": 1667
     },
     {
+      "path": "research/rsi/BT-RSI-001/chaos_agent.py",
+      "size_bytes": 1945,
+      "sha256": "8ae0ff2baea91f282b73a7c41940d97718b9d6f7dbf461810d98a37d0543fcbe"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/CHAOS-AGENT-PROTOCOL.md",
+      "size_bytes": 1398,
+      "sha256": "43c4535a936f5862588d3e6235916b800f5906d70eb4bd664bb027f210fd4311"
+    },
+    {
       "path": "research/rsi/BT-RSI-001/CROSS-PROCESS-FAILURE.md",
       "sha256": "495b63279301bb0a78edf33fbc399efcb4dabdce45cd6f8808fd2bbfbfa20647",
       "size_bytes": 993
@@ -726,6 +736,21 @@
       "size_bytes": 3394
     },
     {
+      "path": "research/rsi/BT-RSI-001/successor_revocation.py",
+      "size_bytes": 3184,
+      "sha256": "78dc356d8dea02b2fad96ac5ebf4f4571a6c973c7ca4ef51f9d0147a2018b7c2"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/SUCCESSOR-REVOCATION.md",
+      "size_bytes": 1690,
+      "sha256": "32a606f80c747287b9c310fe58fd0a1db68986fd508eb2a7da7f6c9a5ced43a5"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_chaos_agent.py",
+      "size_bytes": 1082,
+      "sha256": "64d35835dd66b71e887dcf47c63676355f2195bf67e2ddf47ae8383d8ea5b5ea"
+    },
+    {
       "path": "research/rsi/BT-RSI-001/test_cross_process.py",
       "sha256": "bd77105d924137bd43d7ba0d243220fe047ba78709e092a005706be507f8c854",
       "size_bytes": 1591
@@ -739,6 +764,11 @@
       "path": "research/rsi/BT-RSI-001/test_runner.py",
       "sha256": "d62fd883314442cc2998ba3ff3046cc9d998fb35f5d1253dba3d1e7b620a09a4",
       "size_bytes": 1515
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_successor_revocation.py",
+      "size_bytes": 667,
+      "sha256": "9114aa596c8808d4fd50fbbad84c1c476c92c5f3d11f2da7b18b9ccffa83a029"
     },
     {
       "path": "research/rsi/BT-RSI-001/worker_process.py",
