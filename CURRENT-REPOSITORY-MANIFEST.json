@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/rsi-offline-audit.yml",
-      "sha256": "ed47e94955b4a01caa711cdf37bcac098eb86ee2ae46bf7e52ee4777ab08c74c",
-      "size_bytes": 2579
+      "sha256": "daeec2e7ca2cca9f593eae8ee98deb662fd00dd328a1ed65bae39898b4e186fc",
+      "size_bytes": 2747
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -771,6 +771,16 @@
       "size_bytes": 2877
     },
     {
+      "path": "research/rsi/BT-RSI-001/resource_boundary.py",
+      "size_bytes": 2144,
+      "sha256": "d0ec24f0f495f36d39ccffbe27d375dc4c93e9b764ea74cbcbccf1469237f076"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/RESOURCE-BOUNDARY.md",
+      "size_bytes": 1568,
+      "sha256": "826f8111f71325498a7b1b4c57a39503091bb416c030f83fa51e7baeaf8589ad"
+    },
+    {
       "path": "research/rsi/BT-RSI-001/runner.py",
       "sha256": "d4bd3a72867eb5bfa4de808d34c351054224c2a10a1ef4b821168dc7027ba704",
       "size_bytes": 3394
@@ -824,6 +834,11 @@
       "path": "research/rsi/BT-RSI-001/test_custodian.py",
       "size_bytes": 2606,
       "sha256": "dd632f598cebaae947f02229dce91ff2a5f867ce0c27ee35c4977522618e2834"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_resource_boundary.py",
+      "size_bytes": 1551,
+      "sha256": "cae6bda809a41c1d5a3ce8bdf8e79ed56f4e05947db575e70b490fe9188cf1b5"
     },
     {
       "path": "research/rsi/BT-RSI-001/test_runner.py",
