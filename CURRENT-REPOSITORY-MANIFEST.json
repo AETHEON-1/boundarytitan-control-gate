@@ -783,7 +783,7 @@
     {
       "path": "research/rsi/BT-RSI-001/VULNERABLE-GATE-NEGATIVE-CONTROL.md",
       "size_bytes": 1161,
-      "sha256": "d240b9533868a1d98096eeb807eb89d3c962b9986d0dbd3d8c4dcd17bde7338"
+      "sha256": "d240b9533868a1d98096eeb807eb89d3c962b9986d0dbd3d8c4dcd17bde7338e"
     },
     {
       "path": "research/rsi/BT-RSI-001/worker_process.py",
