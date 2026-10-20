@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/rsi-offline-audit.yml",
-      "sha256": "bf26659e92b39edc2d78b548ee3125763593457255f035b0b617f70a5f301254",
-      "size_bytes": 1709
+      "sha256": "e652eaababfcc5635f8ff1466839a9e42c0fcf1fa99aff4b40b1ddbf741c65d1",
+      "size_bytes": 1878
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -769,6 +769,21 @@
       "path": "research/rsi/BT-RSI-001/test_successor_revocation.py",
       "size_bytes": 667,
       "sha256": "9114aa596c8808d4fd50fbbad84c1c476c92c5f3d11f2da7b18b9ccffa83a029"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_vulnerable_gate_negative_control.py",
+      "size_bytes": 732,
+      "sha256": "04081f39ba2018228da256e3477e5d8bb54adf948bb1a4706628644377f52302"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/vulnerable_gate_negative_control.py",
+      "size_bytes": 1376,
+      "sha256": "e9c2dcee2fd43db29e75d53e39c41f1a169bbd8626e51a747616c2b6bea1bd82"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/VULNERABLE-GATE-NEGATIVE-CONTROL.md",
+      "size_bytes": 1161,
+      "sha256": "d240b9533868a1d98096eeb807eb89d3c962b9986d0dbd3d8c4dcd17bde7338"
     },
     {
       "path": "research/rsi/BT-RSI-001/worker_process.py",
