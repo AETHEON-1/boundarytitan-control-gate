@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/rsi-offline-audit.yml",
-      "sha256": "acb6704e9e11e2f4129d87ccdfe4effb71bad8c8643ac130bc25334590e320b6",
-      "size_bytes": 3060
+      "sha256": "442a0de9815f820907ad28f7f8d5e59adb56b0fb60b04fb857fe263e8323a730",
+      "size_bytes": 3216
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -831,6 +831,16 @@
       "sha256": "32a606f80c747287b9c310fe58fd0a1db68986fd508eb2a7da7f6c9a5ced43a5"
     },
     {
+      "path": "research/rsi/BT-RSI-001/swarm_composition.py",
+      "size_bytes": 3786,
+      "sha256": "204de845610424ba815b113043ffc1e902b4d0d369acbf1529222ebc50b822ad"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/SWARM-COMPOSITION.md",
+      "size_bytes": 3355,
+      "sha256": "09851e05a996d59437d1f25b61d1678587cd9e3b209049aaa4180f49da372190"
+    },
+    {
       "path": "research/rsi/BT-RSI-001/test_adversarial_omissions.py",
       "size_bytes": 1546,
       "sha256": "1587a72b4a14de23db5320996619b45b9848789fc917b8f7a068bc7abf3de16b"
@@ -889,6 +899,11 @@
       "path": "research/rsi/BT-RSI-001/test_successor_revocation.py",
       "size_bytes": 667,
       "sha256": "9114aa596c8808d4fd50fbbad84c1c476c92c5f3d11f2da7b18b9ccffa83a029"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_swarm_composition.py",
+      "size_bytes": 1413,
+      "sha256": "137fb49d8ef2e06843bc2a68ccb38ace7e803d7d7379ffa26ae9bb4c977b955c"
     },
     {
       "path": "research/rsi/BT-RSI-001/test_vulnerable_gate_negative_control.py",
