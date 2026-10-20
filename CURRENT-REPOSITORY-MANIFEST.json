@@ -27,8 +27,8 @@
     },
     {
       "path": ".github/workflows/rsi-offline-audit.yml",
-      "sha256": "daeec2e7ca2cca9f593eae8ee98deb662fd00dd328a1ed65bae39898b4e186fc",
-      "size_bytes": 2747
+      "sha256": "e6840ea4ae419ef07f768033659e4b2cce82b0a3ee78909bde9a2df0729a67c8",
+      "size_bytes": 2905
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -791,6 +791,16 @@
       "sha256": "c84126dc990f557b7b0ffbf07cc6a5d53893da4371eb63230c5e535dc29d66f0"
     },
     {
+      "path": "research/rsi/BT-RSI-001/specialist_knowledge_adversary.py",
+      "size_bytes": 2841,
+      "sha256": "1ff1d404addef9c8ab174840f0893f4af909c68c9e1f74812225987915856a7d"
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/SPECIALIST-KNOWLEDGE-ADVERSARY.md",
+      "size_bytes": 1505,
+      "sha256": "6c9bc0433d25bcbcc5a381432e1988df28b50f26c27ba2dd9c935b1306bdd30a"
+    },
+    {
       "path": "research/rsi/BT-RSI-001/successor_revocation.py",
       "size_bytes": 3184,
       "sha256": "78dc356d8dea02b2fad96ac5ebf4f4571a6c973c7ca4ef51f9d0147a2018b7c2"
@@ -844,6 +854,11 @@
       "path": "research/rsi/BT-RSI-001/test_runner.py",
       "sha256": "d62fd883314442cc2998ba3ff3046cc9d998fb35f5d1253dba3d1e7b620a09a4",
       "size_bytes": 1515
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_specialist_knowledge_adversary.py",
+      "size_bytes": 2081,
+      "sha256": "88b9d6fbd35c4a86b4e22e4b43f5e827360e20f9a9ad7a137a866bcde9b4e224"
     },
     {
       "path": "research/rsi/BT-RSI-001/test_successor_revocation.py",
