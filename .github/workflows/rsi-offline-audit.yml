@@ -40,5 +40,7 @@ jobs:
         run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_vulnerable_gate_negative_control.py
       - name: Test completion-triggered authority extinction and negative control
         run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_completion_extinction.py
+      - name: Sigma-2 human authority mapping and omissions battery
+        run: cd research/rsi/BT-RSI-001 && python3 -m unittest -v test_adversarial_omissions.py
       - name: Verify repository state
         run: node scripts/verify-repository-state.js
