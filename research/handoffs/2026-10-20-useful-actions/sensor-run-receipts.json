@@ -1,0 +1,104 @@
+[
+  {
+    "runId": 39145505914,
+    "url": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39145505914",
+    "event": "schedule",
+    "createdAt": "2026-10-18T16:33:00Z",
+    "startedAt": "2026-10-18T16:33:00Z",
+    "headSha": "33b3df7208c224cd0477beb541ed0e8f12afc514",
+    "conclusion": "success",
+    "nominalTriggerUtc": "2026-10-18T13:17:00Z",
+    "observedCreatedOffsetSeconds": 11760,
+    "offsetInterpretation": "Run creation offset from configured cron; not measured queue residence or identified cause.",
+    "jobId": 117728396032,
+    "steps": [
+      {
+        "name": "Run fixture tests",
+        "conclusion": "success"
+      },
+      {
+        "name": "Collect public interaction evidence",
+        "conclusion": "success"
+      },
+      {
+        "name": "Retain report artifact",
+        "conclusion": "success"
+      }
+    ],
+    "artifact": {
+      "id": 12143590291,
+      "bytes": 3220,
+      "githubReportedDigest": "sha256:09798b849b551e42f257b41f10d98b0817615c0e07a0b6ff83a9789b963656d4",
+      "independentlyRecomputedInThisReview": false,
+      "independentCustody": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "runId": 39310158648,
+    "url": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39310158648",
+    "event": "schedule",
+    "createdAt": "2026-10-19T19:20:28Z",
+    "startedAt": "2026-10-19T19:20:28Z",
+    "headSha": "2e3296cad8d0b8416b336d0b6fd973264243f6ad",
+    "conclusion": "success",
+    "nominalTriggerUtc": "2026-10-19T13:17:00Z",
+    "observedCreatedOffsetSeconds": 21808,
+    "offsetInterpretation": "Run creation offset from configured cron; not measured queue residence or identified cause.",
+    "jobId": 118257339119,
+    "steps": [
+      {
+        "name": "Run fixture tests",
+        "conclusion": "success"
+      },
+      {
+        "name": "Collect public interaction evidence",
+        "conclusion": "success"
+      },
+      {
+        "name": "Retain report artifact",
+        "conclusion": "success"
+      }
+    ],
+    "artifact": {
+      "id": 12215178011,
+      "bytes": 3365,
+      "githubReportedDigest": "sha256:1f09d7fd4c76e135684fb9b8786ce40ddc83f2b808706a28743f7bb68e63d01f",
+      "independentlyRecomputedInThisReview": false,
+      "independentCustody": "NOT_ESTABLISHED"
+    }
+  },
+  {
+    "runId": 39470764849,
+    "url": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39470764849",
+    "event": "schedule",
+    "createdAt": "2026-10-20T17:59:00Z",
+    "startedAt": "2026-10-20T17:59:00Z",
+    "headSha": "2e3296cad8d0b8416b336d0b6fd973264243f6ad",
+    "conclusion": "success",
+    "nominalTriggerUtc": "2026-10-20T13:17:00Z",
+    "observedCreatedOffsetSeconds": 16920,
+    "offsetInterpretation": "Run creation offset from configured cron; not measured queue residence or identified cause.",
+    "jobId": 118793920027,
+    "steps": [
+      {
+        "name": "Run fixture tests",
+        "conclusion": "success"
+      },
+      {
+        "name": "Collect public interaction evidence",
+        "conclusion": "success"
+      },
+      {
+        "name": "Retain report artifact",
+        "conclusion": "success"
+      }
+    ],
+    "artifact": {
+      "id": 12287695978,
+      "bytes": 3363,
+      "githubReportedDigest": "sha256:ff691fa7e7a07b0bae43233a02fef104aefa05a2dc894871e94f8e5651862cd8",
+      "independentlyRecomputedInThisReview": false,
+      "independentCustody": "NOT_ESTABLISHED"
+    }
+  }
+]

@@ -1,0 +1,262 @@
+{
+  "pinnedCommit": "51ff7396ee4dc43622002058ba9610cfd426311e",
+  "state": "READ_ONLY_INDEX_NOT_REPRODUCTION",
+  "files": [
+    {
+      "path": ".github/workflows/rsi-offline-audit.yml",
+      "gitBlobSha1": "ae6af53dfea3f486c5765a99470b3882a2f6260f",
+      "sizeBytes": 3216
+    },
+    {
+      "path": "AGENTS.md",
+      "gitBlobSha1": "528cdaa5e4096ac71704a33bdc1c9a9f8ce7b7c2",
+      "sizeBytes": 1791
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/AGENT-ROSTER-v0.1.md",
+      "gitBlobSha1": "4492a5fc19759f585b341f8d41a85a473783d39f",
+      "sizeBytes": 1667
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/AUTHORITY-TRANSITION-LEDGER.md",
+      "gitBlobSha1": "86abbdb58070bae12ae66925dcb8b17a76abe43a",
+      "sizeBytes": 2371
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/CHAOS-AGENT-PROTOCOL.md",
+      "gitBlobSha1": "52a05314814ad40ff2852a97ad26bd2b35f93f6f",
+      "sizeBytes": 1398
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/COMPLETION-EXTINCTION.md",
+      "gitBlobSha1": "69a1071b11f6229436d7e846f3792cca2641bb90",
+      "sizeBytes": 1318
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/CONSEQUENCE-PATH-BATTERY.md",
+      "gitBlobSha1": "e610f21e4e3bde50fcd730b6f9eaafffe3d1b319",
+      "sizeBytes": 1860
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/CROSS-DOMAIN-ARROW-MAP.md",
+      "gitBlobSha1": "c7879fe8060b77a236ce1feb4f23484ad6cbc47b",
+      "sizeBytes": 7391
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/CROSS-PROCESS-FAILURE.md",
+      "gitBlobSha1": "9cec4bddf59e496b59d0a69c40d2db1d771b1fac",
+      "sizeBytes": 993
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/CUSTODIAN-ISOLATION.md",
+      "gitBlobSha1": "1d9aef4d02bb0edc1c34aa3930aab8885597827b",
+      "sizeBytes": 1092
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/EXECUTION-README.md",
+      "gitBlobSha1": "ad96c96eb23ceaef269c3e5c1fc2b4da18fbbac4",
+      "sizeBytes": 1303
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/INTEGRATION-AUDIT-v0.1.md",
+      "gitBlobSha1": "3a9901c1818d25ea7eb2fb3beba4d7bb24659231",
+      "sizeBytes": 2877
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/RESOURCE-BOUNDARY.md",
+      "gitBlobSha1": "7e4d619924ae80c06e2b85563c468774c1f5010d",
+      "sizeBytes": 1568
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/SIGMA2-AUTHORITY-BRIDGE.md",
+      "gitBlobSha1": "0cde4712301f97afed57462de87b046bb0a7c56b",
+      "sizeBytes": 1822
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/SPECIALIST-KNOWLEDGE-ADVERSARY.md",
+      "gitBlobSha1": "64b0189c5c37f553ebfac9d03ef93ad2d4d6acc6",
+      "sizeBytes": 1505
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/SUCCESSOR-REVOCATION.md",
+      "gitBlobSha1": "f00ab4fef02f29f05efba57dcfb40cde87ec41e8",
+      "sizeBytes": 1690
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/SWARM-COMPOSITION.md",
+      "gitBlobSha1": "766e769ae97c5e344119dca06b0b0b7fa964a74a",
+      "sizeBytes": 3355
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/VULNERABLE-GATE-NEGATIVE-CONTROL.md",
+      "gitBlobSha1": "e62c57b00e57935184f38532402abe6ffcee6e4e",
+      "sizeBytes": 1161
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/adversarial_omissions.py",
+      "gitBlobSha1": "1192510342f58bf7ccf3a42fec1481fe1f1878c4",
+      "sizeBytes": 1522
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/authority_transition_ledger.py",
+      "gitBlobSha1": "6199dd52cd8f3e7e9f5764ca185f214e0a018ffe",
+      "sizeBytes": 4510
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/chaos_agent.py",
+      "gitBlobSha1": "106c8723a5780e72fba405077096e39a72369ed7",
+      "sizeBytes": 1945
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/completion_extinction.py",
+      "gitBlobSha1": "aa33aa6d406939a452508ef7cd4eb528a673e75d",
+      "sizeBytes": 3620
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/consequence_mapping.py",
+      "gitBlobSha1": "6232f1c3c7e74fd0e1b9fd2cdaf3fdae92efcac3",
+      "sizeBytes": 2198
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/consequence_path_battery.py",
+      "gitBlobSha1": "50c91fe5ed9e44b2154e4b09a752b3d936cf2064",
+      "sizeBytes": 3137
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/cross_language_contract.js",
+      "gitBlobSha1": "0efa4c1ef306555657ee25b88cbd0b35bceb2269",
+      "sizeBytes": 973
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/cross_language_contract.py",
+      "gitBlobSha1": "51ab355fc773312afdc02ce75de90f46fa77449b",
+      "sizeBytes": 552
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/cross_language_vectors.json",
+      "gitBlobSha1": "03a3b647f9dd5d4004bb13a159d1f9cea72b9280",
+      "sizeBytes": 2707
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/custodian_service.py",
+      "gitBlobSha1": "af94e609efd272afd1a5800f61aaf581e8e6692c",
+      "sizeBytes": 1980
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/custodian_worker.py",
+      "gitBlobSha1": "da255bbe8397c57cb674d8c923fede194245187b",
+      "sizeBytes": 1280
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/gate_service.py",
+      "gitBlobSha1": "94cb937d3dcd928a46d2f72f32562ce3afae48e6",
+      "sizeBytes": 1182
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/resource_boundary.py",
+      "gitBlobSha1": "c90fe0e19889846236037d728e3cf2b21e900f72",
+      "sizeBytes": 2144
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/runner.py",
+      "gitBlobSha1": "00b231cf4036ceaa8a51ce0a4881a01c5bd85579",
+      "sizeBytes": 3394
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/specialist_knowledge_adversary.py",
+      "gitBlobSha1": "24fe268838bc924a455fadc507891507c74ef1c9",
+      "sizeBytes": 2841
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/successor_revocation.py",
+      "gitBlobSha1": "6402f4fdeee8e723ced6a01a983172b2ead57e37",
+      "sizeBytes": 3184
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/swarm_composition.py",
+      "gitBlobSha1": "4c97ccbf1d4fe47b74ba5418e0b9f36329f9cf25",
+      "sizeBytes": 3786
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_adversarial_omissions.py",
+      "gitBlobSha1": "897b109b1ce8469e03aa350065c1c373feb8bf87",
+      "sizeBytes": 1546
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_authority_transition_ledger.py",
+      "gitBlobSha1": "fae3584b74c834119654fa59be52a52d0d345ec3",
+      "sizeBytes": 3365
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_chaos_agent.py",
+      "gitBlobSha1": "e79f75f0b99d9919f065db60764e186c1fe7f635",
+      "sizeBytes": 1082
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_completion_extinction.py",
+      "gitBlobSha1": "6fe492095a1a77aad59c961505830622afed4fdc",
+      "sizeBytes": 808
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_consequence_path_battery.py",
+      "gitBlobSha1": "d771686da4fb0c2746104a717092736da81be0eb",
+      "sizeBytes": 1476
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_cross_language_contract.py",
+      "gitBlobSha1": "826e7721bcc8b21e303b44b9b8c8090affe1dd95",
+      "sizeBytes": 792
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_cross_process.py",
+      "gitBlobSha1": "1ab26b19ed20448f7f1adac2c90de4bb4f3f8f01",
+      "sizeBytes": 1591
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_custodian.py",
+      "gitBlobSha1": "e4a06c6a569f104b2f1f9b6ca7af514103ad5d02",
+      "sizeBytes": 2606
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_resource_boundary.py",
+      "gitBlobSha1": "a6d735d9aeeaf96c1fb2dd22a19e52cf20c467cd",
+      "sizeBytes": 1551
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_runner.py",
+      "gitBlobSha1": "e65d19b9b3a1d3a68bd35b9e8e36bd1e3d21d9ba",
+      "sizeBytes": 1515
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_specialist_knowledge_adversary.py",
+      "gitBlobSha1": "e592fe3e57e226575c7b3e2af8428acc041ae819",
+      "sizeBytes": 2081
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_successor_revocation.py",
+      "gitBlobSha1": "ad6d298f3e21d71474757be8d3d0fd7e6555f194",
+      "sizeBytes": 667
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_swarm_composition.py",
+      "gitBlobSha1": "7536969a03b948263b1f0cffa1957d9d083c9a45",
+      "sizeBytes": 1413
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/test_vulnerable_gate_negative_control.py",
+      "gitBlobSha1": "5edbe5487b82ddd40534bf27e4816f83fe534058",
+      "sizeBytes": 732
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/vulnerable_gate_negative_control.py",
+      "gitBlobSha1": "53ef7554bc41038ce5e7fbd15087a1bc9f870fec",
+      "sizeBytes": 1376
+    },
+    {
+      "path": "research/rsi/BT-RSI-001/worker_process.py",
+      "gitBlobSha1": "9b198629ef6c1a0abeda3005f19c9344b539fadf",
+      "sizeBytes": 1829
+    }
+  ],
+  "independentExecution": "NOT_PERFORMED"
+}
