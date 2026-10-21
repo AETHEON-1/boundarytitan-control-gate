@@ -816,6 +816,21 @@
       "sha256": "5214e3f37a24494825ee41674d9b1afdc94a5c4d50665e5751e7fae9e286198c"
     },
     {
+      "path": "research/intake/ATLAS-928P-CANDIDATE-BOUNDARIES.md",
+      "size_bytes": 3516,
+      "sha256": "8e2aa5589a7ae3f61fc0ca2689a0244fdb340822f9307448e504ed21ca439de1"
+    },
+    {
+      "path": "research/intake/BOUNDARY-ATLAS-WORDPRESS-928P-SOURCE-RECEIPT-2026-10-20.md",
+      "size_bytes": 3914,
+      "sha256": "66681c3a58f861edd432f72ef8a19c8e6913f18be4d928bef3cf0635b6576a54"
+    },
+    {
+      "path": "research/intake/WORDPRESS-ONLY-RECONCILIATION-NOTE.md",
+      "size_bytes": 589,
+      "sha256": "71dd3bf961c2a71a740e27f900c5abda75cd1d87855afb665588aa8cf067bad5"
+    },
+    {
       "path": "research/quora-lane/RESPONSE-RECONCILIATION-v0.1.md",
       "size_bytes": 4067,
       "sha256": "77abaf043739d9ae7e94b3d24e18596e3dbb354e4abd6eae000bf8837c66003f"
