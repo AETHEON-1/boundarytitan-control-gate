@@ -776,6 +776,11 @@
       "sha256": "4ab07158dee6593c88a592f7ce7ed71a8f36282476321ce7f40d60fb87e7d549"
     },
     {
+      "path": "encyclopedia-of-chaos/entries/EOC-20261020-SENSOR-ABSENCE-CORRECTION-v0.1.json",
+      "size_bytes": 4599,
+      "sha256": "d8b9d32307caf32c26c46db24ac2317ef5e94d7d1cb4408f5c399579508b9bdd"
+    },
+    {
       "path": "evaluation-record.schema.json",
       "size_bytes": 2179,
       "sha256": "4cc299f1b268eb47fe5b32af428321859317a877688bf5d728b3ec3bdb533ba3"
@@ -814,6 +819,56 @@
       "path": "research/fixtures/can-may-research-input-v0.1.json",
       "size_bytes": 842,
       "sha256": "eb482cc6a964d237d986d5592dfddb3907d6094517362c9b4b9defd4e3424865"
+    },
+    {
+      "path": "research/handoffs/2026-10-20-useful-actions/EMUDHRA-ADDENDUM-20261022.md",
+      "size_bytes": 8309,
+      "sha256": "ab5a8520c00b34e920733e54ce32005969b5a2d40c852ba5bbe2c0171b9ccb77"
+    },
+    {
+      "path": "research/handoffs/2026-10-20-useful-actions/EMUDHRA-SPECIALIST-HANDOFF.md",
+      "size_bytes": 3240,
+      "sha256": "649ad1d77a16e873b656aff62f66065b1c8f7b0673cb9e995ff7dcb3f4523f7e"
+    },
+    {
+      "path": "research/handoffs/2026-10-20-useful-actions/FINANCIAL-SSA-HOLDS.md",
+      "size_bytes": 1651,
+      "sha256": "1441642d6ff7170b4259c76c4d05b8434917a5a1540146925c1698c7ff509aa7"
+    },
+    {
+      "path": "research/handoffs/2026-10-20-useful-actions/PR103-INDEPENDENT-REVIEW.md",
+      "size_bytes": 3432,
+      "sha256": "8df31b4f49b4ec10fb3669703e3e29a95595c34aae523eebf4dc562600caf9e8"
+    },
+    {
+      "path": "research/handoffs/2026-10-20-useful-actions/PREPARATION-FAILURE.md",
+      "size_bytes": 1243,
+      "sha256": "52120c9abc0c40852e89865b4e2e5db25c6e95ab624d48e8348a68e9ec3752c0"
+    },
+    {
+      "path": "research/handoffs/2026-10-20-useful-actions/README.md",
+      "size_bytes": 1668,
+      "sha256": "87c8d855c6bcd56c8db2b1f24b71cb03c402fdd3aa398b583f2019a80837cdbf"
+    },
+    {
+      "path": "research/handoffs/2026-10-20-useful-actions/emudhra-addendum-20261022.json",
+      "size_bytes": 2012,
+      "sha256": "4e857daf2a504de1dd5da5999234cd994f417f27c96de2aed859987f42142263"
+    },
+    {
+      "path": "research/handoffs/2026-10-20-useful-actions/emudhra-matrix.json",
+      "size_bytes": 8128,
+      "sha256": "d72bb337ac74c1fd2a8c2102d2ee874cfd1c902f162c8d8380b06c7ee8091377"
+    },
+    {
+      "path": "research/handoffs/2026-10-20-useful-actions/rsi-source-index.json",
+      "size_bytes": 8719,
+      "sha256": "1e9d8e6883829a87ece0ff77f2d296b5ca67bedaa7628a46c953e7e7a9012457"
+    },
+    {
+      "path": "research/handoffs/2026-10-20-useful-actions/sensor-run-receipts.json",
+      "size_bytes": 3429,
+      "sha256": "f7361d4e40936e8b4340baf3ee03dad4a0a0ddbbb57845a35bc0fa7f2b572aef"
     },
     {
       "path": "scripts/research-discovery.js",

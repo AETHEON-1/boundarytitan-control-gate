@@ -1,0 +1,104 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261020-SENSOR-ABSENCE-CORRECTION-v0.1",
+  "recordedDate": "2026-10-20",
+  "kind": "APPEND_ONLY_REPORTING_CORRECTION",
+  "claim": "October 18, 19 and 20 scheduled sensor runs are recorded as successful. A later report calling October 19 the first observable scheduled execution and October 18 unobserved contradicted an already retrieved October 18 success; earlier time-bounded UNKNOWN observations remain historical.",
+  "sources": [
+    {
+      "type": "github_actions",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39145505914"
+    },
+    {
+      "type": "github_actions",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39310158648"
+    },
+    {
+      "type": "github_actions",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/actions/runs/39470764849"
+    },
+    {
+      "type": "supplied_transcript",
+      "locator": "User-supplied Open-World Kernel Scout checkpoint, late-success and correction messages in this conversation; original output digest/run ID UNKNOWN"
+    }
+  ],
+  "evidenceState": "SUPPORTED",
+  "observations": [
+    {
+      "id": "SC1",
+      "description": "October 18 run 39145505914 existed and succeeded; creation offset 3h16m from nominal trigger. Re-read via API with job and artifact metadata.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "SC2",
+      "description": "October 19 run 39310158648 succeeded; creation offset 6h03m28s. Withdraw the later first-observable-scheduled-run label.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "SC3",
+      "description": "October 20 run 39470764849 succeeded; creation offset 4h42m. Correct earlier time-bounded UNKNOWN to later observed success without erasing the earlier observation.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "SC4",
+      "description": "A query that did not surface a run did not establish the run never existed. The later historical absence claim is contradicted; its exact cause (query coverage, visibility lag or synthesis error) is unresolved.",
+      "state": "CONTRADICTED"
+    },
+    {
+      "id": "SC5",
+      "description": "All three jobs report successful fixture, collector and upload steps. Digests are platform-reported in this review; earlier transcript claims of recomputation are not adopted as recomputation performed here.",
+      "state": "SUPPORTED"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "RECEIPT-RECHECK",
+      "purpose": "Reconcile event, date, SHA, job steps and artifact metadata",
+      "execution": "Read-only API recheck executed for all three runs; no workflow dispatched."
+    },
+    {
+      "id": "ARTIFACT-BYTES",
+      "purpose": "Independently recompute archived bytes",
+      "execution": "NOT PERFORMED in this review."
+    },
+    {
+      "id": "DELIVERY-AND-CAUSE",
+      "purpose": "Establish notification receipt and scheduler cause",
+      "execution": "NOT TESTED; retained UNKNOWN."
+    }
+  ],
+  "reproduction": [
+    "Read each pinned run, its jobs and artifacts endpoints; compare exact event/SHAs and timestamps to receipt JSON in this proposal."
+  ],
+  "environment": "Read-only connected GitHub API inspection; monitored GitHub-hosted Actions jobs. No sensor rerun.",
+  "limitations": [
+    "User-supplied historical assistant messages are not authenticated original task-output attestations.",
+    "Created-at offset is not proof of queue telemetry, dropped events or outage causation.",
+    "GitHub digests and same-platform job logs do not establish independent custody or notification delivery.",
+    "No complete interaction coverage, independent review or external adoption follows."
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Prevents a retrieval omission becoming a permanent absence claim."
+    ],
+    "harmful": [
+      "Uncorrected synthesis could falsely describe lost execution or hide delayed correction propagation."
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "Human approved correction preservation and specialist preparation; admission pending.",
+  "externalStopState": "NOT_ESTABLISHED",
+  "specialistReview": "NOT_STARTED",
+  "authorizationGranted": false,
+  "links": {
+    "parent": null,
+    "supersedes": null,
+    "corrections": []
+  },
+  "reopenConditions": [
+    "Run attribution or archived bytes contradict receipts",
+    "Independent scheduler telemetry establishes cause",
+    "Original task-output custody clarifies contradiction lineage"
+  ],
+  "humanDisposition": "PENDING_ARCHIVE_REVIEW"
+}
