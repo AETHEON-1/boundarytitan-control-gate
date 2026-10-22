@@ -14,3 +14,7 @@ PR104's separate manifest repair preserves its original failed CI and source fil
 Human may reject/close the draft before admission. GitHub execution and evidence remain under shared platform/owner administration; no independently effective technical stop path demonstrated. No workflow or monitor schedule/permissions changed.
 
 CAN ⊬ MAY.
+
+## October 22 specialist addendum
+
+See [EMUDHRA-ADDENDUM-20261022.md](EMUDHRA-ADDENDUM-20261022.md) and [structured preparation state](emudhra-addendum-20261022.json). Android startup, CRL signer and migration work packages remain NOT TESTED; exact specimens and execution admission are incomplete. Earlier handoff, matrix and failures are preserved.

@@ -1,0 +1,62 @@
+{
+  "artifact": "EMUDHRA-SPECIALIST-ADDENDUM-v0.1",
+  "recordedDate": "2026-10-22",
+  "baselineCommit": "9f1e06af4beb8b8529e6e0bf526273ad9d668591",
+  "primaryLane": "Cybersecurity / certificate trust, revocation and recovery",
+  "executionAuthorized": false,
+  "publicationAuthorized": false,
+  "independentTestingPerformed": false,
+  "workPackages": [
+    {
+      "id": "ANDROID-STARTUP",
+      "result": "NOT TESTED",
+      "specimenState": "NOT ACQUIRED / HASHES UNKNOWN",
+      "operator": "UNASSIGNED",
+      "custodian": "UNASSIGNED",
+      "stopOperator": "UNASSIGNED"
+    },
+    {
+      "id": "CRL-SIGNER",
+      "result": "NOT TESTED",
+      "specimenState": "NOT ACQUIRED / HASHES UNKNOWN",
+      "operator": "UNASSIGNED",
+      "custodian": "UNASSIGNED",
+      "stopOperator": "UNASSIGNED"
+    },
+    {
+      "id": "MIGRATION-RECONCILIATION",
+      "result": "NOT TESTED",
+      "specimenState": "DEPLOYMENT RECORDS NOT RETRIEVED",
+      "operator": "UNASSIGNED",
+      "custodian": "UNASSIGNED",
+      "stopOperator": "UNASSIGNED"
+    }
+  ],
+  "originalMatrix": {
+    "path": "research/handoffs/2026-10-20-useful-actions/emudhra-matrix.json",
+    "profileCount": 8,
+    "result": "NOT TESTED",
+    "modified": false
+  },
+  "sourceAccessibility": [
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2084517",
+      "observedState": "PUBLIC / RESOLVED DUPLICATE OF 2084311",
+      "observedDate": "2026-10-22",
+      "priorRetrievalFailurePreserved": true
+    },
+    {
+      "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2084311",
+      "observedState": "ACCESS DENIED",
+      "observedDate": "2026-10-22"
+    }
+  ],
+  "admissionBlockers": [
+    "Exact specimens and digests",
+    "Frozen environment and expected outcomes",
+    "Named operator and independent custodian",
+    "Named external technical stop operator and demonstrated stop",
+    "Separate human execution authorization"
+  ],
+  "detail": "research/handoffs/2026-10-20-useful-actions/EMUDHRA-ADDENDUM-20261022.md"
+}

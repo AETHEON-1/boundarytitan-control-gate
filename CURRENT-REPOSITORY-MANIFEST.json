@@ -821,6 +821,11 @@
       "sha256": "eb482cc6a964d237d986d5592dfddb3907d6094517362c9b4b9defd4e3424865"
     },
     {
+      "path": "research/handoffs/2026-10-20-useful-actions/EMUDHRA-ADDENDUM-20261022.md",
+      "size_bytes": 8309,
+      "sha256": "ab5a8520c00b34e920733e54ce32005969b5a2d40c852ba5bbe2c0171b9ccb77"
+    },
+    {
       "path": "research/handoffs/2026-10-20-useful-actions/EMUDHRA-SPECIALIST-HANDOFF.md",
       "size_bytes": 3240,
       "sha256": "649ad1d77a16e873b656aff62f66065b1c8f7b0673cb9e995ff7dcb3f4523f7e"
@@ -842,8 +847,13 @@
     },
     {
       "path": "research/handoffs/2026-10-20-useful-actions/README.md",
-      "size_bytes": 1316,
-      "sha256": "5d1e8aae99e53b430a9aece3d0a432214d45892b81d09bcbfcbec5ab5c8616fa"
+      "size_bytes": 1668,
+      "sha256": "87c8d855c6bcd56c8db2b1f24b71cb03c402fdd3aa398b583f2019a80837cdbf"
+    },
+    {
+      "path": "research/handoffs/2026-10-20-useful-actions/emudhra-addendum-20261022.json",
+      "size_bytes": 2012,
+      "sha256": "4e857daf2a504de1dd5da5999234cd994f417f27c96de2aed859987f42142263"
     },
     {
       "path": "research/handoffs/2026-10-20-useful-actions/emudhra-matrix.json",
