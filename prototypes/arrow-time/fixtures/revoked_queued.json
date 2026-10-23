@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "id": "owner",
+      "type": "actor"
+    },
+    {
+      "id": "service",
+      "type": "system"
+    },
+    {
+      "id": "payment",
+      "type": "action"
+    },
+    {
+      "id": "harm",
+      "type": "consequence"
+    }
+  ],
+  "edges": [
+    {
+      "from": "service",
+      "to": "payment",
+      "type": "execution"
+    },
+    {
+      "from": "payment",
+      "to": "harm",
+      "type": "consequence"
+    }
+  ],
+  "permissions": [
+    {
+      "id": "p1",
+      "start": "2026-10-23T10:00:00Z",
+      "end": "2026-10-23T11:00:00Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "grant",
+      "kind": "grant",
+      "time": "2026-10-23T10:00:00Z"
+    },
+    {
+      "id": "revoke",
+      "kind": "revocation",
+      "permission": "p1",
+      "time": "2026-10-23T10:06:00Z",
+      "after": [
+        "grant"
+      ]
+    },
+    {
+      "id": "execute",
+      "kind": "execution",
+      "permission": "p1",
+      "time": "2026-10-23T10:07:00Z",
+      "after": [
+        "revoke"
+      ]
+    }
+  ],
+  "consequence_bearer": "owner",
+  "external_stop": null
+}
