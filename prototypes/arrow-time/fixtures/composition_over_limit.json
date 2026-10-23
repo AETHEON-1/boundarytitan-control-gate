@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "owner",
+      "type": "actor"
+    }
+  ],
+  "permissions": [
+    {
+      "id": "p1",
+      "start": "2026-10-23T10:00:00Z",
+      "end": "2026-10-23T11:00:00Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "debit1",
+      "kind": "execution",
+      "permission": "p1",
+      "amount": "70",
+      "time": "2026-10-23T10:10:00Z"
+    },
+    {
+      "id": "debit2",
+      "kind": "execution",
+      "permission": "p1",
+      "amount": "70",
+      "time": "2026-10-23T10:11:00Z"
+    }
+  ],
+  "cross_action_constraints": [
+    {
+      "id": "budget",
+      "kind": "sum_limit",
+      "permission": "p1",
+      "event_ids": [
+        "debit1",
+        "debit2"
+      ],
+      "max_total": "100"
+    }
+  ],
+  "consequence_bearer": "owner",
+  "external_stop": "declared, not independently verified"
+}
