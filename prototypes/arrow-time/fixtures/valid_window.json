@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    {
+      "id": "owner",
+      "type": "actor"
+    }
+  ],
+  "permissions": [
+    {
+      "id": "p1",
+      "start": "2026-10-23T10:00:00Z",
+      "end": "2026-10-23T11:00:00Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "execute",
+      "kind": "execution",
+      "permission": "p1",
+      "time": "2026-10-23T10:30:00Z"
+    }
+  ],
+  "consequence_bearer": "owner",
+  "external_stop": "claimed independent gate"
+}
