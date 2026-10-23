@@ -1,5 +1,6 @@
 """Synthetic authority/time investigation only. No external effects."""
 from datetime import datetime, timezone
+from .composition import evaluate_composition
 
 VALID_NODES = {"actor", "system", "evidence", "permission", "decision", "action", "consequence", "control"}
 VALID_EDGES = {"evidence", "dependency", "delegation", "execution", "consequence", "review", "stop"}
@@ -73,6 +74,7 @@ def analyze(fixture):
         revocations = [timestamp(r.get("time")) for r in events if r.get("kind") == "revocation" and r.get("permission") == p.get("id")]
         if t and any(r is not None and r <= t for r in revocations):
             add("PRIOR_REVOCATION", "CONTRADICTED", "Recorded revocation precedes execution; enforcement unknown")
+    findings.extend(evaluate_composition(fixture))
     if not fixture.get("consequence_bearer"):
         add("MISSING_BEARER", "INDETERMINATE", "No documented consequence bearer")
     if not fixture.get("external_stop"):
