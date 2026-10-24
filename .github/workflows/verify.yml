@@ -26,5 +26,7 @@ jobs:
         run: npm test -- --coverage=false
       - name: Run Python handoff tests
         run: npm run test:python
+      - name: Run Arrow Mapper and Time Arrow tests
+        run: python3 -m unittest discover -s prototypes/arrow-time/tests -v
       - name: Verify repository state
         run: npm run verify:state

@@ -6,6 +6,11 @@
   "deployment_authority": false,
   "files": [
     {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/AT-CHAOS-005-manifest-and-ci-coverage-gap.md",
+      "size_bytes": 3413,
+      "sha256": "b4d0fd60e54c24f4704f3f8a44d1be492f605fb86bdb3c3a5d47588873c8733d"
+    },
+    {
       "path": ".github/CODEOWNERS",
       "size_bytes": 88,
       "sha256": "c989251892698f69de8bb65a545877f302d5acb4d0e051752b5caebcdb8ad92b"
@@ -27,8 +32,8 @@
     },
     {
       "path": ".github/workflows/verify.yml",
-      "size_bytes": 657,
-      "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
+      "size_bytes": 785,
+      "sha256": "10e6b856b6e249a0f252826474a1ac502cad03c1ce7b62db0cb0f47cb1868056"
     },
     {
       "path": ".gitignore",
@@ -756,6 +761,26 @@
       "sha256": "7dc069d4d3cd322c2b3f5744e98fa051adf001719898f4479ff11fd27a5f1839"
     },
     {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/AT-CHAOS-001-arrow-time-adversarial-battery.md",
+      "size_bytes": 2839,
+      "sha256": "418126c8ff8bc247f6e38b38577acb7a3ab66da900a5fceba91c6df0b3672692"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/AT-CHAOS-002-branch-composition-battery.md",
+      "size_bytes": 2818,
+      "sha256": "f3b8dc0612f7ff1d719930ea065406176d2f1ffcded724d78708aeadeb70f7b2"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/AT-CHAOS-003-reproducibility-schedule-oracle.md",
+      "size_bytes": 1893,
+      "sha256": "a3de27e729d3415a1c50ad737a0315fa432a104159d52e061025a386bcc60eb8"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/AT-CHAOS-004-same-implementation-interleavings.md",
+      "size_bytes": 1448,
+      "sha256": "79acd50aabe5b598367e1775109e28bdab6a4ee77b829da16baaff76d76c4650"
+    },
+    {
       "path": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md",
       "size_bytes": 4281,
       "sha256": "863e6656f3a08a21d804a5f457fa4ebefc312dd0c1daa485ee20dd328f7b9acf"
@@ -789,6 +814,86 @@
       "path": "package.json",
       "size_bytes": 701,
       "sha256": "47297033148e95c4ec39fd0d5b122edfd1175f0783dc479bcf789d91e753f313"
+    },
+    {
+      "path": "prototypes/arrow-time/COMPOSITION_SCHEMA.md",
+      "size_bytes": 1152,
+      "sha256": "c6e277d88ab6a2c9f0b2962e17c396e2b570cc42d6a931fe2536f48ea4a8013b"
+    },
+    {
+      "path": "prototypes/arrow-time/README.md",
+      "size_bytes": 1202,
+      "sha256": "789af6822eab9a9e24571c40e090ae84ee10c236317fb6384faf4d0ac8d9020f"
+    },
+    {
+      "path": "prototypes/arrow-time/REPRODUCIBILITY.md",
+      "size_bytes": 1319,
+      "sha256": "3f2a948ff177bfce571b6447329c9d1428ea41fd9626b300cac1138b576851aa"
+    },
+    {
+      "path": "prototypes/arrow-time/arrowtime/__init__.py",
+      "size_bytes": 28,
+      "sha256": "12a0709f114c443b1bc04bd8c7d19e5f269db16f1f0a3aefd22812818b5bd966"
+    },
+    {
+      "path": "prototypes/arrow-time/arrowtime/composition.py",
+      "size_bytes": 3255,
+      "sha256": "cd4c1c3be500ed70fdd4b61bc33fdc338e852bc8acddb7d373bbee9abda6ec4f"
+    },
+    {
+      "path": "prototypes/arrow-time/arrowtime/engine.py",
+      "size_bytes": 4302,
+      "sha256": "395cf24ee50579915de1f0e9505309000a8b06939ebbb2f9911b878dcfea6b45"
+    },
+    {
+      "path": "prototypes/arrow-time/arrowtime/reproducibility.py",
+      "size_bytes": 1243,
+      "sha256": "e03d8f63de5381bd7bf8311c8376389bf46f34652f7dc0cc40ccbcf708704c38"
+    },
+    {
+      "path": "prototypes/arrow-time/cli.py",
+      "size_bytes": 432,
+      "sha256": "9c586db1f991962722eb8b9557ee270279ead2ff111e724ac208828cc93f9f17"
+    },
+    {
+      "path": "prototypes/arrow-time/fixtures/composition_over_limit.json",
+      "size_bytes": 823,
+      "sha256": "0e38a3d07770b6509b83d7f3ccee93a81320b412e24a070d0373b9956cdd8943"
+    },
+    {
+      "path": "prototypes/arrow-time/fixtures/revoked_queued.json",
+      "size_bytes": 1080,
+      "sha256": "f4b4558b52b41b9dc2dd650e4770fa69edb339b8ff5afac89f982bb1acefdd77"
+    },
+    {
+      "path": "prototypes/arrow-time/fixtures/unknowns.json",
+      "size_bytes": 134,
+      "sha256": "4684081fd8bd19df8c758139d9de0408459fc37588e1dafa619c2689d63014c1"
+    },
+    {
+      "path": "prototypes/arrow-time/fixtures/valid_window.json",
+      "size_bytes": 428,
+      "sha256": "bc10f9ffc67cbdb0310509c3383cc36869d58bbdb1f794cee7be031bd2dd9f7d"
+    },
+    {
+      "path": "prototypes/arrow-time/reports/HTK_handoff.md",
+      "size_bytes": 1179,
+      "sha256": "ef99c3d7271ad4d7a81f78bbdb3b7a94781eacd25aaae1e5c03888d4b3f13db0"
+    },
+    {
+      "path": "prototypes/arrow-time/tests/test_composition.py",
+      "size_bytes": 2012,
+      "sha256": "8ab450163926691e6994d049f28704637943a1d8715b580888226e79f3e18796"
+    },
+    {
+      "path": "prototypes/arrow-time/tests/test_engine.py",
+      "size_bytes": 1783,
+      "sha256": "55c456f3786afd89b003bdca7092c288b9a1a20cfe7e77705eb46cb707bc10f8"
+    },
+    {
+      "path": "prototypes/arrow-time/tests/test_reproducibility.py",
+      "size_bytes": 1375,
+      "sha256": "b32f1edd171c2f0b05d5a77c9ab3738c86701618c2f581f3926f2ec5494b4b52"
     },
     {
       "path": "research/candidates/2026-10-16-external-evidence/BT-OWKS-20261016-C3-C5-REVOCATION-GAP.json",
