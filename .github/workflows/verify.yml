@@ -26,5 +26,7 @@ jobs:
         run: npm test -- --coverage=false
       - name: Run Python handoff tests
         run: npm run test:python
+      - name: Run Sigma-2 test inventory (fail closed on missing suites)
+        run: python3 scripts/test-sigma2-inventory.py
       - name: Verify repository state
         run: npm run verify:state
