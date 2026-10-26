@@ -17,18 +17,18 @@
     },
     {
       "path": ".github/dependabot.yml",
-      "size_bytes": 101,
-      "sha256": "146fc4a7e29026507034652f344d0f100f70fd1a61e2a9cfa74bbabe38281b43"
+      "size_bytes": 193,
+      "sha256": "e6714156ceca913ca03c2235c80c76c735ebc9312279ad69ffb86457efd7670c"
     },
     {
       "path": ".github/workflows/interaction-sensor.yml",
-      "size_bytes": 937,
-      "sha256": "24e1adb7755e130b6e739c7e8dee9a9bb19ff218791ed4573252c348b10118f6"
+      "size_bytes": 1117,
+      "sha256": "f859be9f8c74d04b4cd48ad36a6882f642681c3aa80dc1d2942ee731467be037"
     },
     {
       "path": ".github/workflows/verify.yml",
-      "size_bytes": 657,
-      "sha256": "98c2ecf24beafb48f825f3946a4a915805761b5d19971c2ed44466ce4104cdcd"
+      "size_bytes": 825,
+      "sha256": "d091f207da5e57248e33d6f38f16d8025e715440de3b67d4a5740be6261d8035"
     },
     {
       "path": ".gitignore",
