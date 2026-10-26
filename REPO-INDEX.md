@@ -115,6 +115,7 @@
 | `REVIEW-SURFACE-BOUNDARY.md` | Review boundary |
 | `REVIEW-SURFACE-HTK.md` | Human Translation Key review surface |
 | `SPECIALIST-HANDOFF-v0.1.md` | Specialist handoff contract |
+| [`SPECIALIST-HANDOFF-REPO-SECURITY-2026-10-26-v0.1.md`](./SPECIALIST-HANDOFF-REPO-SECURITY-2026-10-26-v0.1.md) | October 26 CI hardening evidence, dependency-audit findings, unenabled merge gate, and bounded specialist denial tests |
 | `SPECIALIST-HANDOFF-READINESS.md` | Handoff readiness state |
 | `STATE-RECONCILIATION-v1.1.md` | State reconciliation |
 | `examples/review-packet.html` | Review-packet example |

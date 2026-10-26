@@ -160,6 +160,10 @@ Who should decide:
 Who can still stop it:
 ```
 
+## Repository security handoff — October 26, 2026
+
+[Review the repository security handoff](./SPECIALIST-HANDOFF-REPO-SECURITY-2026-10-26-v0.1.md). It records merged PR #110, successful CI with four reported dependency vulnerabilities, and the main-branch enforcement gap at the recorded cutoff. The bounded specialist question is whether the configured control path actually prevents updates when required checks are absent or failing, and which security findings remain outside that gate. Public availability is not specialist review or acceptance.
+
 ## Current state
 
 ```text

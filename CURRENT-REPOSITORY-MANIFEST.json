@@ -6,6 +6,11 @@
   "deployment_authority": false,
   "files": [
     {
+      "path": "SPECIALIST-HANDOFF-REPO-SECURITY-2026-10-26-v0.1.md",
+      "size_bytes": 14002,
+      "sha256": "9549d7ff01f893b50b80f876a283f0bbcffe808803c0915ffc9b5fba229e2421"
+    },
+    {
       "path": ".github/CODEOWNERS",
       "size_bytes": 88,
       "sha256": "c989251892698f69de8bb65a545877f302d5acb4d0e051752b5caebcdb8ad92b"
@@ -507,8 +512,8 @@
     },
     {
       "path": "REPO-INDEX.md",
-      "size_bytes": 10029,
-      "sha256": "1a10828b4a55e44ff35061b122d9fffc92eff4621541d09c08ca408cf84670c0"
+      "size_bytes": 10265,
+      "sha256": "a26ac65213019bac6dd84ea31b45b98fbf04c843b3edf78534d76d8966b39e8d"
     },
     {
       "path": "REVIEW-SURFACE-BOUNDARY.md",
@@ -592,8 +597,8 @@
     },
     {
       "path": "SPECIALIST-OUTREACH-README.md",
-      "size_bytes": 6338,
-      "sha256": "3161fe38c79e3f72683dfab1c7c98424a05017a41daf95274dc179db512b7f14"
+      "size_bytes": 6892,
+      "sha256": "6c51b123cfb366bedafac6e918b1e6a61454d180ccd36e25d67f3cd4a76bc369"
     },
     {
       "path": "SPECIALIST-TITLE-AND-MISSING-ARROW-INDEX-v0.1.md",
