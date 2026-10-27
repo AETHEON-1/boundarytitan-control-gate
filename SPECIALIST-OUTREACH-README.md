@@ -182,3 +182,9 @@ Deployment: NOT APPROVED
 The system can help articulate what it is, but its articulation is not final authority about what it is. The repository can preserve the claim and expose its structure. It cannot be the final judge of itself.
 
 > **This is an open attempt to make harmful transitions of unearned authority visible, testable, ownable, and stoppable. Find one counterexample.**
+
+## Consequence-control specialist handoff — October 27, 2026
+
+[BT-SCB-001 open specialist handoff](./specialist-tests/BT-SCB-001-OPEN-SPECIALIST-HANDOFF.md) | [Revised v0.2 battery](./specialist-tests/BT-SCB-001-CONSEQUENCE-CONTROL-BATTERY-v0.2.md) | [CI diagnostic and session closure](./specialist-tests/BT-SCB-001-DIAGNOSTIC-2026-10-27.md) | [PR #117](https://github.com/AETHEON-1/boundarytitan-control-gate/pull/117).
+
+Public specialist challenge only. The 21-case battery has not been executed. One repository CI diagnostic found current-tree manifest drift and four reported dependency vulnerabilities; see the linked evidence record. No independent verification, merge, live test, certification, or deployment is authorized.
