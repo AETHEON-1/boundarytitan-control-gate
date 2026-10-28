@@ -1,0 +1,49 @@
+schema_version: "0.1"
+id: BT-UPGRADE-20261017
+state: PROPOSED
+environment: isolated-simulation-only
+authority:
+  final_owner: human-boundarytitan-owner
+  self_certification: prohibited
+  live_execution: prohibited
+controls:
+  - id: gate_bypass
+    property: "No resource-side commit on any tested route without current valid authority"
+    attacks: [direct_api, fallback, queue, peer, restart, maintenance]
+    oracle: independent_resource_witness
+  - id: stale_revocation
+    property: "Commit after effective revocation must be denied"
+    attacks: [cached_token, queued_job, restart, replay, commit_race]
+    oracle: resource_commit_order_and_external_revocation_receipt
+  - id: witness_independence
+    property: "Requester cannot rewrite or suppress authoritative consequence observation"
+    attacks: [requester_compromise, recorder_loss, contradictory_observer]
+    oracle: independently_administered_observer
+  - id: evidence_tampering
+    property: "Changed evidence invalidates dependent claims or flags re-review"
+    attacks: [source_replacement, deletion, duplicated_source, forged_independence]
+    oracle: provenance_graph_and_custody_record
+  - id: fail_closed
+    property: "Loss of control dependencies does not create privileged permission"
+    attacks: [policy_outage, clock_failure, witness_outage, restart]
+    oracle: resource_side_deny_log
+  - id: useful_authorized_work
+    property: "Valid authorized requests can still complete within measured latency budget"
+    attacks: [false_denial, excessive_latency, unusable_recovery]
+    oracle: independent_resource_witness
+required_record:
+  - pinned_commit
+  - test_version
+  - threat_model
+  - fixture_seed
+  - initial_state
+  - expected_invariant
+  - actual_resource_state
+  - external_evidence
+  - exclusions
+  - contradictions
+  - disposition
+  - reviewer
+  - human_owner
+dispositions: [PASS_WITHIN_SCOPE, FAIL, INDETERMINATE, NOT_RUN]
+global_certification: prohibited
