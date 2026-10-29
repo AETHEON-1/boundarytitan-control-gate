@@ -1,6 +1,6 @@
 # EOC-CRB-001 | The Search Engine That Could Retrieve What It Could Not Find
 Prepared: 2026-10-29
-Admission: CANDIDATE / NOT ADMITTED / HUMAN REVIEW PENDING
+Admission: APPROVED BY HUMAN BOUNDARYTITAN OWNER 2026-10-29; repository integration pending
 Evidence: Grok CRB-001 through CRB-003 self-reports as supplied in conversation, not independently reproduced
 Related: BT-SHB-CRB-004; BA-CRB-001
 
@@ -35,3 +35,6 @@ Preserve failed and invalid tests as historical records even if corrected.
 Research Scout -> Chaos Engine -> 51-50 Falsification -> Evidence Ledger -> Human Archive Admission -> Encyclopedia of Chaos.
 This candidate file on a review branch is not archive admission, certification, publication, or repository-main mutation.
 CAN ⊬ MAY.
+
+## Human admission record (2026-10-29)
+Human BoundaryTitan owner explicitly directed: "Admit". This admits the bounded research record to the designated archive/atlas classification, **not** the truth of its claims, independent reproduction, publication, implementation, or deployment. Original failed and invalid tests remain preserved. The review branch and draft PR remain unmerged pending separate integration disposition.
