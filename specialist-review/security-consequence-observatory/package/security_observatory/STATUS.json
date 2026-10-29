@@ -1,0 +1,10 @@
+{
+  "as_of": "2026-10-29",
+  "official_cve_ingested": false,
+  "official_kev_ingested": false,
+  "itrc_annual_reconciled": true,
+  "independent_external_review": "NOT_PERFORMED",
+  "adversarial_self_review": "FAIL_FOR_PROMOTION",
+  "publication": "NOT_AUTHORIZED",
+  "deployment": "NOT_AUTHORIZED"
+}
