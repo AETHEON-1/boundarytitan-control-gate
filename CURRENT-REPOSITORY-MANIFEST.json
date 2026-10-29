@@ -567,8 +567,8 @@
     },
     {
       "path": "maintenance/integrity_sentinel.py",
-      "size_bytes": 3191,
-      "sha256": "320663eacc2108aedd230b70a098a5012237b1bd7fef3a167b48534c4d31e04d"
+      "size_bytes": 3189,
+      "sha256": "b60a009993ccbcbc499e923eb5ba4aded5c0d66c2e33e640421e414d66dc25bc"
     },
     {
       "path": "maintenance/MAINTENANCE-PLAN-2026-10-29.md",
