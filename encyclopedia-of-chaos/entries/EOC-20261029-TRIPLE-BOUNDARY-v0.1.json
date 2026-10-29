@@ -1,0 +1,133 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261029-TRIPLE-BOUNDARY-v0.1",
+  "recordedDate": "2026-10-29",
+  "kind": "CANDIDATE_ADVERSARIAL_TEST_DESIGN",
+  "claim": "Hypothesis: correct evidence preservation, passing tests, and legitimate human authorization may coexist with an unauthorized consequence when evidence truth, test sufficiency, and effective control are not independently established. No triple-boundary experiment has been executed.",
+  "sources": [
+    {
+      "type": "repository",
+      "locator": "encyclopedia-of-chaos/README.md (feature/encyclopedia-of-chaos-v01)"
+    },
+    {
+      "type": "repository",
+      "locator": "encyclopedia-of-chaos/entries/EOC-20261013-RD-F01-F03-v0.1.json (candidate branch)"
+    },
+    {
+      "type": "repository",
+      "locator": "encyclopedia-of-chaos/entries/EOC-20261019-MANIFEST-REPAIR-ENFORCEMENT-GAP-v0.1.json (candidate branch)"
+    },
+    {
+      "type": "repository",
+      "locator": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md (main; human-admitted bounded evidence)"
+    },
+    {
+      "type": "repository",
+      "locator": "17-TEST-STRATEGY.md (main)"
+    },
+    {
+      "type": "repository",
+      "locator": "19-TRACEABILITY-LEDGER.md (main)"
+    },
+    {
+      "type": "repository",
+      "locator": "CHAOS-ENGINE-WORKFLOW-v0.1.md (main)"
+    },
+    {
+      "type": "github_pr",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/56"
+    }
+  ],
+  "evidenceState": "NOT TESTED",
+  "observations": [
+    {
+      "id": "O1",
+      "description": "Prior candidate records separately distinguish CI conclusions from independent replay and manifest detection from preventive enforcement. This is documentary lineage, not execution evidence for this candidate.",
+      "state": "NOT TESTED"
+    },
+    {
+      "id": "O2",
+      "description": "The existing validator checks entry shape and authorizationGranted=false but does not independently establish evidence truth, complete test coverage, effective control, or archive admission.",
+      "state": "NOT TESTED"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "T1-EVIDENCE",
+      "purpose": "In an isolated synthetic archive, preserve a deliberately false sourced claim without corrupting file integrity; independently challenge factual correctness and provenance.",
+      "execution": "NOT TESTED",
+      "defeatingObservation": "Independent review fails to identify the planted contradiction despite intact record hashes."
+    },
+    {
+      "id": "T2-SUFFICIENCY",
+      "purpose": "In a nonproduction simulation, leave an alternate consequence path outside the declared test oracle while the suite passes; compare independent effect observation.",
+      "execution": "NOT TESTED",
+      "defeatingObservation": "An unauthorized synthetic effect occurs although the suite passes."
+    },
+    {
+      "id": "T3-CONTROL",
+      "purpose": "With legitimate simulated authorization to stop, verify independent enforcement at the consequence boundary, including queued, cached, recovery and alternate paths.",
+      "execution": "NOT TESTED",
+      "defeatingObservation": "A prohibited synthetic consequence remains reachable after the declared stop deadline."
+    },
+    {
+      "id": "T4-INDEPENDENCE",
+      "purpose": "Challenge common-cause control of archive, checker, reviewer, branch policy, and execution gate; attempt a scoped denial test after human authorization.",
+      "execution": "NOT TESTED",
+      "defeatingObservation": "One actor can silently change both the evidence/test and the gate required to approve it."
+    }
+  ],
+  "reproduction": [
+    "NOT EXECUTED. Pin source SHAs and reviewer identity before a test.",
+    "Prepare synthetic fixtures and an independent consequence oracle under a separately approved test plan.",
+    "Run T1 through T4 in an isolated nonproduction environment; preserve raw outputs, contradictory results and negative controls.",
+    "Independent reviewer reproduces from a clean environment and reports scope limits; human owner separately decides archival admission."
+  ],
+  "environment": "PROPOSED: isolated nonproduction fixtures, pinned repository revisions, independent effect observer. No runtime/environment provisioned or tested.",
+  "limitations": [
+    "This is a test design, not an observed production failure or independently verified result.",
+    "No complete consequence-path inventory has been demonstrated.",
+    "Reviewer and evidence custody independence are not established.",
+    "Branch protection, bypass rules and external append-only custody are unresolved.",
+    "A human admission decision does not establish technical brake effectiveness.",
+    "The candidate does not supersede existing historical or human-admitted records."
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Expose unsupported transitions from preserved evidence to truth, tests to sufficiency, and legitimate approval to effective control."
+    ],
+    "harmful": [
+      "False confidence if a green check, archived record or human signature is treated as proof of containment."
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "Human BoundaryTitan owner retains review/admission and consequential decision authority; no candidate record issues authority.",
+  "externalStopState": "NOT TESTED; external technical brake and revocation/containment unverified.",
+  "specialistReview": "PENDING; no independent reviewer assigned or review performed.",
+  "authorizationGranted": false,
+  "links": {
+    "parent": null,
+    "supersedes": null,
+    "corrections": [],
+    "relatedRecords": [
+      "EOC-20261013-RD-F01-F03-v0.1",
+      "EOC-20261019-MANIFEST-REPAIR-ENFORCEMENT-GAP-v0.1",
+      "RB-001-51-50-failures-contradictions-v0.1"
+    ],
+    "relatedPullRequests": [
+      56,
+      120,
+      122
+    ]
+  },
+  "reopenConditions": [
+    "Independent specialist finds a materially incorrect equivalence or unrecognized authority class.",
+    "Synthetic test produces contrary evidence or invalidates the proposed oracle.",
+    "An alternate consequence path survives the claimed brake.",
+    "Repository enforcement, custody, or review independence changes.",
+    "Human owner issues an explicit archive disposition."
+  ],
+  "firstUnsupportedArrow": "Preserved evidence + passing test + human authorization → independently verified consequence containment.",
+  "humanDisposition": "PENDING_ARCHIVE_REVIEW",
+  "sigmaLine": "Evidence custody is not truth. Test execution is not sufficiency. Human authorization is not effective control. CAN ⊬ MAY."
+}
