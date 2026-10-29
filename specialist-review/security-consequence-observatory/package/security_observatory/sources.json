@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-10-29",
+  "sources": {
+    "cve": "https://github.com/CVEProject/cvelistV5",
+    "kev": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "breach": "https://www.idtheftcenter.org/post/2025-annual-data-breach-report-record-number-compromises/"
+  },
+  "KEV_input": null,
+  "definitions": {
+    "missing": "Blank numeric cells mean unknown, not zero",
+    "kev": "Distinct CVE IDs by CISA dateAdded; not exploitation occurrence",
+    "breach": "ITRC annual US data compromises, not global incidents",
+    "closure": "No comparable public denominator or independently verified closure dataset available"
+  }
+}
