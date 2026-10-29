@@ -6,11 +6,6 @@
   "deployment_authority": false,
   "files": [
     {
-      "path": "SPECIALIST-HANDOFF-REPO-SECURITY-2026-10-26-v0.1.md",
-      "size_bytes": 14002,
-      "sha256": "9549d7ff01f893b50b80f876a283f0bbcffe808803c0915ffc9b5fba229e2421"
-    },
-    {
       "path": ".github/CODEOWNERS",
       "size_bytes": 88,
       "sha256": "c989251892698f69de8bb65a545877f302d5acb4d0e051752b5caebcdb8ad92b"
@@ -32,8 +27,8 @@
     },
     {
       "path": ".github/workflows/verify.yml",
-      "size_bytes": 825,
-      "sha256": "d091f207da5e57248e33d6f38f16d8025e715440de3b67d4a5740be6261d8035"
+      "size_bytes": 1073,
+      "sha256": "5ae3d548c0127bd45b125a60bb96ca3cb823f4c7e3c6ca3c40cedd4cb34a20d8"
     },
     {
       "path": ".gitignore",
@@ -586,6 +581,11 @@
       "sha256": "9bc8615b37b414e97df1254f4a9bbe9d69ed162007a12ef74e5a5f7ea187061d"
     },
     {
+      "path": "SPECIALIST-HANDOFF-REPO-SECURITY-2026-10-26-v0.1.md",
+      "size_bytes": 14002,
+      "sha256": "9549d7ff01f893b50b80f876a283f0bbcffe808803c0915ffc9b5fba229e2421"
+    },
+    {
       "path": "SPECIALIST-HANDOFF-v0.1.md",
       "size_bytes": 3854,
       "sha256": "cfdb0415da8386d05c90a6ac24ae6a1a2eb140fc8a3b51c28934a868294ae06e"
@@ -776,6 +776,51 @@
       "sha256": "fa4dd680da8f66ef2560b9c3078ad043a7934b89e24cfafd89aea575542c6ef9"
     },
     {
+      "path": "maintenance/ADVERSARIAL-CHALLENGE-2026-10-29.md",
+      "size_bytes": 1739,
+      "sha256": "2c34616ba4696e1b984e053d667825d281f4f1aecd764d83d6c148b8cf15101d"
+    },
+    {
+      "path": "maintenance/BRANCH-LIFECYCLE.md",
+      "size_bytes": 995,
+      "sha256": "680631ad67862a232eb590aef99c51e24eb88ad5b0bd6fa50571058242fb2f02"
+    },
+    {
+      "path": "maintenance/CI-EXECUTION-RECEIPT-2026-10-29.md",
+      "size_bytes": 2615,
+      "sha256": "3e5294e28386392d491fd5c8f17ed9a4805acc9d26dbfa603f0082e1455fab79"
+    },
+    {
+      "path": "maintenance/FAILURE-LEDGER-2026-10-29.md",
+      "size_bytes": 3249,
+      "sha256": "b23a9fed1513f761b706bbfe0fe321a2577e62c3d6b1d429ebe5225292b268c2"
+    },
+    {
+      "path": "maintenance/MAINTENANCE-PLAN-2026-10-29.md",
+      "size_bytes": 3123,
+      "sha256": "816dad6fae00f0b5b978870f1edcbd54bde34659332bedcb77e2c5d9c845dee8"
+    },
+    {
+      "path": "maintenance/MAINTENANCE-QUEUE.json",
+      "size_bytes": 1471,
+      "sha256": "be10306a9e8c9f269bb3f3b63cfa447e9f9b2d834326f4afef76a731ae56f61c"
+    },
+    {
+      "path": "maintenance/integrity_sentinel.py",
+      "size_bytes": 3189,
+      "sha256": "b60a009993ccbcbc499e923eb5ba4aded5c0d66c2e33e640421e414d66dc25bc"
+    },
+    {
+      "path": "maintenance/tests/test_adversarial_integrity.py",
+      "size_bytes": 2992,
+      "sha256": "c11e396b7920fed23518fff2a275b113ef0a212693608005a214a45b2f07224c"
+    },
+    {
+      "path": "maintenance/tests/test_integrity_sentinel.py",
+      "size_bytes": 2117,
+      "sha256": "bf7761e2dfbef5afb5699de95af8fd278b691668e966ae7a519d68d4cce0ea6f"
+    },
+    {
       "path": "operational-guidance.schema.json",
       "size_bytes": 2223,
       "sha256": "b4f6a568e78d219deb42514fb516b710eab54bcfacae47f88874cf65b9388201"
@@ -844,6 +889,21 @@
       "path": "source-manifest.csv",
       "size_bytes": 2373,
       "sha256": "b469137f63bf6d19f7cb540da29e26b8d884e8f8f5ccbdf8608c85683d453030"
+    },
+    {
+      "path": "specialist-review/repository-integrity-sentinel/CHALLENGE-CONTRACT.md",
+      "size_bytes": 2681,
+      "sha256": "4518e0ca45b46e4411bb6c0575cd2742d14c5741759cb39ad55a22bb9abfe11d"
+    },
+    {
+      "path": "specialist-review/repository-integrity-sentinel/README.md",
+      "size_bytes": 2941,
+      "sha256": "5241a6b30c2d196654314deb79d5ab06c7a74f6fce6589df7c5d0469421c80f1"
+    },
+    {
+      "path": "specialist-review/repository-integrity-sentinel/REVIEW-REPORT-TEMPLATE.md",
+      "size_bytes": 940,
+      "sha256": "249b1b8cdfbb9cc349dd7c55469e95d59f2ddae9b82c2f256f5f13eb7a2535a0"
     },
     {
       "path": "src/can-may/universal-kernel.ts",
