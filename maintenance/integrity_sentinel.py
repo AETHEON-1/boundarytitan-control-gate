@@ -17,7 +17,9 @@ def run(root):
         add("MANIFEST_ABSENT",MANIFEST);return findings
     try:
         manifest=json.loads(manifest_path.read_text(encoding="utf-8"))
-        if manifest.get("machine_certification", False) is not False or manifest.get("deployment_authority", False) is not False:\n            add("AUTHORITY_METADATA_INVALID","manifest claims machine certification or deployment authority")\n        entries=manifest["files"]
+        if manifest.get("machine_certification", False) is not False or manifest.get("deployment_authority", False) is not False:
+            add("AUTHORITY_METADATA_INVALID","manifest claims machine certification or deployment authority")
+        entries=manifest["files"]
         if not isinstance(entries,list):raise ValueError("files is not a list")
     except (ValueError,KeyError,TypeError) as e:
         add("MANIFEST_INVALID",str(e));return findings
