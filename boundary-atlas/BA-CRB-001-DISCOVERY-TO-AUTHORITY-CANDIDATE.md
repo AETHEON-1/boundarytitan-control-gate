@@ -1,6 +1,6 @@
 # BA-CRB-001 | Discovery-to-Authority Boundary
 Prepared: 2026-10-29
-State: CANDIDATE / HUMAN REVIEW PENDING / NOT ADMITTED
+State: HUMAN-ADMITTED RESEARCH ENTRY 2026-10-29; repository integration pending
 Evidence lineage: CRB-001 -> CRB-002 -> CRB-003 (reported, not independently reproduced)
 Related: BT-SHB-CRB-004; EOC-CRB-001
 This entry is an additive candidate and does not revise BOUNDARY-ATLAS-CONTEXT-NOTES.md or frozen doctrine.
@@ -37,3 +37,6 @@ Can an independent reviewer identify an eligible, relevant source missed by the 
 ## Minimum kernel
 What the instrument cannot find may still exist. What it finds may still be wrong. What it verifies may still be insufficient. What it proves may still not authorize action.
 Maximum CAN. Zero self-granted MAY. CAN ⊬ MAY.
+
+## Human admission record (2026-10-29)
+Human BoundaryTitan owner explicitly directed: "Admit". This admits the bounded research record to the designated archive/atlas classification, **not** the truth of its claims, independent reproduction, publication, implementation, or deployment. Original failed and invalid tests remain preserved. The review branch and draft PR remain unmerged pending separate integration disposition.
