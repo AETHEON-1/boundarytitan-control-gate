@@ -42,7 +42,9 @@ For every challenge preserve: test ID, exact fixture or source, expected invaria
 
 **No source or review gate is passed merely because this document exists.**
 
-## Package availability
-The full v0.5 ZIP was produced as a conversation attachment, but **its contents have NOT been uploaded to this repository**. This branch is a public-facing review intake and evidence-state notice only. Specialists need the separately supplied v0.5 ZIP to run the full battery. Do not represent this branch as containing the full package.
+## Package availability and verification
+The full 13-file v0.5 archive has now been extracted to `package/security_observatory/` on this review branch. All 13 Git blob SHA-1 identifiers were compared to the corresponding original uploaded ZIP entries and matched exactly. The original ZIP's SHA-256 inventory is in `PACKAGE_MANIFEST_v0_5.md`.
+
+**This verifies transfer fidelity, not correctness of the research, official source ingestion, or independent validation.** The source completeness, external specialist review, and trend promotion gates remain blocked.
 
 CAN ⊬ MAY. No owner, no brake. No ledger, no trust.
