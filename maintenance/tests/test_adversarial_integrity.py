@@ -39,8 +39,7 @@ class AdversarialIntegrityChallenge(unittest.TestCase):
     def test_no_git_inventory_is_not_pass(self):
         (self.root/".git").rename(self.root/"git-disabled")
         self.assertIn("TRACKED_INVENTORY_UNAVAILABLE",self.codes())
-    @unittest.expectedFailure
     def test_critical_manifest_metadata_tampering_should_be_rejected(self):
         self.manifest.write_text(json.dumps({"files":self.entries,"machine_certification":True,"deployment_authority":True}))
-        self.assertTrue(self.codes(), "checker does not inspect authority metadata")
+        self.assertIn("AUTHORITY_METADATA_INVALID",self.codes())
 if __name__=="__main__":unittest.main()
