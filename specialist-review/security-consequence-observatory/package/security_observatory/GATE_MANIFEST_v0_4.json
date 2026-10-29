@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-10-29",
+  "rows": 72,
+  "official_cve_snapshot": "NOT_RETRIEVED",
+  "official_kev_snapshot": "NOT_RETRIEVED",
+  "source_completeness": "NOT_VERIFIED",
+  "independent_review": "NOT_PERFORMED",
+  "trend_promotion": "BLOCKED",
+  "local_sha256": {
+    "sources.json": "7700ca2b6308231ee7910e561313101c3ada5a15eba3ff1972c7b25449b56f4a",
+    "RECONCILIATION.md": "cbfc8bbb66f7a96104a5c85dbc5e5a7926225146028b58148b1d53907c287a1c",
+    "REVIEW_GATE_v0_4.md": "39085bd372eb3a80472149435626f0ab67002a9263553c47d9bc73d30a028f57",
+    "build.py": "973edd2dbb5392fb7cec92a161957ccc80bd9e239f1a71d4d8832d3afff6d4d2",
+    "STATUS.json": "7d5b388ae7a6cae2b685a741fa28cfdd6ee82cfda8f56013039cc2d5d464e980",
+    "monthly_2021_2026.csv": "d2df01bc8e5d5de21ce98faa24a5a32dd4d99cb059fb35acee097529bc88d222",
+    "PRELIMINARY_REPORT.md": "ea5d4822070773eee86b57169b5c3f75c11e0511ed895e45f3199ba6fba0b6eb",
+    "annual_breaches.csv": "590c3e95c10e3a4d665b6925c24cf42500a42a265a62144f25ead6c518211c04",
+    "IMPORT_GUIDE.md": "738de3b62899dd79203fcd94a8447c3684f3f6e7782c397be561317a359f1928",
+    "INDEPENDENT_CHALLENGE.md": "aaef8149f59f7be2486029f5cbb4cde8489c10c3380aa7ba664b5f68b5414ffe",
+    "import_official.py": "c6541112e7c430e6244176b5b2da38821e7fa7fefc5326587722639642d38e8f"
+  }
+}
