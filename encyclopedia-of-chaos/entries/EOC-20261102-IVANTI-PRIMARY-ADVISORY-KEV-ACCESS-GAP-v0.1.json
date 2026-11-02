@@ -1,0 +1,106 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261102-IVANTI-PRIMARY-ADVISORY-KEV-ACCESS-GAP-v0.1",
+  "recordedDate": "2026-11-02",
+  "kind": "PRIMARY_SECURITY_ADVISORY_RETRIEVAL_GAP",
+  "claim": "The Ivanti primary advisory and CISA KEV filtered page returned HTTP 403 from the web reader. This does not establish the advisory is absent or incorrect. Exact vendor patch matrix and direct KEV records were not independently inspected; Volexity firsthand incident forensics and Rapid7's dated synthesis support bounded claims only.",
+  "sources": [
+    {
+      "type": "vendor_root",
+      "locator": "https://hub.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935?language=en_US"
+    },
+    {
+      "type": "regulator_kev",
+      "locator": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-118527"
+    },
+    {
+      "type": "primary_incident",
+      "locator": "https://www.volexity.com/blog/2026/10/13/a-series-of-unauthenticated-events-chained-exploitation-of-ivanti-connect-secure-zero-days/"
+    },
+    {
+      "type": "technical_secondary",
+      "locator": "https://www.rapid7.com/blog/post/etr-additional-ivanti-connect-secure-zero-days-exploited-in-the-wild-cve-2026-111357-cve-2026-118527/"
+    }
+  ],
+  "evidenceState": "INDETERMINATE",
+  "observations": [
+    {
+      "id": "IVANTI_WEB",
+      "description": "web click to vendor advisory returned HTTP 403 Forbidden; no vendor advisory body was read",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "CISA_WEB",
+      "description": "web click to CISA filtered KEV catalog returned HTTP 403 Forbidden; no direct KEV entry was read",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "VOLEXITY",
+      "description": "Volexity firsthand October 13 incident account with October 29 update was readable",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "RAPID7",
+      "description": "Rapid7 November 2 technical review and attributed fixed-version matrix was readable",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "PATCH_AND_RECOVERY_INFERENCE",
+      "description": "Cannot independently reconcile every vendor revision or prove recovery from the available evidence",
+      "state": "INDETERMINATE"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "VENDOR_RETRIEVAL",
+      "purpose": "Read dated vendor advisory and compare version/mitigation statements against Rapid7",
+      "execution": "NOT EXECUTED: vendor source HTTP 403"
+    },
+    {
+      "id": "KEV_RETRIEVAL",
+      "purpose": "Inspect direct CISA KEV entries and federal remediation deadlines",
+      "execution": "NOT EXECUTED: CISA filtered source HTTP 403"
+    },
+    {
+      "id": "INFERENCE_CONTROL",
+      "purpose": "Preserve source failure as uncertainty, not as missing patch or absent KEV listing",
+      "execution": "REASONING BOUNDARY APPLIED; no runtime test"
+    }
+  ],
+  "reproduction": [
+    "Open the exact vendor and KEV URLs in an authorized browser or supported source mirror and preserve retrieval time and document revision.",
+    "Compare dated vendor version matrix with Rapid7 and Volexity; record corrections as additive evidence.",
+    "Do not infer clean systems from integrity-check output or patch status alone."
+  ],
+  "environment": "Public read-only web retrieval and connected GitHub repo custody; no appliance interaction or exploit execution.",
+  "limitations": [
+    "Vendor/CISA direct records not read",
+    "No independent current deployment or post-patch verification",
+    "No credentials or victim-specific data accessed",
+    "Unique execution ID null; independent specialist review not performed"
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Maintaining source boundaries prevents overconfident patch/recovery claims"
+    ],
+    "harmful": [
+      "Relying solely on secondary patch summaries could misstate affected versions or remediation"
+    ],
+    "classification": "UNDETERMINED"
+  },
+  "authorityState": "OWNER_BOUNDED_REPO_CUSTODY_ONLY",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "PENDING",
+  "authorizationGranted": false,
+  "links": {
+    "parent": null,
+    "supersedes": null,
+    "corrections": [],
+    "relatedIntake": "research/task-bridge/intake/BT-OW-20261029-IVANTI-ICS-CHAIN-PATCH-RECOVERY-v0.1.md"
+  },
+  "reopenConditions": [
+    "Vendor primary advisory becomes readable",
+    "Direct CISA KEV entries can be inspected",
+    "Version or exploit-chain evidence contradicts the bounded synthesis"
+  ]
+}
