@@ -1,0 +1,102 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261102-TASK-RUNID-RECEIPT-GAP-v0.1",
+  "recordedDate": "2026-11-02",
+  "kind": "SCHEDULED_RUN_ATTRIBUTION_AND_DELIVERY_GAP",
+  "claim": "Scheduler peek now exposes a completed Signals run ID whose result cites a pinned repository deposit, but the existing deposit says unique execution ID null and no independent specialist/delivery attestation is established.",
+  "sources": [
+    {
+      "type": "automation_metadata",
+      "locator": "Signals and Opportunities task 6ae2b9d15f8481919d0cdff95cf9f06a; last run dc34387b-7cd4-8333-be17-4b6c2767b271; completed 2026-11-02T14:55:00.568843Z; latest_result includes commit ae54acf3495f5790ccdbab74eae94084ba3430c5; delivery_status unknown"
+    },
+    {
+      "type": "repository",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/ae54acf3495f5790ccdbab74eae94084ba3430c5/research/task-bridge/intake/BT-OW-20261027-LITELLM-ENTERPRISE-EXFIL-034-v0.1.md"
+    },
+    {
+      "type": "repository",
+      "locator": "encyclopedia-of-chaos/entries/EOC-20261102-TASK-REPO-BOUNDARY-v0.1.json"
+    }
+  ],
+  "evidenceState": "INDETERMINATE",
+  "observations": [
+    {
+      "id": "RUN-METADATA",
+      "description": "Automation peek reports completed Signals run with ID dc34387b-7cd4-8333-be17-4b6c2767b271 and result text naming exact repository commit. Metadata is not independent execution-origin attestation.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "DEPOSIT-NULL",
+      "description": "Pinned intake file declares unique execution ID null; this is a contemporaneous unknown, not proof that the run had no ID. Append crosslink rather than overwrite.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "DELIVERY-UNKNOWN",
+      "description": "Scheduler delivery_status is unknown; chat_ref is a conversation reference, not proof of user notification or originating-project routing.",
+      "state": "INDETERMINATE"
+    },
+    {
+      "id": "SPECIALIST-NO-RECEIPT",
+      "description": "Repo custody is not reviewer delivery, acceptance, or independent validation; no specialist receipt observed.",
+      "state": "SUPPORTED"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "CROSSLINK",
+      "purpose": "Compare scheduler run result and exact pinned repo bytes, preserving original null field",
+      "execution": "READ-ONLY COMPARISON PERFORMED; no independent attestation"
+    },
+    {
+      "id": "MISSING-SOURCE",
+      "purpose": "Treat unavailable task run metadata as UNKNOWN rather than clean success",
+      "execution": "ANALYTICAL REVIEW ONLY; no simulated execution"
+    },
+    {
+      "id": "DUPLICATE-AND-RACE",
+      "purpose": "Ensure same root/claim/event/arrow does not produce duplicate commits after concurrent updates",
+      "execution": "SPECIFICATION ONLY; NOT EXECUTED"
+    },
+    {
+      "id": "ROUTING",
+      "purpose": "Demonstrate originating-project delivery with independent receipt",
+      "execution": "NOT TESTED"
+    }
+  ],
+  "reproduction": [
+    "Inspect task 6ae2b9d15f8481919d0cdff95cf9f06a via Automations peek",
+    "Read pinned intake file at ae54acf3495f5790ccdbab74eae94084ba3430c5 and compare task ID/claimed run provenance"
+  ],
+  "environment": "Scheduled Defense and Operations Brief; read-only Automations and GitHub connector inspection",
+  "limitations": [
+    "No independent scheduler attestation",
+    "No delivered notification receipt",
+    "No proven originating-project routing",
+    "No specialist receipt",
+    "Historical Scout same-run-ID contradictions remain unresolved separately; not adjudicated here"
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "More precise reconciliation of source run and repo custody"
+    ],
+    "harmful": [
+      "Mistakenly treating a correlated task result as independently verified scheduled origin or delivered specialist handoff"
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "OWNER_BOUNDED_REPO_CUSTODY_ONLY",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "PENDING",
+  "authorizationGranted": false,
+  "links": {
+    "parent": "encyclopedia-of-chaos/entries/EOC-20261102-TASK-REPO-BOUNDARY-v0.1.json",
+    "supersedes": null,
+    "corrections": []
+  },
+  "reopenConditions": [
+    "Independent scheduler-origin receipt",
+    "Actual notification delivery evidence",
+    "Observed specialist acknowledgement",
+    "Conflicting or duplicate run evidence"
+  ]
+}
