@@ -1439,6 +1439,16 @@
       "path": "workshops/fr001/specialist-matrix.md",
       "size_bytes": 3544,
       "sha256": "04af76ac35aa8dae99fc58ded97fd6d0846278abc7fda8fdf6a7d30eb27d7ffe"
+    },
+    {
+      "path": "research/sigma2/BT-GFS-20261108-001-specialist-handoff.md",
+      "size_bytes": 9689,
+      "sha256": "4c56f6334d22ffd328cc97c08b63f07c6be11583d23dcb379eac7213e6ba3315"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/EOC-GFS-20261108-001-reachable-target.md",
+      "size_bytes": 5303,
+      "sha256": "462a0e4c9f882f03b0a3cd87d26cda8a9677d2a2722732bf15e026422d81c990"
     }
   ]
 }
