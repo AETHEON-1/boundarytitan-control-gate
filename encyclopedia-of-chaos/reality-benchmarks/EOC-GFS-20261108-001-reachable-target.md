@@ -53,3 +53,6 @@ External reviewers challenge source integrity, authorization scope, enforcement,
 
 Freeze the evidence. Never freeze the search.
 Σ₂ | Reachability is not legitimacy. CAN ⊬ MAY. ⚒️
+
+## Source correction addendum | 2026-11-08
+Original publisher disclosure URLs for WorkOS, Botpress and OpenAI were located. See the specialist packet's primary-source reconciliation addendum for exact links, publisher claims and remaining limits. This updates the earlier **URL pending** omission; it does **not** independently reproduce the incidents or authorize canonical Encyclopedia admission. AP institutional reporting remains secondary, and the other signals remain unverified. Independent custody and human admission still pending.
