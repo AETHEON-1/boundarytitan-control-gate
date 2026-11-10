@@ -1,0 +1,92 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261102-WESTERN-UNION-REMISSION-STALE-DEADLINE-v0.1",
+  "recordedDate": "2026-11-02",
+  "kind": "PUBLIC_REMEDY_DEADLINE_INTERNAL_CONTRADICTION",
+  "claim": "DOJ and its linked administrator FAQ/header state 2026-12-31 for Phase 3 petitions, while two homepage body instructions still state 2026-08-19. This is a contradiction in published instructions, not proof of wrongful denial or a changed legal deadline.",
+  "sources": [
+    {
+      "type": "primary_government",
+      "locator": "https://www.justice.gov/opa/pr/department-justice-announces-phase-three-compensation-process-western-union-fraud-victims",
+      "date": "2026-10-07"
+    },
+    {
+      "type": "DOJ_linked_administrator_home",
+      "locator": "https://www.westernunionremissionphase3.com/",
+      "observationDate": "2026-11-02"
+    },
+    {
+      "type": "DOJ_linked_administrator_faq",
+      "locator": "https://www.westernunionremissionphase3.com/frequently-asked-questions.aspx",
+      "observationDate": "2026-11-02"
+    },
+    {
+      "type": "related_candidate",
+      "locator": "research/task-bridge/intake/BT-HC-20261007-DOJ-WESTERN-UNION-REMISSION-DEADLINE-REMEDY-v0.1.md"
+    }
+  ],
+  "evidenceState": "SUPPORTED UNDER STATED CONDITIONS",
+  "observations": [
+    {
+      "id": "DOJ-20261231",
+      "description": "DOJ Oct 7 notice states Dec 31 deadline.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "HEADER-20261231",
+      "description": "Administrator homepage Aug 5 update extends original Aug 19 deadline to Dec 31, 2026.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "FAQ-20261231",
+      "description": "FAQ #7 confirms Dec 31 online submission/postmark.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "BODY-20260819",
+      "description": "Administrator homepage paragraphs on initial and supplemental petitions retain Aug 19, 2026 filing instructions.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "ACTUAL-DENIAL",
+      "description": "No person-level intake, rejection or harm evidence; no test petition submitted.",
+      "state": "NOT TESTED"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "DOCUMENT-RECONCILIATION",
+      "purpose": "Compare dated official instructions and legal hierarchy; preserve stale wording and controlling deadline",
+      "execution": "READ-ONLY COMPARISON PERFORMED 2026-11-02"
+    },
+    {
+      "id": "INTAKE-ACCEPTANCE",
+      "purpose": "Verify administrator accepts eligible Dec 31 petitions",
+      "execution": "NOT EXECUTED; live filing prohibited"
+    },
+    {
+      "id": "REMEDY-COMPLETION",
+      "purpose": "Verify adjudication, appeal and actual payments",
+      "execution": "NOT EXECUTED; no individual data or receipt"
+    }
+  ],
+  "limitations": [
+    "Source pages may be updated after observation",
+    "Published contradiction does not establish actual claim rejection",
+    "DOJ statement and administrator site are not independent evidence of individual payment",
+    "No complete denominator of eligible claimants"
+  ],
+  "reopeningLinks": [
+    "https://www.westernunionremissionphase3.com/",
+    "https://www.westernunionremissionphase3.com/frequently-asked-questions.aspx"
+  ],
+  "authorizationGranted": false,
+  "custodyAuthorized": true,
+  "mergeAuthorized": false,
+  "executionAuthorized": false,
+  "publicationOutsideRepoAuthorized": false,
+  "specialistReview": "PENDING",
+  "humanDisposition": "RESERVED",
+  "sourceTaskDefinitionId": "6ae2b9d15f8481919d0cdff95cf9f06a",
+  "executionId": null
+}
