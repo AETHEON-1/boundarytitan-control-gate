@@ -1,0 +1,59 @@
+{
+  "version": "0.1",
+  "as_of": "2026-10-29",
+  "state": "CANDIDATE",
+  "tasks": [
+    {
+      "id": "MNT-001",
+      "priority": "P0",
+      "title": "Offline integrity sentinel and disappearance negative controls",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "owner": "human BoundaryTitan owner",
+      "evidence": "maintenance/integrity_sentinel.py"
+    },
+    {
+      "id": "MNT-002",
+      "priority": "P0",
+      "title": "Independent check-run and delivery continuity",
+      "status": "NOT_IMPLEMENTED",
+      "blocker": "provider-side immutable run and attempt ledger needed"
+    },
+    {
+      "id": "MNT-003",
+      "priority": "P0",
+      "title": "Verify main branch protection and required checks",
+      "status": "NOT_VERIFIED"
+    },
+    {
+      "id": "MNT-004",
+      "priority": "P1",
+      "title": "Read-only branch lifecycle inventory",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "MNT-005",
+      "priority": "P1",
+      "title": "Specialist handoff outcome queue",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "MNT-006",
+      "priority": "P2",
+      "title": "Consequence dependency graph",
+      "status": "RESEARCH_CANDIDATE"
+    },
+    {
+      "id": "MNT-007",
+      "priority": "P2",
+      "title": "Cross-domain failure transfer",
+      "status": "RESEARCH_CANDIDATE"
+    }
+  ],
+  "prohibitions": [
+    "no auto merge",
+    "no auto deletion",
+    "no self-certification",
+    "no publication",
+    "no deployment"
+  ]
+}
