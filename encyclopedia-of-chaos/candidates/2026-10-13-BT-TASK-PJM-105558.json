@@ -1,0 +1,57 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-PJM-105558",
+  "observedAt": "2026-10-13T17:57:41-04:00",
+  "claim": "PJM posted TLR Level 5a Action 105558 for flowgate 27750 (Peach Bottom-Conastone 5012 500 kV), effective 18:00 EPT on 2026-10-13. This establishes a transmission-loading-relief action; it does not establish which interchange transactions were curtailed or reallocated, the delivered relief, customer interruption, or backup-generator use.",
+  "source": [
+    {
+      "type": "primary_operator_posting",
+      "title": "PJM Emergency Procedures Postings — Message 105558",
+      "url": "https://emergencyprocedures.pjm.com/ep/pages/dashboard.jsf",
+      "sourceDate": "2026-10-13",
+      "observedState": "Last Updated 10.13.2026 17:57:41 EPT; TLR Level 5a effective 18:00 EPT"
+    },
+    {
+      "type": "primary_operator_manual",
+      "title": "PJM Manual 37: Reliability Coordination, Revision 23",
+      "url": "https://learn.pjm.com/-/media/DotCom/documents/manuals/m37.ashx",
+      "sourceDate": "2026-04-22"
+    },
+    {
+      "type": "primary_reliability_standard",
+      "title": "NERC IRO-006-5: Reliability Coordination — Transmission Loading Relief",
+      "url": "https://www.nerc.com/standards/reliability-standards/iro/iro-006-5",
+      "sourceDate": "2026-10-13"
+    }
+  ],
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "A corrected or withdrawn PJM posting showing Message 105558 was erroneous, a drill, or never became effective would falsify the operational-transition claim. Transaction-level records showing no curtailment or reallocation would not falsify issuance but would falsify any claimed realized relief.",
+  "firstUnsupportedArrow": "TLR Level 5a issuance -> identified transactions actually curtailed or reallocated -> measured flowgate relief -> avoided escalation or customer consequence",
+  "omissions": [
+    "No transaction identities, priorities, megawatts, curtailment start/stop records, or measured flowgate relief were retrieved.",
+    "No public NERC TLR log for Message 105558 was retrieved at observation time.",
+    "No evidence ties this action to data-center backup generation, customer load shed, or the mandatory demand-response registrations in Messages 105561/105562.",
+    "No release or downgrade posting was present in the retrieved PJM page."
+  ],
+  "failures": [
+    {
+      "type": "RETRIEVAL_GAP",
+      "detail": "Transaction-level interchange tags and the completed TLR log were not available in the retrieved public posting."
+    }
+  ],
+  "rivalHypotheses": [
+    "The TLR action reflects a real transmission constraint requiring reallocation after less consequential measures were exhausted.",
+    "The action is a bounded scheduling reallocation among firm transactions and may resolve without customer interruption, backup generation, or broader capacity scarcity.",
+    "The action may be driven by local or neighboring-system flow patterns rather than underperformance of the earlier demand-response dispatch."
+  ],
+  "priorFindingOrLedger": [
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/65",
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/67"
+  ],
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
