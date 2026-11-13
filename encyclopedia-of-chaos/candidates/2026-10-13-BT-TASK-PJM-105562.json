@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-2026-10-13-PJM-105562",
+  "observedAt": "2026-10-13T16:08:51-04:00",
+  "claim": "PJM issued a second mandatory Pre-Emergency Load Management Reduction Action at 16:00 EPT on October 13, 2026. Message 105562 dispatched Capacity Performance demand-response registrations with Quick_30 lead time across 20 zones, adding RECO to the zones already covered by message 105561. The posting requires reductions to continue until PJM releases them.",
+  "source": {
+    "type": "PRIMARY_OPERATOR_POSTING",
+    "publisher": "PJM Interconnection",
+    "title": "Emergency Procedures Postings — Message 105562",
+    "url": "https://emergencyprocedures.pjm.com/ep/pages/dashboard.jsf",
+    "sourceDate": "2026-10-13",
+    "retrievedAt": "2026-10-13T16:08:51-04:00"
+  },
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "A corrected or withdrawn PJM primary posting showing message 105562 was a drill, was not issued, did not apply to Quick_30 Capacity Performance demand response, or did not add RECO would contradict the recorded operational delta. Delivered relief remains separately untested.",
+  "firstUnsupportedArrow": "Mandatory Quick_30 dispatch issued -> Curtailment Service Providers received registration-specific instructions -> selected participants complied -> telemetry verified delivered megawatts -> the grid received usable relief.",
+  "omissions": [
+    "Selected registrations and facility identities are not public in the posting.",
+    "Expected and delivered megawatts are not stated.",
+    "CSP receipt, participant compliance, telemetry validation, failures and penalties are not stated.",
+    "The release time is not yet stated.",
+    "The posting does not distinguish direct load reduction from workload migration or self-generation.",
+    "No Emergency Use of Back-Up Generator Warning or Action is shown in the retrieved posting.",
+    "No later George v. Rollins docket state or discovery-to-application signal was established in this finding."
+  ],
+  "failures": [
+    "Registration-specific DR Hub records were not accessible through the public posting.",
+    "No public performance record was retrieved to establish actual megawatt delivery."
+  ],
+  "rivalHypotheses": [
+    "PJM expanded dispatch because earlier 60-minute and 120-minute resources were insufficient or system conditions worsened.",
+    "The 16:00 action was a staged product-specific dispatch triggered by Quick_30 timing and availability, not evidence that earlier resources underperformed.",
+    "RECO's addition reflects product-registration geography rather than a new local reliability deterioration."
+  ],
+  "priorFindingReference": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false,
+  "humanDispositionRequired": true,
+  "repositoryState": "REVIEW_ONLY_CANDIDATE",
+  "notes": [
+    "This candidate records an operator instruction, not completed performance, avoided outage, backup-generator use, or customer migration.",
+    "CAN prepare and test the candidate; MAY to admit, merge, publish or act remains external."
+  ]
+}
