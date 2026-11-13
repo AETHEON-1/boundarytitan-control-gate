@@ -1,0 +1,92 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6ab47d6b3dc88191ac03a16a446c328b",
+  "findingId": "BALA-S1-BNC-REMEDY-COST-20261017",
+  "observedAt": "2026-10-17",
+  "observedAtPrecision": "DATE_ONLY; observation clock time not captured",
+  "lane": "BALA Sigma-1 legal scout / bankruptcy notification participation",
+  "rootQuestionId": "EOC-BALA-BNC-Q0-20261017",
+  "source": [
+    {
+      "authority": "Administrative Office of the U.S. Courts",
+      "document": "Cybersecurity Incident Disrupting Bankruptcy Court Operations",
+      "date": "2026-10-15",
+      "url": "https://www.uscourts.gov/data-news/judiciary-news/2026/10/15/cybersecurity-incident-disrupting-bankruptcy-court-operations",
+      "type": "official judiciary notice"
+    },
+    {
+      "authority": "U.S. Bankruptcy Court, Southern District of Indiana",
+      "document": "General Order 26-0004",
+      "date": "2026-10-16",
+      "url": "https://www.insb.uscourts.gov/sites/insb/files/26-0004.pdf",
+      "type": "original signed judicial order"
+    },
+    {
+      "authority": "U.S. Bankruptcy Court, Southern District of Indiana",
+      "document": "BNC service interruption FAQs",
+      "date": "2026-10-16",
+      "url": "https://www.insb.uscourts.gov/sites/insb/files/BNC_10162026_FAQs.pdf",
+      "type": "official clerk guidance"
+    },
+    {
+      "authority": "U.S. Bankruptcy Court, Northern District of Illinois",
+      "document": "General Order No. 26-4",
+      "date": "2026-10-16",
+      "url": "https://www.ilnb.uscourts.gov/sites/ilnb/files/general-orders/Gen-Ord-26-04-BNCServiceInterruption.pdf",
+      "type": "original signed judicial order"
+    },
+    {
+      "authority": "U.S. Bankruptcy Court, Eastern District of New York",
+      "document": "Update regarding BNC disruption",
+      "date": "2026-10-16",
+      "url": "https://www.nyeb.uscourts.gov/news/update-regarding-bnc-service-disruption-and-accessing-list-creditors-cmecf",
+      "type": "official negative control"
+    }
+  ],
+  "claim": "October 16, 2026 primary court orders establish distinct responses to an existing BNC service interruption. Indiana permits a party seeking relief to elect certain court notices at that party's own expense with a certificate of service; it also requires adjournment of improperly noticed creditor meetings. Northern Illinois authorizes judge-directed deadline and hearing relief. The orders and official FAQs do not prove case-level delivery, practical ability to pay, or completed downstream consequence repair.",
+  "disposition": "SIGNAL_NEW_EVIDENCE_STATE_NOT_NEW_INCIDENT",
+  "evidenceState": "SUPPORTED_BY_PRIMARY_COURT_ORDERS; DOWNSTREAM_EFFECTS_INDETERMINATE",
+  "falsifier": "Case-level records demonstrating timely, legally sufficient notice and available effective remedy would defeat a claim of failed contestability in those particular proceedings. A later contrary or amended court order would revise the procedural account. Such case-specific evidence does not negate the documented BNC interruption.",
+  "firstUnsupportedArrow": "Authorization of alternative service -> performance of alternative service",
+  "rivalHypotheses": [
+    "Timely alternate service made a particular case's notice legally sufficient.",
+    "Normal CM/ECF notices to registered users preserved participation for some parties.",
+    "The availability of deadline or hearing relief prevented prejudice in some cases.",
+    "Elective service costs did not impair practical participation in an affected case.",
+    "No individual party suffered a missed deadline despite interruption of BNC notices."
+  ],
+  "omissions": [
+    "No exhaustive case docket or recipient-level investigation; no paid case access.",
+    "No recipient inventory, certificates, receipts or reconstructed delivery ledger.",
+    "No actual service expense invoices or ability-to-pay evidence.",
+    "No outcome showing a deadline loss or inadequate remedy attributable to the outage.",
+    "No completed restart/backlog reconciliation or notice correction verified.",
+    "Exact observation clock time unknown; only observation date retained.",
+    "Do not extend bankruptcy rules to civil discovery, criminal procedure or FRE authentication."
+  ],
+  "failures": [
+    "BNC delivery interrupted per official notices (documented incident state).",
+    "Completion of elective substitute service not established (research gap, not proven nonperformance).",
+    "Downstream restoration, notifications and consequence repair not verified (research gap).",
+    "No cost-incidence assessment or independent case-level adversarial reproduction performed."
+  ],
+  "negativeResults": [
+    "NEFs to registered CM/ECF users continued per official court FAQs: BNC outage is not universal notice failure.",
+    "No case-specific prejudice, suppression, universal remedy failure, or universal inability to pay established.",
+    "No operative amendment to Federal Rules of Evidence 707 or 901(c) verified by this investigation."
+  ],
+  "controls": {
+    "executionAuthorized": false,
+    "publicationAuthorized": false,
+    "archiveAdmission": "PENDING_HUMAN_OWNER",
+    "specialistReview": "NOT_PERFORMED",
+    "independentCustody": "NOT_ESTABLISHED"
+  },
+  "costBearer": "Electing party bears its own expense for the Indiana voluntary option; actual amount and affordability not verified.",
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "duplicateDisposition": "October 9 BNC disruption already recorded; this candidate isolates October 16 procedural orders and correction risk.",
+  "correctionAtOriginNotConsequenceRepair": true,
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
