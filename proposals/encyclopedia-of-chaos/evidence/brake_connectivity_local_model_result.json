@@ -1,0 +1,11 @@
+{
+  "test_id": "BT-HC-004-LOCAL-MODEL-001",
+  "environment": "isolated in-memory illustrative model, NOT repository runtime",
+  "external_stop_issued": true,
+  "gate_route_after_stop": "DENIED",
+  "unmediated_executor_after_stop": "COMMITTED",
+  "resource_enforced_route_after_stop": "DENIED",
+  "prohibited_consequence_count": 1,
+  "model_result": "BYPASS REPRODUCED IN MODEL",
+  "repository_result": "NOT TESTED"
+}

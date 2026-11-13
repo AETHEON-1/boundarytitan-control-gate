@@ -1,0 +1,122 @@
+{
+  "id": "BT-HC-004-LOCAL-FALSIFICATION-002",
+  "created_utc": "2026-10-18T22:07:11.194807+00:00",
+  "scope": "In-memory adversarial model only; not a repository runtime test",
+  "prior_artifact": "brake_connectivity_local_model_result.json",
+  "question": "Under what conditions does the modeled post-STOP bypass result cease to hold?",
+  "cases": [
+    {
+      "case": "C01 original modeled bypass",
+      "expected": "COMMITTED",
+      "observed": "COMMITTED",
+      "assertion_pass": true,
+      "commits": 1,
+      "interpretation": "Original counterexample reproduces by construction."
+    },
+    {
+      "case": "C02 resource checks stop",
+      "expected": "DENIED",
+      "observed": "DENIED",
+      "assertion_pass": true,
+      "commits": 0,
+      "interpretation": "Original bypass conclusion fails when resource enforces stop."
+    },
+    {
+      "case": "C03 no direct route",
+      "expected": "UNREACHABLE",
+      "observed": "UNREACHABLE",
+      "assertion_pass": true,
+      "commits": 0,
+      "interpretation": "Original bypass conclusion fails if path is unreachable."
+    },
+    {
+      "case": "C04 mediated route",
+      "expected": "DENIED",
+      "observed": "DENIED",
+      "assertion_pass": true,
+      "commits": 0,
+      "interpretation": "Gate itself is functioning."
+    },
+    {
+      "case": "C05 stop before any action",
+      "expected": "COMMITTED",
+      "observed": "COMMITTED",
+      "assertion_pass": true,
+      "commits": 1,
+      "interpretation": "Ordering alone is insufficient."
+    },
+    {
+      "case": "C06 stop after completed commit",
+      "expected": "ALREADY_COMMITTED",
+      "observed": "ALREADY_COMMITTED",
+      "assertion_pass": true,
+      "commits": 1,
+      "interpretation": "STOP cannot retroactively prevent a completed consequence."
+    },
+    {
+      "case": "C07 no stop issued",
+      "expected": "COMMITTED",
+      "observed": "COMMITTED",
+      "assertion_pass": true,
+      "commits": 1,
+      "interpretation": "Commit without STOP is not evidence of post-STOP failure."
+    },
+    {
+      "case": "C08 stop and no attempt",
+      "expected": "NO_ACTION",
+      "observed": "NO_ACTION",
+      "assertion_pass": true,
+      "commits": 0,
+      "interpretation": "Absence of consequence without attempted action does not validate the brake."
+    },
+    {
+      "case": "C09 post-stop gate retry",
+      "expected": "DENIED",
+      "observed": "DENIED",
+      "assertion_pass": true,
+      "commits": 0,
+      "interpretation": "Denial on one route does not establish path dominance."
+    },
+    {
+      "case": "C10 stop enforced on gate and resource",
+      "expected": "DENIED",
+      "observed": "DENIED",
+      "assertion_pass": true,
+      "commits": 0,
+      "interpretation": "Layered enforcement prevents modeled action."
+    },
+    {
+      "case": "C11 revocation after authorization before commit (no recheck)",
+      "expected": "COMMITTED",
+      "observed": "COMMITTED",
+      "assertion_pass": true,
+      "commits": 1,
+      "interpretation": "Illustrates TOCTOU only; no real concurrency or timestamps."
+    },
+    {
+      "case": "C12 revocation after authorization before commit (recheck)",
+      "expected": "DENIED",
+      "observed": "DENIED",
+      "assertion_pass": true,
+      "commits": 0,
+      "interpretation": "Resource-side recheck blocks modeled commit."
+    }
+  ],
+  "preserved_failures": [
+    "F01: A gate-only STOP can be bypassed when an unmediated executor path remains reachable.",
+    "F02: The original model hard-coded direct_executor to commit; it cannot independently establish reachability or exploitability.",
+    "F03: Post-STOP ordering is modeled, not independently timed or observed.",
+    "F04: No real process, network, restart, cached token, race, database, or external brake was exercised.",
+    "F05: An already committed effect is not a post-STOP commit; chronology must be separated.",
+    "F06: A denied route does not prove all routes are denied.",
+    "F07: Resource-side enforcement blocks the constructed bypass in this model; not a general proof of safety.",
+    "F08: No independent evidence custodian or consequence owner was instantiated for a deployment."
+  ],
+  "disposition": {
+    "constructed_bypass": "REPRODUCED",
+    "counterconditions": "DEMONSTRATED_IN_MODEL",
+    "real_repository": "NOT_TESTED",
+    "general_safety": "NOT_ESTABLISHED",
+    "external_authority": "HUMAN_REVIEW_REQUIRED"
+  }
+}
