@@ -1,0 +1,64 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-PJM-DOM-PCLLR-WARNINGS-ENDED-2026-10-14",
+  "observedAt": "2026-10-14T01:32:21-05:00",
+  "claim": "PJM's primary Emergency Procedures dashboard now gives both Dominion Post Contingency Local Load Relief Warnings, Messages 105560 and 105565, an effective end time of October 14, 2026 at 01:04 EPT. This establishes that PJM ended those two warning states. It does not establish that the underlying transmission constraints were physically eliminated, that all downstream consequences were repaired, or that the October 14 RTO-wide EEA 1 posture ended.",
+  "source": [
+    {
+      "type": "primary_operator_status",
+      "title": "PJM Emergency Procedures Postings",
+      "url": "https://emergencyprocedures.pjm.com/ep/pages/dashboard.jsf",
+      "sourceDate": "2026-10-14",
+      "observedState": "At dashboard update 10.14.2026 02:20:03 EPT, Messages 105560 and 105565 each show Effective End Time 10.14.2026 01:04; Message 105563 EEA 1 remains effective through 23:59 on October 14; Message 105564 continues to identify a need for Exhibit A resources without a maximum-output directive."
+    },
+    {
+      "type": "prior_review_candidate",
+      "title": "PJM October 14 emergency posture",
+      "url": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/67",
+      "sourceDate": "2026-10-13",
+      "observedState": "Prior review-only candidate preserved the broader October 14 EEA 1 posture and associated evidence gaps."
+    }
+  ],
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "A corrected PJM posting, archived primary record, or operator notice showing that either warning was not ended at 01:04 EPT, or was immediately continued under another message without a gap, would alter this state-transition finding.",
+  "firstUnsupportedArrow": "PJM warning end timestamp -> underlying Dominion constraints resolved -> affected load and generation operations returned to normal -> all downstream operational or customer consequences repaired",
+  "omissions": [
+    "No operator telemetry, switching record, power-flow record, facility status record, or customer-impact record was retrieved.",
+    "The dashboard gives no reason for ending the two warnings and does not identify who acted or whether any corrective action was completed.",
+    "No evidence establishes restored capacity, customer migration, backup-generator operation, independently reachable backups, delivered incremental MW, or avoided interruption.",
+    "The RTO-wide October 14 EEA 1 and DOE Order 202-26-50 applicability notice remain separate active states.",
+    "No evidence confirms that all downstream recipients or derivative summaries have incorporated the warning end times."
+  ],
+  "failures": [
+    {
+      "type": "CONSEQUENCE_REPAIR_GAP",
+      "detail": "Ending the operator warning is not proof that the physical condition or every downstream consequence was repaired."
+    },
+    {
+      "type": "PROPAGATION_GAP",
+      "detail": "The public dashboard does not show recipient acknowledgment or correction propagation beyond the operator posting."
+    },
+    {
+      "type": "EXECUTION_OBSERVABILITY_GAP",
+      "detail": "The record does not show what action, if any, caused the warning states to end."
+    }
+  ],
+  "rivalHypotheses": [
+    "The constraints were relieved by changed load or network conditions and the warnings ended normally.",
+    "The operational risk was transferred or reclassified without full physical repair.",
+    "The warning end reflects administrative closure while related constraints continued under another control not visible in the retrieved posting."
+  ],
+  "consequenceOwner": "PJM owns the public warning-state transition; Dominion and relevant transmission operators own underlying facilities and operational corrections within their authority; affected customers bear any unrecorded service or compliance costs.",
+  "externalStop": "Human review remains required before treating the warning end as consequence repair or closing the broader infrastructure incident.",
+  "nextBoundedMachineMove": "Recheck PJM primary postings and any public operator event reports for a superseding message, cause, restoration record, delivered-MW evidence, or downstream correction acknowledgment; keep the October 14 EEA 1 and DOE applicability states separate.",
+  "priorFindingOrLedger": [
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/67",
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/71"
+  ],
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
