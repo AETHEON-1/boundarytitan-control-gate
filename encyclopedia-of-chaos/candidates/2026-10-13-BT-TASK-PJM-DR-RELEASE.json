@@ -1,0 +1,60 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-PJM-105561-105562-RELEASE",
+  "observedAt": "2026-10-13T21:35:02-04:00",
+  "claim": "PJM's current public postings add an effective end time of 21:00 EPT on 2026-10-13 to mandatory Pre-Emergency Load Management Reduction Actions 105561 and 105562. This establishes termination of the public dispatch intervals after seven hours and five hours respectively; it does not establish participant receipt, actual load reduction, delivered megawatts, workload migration, self-generation, penalties, or avoided escalation.",
+  "source": [
+    {
+      "type": "primary_operator_posting",
+      "title": "PJM Emergency Procedures Postings — Messages 105561 and 105562",
+      "url": "https://emergencyprocedures.pjm.com/ep/pages/dashboard.jsf",
+      "sourceDate": "2026-10-13",
+      "observedState": "Last Updated 10.13.2026 21:35:02 EPT; both actions show Effective End Time 21:00 EPT"
+    },
+    {
+      "type": "prior_review_candidate",
+      "title": "Prior Quick_30 dispatch finding",
+      "url": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/65",
+      "sourceDate": "2026-10-13",
+      "observedState": "Prior candidate recorded actions as continuing until released with no end time"
+    }
+  ],
+  "disposition": "CORRECTION",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "An authoritative PJM correction showing the 21:00 end times were erroneous, provisional, or did not represent release of the dispatch intervals would alter or falsify the termination claim.",
+  "firstUnsupportedArrow": "Publicly posted end time -> every CSP and registered participant received the release -> participant obligations ceased -> performance telemetry established delivered MW -> the dispatch produced usable relief or avoided escalation",
+  "omissions": [
+    "No expected or delivered megawatts, registration-level performance, telemetry, failures, penalties, or settlement records were retrieved.",
+    "No evidence distinguishes genuine load reduction from workload migration, deferred work, or behind-the-meter generation.",
+    "No explicit recipient acknowledgment chain or separate release message was retrieved.",
+    "No evidence connects the actions to data-center backup generation.",
+    "Ending the dispatch interval does not prove operating conditions were fully normal or that consequences were repaired.",
+    "EEA 1 and the October 14 DOE-resource notice remain separate active preparation states."
+  ],
+  "failures": [
+    {
+      "type": "RETRIEVAL_GAP",
+      "detail": "Registration-specific instructions and performance data remain inside DR Hub or other non-public operational records not retrieved here."
+    },
+    {
+      "type": "PROPAGATION_GAP",
+      "detail": "The public page shows end times but not who received, acknowledged, or acted on the release."
+    }
+  ],
+  "rivalHypotheses": [
+    "The demand-response actions delivered sufficient relief and were released as conditions improved.",
+    "Conditions improved for unrelated reasons such as load decline, imports, generation availability, or transmission reconfiguration.",
+    "The dispatch ended on a planned product interval regardless of participant performance."
+  ],
+  "priorFindingOrLedger": [
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/65",
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/67",
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/68",
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/69"
+  ],
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
