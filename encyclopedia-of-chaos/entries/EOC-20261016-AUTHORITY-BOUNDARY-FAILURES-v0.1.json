@@ -1,0 +1,177 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261016-AUTHORITY-BOUNDARY-FAILURES-v0.1",
+  "recordedDate": "2026-10-16",
+  "kind": "FAILURE_PRESERVATION_AND_LINKED_REVIEW",
+  "rootQuestion": "Can external STOP survive compromise of the requester, resource operator and evidence path?",
+  "claim": "Repository ledgers preserve authority-boundary counterexamples and unresolved control gaps; corrections do not erase the failures or establish independent stop authority.",
+  "sources": [
+    {
+      "type": "repository_snapshot",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/9a8ef9c7892b6a4a144d7162dbd6c708f5381d27/workshop/tsa-brakes/ENCYCLOPEDIA-OF-CHAOS-THREE-AUTHORITY-2026-10-16.md"
+    },
+    {
+      "type": "repository_snapshot",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/9a8ef9c7892b6a4a144d7162dbd6c708f5381d27/workshop/tsa-brakes/CRASH-REVOCATION-ATTACK-LEDGER.md"
+    },
+    {
+      "type": "repository_snapshot",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/9a8ef9c7892b6a4a144d7162dbd6c708f5381d27/workshop/tsa-brakes/ISOLATION-ATTACK-LEDGER.md"
+    },
+    {
+      "type": "repository_snapshot",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/9a8ef9c7892b6a4a144d7162dbd6c708f5381d27/workshop/tsa-brakes/DURABLE-RECOVERY-ATTACK-LEDGER.md"
+    },
+    {
+      "type": "repository_snapshot",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/9a8ef9c7892b6a4a144d7162dbd6c708f5381d27/workshop/tsa-brakes/TRANSACTIONAL-ATTACK-LEDGER.md"
+    }
+  ],
+  "evidenceState": "SUPPORTED",
+  "evidenceScope": "SUPPORTED describes the existence and content of retrieved repository records. Historical runtime observations are attributed to those records, not independently reproduced in this preservation session.",
+  "observations": [
+    {
+      "id": "EOC-TA-01",
+      "description": "Source records hard-crash witness-only enrollment. Reconciliation quarantines the split; it does not make cross-store enrollment atomic.",
+      "state": "CONTRADICTED",
+      "attackedClaim": "Atomic cross-store enrollment",
+      "evidenceBasis": "Repository-reported local reproduction"
+    },
+    {
+      "id": "EOC-TA-02",
+      "description": "Source records direct resource database writes producing a synthetic effect after STOP while requester API calls are denied.",
+      "state": "CONTRADICTED",
+      "attackedClaim": "Complete mediation against same-host resource operator",
+      "evidenceBasis": "Repository-reported negative control; synthetic effect only"
+    },
+    {
+      "id": "EOC-TA-03",
+      "description": "Source records same-host administrator deletion of both effect and observer rows.",
+      "state": "CONTRADICTED",
+      "attackedClaim": "Independent evidence custody",
+      "evidenceBasis": "Repository-reported negative control"
+    },
+    {
+      "id": "EOC-TA-04",
+      "description": "Source records that direct database bypass is not automatically captured by polling or voluntary observation.",
+      "state": "CONTRADICTED",
+      "attackedClaim": "Complete consequence capture",
+      "evidenceBasis": "Repository-reported observer limitation"
+    },
+    {
+      "id": "EOC-TA-05",
+      "description": "Source records an unserved witness IPC channel and delayed CI completion. A wiring correction is described; exact correction validation is not established here.",
+      "state": "CONTRADICTED",
+      "attackedClaim": "Initial process integration works",
+      "evidenceBasis": "Historical source report; raw CI logs not inspected"
+    },
+    {
+      "id": "EOC-TA-08",
+      "description": "Source records an unserved observer append channel. Multiplexing correction is described; validation is not established here.",
+      "state": "CONTRADICTED",
+      "attackedClaim": "Initial observer integration works",
+      "evidenceBasis": "Historical source report; raw CI logs not inspected"
+    },
+    {
+      "id": "EOC-TA-06",
+      "description": "Witness YES precedes uncoordinated resource COMMIT; STOP may race between them. No deterministic race result was retrieved.",
+      "state": "INDETERMINATE",
+      "attackedClaim": "Witness check alone orders revocation with commitment",
+      "evidenceBasis": "Open design falsifier, not demonstrated exploit"
+    },
+    {
+      "id": "EOC-TA-07",
+      "description": "Independent administration, credentials and external consequence custody are not demonstrated by the same-host specimen.",
+      "state": "NOT TESTED",
+      "attackedClaim": "Three processes establish three independent authorities",
+      "evidenceBasis": "Explicit source limitation"
+    },
+    {
+      "id": "EOC-PRES-01",
+      "description": "The source candidate contains literal backslash-n table separators and duplicated correction-validation wording. This linked record provides readable structured indexing without changing the predecessor.",
+      "state": "SUPPORTED",
+      "evidenceBasis": "Direct textual inspection of pinned source"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "PRESERVATION-SCHEMA",
+      "purpose": "Validate this entry with the existing Encyclopedia verifier",
+      "execution": "LOCAL EXECUTION: existing unmodified verifier accepted this entry on 2026-10-16; schema validation only, not evidence verification"
+    },
+    {
+      "id": "HISTORICAL-NEGATIVE-CONTROLS",
+      "purpose": "Retain bypass, erasure, blind spot and crash findings",
+      "execution": "NOT REEXECUTED in this session; repository reports retained"
+    },
+    {
+      "id": "REVOCATION-RACE",
+      "purpose": "Pause after witness YES, apply STOP, then attempt COMMIT and inspect independently captured effect",
+      "execution": "NOT TESTED in this session"
+    },
+    {
+      "id": "SEPARATE-ADMINISTRATION",
+      "purpose": "Repeat requester and resource compromise attacks across independent administration and external consequence custody",
+      "execution": "NOT TESTED"
+    }
+  ],
+  "reproduction": [
+    "node scripts/verify-encyclopedia.js",
+    "cd workshop/tsa-brakes && python -m unittest -v test_crash_boundaries.py test_transactional_brake.py test_process_boundary.py test_resource_boundary.py"
+  ],
+  "environment": "Preservation session reads GitHub text at pinned specimen 9a8ef9c7892b6a4a144d7162dbd6c708f5381d27. Historical fixtures are same-host developer/sandbox experiments. Reproduction commands for fixtures refer to the pinned PR #82 specimen, not the Encyclopedia branch.",
+  "limitations": [
+    "No historical attack suite rerun or raw CI-log verification in this session",
+    "No independent specialist reproduction",
+    "No independently administered stop or evidence custody established",
+    "Synthetic database effects are not real downstream physical or financial effects",
+    "Prior ledgers retain their historical NOT TESTED states even where later records describe corrections",
+    "Git hashes provide comparison anchors, not independent custody or truth",
+    "This record is a bounded index of retrieved failures, not an exhaustive archive"
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Keep defeating evidence discoverable across corrective descendants"
+    ],
+    "harmful": [
+      "Unqualified summaries could launder local regression success into independent validation"
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "NOT_ESTABLISHED",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "NOT_STARTED",
+  "authorizationGranted": false,
+  "humanDirection": {
+    "date": "2026-10-16",
+    "scope": "User explicitly requested repository preservation of authority-boundary failures following freeze of the operating baseline. This authorizes this archival change; it does not establish correctness, release permission or deployment authority.",
+    "consequenceOwner": "Human BoundaryTitan repository owner",
+    "stopPath": "Owner may reject or close the proposed archive change; independent enforcement and privileged-history protection remain unverified"
+  },
+  "preservationRequirements": [
+    "Continuously evaluate and adversarially challenge substantive outputs, including the framework itself",
+    "Preserve authority-boundary failures, contradictions, negative evidence, omissions and correction lineage",
+    "No system, machine, human or consequence-bearing institution is exempt",
+    "Append corrections as separately identified linked records; do not overwrite predecessors",
+    "Self-evaluation cannot certify correctness, grant permission or close its own findings",
+    "Maximize CAN; keep MAY outside. CAN does not mean MAY. No owner, no brake. No ledger, no trust."
+  ],
+  "links": {
+    "parent": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/9a8ef9c7892b6a4a144d7162dbd6c708f5381d27/workshop/tsa-brakes/ENCYCLOPEDIA-OF-CHAOS-THREE-AUTHORITY-2026-10-16.md",
+    "supersedes": null,
+    "corrections": [],
+    "related": [
+      "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/82",
+      "https://github.com/AETHEON-1/boundarytitan-control-gate/issues/83"
+    ]
+  },
+  "archiveDisposition": "PRESERVATION_REQUESTED_BY_HUMAN; REVIEW_BRANCH_RECORD; YELLOW; no merge, deployment, certification or independent-validation claim",
+  "reopenConditions": [
+    "Independent reproduction contradicts a recorded observation",
+    "New bypass, authority violation, missing actor or omitted effect path",
+    "Deterministic STOP/COMMIT race evidence",
+    "Separately administered custody and external consequence observations become available",
+    "Correction is claimed without specimen-specific validation",
+    "The owner or an external challenger disputes this record or the framework"
+  ]
+}
