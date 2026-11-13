@@ -1,0 +1,59 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-PJM-105558-CORRECTION-20261013",
+  "observedAt": "2026-10-13T20:47:46-04:00",
+  "claim": "PJM's public record for Message 105558 changed materially. A 17:57:41 EPT snapshot identified TLR Level 5a commencing at 18:00 for flowgate 27750; the 20:47:46 EPT snapshot identifies TLR Level 1 commencing at 21:00 under the same message ID. This supports a public-record correction or supersession and a lower prospective TLR level, but does not establish when Level 5a ended, whether transactions were curtailed or reallocated during the interval, or whether every downstream recipient received the updated state.",
+  "source": [
+    {
+      "type": "primary_operator_current_posting",
+      "title": "PJM Emergency Procedures Postings — Message 105558 current state",
+      "url": "https://emergencyprocedures.pjm.com/ep/pages/dashboard.jsf",
+      "sourceDate": "2026-10-13",
+      "observedState": "Last Updated 10.13.2026 20:47:46 EPT; Message 105558 states TLR Level 1 commencing 21:00 EPT"
+    },
+    {
+      "type": "preserved_prior_primary_snapshot_receipt",
+      "title": "Review-only candidate preserving prior Message 105558 state",
+      "url": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/68",
+      "sourceDate": "2026-10-13",
+      "observedState": "Preserves PJM 17:57:41 EPT state: TLR Level 5a commencing 18:00 EPT"
+    }
+  ],
+  "disposition": "CORRECTION",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "An authoritative PJM version history showing that the two displays refer to different operational records despite the shared message ID, or that the earlier Level 5a snapshot was a display artifact that never represented an issued state, would alter or falsify the correction/supersession interpretation.",
+  "firstUnsupportedArrow": "PJM current-page correction or supersession -> all transaction operators and downstream data recipients received the update -> earlier curtailment instructions ceased or were reversed -> affected consequences were repaired",
+  "omissions": [
+    "No explicit cancellation, release, correction notice, or public version history for Message 105558 was retrieved.",
+    "The exact time at which the public record changed from Level 5a to Level 1 is unknown between the two snapshots.",
+    "No interchange tags, curtailment identities, megawatts, acknowledgments, or completed TLR log were retrieved.",
+    "No evidence establishes whether Level 5a instructions were acted upon before the 21:00 Level 1 state.",
+    "No evidence establishes propagation to OASIS records, NERC logs, transaction operators, downstream datasets, search indexes, or AI summaries.",
+    "The current page does not prove consequence repair or complete extinction of any earlier operational effect."
+  ],
+  "failures": [
+    {
+      "type": "EVIDENCE_PRESERVATION_GAP",
+      "detail": "The live PJM page overwrites Message 105558 state without exposing the prior version or an explicit correction chain."
+    },
+    {
+      "type": "RETRIEVAL_GAP",
+      "detail": "No public completed TLR log or recipient acknowledgment chain was retrieved."
+    }
+  ],
+  "rivalHypotheses": [
+    "PJM deliberately downgraded the constraint after Level 5a relief or changing grid conditions.",
+    "The earlier Level 5a entry was corrected because it was erroneous or premature rather than operationally completed.",
+    "Reuse of the same message ID is the normal lifecycle mechanism for TLR updates, but the public interface still does not expose custody and propagation history."
+  ],
+  "priorFindingOrLedger": [
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/68",
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/65",
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/67"
+  ],
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
