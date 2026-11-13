@@ -1,0 +1,77 @@
+{
+  "schema": "BT-TASK-FINDING-v0.1",
+  "taskId": "6a9c5e63cc5881918c926077d66e441c",
+  "findingId": "BT-TASK-PJM-202-26-50-EXHIBIT-A-V2",
+  "observedAt": "2026-10-13T23:01:54-05:00",
+  "claim": "DOE's public record for Order 202-26-50 includes PJM Exhibit A Version 2, submitted October 12, 2026 at 5:17 p.m. ET. Compared with Version 1, Version 2 adds 49 listed generating units with approximately 7,425 MW of aggregate nameplate capacity, expanding the list from 38 units (about 8,919.2 MW nameplate) to 87 units (about 16,344.2 MW nameplate). Inclusion establishes the scope of units eligible for order-based dispatch; it does not establish contemporaneous availability, permitted incremental output, commitment, dispatch, operation, delivered MW, or backup-generator use at large loads.",
+  "source": [
+    {
+      "type": "primary_federal_docket_page",
+      "title": "DOE Order 202-26-50 document index",
+      "url": "https://www.energy.gov/ceser/federal-power-act-section-202c-pjm-interconnection-llc-pjm-order-no-202-26-50",
+      "sourceDate": "2026-10-12",
+      "observedState": "DOE separately publishes PJM Exhibit A Version 1 and an updated Exhibit A submitted October 12 at 5:17 p.m. ET."
+    },
+    {
+      "type": "primary_operator_submission",
+      "title": "PJM Exhibit A Version 1 — Specified Resources",
+      "url": "https://www.energy.gov/documents/pjms-202c-application-exhibit-202-26-50",
+      "sourceDate": "2026-10-12",
+      "observedState": "Version 1 lists 38 resources totaling approximately 8,919.2 MW of nameplate capacity."
+    },
+    {
+      "type": "primary_operator_submission",
+      "title": "PJM Updated Exhibit A Version 2 — submitted October 12 at 5:17 p.m. ET",
+      "url": "https://www.energy.gov/documents/pjms-202c-updated-exhibit-october-12-517-pm-et-202-26-50",
+      "sourceDate": "2026-10-12",
+      "observedState": "Version 2 states that bold units are new additions; list comparison identifies 49 added resources totaling approximately 7,425 MW of nameplate capacity."
+    },
+    {
+      "type": "prior_review_candidate",
+      "title": "PJM October 14 emergency posture",
+      "url": "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/67",
+      "sourceDate": "2026-10-13",
+      "observedState": "Prior candidate records the October 14 EEA 1 and identified need for Exhibit A resources but does not enumerate the Version 2 scope expansion."
+    }
+  ],
+  "disposition": "NEW_DELTA",
+  "evidenceState": "SUPPORTED",
+  "falsifier": "An authoritative corrected exhibit, source document, or reproducible list comparison showing that Version 2 did not add 49 units or that the stated nameplate totals are materially wrong would alter or falsify the quantified scope-expansion claim.",
+  "firstUnsupportedArrow": "Unit added to the order's Exhibit A -> unit was independently reachable and physically available -> PJM committed or dispatched it in reliance on the order -> it operated beyond an otherwise binding limit -> delivered incremental usable MW -> avoided load interruption",
+  "omissions": [
+    "No unit-specific commitment, dispatch, start, output, outage, fuel, telemetry, incremental-MW, or settlement record was retrieved.",
+    "Nameplate capacity is not available capacity, permitted incremental output, or delivered energy.",
+    "The Version 2 PDF identifies new additions typographically; the numerical comparison was reconstructed from the two public lists and is not a PJM-published aggregate.",
+    "No daily DOE reliance report or PJM email notification establishing actual operation under the order was retrieved.",
+    "No Emergency Use of Back-Up Generator Warning or Action was retrieved, and Exhibit A generating units are distinct from unidentified backup resources at large loads.",
+    "No evidence establishes customer workload migration, behind-the-meter generation, restored capacity, avoided outages, or final cost allocation.",
+    "The time at which every downstream operator, regulator, index, or decision-maker received Version 2 is unknown."
+  ],
+  "failures": [
+    {
+      "type": "EXECUTION_OBSERVABILITY_GAP",
+      "detail": "The public exhibits define eligible resources but do not show real-time availability, dispatch, operation, or delivered incremental output."
+    },
+    {
+      "type": "PROPAGATION_GAP",
+      "detail": "DOE exposes both versions, but the retrieved record does not show who received the update, when recipients acknowledged it, or whether downstream copies and summaries reflect Version 2."
+    },
+    {
+      "type": "RETRIEVAL_GAP",
+      "detail": "PJM's unit-specific operating records, DOE reliance notifications, resource-owner status records, and any backup-generator instructions were not retrieved."
+    }
+  ],
+  "rivalHypotheses": [
+    "PJM broadened the eligible pool because additional units were genuinely approaching environmental or interconnection limits and might be needed.",
+    "The expansion was precautionary option-preservation; most or all added units may never have been committed or operated under the order.",
+    "The larger legal list may compensate for uncertain unit availability rather than represent an equivalent increase in usable capacity."
+  ],
+  "priorFindingOrLedger": [
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/67",
+    "https://github.com/AETHEON-1/boundarytitan-control-gate/pull/70"
+  ],
+  "sourceRunId": "UNKNOWN",
+  "originalOutputDigest": "UNKNOWN",
+  "executionAuthorized": false,
+  "publicationAuthorized": false
+}
