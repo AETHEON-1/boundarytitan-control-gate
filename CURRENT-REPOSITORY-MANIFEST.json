@@ -6,11 +6,6 @@
   "deployment_authority": false,
   "files": [
     {
-      "path": "SPECIALIST-HANDOFF-REPO-SECURITY-2026-10-26-v0.1.md",
-      "size_bytes": 14002,
-      "sha256": "9549d7ff01f893b50b80f876a283f0bbcffe808803c0915ffc9b5fba229e2421"
-    },
-    {
       "path": ".github/CODEOWNERS",
       "size_bytes": 88,
       "sha256": "c989251892698f69de8bb65a545877f302d5acb4d0e051752b5caebcdb8ad92b"
@@ -586,6 +581,11 @@
       "sha256": "9bc8615b37b414e97df1254f4a9bbe9d69ed162007a12ef74e5a5f7ea187061d"
     },
     {
+      "path": "SPECIALIST-HANDOFF-REPO-SECURITY-2026-10-26-v0.1.md",
+      "size_bytes": 14002,
+      "sha256": "9549d7ff01f893b50b80f876a283f0bbcffe808803c0915ffc9b5fba229e2421"
+    },
+    {
       "path": "SPECIALIST-HANDOFF-v0.1.md",
       "size_bytes": 3854,
       "sha256": "cfdb0415da8386d05c90a6ac24ae6a1a2eb140fc8a3b51c28934a868294ae06e"
@@ -794,6 +794,11 @@
       "path": "package.json",
       "size_bytes": 701,
       "sha256": "47297033148e95c4ec39fd0d5b122edfd1175f0783dc479bcf789d91e753f313"
+    },
+    {
+      "path": "projects/CR-1-Friction/PROJECT-RECORD.md",
+      "size_bytes": 11420,
+      "sha256": "54c31876ae9307c534192f736562d975a1b33245cb4af20417b02fec9658b50e"
     },
     {
       "path": "research/candidates/2026-10-16-external-evidence/BT-OWKS-20261016-C3-C5-REVOCATION-GAP.json",
