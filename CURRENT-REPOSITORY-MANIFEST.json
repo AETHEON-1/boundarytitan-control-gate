@@ -826,6 +826,11 @@
       "sha256": "5214e3f37a24494825ee41674d9b1afdc94a5c4d50665e5751e7fae9e286198c"
     },
     {
+      "path": "research/candidates/2026-11-15-external-evidence/BT-TOR-20261115-001-availability-and-authority.md",
+      "size_bytes": 16951,
+      "sha256": "ba91e74b643cdaf637ec3f2ece6252745d23caf5e81e835085bf4422ee2a74ea"
+    },
+    {
       "path": "research/quora-lane/RESPONSE-RECONCILIATION-v0.1.md",
       "size_bytes": 4067,
       "sha256": "77abaf043739d9ae7e94b3d24e18596e3dbb354e4abd6eae000bf8837c66003f"
