@@ -761,6 +761,16 @@
       "sha256": "7dc069d4d3cd322c2b3f5744e98fa051adf001719898f4479ff11fd27a5f1839"
     },
     {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/EOC-BT-TOR-20261115-001-specialist-handoff.md",
+      "size_bytes": 5222,
+      "sha256": "e1a11eea81f433f6b1fb080d65b1968d8e94e292c4ad19e0910e6e954a0548fc"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/EOC-BT-TOR-20261115-001.md",
+      "size_bytes": 3673,
+      "sha256": "834385a6492c4b387c100f9f129632142843d4c4e9961c72225599ba51d723c8"
+    },
+    {
       "path": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md",
       "size_bytes": 4281,
       "sha256": "863e6656f3a08a21d804a5f457fa4ebefc312dd0c1daa485ee20dd328f7b9acf"
@@ -824,6 +834,11 @@
       "path": "research/candidates/2026-10-16-external-evidence/README.md",
       "size_bytes": 4401,
       "sha256": "5214e3f37a24494825ee41674d9b1afdc94a5c4d50665e5751e7fae9e286198c"
+    },
+    {
+      "path": "research/candidates/2026-11-15-external-evidence/BT-TOR-20261115-001-availability-and-authority.md",
+      "size_bytes": 16951,
+      "sha256": "ba91e74b643cdaf637ec3f2ece6252745d23caf5e81e835085bf4422ee2a74ea"
     },
     {
       "path": "research/quora-lane/RESPONSE-RECONCILIATION-v0.1.md",
