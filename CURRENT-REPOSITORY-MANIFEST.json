@@ -761,6 +761,11 @@
       "sha256": "7dc069d4d3cd322c2b3f5744e98fa051adf001719898f4479ff11fd27a5f1839"
     },
     {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/BT-USA-INFRA-001-investigation-ledger-v0.1.md",
+      "size_bytes": 10498,
+      "sha256": "d12625e0c147ff98e92678790ec27a14c2d7367a652f58f9b67d437514a75356"
+    },
+    {
       "path": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md",
       "size_bytes": 4281,
       "sha256": "863e6656f3a08a21d804a5f457fa4ebefc312dd0c1daa485ee20dd328f7b9acf"
