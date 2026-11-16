@@ -826,6 +826,11 @@
       "sha256": "5214e3f37a24494825ee41674d9b1afdc94a5c4d50665e5751e7fae9e286198c"
     },
     {
+      "path": "research/candidates/BT-REPO-TIN-001-v0.1.md",
+      "size_bytes": 4439,
+      "sha256": "3e35be932148468fe059f506b6e444ac87feab6b7d7fe5cfe9d4eba8ad7ed530"
+    },
+    {
       "path": "research/quora-lane/RESPONSE-RECONCILIATION-v0.1.md",
       "size_bytes": 4067,
       "sha256": "77abaf043739d9ae7e94b3d24e18596e3dbb354e4abd6eae000bf8837c66003f"
@@ -1106,6 +1111,11 @@
       "sha256": "cd916991f43c9b4fdb2298c4cdb3c48e3def0bf52e82974e9e5ae7957acfcd29"
     },
     {
+      "path": "src/tests/tool-inventory-normalization.test.ts",
+      "size_bytes": 4057,
+      "sha256": "2cb223c463774c88b83f8433bc77d36d314a6a15c58040acc30bace767504fc3"
+    },
+    {
       "path": "src/tests/zombie-permission-hunter-batch.test.ts",
       "size_bytes": 1064,
       "sha256": "3cd20143408f8e6cfebe5e1e31d37a28591f8fb2121ae5fc1e502b43537b11b6"
@@ -1276,6 +1286,11 @@
       "sha256": "52b55046cd570e0e1737ac2cafafd8163fc7e667775691728815e51b750cacc8"
     },
     {
+      "path": "src/types/tool-inventory-normalization-contracts.ts",
+      "size_bytes": 1670,
+      "sha256": "491be0764f08324ac3919972eeeb5163cb2ece6a40c7280a558ccaa53ac19885"
+    },
+    {
       "path": "src/types/zombie-permission-hunter-contracts.ts",
       "size_bytes": 2308,
       "sha256": "fbd04982e6aa7fcd4ba9aad7d217e6edf696d36038befbe4ef412d36309d9040"
@@ -1349,6 +1364,11 @@
       "path": "src/workflows/switchboard-agent-gate.ts",
       "size_bytes": 3112,
       "sha256": "2f241d2a8c95822a4a3a21fac73be60196583e2096e50d96892b669660f0e417"
+    },
+    {
+      "path": "src/workflows/tool-inventory-normalization.ts",
+      "size_bytes": 3896,
+      "sha256": "9c0fa2324c476cef7a969fb9ed2f75effd408e114e2e16ece30692a73a4bb875"
     },
     {
       "path": "state-machine.mmd",
