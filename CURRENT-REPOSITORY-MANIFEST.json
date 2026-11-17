@@ -791,6 +791,16 @@
       "sha256": "c5ee733ce22d32fe6d0b6c9dd4833189799db4b3dc6a94477c0ec82ea2d4bae8"
     },
     {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-17-ec-rfr-001-tf01-v0.1.md",
+      "size_bytes": 3637,
+      "sha256": "ac2b48d868e4bff9164b6b53f8d595a8a041f588b09df0371d8935003a37dc01"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-17-ec-rfr-001-v0.1.md",
+      "size_bytes": 2690,
+      "sha256": "01cb171e2f7af31ae36bf5efecd6ad8c856093c9f4f0164fc311d1cb75fd2ec5"
+    },
+    {
       "path": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md",
       "size_bytes": 4281,
       "sha256": "863e6656f3a08a21d804a5f457fa4ebefc312dd0c1daa485ee20dd328f7b9acf"
@@ -929,6 +939,16 @@
       "path": "research/quora-lane/RESPONSE-RECONCILIATION-v0.1.md",
       "size_bytes": 4067,
       "sha256": "77abaf043739d9ae7e94b3d24e18596e3dbb354e4abd6eae000bf8837c66003f"
+    },
+    {
+      "path": "research/repository-integrity/2026-11-17-nsa-placement-receipt.md",
+      "size_bytes": 2280,
+      "sha256": "cca6f842b1ca180592635ed5e9312f71b84792ca613601916bd097eca242a2e7"
+    },
+    {
+      "path": "research/repository-integrity/2026-11-17-rb-rfr-001-test-contract.md",
+      "size_bytes": 2839,
+      "sha256": "70b7cc1c1384cad4465155e685875c077d2a59fd4a68ab3d5249f35611190961"
     },
     {
       "path": "research/repository-integrity/MANIFEST-FAILURE-REPAIR-20261019.md",
