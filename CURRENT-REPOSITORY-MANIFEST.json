@@ -761,6 +761,36 @@
       "sha256": "7dc069d4d3cd322c2b3f5744e98fa051adf001719898f4479ff11fd27a5f1839"
     },
     {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-16-ada-jay-001-failures-v0.1.md",
+      "size_bytes": 2688,
+      "sha256": "6a1937fed4457fdb92887b533d7a30cc3310099d069403adb0f8da2eaa195b46"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-16-collateralized-compute-cascade-candidate-v0.1.md",
+      "size_bytes": 1047,
+      "sha256": "768a5ed6768f3120a103d22b293c0001db84734c47875bd9ec5f79f1c71fbd3b"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-16-collateralized-compute-cascade-failures-contradictions-v0.1.md",
+      "size_bytes": 5395,
+      "sha256": "38cacaf0dddffd678f98a5d75b815296f1abf063d0155f07b4e38b776eeeda5a"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-16-ec-ada-jay-or-001-v0.1.md",
+      "size_bytes": 3976,
+      "sha256": "ed728b8fcfc019b073e6fee8bf860aaa8536a2506476c900e20ecf62a049f022"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-16-illusion-of-universal-notice-candidate-v0.1.md",
+      "size_bytes": 5909,
+      "sha256": "cc4358cf78699219429f04db30bba79dafb5246369dd5752ca4db855f2e3b89e"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-17-ada-nsa-001-failures-v0.1.md",
+      "size_bytes": 2596,
+      "sha256": "c5ee733ce22d32fe6d0b6c9dd4833189799db4b3dc6a94477c0ec82ea2d4bae8"
+    },
+    {
       "path": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md",
       "size_bytes": 4281,
       "sha256": "863e6656f3a08a21d804a5f457fa4ebefc312dd0c1daa485ee20dd328f7b9acf"
@@ -824,6 +854,76 @@
       "path": "research/candidates/2026-10-16-external-evidence/README.md",
       "size_bytes": 4401,
       "sha256": "5214e3f37a24494825ee41674d9b1afdc94a5c4d50665e5751e7fae9e286198c"
+    },
+    {
+      "path": "research/candidates/2026-11-16-ada-jay-001-handoff-v0.1.md",
+      "size_bytes": 4536,
+      "sha256": "3c6b71858940bf9744ae2cb690c76124d8427d0e671bbbf924e23ea67e7213be"
+    },
+    {
+      "path": "research/candidates/2026-11-16-ada-jay-001-v0.1.md",
+      "size_bytes": 4388,
+      "sha256": "d14b81ae950775a978c23e7dd266e5e7356d65dea8b8d1351ab0d0b7c39be4c3"
+    },
+    {
+      "path": "research/candidates/2026-11-16-collateralized-compute-cascade-v0.1.md",
+      "size_bytes": 5098,
+      "sha256": "683dc37349a6a3a1e8c0c1a9df1f7ee27274003d804361c331432c72a4b7cbcc"
+    },
+    {
+      "path": "research/candidates/2026-11-16-optimizely/A-atlas.md",
+      "size_bytes": 1149,
+      "sha256": "341d9936dc8922186ddf081a5da0ef6575c2b0c73ba39862b78713e6828203c3"
+    },
+    {
+      "path": "research/candidates/2026-11-16-optimizely/B-chaos.md",
+      "size_bytes": 1034,
+      "sha256": "611418b4c9ee91c0e3bacc7f960730bf25c3ce4ae9a43659f2dd213211ad20e0"
+    },
+    {
+      "path": "research/candidates/2026-11-16-optimizely/C-benchmarks.md",
+      "size_bytes": 2363,
+      "sha256": "a7cdea81a19c2c7154306f848f158ac031a3541e0e0c34ce5d693006a68e4c6b"
+    },
+    {
+      "path": "research/candidates/2026-11-16-optimizely/D-archaeology.md",
+      "size_bytes": 992,
+      "sha256": "57b779a8bc20938874ba740f846188157e4a6e7452529fb24472289f40eb42f9"
+    },
+    {
+      "path": "research/candidates/2026-11-16-optimizely/E-evidence.md",
+      "size_bytes": 1139,
+      "sha256": "a5619bb9416083f218da820068d4ad1322b24ef7acce3b49216b492505f01dde"
+    },
+    {
+      "path": "research/candidates/2026-11-16-optimizely/F-failure-ledger.md",
+      "size_bytes": 1784,
+      "sha256": "fe00ff09656ea5ddd0afe9fce8367ae6a11584307b76b2acb403f0cf8e7f4791"
+    },
+    {
+      "path": "research/candidates/2026-11-16-optimizely/G-crosswalk.md",
+      "size_bytes": 3112,
+      "sha256": "8040acae68433f33b5afc40fa83754cf000fcf992cb30be5c288346bd60a031f"
+    },
+    {
+      "path": "research/candidates/2026-11-16-optimizely/README.md",
+      "size_bytes": 659,
+      "sha256": "1a1581ce113ec877a68f097559ea4740b070e518d0b1c5fa574092dd4f77bba1"
+    },
+    {
+      "path": "research/candidates/2026-11-16-optimizely/SHA256SUMS.json",
+      "size_bytes": 701,
+      "sha256": "b56dcfba46e130870109e96bb6a83edc7fb791ff9aad2ab8ee781de72af69ee2"
+    },
+    {
+      "path": "research/candidates/2026-11-17-ada-nsa-001-handoff-v0.1.md",
+      "size_bytes": 3132,
+      "sha256": "76b63eb7946110888e9f54fc3fec9eda3b507330c818c377d9d7ca54965b3e3e"
+    },
+    {
+      "path": "research/candidates/2026-11-17-ada-nsa-001-v0.1.md",
+      "size_bytes": 4299,
+      "sha256": "fdade39ddbb7ec341ccd2ea906297d1f919c63e8f6c4272228d04f2270d8e355"
     },
     {
       "path": "research/quora-lane/RESPONSE-RECONCILIATION-v0.1.md",
