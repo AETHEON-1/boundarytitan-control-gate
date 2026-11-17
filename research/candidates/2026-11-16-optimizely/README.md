@@ -1,0 +1,3 @@
+# BT-BCS-SUPPLY-CHAIN-001 v0.2
+2026-11-16 | YELLOW | proposed repository placement only
+Four linked records A–D, evidence register, crosswalk and failure ledger. Supersedes preparation v0.1 as a candidate, not frozen doctrine. Proposed destination: research/candidates/2026-11-16-optimizely/; Encyclopedia record may be cross-linked from encyclopedia-of-chaos/reality-benchmarks/ after human review. No repository write, execution, publication, certification or canonical admission. Human owner controls disposition; independent specialist review pending. Read E and F before relying on any claim. Freeze the evidence; never freeze the search. CAN ⊬ MAY.
