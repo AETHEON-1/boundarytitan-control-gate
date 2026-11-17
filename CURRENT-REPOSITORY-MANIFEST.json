@@ -926,6 +926,11 @@
       "sha256": "b56dcfba46e130870109e96bb6a83edc7fb791ff9aad2ab8ee781de72af69ee2"
     },
     {
+      "path": "research/candidates/2026-11-17-ada-nsa-001-addendum-v0.1.md",
+      "size_bytes": 2622,
+      "sha256": "78e58e6ff60571fcd59b222efa61b878685518839edbf9cdaacc6c26a720c854"
+    },
+    {
       "path": "research/candidates/2026-11-17-ada-nsa-001-handoff-v0.1.md",
       "size_bytes": 3132,
       "sha256": "76b63eb7946110888e9f54fc3fec9eda3b507330c818c377d9d7ca54965b3e3e"
