@@ -1,0 +1,91 @@
+{
+  "id": "CTC-001",
+  "revision": 1,
+  "authority_state": "CANDIDATE",
+  "source": {
+    "record": "EC-MAR-001",
+    "url": "https://www.atsb.gov.au/investigations/mo-2025-009",
+    "custody": "Retrieval pointer only; unresolved source wording conflict"
+  },
+  "target": "Synthetic autonomous execution and stop/recovery laboratory",
+  "proposition": "Shared-dependency control loss and operational recovery conditions may inform autonomous execution stop tests",
+  "dimensions": [
+    {
+      "name": "functional",
+      "correspondence": "Normal automatic and human control versus alternative actuation",
+      "limitation": "Physical steering differs from digital enforcement",
+      "defeating_observation": "Target override does not control specified effect",
+      "status": "PROPOSED_NOT_INDEPENDENTLY_TESTED"
+    },
+    {
+      "name": "causal",
+      "correspondence": "Common failed dependency disables two control paths",
+      "limitation": "No causal equivalence established",
+      "defeating_observation": "Target control remains available despite dependency loss",
+      "status": "PROPOSED_NOT_INDEPENDENTLY_TESTED"
+    },
+    {
+      "name": "dependency",
+      "correspondence": "Shared sensor vs shared control plane",
+      "limitation": "Other common dependencies unmodeled",
+      "defeating_observation": "Independent path shares impaired service",
+      "status": "PROPOSED_NOT_INDEPENDENTLY_TESTED"
+    },
+    {
+      "name": "state",
+      "correspondence": "Actual rudder response vs actual committed effect",
+      "limitation": "Journal is idealized",
+      "defeating_observation": "Reported stop differs from effect journal",
+      "status": "PROPOSED_NOT_INDEPENDENTLY_TESTED"
+    },
+    {
+      "name": "temporal",
+      "correspondence": "Emergency response deadline vs commit boundary",
+      "limitation": "Synthetic ticks, no physical timing claim",
+      "defeating_observation": "Commit precedes effective stop",
+      "status": "PROPOSED_NOT_INDEPENDENTLY_TESTED"
+    },
+    {
+      "name": "authority",
+      "correspondence": "Designated operator vs simulated owner",
+      "limitation": "Legal standing and real authentication untested",
+      "defeating_observation": "Invalid owner changes authorization state",
+      "status": "PROPOSED_NOT_INDEPENDENTLY_TESTED"
+    },
+    {
+      "name": "observability",
+      "correspondence": "Independent indication vs separate effect journal",
+      "limitation": "Journal is not independently held",
+      "defeating_observation": "Observer fails or falsely reports actual effect",
+      "status": "PROPOSED_NOT_INDEPENDENTLY_TESTED"
+    },
+    {
+      "name": "recovery",
+      "correspondence": "Alternative steering vs bounded essential service",
+      "limitation": "No real rollback or control dynamics",
+      "defeating_observation": "Essential function lost or recovery overreaches",
+      "status": "PROPOSED_NOT_INDEPENDENTLY_TESTED"
+    },
+    {
+      "name": "completeness",
+      "correspondence": "Declared control paths vs modeled worker and bypass",
+      "limitation": "Single-worker finite simulation only",
+      "defeating_observation": "Unmodeled path reaches consequence",
+      "status": "PROPOSED_NOT_INDEPENDENTLY_TESTED"
+    },
+    {
+      "name": "falsifiability",
+      "correspondence": "Fault injection and measured state transitions",
+      "limitation": "Machine-authored fixture expectations",
+      "defeating_observation": "Independent reproduction contradicts predicted scoped result",
+      "status": "PROPOSED_NOT_INDEPENDENTLY_TESTED"
+    }
+  ],
+  "counterevidence": [
+    "Shared emergency route failure with fail-closed gate: no modeled violation.",
+    "Cancellation without commit fence succeeds for single worker but fails on retry.",
+    "Blanket shutdown misses required essential service."
+  ],
+  "reopen": "Independent maritime reconciliation, independently designed software tests, counterexample or missing dependency discovered",
+  "review": "NOT PERFORMED"
+}

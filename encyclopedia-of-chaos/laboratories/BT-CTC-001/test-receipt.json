@@ -1,0 +1,1589 @@
+{
+  "scope": "Synthetic single-worker event scheduler; machine-authored fixtures, no independent review",
+  "total": 19,
+  "matched": 19,
+  "violations": 12,
+  "results": [
+    {
+      "config": {
+        "name": "reference",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": 3,
+      "forbidden_effects": [],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        },
+        {
+          "tick": 5,
+          "event": "commit_denied",
+          "action": "normal",
+          "reason": "live_fence",
+          "token": 0,
+          "epoch": 1
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "NO_VIOLATION_OBSERVED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 0,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "normal_override",
+        "shared_fault": true,
+        "route": "normal",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": null,
+      "forbidden_effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "normal"
+        },
+        {
+          "tick": 2,
+          "event": "delivery_failed",
+          "reason": "dependency_or_usability"
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 1,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "shared_emergency",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": true,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": null,
+      "forbidden_effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 2,
+          "event": "delivery_failed",
+          "reason": "dependency_or_usability"
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 1,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "unusable_emergency",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": false,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": null,
+      "forbidden_effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 2,
+          "event": "delivery_failed",
+          "reason": "dependency_or_usability"
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 1,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "late_delivery",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 4,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": 6,
+      "forbidden_effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        },
+        {
+          "tick": 6,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 1,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "ack_only",
+        "shared_fault": true,
+        "route": "normal",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": true,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": null,
+      "forbidden_effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "normal"
+        },
+        {
+          "tick": 2,
+          "event": "interface_ack",
+          "effective": false
+        },
+        {
+          "tick": 2,
+          "event": "delivery_failed",
+          "reason": "dependency_or_usability"
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 1,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "no_commit_fence",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": false,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": 3,
+      "forbidden_effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 1,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "bypass",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": true,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": 3,
+      "forbidden_effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "bypass"
+        }
+      ],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "bypass"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "bypass"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 1,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "restart_loses_stop",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": true,
+        "durable_stop": false,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": 3,
+      "forbidden_effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        },
+        {
+          "tick": 4,
+          "event": "restart",
+          "denied": false,
+          "epoch": 0
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 1,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "restart_preserves_stop",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": true,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": 3,
+      "forbidden_effects": [],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        },
+        {
+          "tick": 4,
+          "event": "restart",
+          "denied": true,
+          "epoch": 1
+        },
+        {
+          "tick": 5,
+          "event": "commit_denied",
+          "action": "normal",
+          "reason": "live_fence",
+          "token": 0,
+          "epoch": 1
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "NO_VIOLATION_OBSERVED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 0,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "blanket_shutdown",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": false,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": 3,
+      "forbidden_effects": [],
+      "essential_misses": [
+        6
+      ],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": false
+        },
+        {
+          "tick": 5,
+          "event": "commit_denied",
+          "action": "normal",
+          "reason": "power_off"
+        },
+        {
+          "tick": 6,
+          "event": "essential_missed"
+        }
+      ],
+      "effects": [],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 0,
+        "essential_misses": 1
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "recovery_overreach",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": true,
+        "retry": false
+      },
+      "effective_tick": 3,
+      "forbidden_effects": [
+        {
+          "tick": 7,
+          "action": "recovery_extra",
+          "path": "recovery"
+        }
+      ],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        },
+        {
+          "tick": 5,
+          "event": "commit_denied",
+          "action": "normal",
+          "reason": "live_fence",
+          "token": 0,
+          "epoch": 1
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        },
+        {
+          "tick": 7,
+          "event": "effect_committed",
+          "action": "recovery_extra",
+          "path": "recovery"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        },
+        {
+          "tick": 7,
+          "action": "recovery_extra",
+          "path": "recovery"
+        }
+      ],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 1,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "stale_retry",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": true
+      },
+      "effective_tick": 3,
+      "forbidden_effects": [],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        },
+        {
+          "tick": 5,
+          "event": "commit_denied",
+          "action": "normal",
+          "reason": "live_fence",
+          "token": 0,
+          "epoch": 1
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        },
+        {
+          "tick": 7,
+          "event": "commit_denied",
+          "action": "normal",
+          "reason": "live_fence",
+          "token": 0,
+          "epoch": 1
+        }
+      ],
+      "effects": [
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "NO_VIOLATION_OBSERVED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 0,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "cancel_without_fence",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": false,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": true,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": 3,
+      "forbidden_effects": [],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": false,
+          "power": true
+        },
+        {
+          "tick": 5,
+          "event": "worker_cancelled"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "NO_VIOLATION_OBSERVED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 0,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "cancel_without_fence_retry",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": false,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": true,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": true
+      },
+      "effective_tick": 3,
+      "forbidden_effects": [
+        {
+          "tick": 7,
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": false,
+          "power": true
+        },
+        {
+          "tick": 5,
+          "event": "worker_cancelled"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        },
+        {
+          "tick": 7,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        },
+        {
+          "tick": 7,
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 1,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "shared_failure_fail_closed",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": true,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": true,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": null,
+      "forbidden_effects": [],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 2,
+          "event": "delivery_failed",
+          "reason": "dependency_or_usability"
+        },
+        {
+          "tick": 5,
+          "event": "commit_denied",
+          "action": "normal",
+          "reason": "fault_fail_closed"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "NO_VIOLATION_OBSERVED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 0,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "invalid_owner",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": false,
+        "stop_tick": 2,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": null,
+      "forbidden_effects": [],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": false,
+          "route": "independent"
+        },
+        {
+          "tick": 2,
+          "event": "stop_rejected",
+          "reason": "invalid_owner"
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "NO_VIOLATION_OBSERVED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 0,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "same_tick_stop_commit",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 2,
+        "stop_delay": 3,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": 5,
+      "forbidden_effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 5,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "CONTRADICTED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 1,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    },
+    {
+      "config": {
+        "name": "pre_request_commit",
+        "shared_fault": true,
+        "route": "independent",
+        "emergency_shared": false,
+        "usable": true,
+        "valid_owner": true,
+        "stop_tick": 6,
+        "stop_delay": 1,
+        "commit_tick": 5,
+        "fence": true,
+        "bypass": false,
+        "restart": false,
+        "durable_stop": true,
+        "false_ack": false,
+        "cancel_pending": false,
+        "fail_closed_on_fault": false,
+        "essential_required": true,
+        "essential_separate": true,
+        "recovery_overreach": false,
+        "retry": false
+      },
+      "effective_tick": 7,
+      "forbidden_effects": [],
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        },
+        {
+          "tick": 7,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ],
+      "disposition": "NO_VIOLATION_OBSERVED_IN_MODEL",
+      "expected": {
+        "forbidden_effects": 0,
+        "essential_misses": 0
+      },
+      "fixture_match": true
+    }
+  ]
+}
