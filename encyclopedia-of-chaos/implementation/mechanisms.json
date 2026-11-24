@@ -1,0 +1,96 @@
+{
+  "version": "0.1",
+  "status": "CANDIDATE",
+  "mechanisms": [
+    {
+      "id": "FM-001",
+      "label": "Common-mode dependency failure",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-002",
+      "label": "Local-to-global composition failure",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-003",
+      "label": "Authority leakage",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-004",
+      "label": "Revocation propagation failure",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-005",
+      "label": "Measurement incompatibility",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-006",
+      "label": "Evaluator contamination",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-007",
+      "label": "Correlated evaluation error",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-008",
+      "label": "Recovery-induced failure",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-009",
+      "label": "Manual override failure",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-010",
+      "label": "Incomplete mediation",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-011",
+      "label": "Evidence custody failure",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-012",
+      "label": "Premature causal attribution",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-013",
+      "label": "Objective-induced boundary violation",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-014",
+      "label": "Investigator-induced failure",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-015",
+      "label": "Hidden dependency",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-016",
+      "label": "Temporal incompatibility",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-017",
+      "label": "False redundancy",
+      "status": "CANDIDATE"
+    },
+    {
+      "id": "FM-018",
+      "label": "Domain-transfer error",
+      "status": "CANDIDATE"
+    }
+  ]
+}

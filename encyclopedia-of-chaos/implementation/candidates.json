@@ -1,0 +1,172 @@
+[
+  {
+    "id": "EC-GL-010",
+    "revision": 1,
+    "title": "The Manual Override That Didn't Respond",
+    "original_domain": "Maritime engineering",
+    "source": {
+      "url": "https://www.atsb.gov.au/investigations/mo-2026-003",
+      "retrieved": "2026-11-24",
+      "kind": "ATSB open investigation",
+      "custody": "Public retrieval pointer only; no source snapshot or independent custody."
+    },
+    "original_proposition": "Manual follow-up steering should respond after a change from autopilot.",
+    "rejected_assumption": "Presence of manual steering proves effective manual override; challenged by reported nonresponse.",
+    "failure_mechanism": "Reported lack of response to helm commands; physical root cause UNKNOWN.",
+    "failure_conditions": "Second vessel incident on 2026-11-05 during transfer from autopilot to manual follow-up mode.",
+    "observed_consequence": "ATSB reports steering wheel did not respond; alternative steering arrangements were used.",
+    "remaining_useful_information": "Mode transfer and alternative steering are distinct paths; inspect actuation after override.",
+    "uncertainty": "Investigation open; common cause across the two vessels not established.",
+    "counterevidence": "Alternative steering reportedly remained available; this was not proof of total loss of control.",
+    "transfer_applications": "Autonomous AI recovery; external stop; manual override; degraded mode.",
+    "transfer_limitations": "Steering actuation differs from software authorization and irreversible commits; causal equivalence NOT TESTED.",
+    "reopening_conditions": "Final ATSB findings, corrected sequence, verified cause or independent transfer test.",
+    "mechanisms": [
+      {
+        "id": "FM-009",
+        "relation": "REPORTED",
+        "rationale": "Manual follow-up did not respond according to ATSB."
+      }
+    ],
+    "independent_review": "PENDING for this classification and any transfer; source investigation status is separate.",
+    "authority_state": "CANDIDATE"
+  },
+  {
+    "id": "EC-GL-001",
+    "revision": 1,
+    "title": "The Backup That Couldn't Wake Up",
+    "original_domain": "Cloud power engineering",
+    "source": {
+      "url": "https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj",
+      "retrieved": "2026-11-24",
+      "kind": "Operator incident report",
+      "custody": "Public retrieval pointer only; no source snapshot or independent custody."
+    },
+    "original_proposition": "Dual redundant generator controllers provide recovery after utility power loss.",
+    "rejected_assumption": "Duplicated controllers necessarily provide independent recovery; challenged by reported startup fault.",
+    "failure_mechanism": "Operator reports shared control logic and sensor information and failure to start emergency generators.",
+    "failure_conditions": "London zone power disruption 2026-10-20 during reduced redundancy maintenance configuration.",
+    "observed_consequence": "Reported cloud service disruption, elevated errors and latency.",
+    "remaining_useful_information": "Assess shared inputs and logic as well as duplicated hardware; test degraded maintenance states.",
+    "uncertainty": "Independent control-plane audit and all downstream consequences UNKNOWN.",
+    "counterevidence": "Operator reports power recovery after controller reset and testing; redundancy is not inherently ineffective.",
+    "transfer_applications": "AI external stop; failover; recovery; independent control planes.",
+    "transfer_limitations": "Electrical startup and software permission checks have different mechanisms and timing; transfer NOT TESTED.",
+    "reopening_conditions": "Independent controller logs, revised incident report or scoped failover experiments.",
+    "mechanisms": [
+      {
+        "id": "FM-001",
+        "relation": "REPORTED",
+        "rationale": "Reported shared control logic/input dependency."
+      },
+      {
+        "id": "FM-017",
+        "relation": "HYPOTHESIS",
+        "rationale": "Duplicated controllers may not provide independent recovery."
+      }
+    ],
+    "independent_review": "PENDING for this classification and any transfer; source investigation status is separate.",
+    "authority_state": "CANDIDATE"
+  },
+  {
+    "id": "EC-GL-009",
+    "revision": 1,
+    "title": "The Brake That Actually Worked",
+    "original_domain": "Aviation safety",
+    "source": {
+      "url": "https://www.atsb.gov.au/investigations/ao-2026-061",
+      "retrieved": "2026-11-24",
+      "kind": "ATSB final investigation page",
+      "custody": "Public retrieval pointer only; no source snapshot or independent custody."
+    },
+    "original_proposition": "Independent detection and intervention may interrupt an unsafe transition.",
+    "rejected_assumption": "A failed clearance boundary necessarily produces the immediate harmful consequence; bounded counterexample.",
+    "failure_mechanism": "Runway incursion followed by successful alert, controller intervention and rejected takeoff.",
+    "failure_conditions": "Vehicle entered active runway without clearance on 2026-02-17.",
+    "observed_consequence": "ATSB reports the vehicle vacated and the flight crew rejected takeoff.",
+    "remaining_useful_information": "Independent detection, communications and intervention can interrupt a consequence in a specific event.",
+    "uncertainty": "Generalized stop effectiveness and all degraded conditions NOT TESTED.",
+    "counterevidence": "This successful intervention is a positive control; it is not evidence of manual override failure.",
+    "transfer_applications": "Autonomous AI recovery; external stop; independent intervention; consequence timing.",
+    "transfer_limitations": "Aviation procedures and physical stopping distances do not establish software authority-path dominance.",
+    "reopening_conditions": "New investigation evidence, counterexample or independent transfer evaluation.",
+    "mechanisms": [
+      {
+        "id": "FM-009",
+        "relation": "POSITIVE_CONTROL",
+        "rationale": "Successful intervention contrasts with unsuccessful override; not a failed manual override."
+      }
+    ],
+    "independent_review": "PENDING for this classification and any transfer; source investigation status is separate.",
+    "authority_state": "CANDIDATE"
+  },
+  {
+    "id": "EC-CMDF-002",
+    "revision": 1,
+    "title": "The Consensus Mirage",
+    "original_domain": "Empirical machine learning",
+    "source": {
+      "url": "https://proceedings.mlr.press/v267/kim25e.html",
+      "retrieved": "2026-11-24",
+      "kind": "Peer-reviewed study abstract; also documented in BT-CMDF-001",
+      "custody": "Public retrieval pointer only; no source snapshot or independent custody."
+    },
+    "original_proposition": "Multiple model outputs may supply independent evidence.",
+    "rejected_assumption": "Different provider labels guarantee independent errors; challenged by bounded reported error dependence.",
+    "failure_mechanism": "Correlated evaluation errors; exact causal dependencies UNKNOWN.",
+    "failure_conditions": "Study-specific tasks and model pairs; conditional agreement when both answers incorrect.",
+    "observed_consequence": "Paper reports 60 percent conditional incorrect-answer agreement on one dataset.",
+    "remaining_useful_information": "Measure item-level joint errors against independently held ground truth.",
+    "uncertainty": "No replication or full method audit in this build; generalization UNKNOWN.",
+    "counterevidence": "Dependence varies by task and model; shared dependencies need not yield identical failures.",
+    "transfer_applications": "Independent AI evaluators; multi-agent consensus; evidence aggregation.",
+    "transfer_limitations": "Statistical error dependence is not an operational stop failure or proof of shared training.",
+    "reopening_conditions": "Full method audit, replication, contrary panels or new evidence of causal dependency.",
+    "mechanisms": [
+      {
+        "id": "FM-007",
+        "relation": "REPORTED",
+        "rationale": "Bounded empirical error correlation, not universal."
+      }
+    ],
+    "independent_review": "PENDING for this classification and any transfer; source investigation status is separate.",
+    "authority_state": "CANDIDATE"
+  },
+  {
+    "id": "EC-CMDF-006",
+    "revision": 1,
+    "title": "The Investigator's Missing Source",
+    "original_domain": "Research evidence custody",
+    "source": {
+      "url": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/cbe7f0af525f5ed716ee679c6356c336c1f127a6/research/candidates/2026-11-24-cross-model-dependency-ledger-v0.1.md",
+      "retrieved": "2026-11-24",
+      "kind": "Repository research candidate",
+      "custody": "Public retrieval pointer only; no source snapshot or independent custody."
+    },
+    "original_proposition": "Direct full-text source retrieval would permit methods examination.",
+    "rejected_assumption": "Abstract and project-page corroboration substitute for examination of the full record; not accepted.",
+    "failure_mechanism": "Direct arXiv open failed as documented in parent record; cause UNKNOWN.",
+    "failure_conditions": "CM-04 source retrieval during BT-CMDF-001 preparation.",
+    "observed_consequence": "Full text not examined; findings retained with explicit limitations.",
+    "remaining_useful_information": "Indexed abstract and author project page provide leads for reopening.",
+    "uncertainty": "Exact retrieval obstruction and full methods remain unresolved.",
+    "counterevidence": "Partial corroboration is useful as a lead but does not resolve custody or method gaps.",
+    "transfer_applications": "Research source audit; evidence custody; investigator correction.",
+    "transfer_limitations": "Access failure is not proof source does not exist or findings false.",
+    "reopening_conditions": "Successful full-text retrieval with reproducible source identity and independent methods review.",
+    "mechanisms": [
+      {
+        "id": "FM-011",
+        "relation": "REPORTED",
+        "rationale": "Missing full source and custody limitation documented."
+      },
+      {
+        "id": "FM-014",
+        "relation": "HYPOTHESIS",
+        "rationale": "Investigation must preserve its own gaps; investigator causation not established."
+      }
+    ],
+    "independent_review": "PENDING for this classification and any transfer; source investigation status is separate.",
+    "authority_state": "CANDIDATE"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-24",
+  "state": "MACHINE_TEST_ONLY",
+  "environment": "JavaScript orchestration isolate; function bodies executed directly; Node CLI not executed",
+  "independent_review": "NOT PERFORMED",
+  "tests": [
+    {
+      "name": "all initial candidates validate",
+      "result": "PASS"
+    },
+    {
+      "name": "maritime-to-AI override and aviation positive control",
+      "result": "PASS"
+    },
+    {
+      "name": "correlated errors not returned as override failure",
+      "result": "PASS"
+    },
+    {
+      "name": "common dependency retrieved",
+      "result": "PASS"
+    },
+    {
+      "name": "unknown mandatory field rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "blank required text rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "machine admission rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "unknown mechanism rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "duplicate revision rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "correction latest and historical retention",
+      "result": "PASS"
+    },
+    {
+      "name": "unclassified record remains text searchable",
+      "result": "PASS"
+    },
+    {
+      "name": "provenance and counterevidence survive retrieval",
+      "result": "PASS"
+    },
+    {
+      "name": "unknown query mechanism rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "null search is explicit empty result",
+      "result": "PASS"
+    },
+    {
+      "name": "deterministic ordering",
+      "result": "PASS"
+    }
+  ]
+}

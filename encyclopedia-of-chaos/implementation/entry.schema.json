@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EC-MIKA-001 candidate record v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "revision",
+    "title",
+    "source",
+    "mechanisms",
+    "authority_state",
+    "original_domain",
+    "original_proposition",
+    "rejected_assumption",
+    "failure_mechanism",
+    "failure_conditions",
+    "observed_consequence",
+    "remaining_useful_information",
+    "uncertainty",
+    "counterevidence",
+    "transfer_applications",
+    "transfer_limitations",
+    "reopening_conditions",
+    "independent_review"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^EC-[A-Z0-9-]+$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "retrieved",
+        "kind",
+        "custody"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "pattern": "^https://[^\\s]+$"
+        },
+        "retrieved": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "custody": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      }
+    },
+    "mechanisms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "relation",
+          "rationale"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^FM-\\d{3}$"
+          },
+          "relation": {
+            "enum": [
+              "REPORTED",
+              "HYPOTHESIS",
+              "POSITIVE_CONTROL",
+              "CHALLENGE"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        }
+      }
+    },
+    "authority_state": {
+      "const": "CANDIDATE"
+    },
+    "original_domain": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "original_proposition": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "rejected_assumption": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "failure_mechanism": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "failure_conditions": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "observed_consequence": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "remaining_useful_information": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "uncertainty": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "counterevidence": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "transfer_applications": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "transfer_limitations": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "reopening_conditions": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "independent_review": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    }
+  }
+}
