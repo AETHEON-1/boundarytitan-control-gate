@@ -1,0 +1,63 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261102-HISTORICAL-TASK-LIMIT-FAILURE-v0.1",
+  "recordedDate": "2026-11-02",
+  "kind": "HISTORICAL_TASK_HEALTH_UNRESOLVED_CANDIDATE",
+  "claim": "An earlier automation creation attempt reportedly returned too_many_active_automations with current_count=5 and plan_limit=5.",
+  "evidenceState": "INDETERMINATE",
+  "sources": [
+    {
+      "type": "owner_task_contract",
+      "locator": "Defense and Operations Brief task definition 6ae2b9d59dc08191af8196a28264f4d7, observed 2026-11-02; reported history is not independently verified"
+    },
+    {
+      "type": "repository",
+      "locator": "encyclopedia-of-chaos/entries/EOC-20261102-TASK-REPO-BOUNDARY-v0.1.json"
+    }
+  ],
+  "observations": [
+    {
+      "id": "PRESERVED-REPORT",
+      "description": "Prior EOC-20261102-TASK-REPO-BOUNDARY records this failure; original backend error receipt not independently reproduced in this run.",
+      "state": "INDETERMINATE"
+    }
+  ],
+  "firstUnsupportedArrow": "A later three-task configuration does not erase the historical limit failure or prove the prior request succeeded.",
+  "testCases": [
+    {
+      "id": "SOURCE-RECONCILIATION",
+      "purpose": "Compare original error response and account task limit metadata; keep failure separate from current enabled task count.",
+      "execution": "NOT EXECUTED; read-only evidence needed"
+    }
+  ],
+  "reproduction": [
+    "Compare original error response and account task limit metadata; keep failure separate from current enabled task count."
+  ],
+  "environment": "Defense and Operations Brief scheduled metadata read, source task 6ae2b9d59dc08191af8196a28264f4d7, current execution b45f0aaf-04cc-832d-80bf-19681c449250; original historical source may be inaccessible",
+  "limitations": [
+    "No independent source-root receipt for historical assertion",
+    "No synthetic test, live probe or independent enforcement evaluation",
+    "Candidate record is not archive admission"
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Preserving distinct failure classes prevents silent false closure"
+    ],
+    "harmful": [
+      "Incorrect task-health assurance could hide missed delivery, duplicated work, stale state or unauthorized promotion"
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "HUMAN_OWNER_RESERVED",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "PENDING",
+  "authorizationGranted": false,
+  "links": {
+    "parent": "encyclopedia-of-chaos/entries/EOC-20261102-TASK-REPO-BOUNDARY-v0.1.json",
+    "supersedes": null,
+    "corrections": []
+  },
+  "reopenConditions": [
+    "Compare original error response and account task limit metadata; keep failure separate from current enabled task count."
+  ]
+}

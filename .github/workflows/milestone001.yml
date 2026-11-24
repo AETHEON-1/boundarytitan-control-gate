@@ -1,0 +1,26 @@
+name: Milestone 001 live provenance gate
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  milestone-001:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Challenge provenance and synthetic promotion
+        run: node --test scripts/milestone001-evidence-audit.test.js
+      - name: Check tracked file manifest before generating results
+        run: npm run verify:state
+      - name: Reproduce actual-evidence availability assessment
+        run: node scripts/milestone001-evidence-audit.js research/task-bridge/milestone001-observed-20261013.v0.1.json .research-output/milestone001-assessment.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: milestone001-blocking-evidence-audit
+          path: .research-output/milestone001-assessment.json
+          retention-days: 30

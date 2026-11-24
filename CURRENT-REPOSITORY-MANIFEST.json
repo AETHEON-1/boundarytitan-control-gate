@@ -46,6 +46,11 @@
       "sha256": "17d674de2244934e01b50d774c9a13c10108c6900db69e8c87225a33c63a71a8"
     },
     {
+      "path": ".github/workflows/milestone001.yml",
+      "size_bytes": 968,
+      "sha256": "af93cf1c83db780cf4e9bf57791f7a837da4f373681b73241ec2cfffd93d51af"
+    },
+    {
       "path": ".github/workflows/research-discovery.yml",
       "size_bytes": 913,
       "sha256": "76ed3bb47655800fe4e789669a3689e8b17713bc70d5f87e4fd33eb471891e3b"
@@ -866,6 +871,11 @@
       "sha256": "68456cd140d27a13485c1daa64d947c6ef7e368e7f00379eacc43e5819337c67"
     },
     {
+      "path": "research/task-bridge/MILESTONE-001-TEST-20261013.md",
+      "size_bytes": 3009,
+      "sha256": "35158645cef0350bdfaf3ded26e1e461c529cf407e971d33fe81ac7236cb4dfa"
+    },
+    {
       "path": "research/task-bridge/README.md",
       "size_bytes": 1775,
       "sha256": "8b198b61d2d2644c81b26fdd2a0fe45f604b6be63529a7fc05781eb1ca26cb7c"
@@ -884,6 +894,11 @@
       "path": "research/task-bridge/empty-replay-ledger.v0.1.json",
       "size_bytes": 78,
       "sha256": "14568dd077b00ece394d952d2260e4b6a7b1c6780facfcba76b0407832a3bb42"
+    },
+    {
+      "path": "research/task-bridge/milestone001-observed-20261013.v0.1.json",
+      "size_bytes": 691,
+      "sha256": "cb5cf5a40d4092362dad1db82b4979e8b39f47901252697ab58809ae7083587a"
     },
     {
       "path": "research/task-bridge/synthetic-finding.v0.1.json",
@@ -934,6 +949,16 @@
       "path": "scripts/htk-to-encyclopedia.test.js",
       "size_bytes": 2027,
       "sha256": "bafffd8d047bcb6de1a3fd440e513835f41d26f7fa0230a108075c73904e25dc"
+    },
+    {
+      "path": "scripts/milestone001-evidence-audit.js",
+      "size_bytes": 4410,
+      "sha256": "c9aa6640fc7fa5ad16e267b76e6dd9b5e599df929fc157ab69f80f01d70c10f0"
+    },
+    {
+      "path": "scripts/milestone001-evidence-audit.test.js",
+      "size_bytes": 2647,
+      "sha256": "bef9e33c0a689b5ef44c3bc09905df313f51cc3f047d46218191facb9b25273b"
     },
     {
       "path": "scripts/research-discovery.js",

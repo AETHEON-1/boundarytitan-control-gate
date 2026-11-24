@@ -1,0 +1,115 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261102-POSTWRITE-RECEIPT-EXCEPTION-v0.1",
+  "recordedDate": "2026-11-02",
+  "kind": "POST_WRITE_RECEIPT_RENDER_FAILURE_RECOVERED",
+  "claim": "A scheduled Signals and Opportunities run successfully committed a bounded specialist note but its local receipt-rendering code threw ReferenceError: TextEncoder is not defined after GitHub write, pinned readback, and workflow lookup. The caught exception printed PERSISTENCE PENDING even though GitHub custody had succeeded. Independent readback subsequently recovered the actual commit.",
+  "sources": [
+    {
+      "type": "tool_execution",
+      "locator": "This run's GitHub connector create_tree -> create_commit -> update_ref(expected_sha=eda0e4e23e848a141d57930bf43a2142f9882727) -> fetch_file -> fetch_commit_workflow_runs; final text rendering raised ReferenceError: TextEncoder is not defined."
+    },
+    {
+      "type": "repository",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/commit/152eec51db4039a8c21b89aa0fee70c83c81141c"
+    },
+    {
+      "type": "repository",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/152eec51db4039a8c21b89aa0fee70c83c81141c/research/task-bridge/intake/BT-OW-20261029-OPENAI-MISALIGNMENT-STOP-CONTINUITY-v0.1.md"
+    },
+    {
+      "type": "repository",
+      "locator": "encyclopedia-of-chaos/entries/EOC-20261102-TASK-REPO-BOUNDARY-v0.1.json"
+    }
+  ],
+  "evidenceState": "SUPPORTED",
+  "observations": [
+    {
+      "id": "WRITE-SUCCEEDED",
+      "description": "GitHub branch advanced to commit 152eec51db4039a8c21b89aa0fee70c83c81141c; commit parent eda0e4e23e848a141d57930bf43a2142f9882727; exactly one additive intake file.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "RECEIPT-EXCEPTION",
+      "description": "TextEncoder was unavailable in the tool orchestration runtime; exception occurred while formatting receipt after writes, and a generic catch misclassified the outcome as PERSISTENCE PENDING.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "RECOVERY",
+      "description": "Fresh GitHub connector read returned the exact pinned intake path and blob d5c6c60251d89a0ee5ad3c8499e23b6aeab3c044, matching the blob recorded in the commit file listing. Workflow query returned zero pull_request-triggered runs on first page.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "BYTES-COMPARISON",
+      "description": "A boolean exact-string comparison was computed before the rendering exception but was not emitted in the failed receipt. Independent GitHub pinned readback and commit blob identity are confirmed; original-string equality lacks a durable emitted receipt.",
+      "state": "INDETERMINATE"
+    },
+    {
+      "id": "SCHEDULER-ORIGIN",
+      "description": "Task definition ID 6ae2b9d15f8481919d0cdff95cf9f06a is known; unique execution ID is unavailable. Repository commit alone is not independently authenticated scheduler provenance.",
+      "state": "INDETERMINATE"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "POSITIVE-READBACK",
+      "purpose": "Verify that a successful branch update is followed by pinned readback and commit-file blob comparison",
+      "execution": "READ-ONLY RECHECK PERFORMED; pinned commit and file blob matched"
+    },
+    {
+      "id": "NEGATIVE-POSTWRITE-ERROR",
+      "purpose": "Ensure post-write reporting failure does not become a false custody-failure declaration",
+      "execution": "OBSERVED FAILURE IN THIS RUN; NO TEST FIX EXECUTED"
+    },
+    {
+      "id": "DEFEATING-RECEIPT",
+      "purpose": "Find a case where tool output claims success but pinned file does not exist or bytes mismatch",
+      "execution": "NOT EXECUTED; SPECIFICATION ONLY"
+    },
+    {
+      "id": "ORIGIN-ATTESTATION",
+      "purpose": "Compare actual scheduler execution receipt to GitHub commit",
+      "execution": "NOT TESTED; unique run ID unavailable"
+    }
+  ],
+  "reproduction": [
+    "Use existing draft PR #66 and authorized branch with an expected_sha lease.",
+    "After creating and reading back a commit, call an unavailable TextEncoder in the receipt formatting code; observe ReferenceError and misleading generic PERSISTENCE PENDING output.",
+    "Independently fetch branch head and pinned commit/file; compare commit parent, added path, and Git blob SHA.",
+    "For future implementations, separate mutation failure from post-mutation receipt-render failure and always perform a fresh custody read before classifying persistence."
+  ],
+  "environment": "Scheduled Signals and Opportunities run, GitHub connector, functions.exec JavaScript isolate; no external test or deployment.",
+  "limitations": [
+    "No durable exact-string boolean emitted from initial write call",
+    "No unique scheduler execution ID",
+    "No independent reviewer or specialist receipt",
+    "Workflow query only covers pull_request-triggered runs on first page",
+    "No runtime code fix authorized or executed"
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Recovery path prevents unnecessary duplicate deposit after misleading failure output"
+    ],
+    "harmful": [
+      "A later run could duplicate the same signal or incorrectly report missing custody despite a successful write"
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "OWNER_BOUNDED_REPO_CUSTODY_ONLY",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "PENDING",
+  "authorizationGranted": false,
+  "links": {
+    "parent": "encyclopedia-of-chaos/entries/EOC-20261102-TASK-REPO-BOUNDARY-v0.1.json",
+    "supersedes": null,
+    "corrections": [],
+    "relatedIntake": "research/task-bridge/intake/BT-OW-20261029-OPENAI-MISALIGNMENT-STOP-CONTINUITY-v0.1.md"
+  },
+  "reopenConditions": [
+    "Reproducible receipt-layer failure after successful write",
+    "New durable exact-string comparison or independent attestation",
+    "Evidence of duplicate deposit caused by false failure classification",
+    "Evidence of missing/altered pinned content",
+    "Actual scheduler-origin and delivery receipts"
+  ]
+}

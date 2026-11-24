@@ -1,0 +1,116 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261102-TASK-REPO-BOUNDARY-v0.1",
+  "recordedDate": "2026-11-02",
+  "kind": "OPERATIONAL_LIMIT_AND_AUTHORIZATION_RECONCILIATION",
+  "claim": "Bounded repo custody is now user-authorized; configuration and manual repo operations do not establish authentic scheduled-task delivery or independently enforced no-merge control.",
+  "sources": [
+    {
+      "type": "conversation",
+      "locator": "Originating task reconfiguration conversation, 2026-11-02; no public conversation URL or scheduler attestation supplied"
+    },
+    {
+      "type": "repository",
+      "locator": "research/task-bridge/MILESTONE-001-TEST-20261013.md at 6f9407d67b516abe6122cb2db7f0b7a83afaae08"
+    },
+    {
+      "type": "github_api",
+      "locator": "https://api.github.com/repos/AETHEON-1/boundarytitan-control-gate/branches/main"
+    },
+    {
+      "type": "repository",
+      "locator": "research/task-bridge/BOUNDED-REPO-INTAKE-v0.2.md"
+    }
+  ],
+  "evidenceState": "INDETERMINATE",
+  "observations": [
+    {
+      "id": "LIMIT-1",
+      "description": "Earlier create attempt returned too_many_active_automations with current_count=5 and plan_limit=5. Configuration consolidated to three enabled tasks; original failure remains historical.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "LIMIT-2",
+      "description": "Earlier task prompts prohibited all repo writes, preventing the desired autonomous custody path. Owner now explicitly authorizes bounded repo deposits; no merge authorization.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "LIMIT-3",
+      "description": "Existing Milestone 001 records authentic scheduled-task output transport NOT ESTABLISHED and synthetic CI cannot substitute. Not rerun or newly contradicted here.",
+      "state": "INDETERMINATE"
+    },
+    {
+      "id": "LIMIT-4",
+      "description": "Observed main SHA cc07b5252af28ec34d322de1ec3b6889c0ff2a95 branch response says protected:false. Rulesets, effective token denial and complete enforcement were not independently audited.",
+      "state": "INDETERMINATE"
+    },
+    {
+      "id": "LIMIT-5",
+      "description": "Task metadata lacks proof of future connector availability, unattended write approval, delivery or cross-task persistence. Null/missing metadata is not failed execution evidence.",
+      "state": "INDETERMINATE"
+    },
+    {
+      "id": "LIMIT-6",
+      "description": "Repo workflow definitions trigger push/PR test execution. Documentation custody commits use skip-ci; skipped tests remain NOT TESTED. Manifest not repaired or reclassified.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "LIMIT-7",
+      "description": "Repository deposit is not evidence of specialist receipt, acceptance, engagement or independent validation.",
+      "state": "SUPPORTED"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "LIVE-SCHEDULED-DELIVERY",
+      "purpose": "Observe authentic scheduled-run deposit and exact pinned readback",
+      "execution": "NOT EXECUTED during this interactive preparation"
+    },
+    {
+      "id": "MERGE-DENIAL",
+      "purpose": "Establish credential-level inability to merge or bypass",
+      "execution": "NOT TESTED; no merge attempted"
+    },
+    {
+      "id": "RACE-REPLAY-PRIVACY",
+      "purpose": "Challenge idempotency, concurrency, source injection and private-data exclusion",
+      "execution": "SPECIFICATION ONLY; NOT TESTED"
+    }
+  ],
+  "reproduction": [
+    "Read referenced historical Milestone 001 record; do not run its commands without separate execution authority",
+    "Inspect configured tasks and pinned repo custody receipts; compare scheduled vs interactive provenance"
+  ],
+  "environment": "Interactive ChatGPT Work session, GitHub connector and Automations; future scheduled runtime capabilities unknown",
+  "limitations": [
+    "No independent validation",
+    "No live scheduled-run experiment",
+    "No full branch/ruleset/credential audit",
+    "No specialist response",
+    "Configuration is a policy instruction, not a non-bypassable gate"
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Routine bounded evidence custody can remove human relay work"
+    ],
+    "harmful": [
+      "False origin, duplicate deposits or public private-data leakage if controls fail"
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "BOUNDED_CUSTODY_AUTHORIZED_BY_OWNER_ONLY",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "PENDING",
+  "authorizationGranted": false,
+  "links": {
+    "parent": "research/task-bridge/MILESTONE-001-TEST-20261013.md",
+    "supersedes": null,
+    "corrections": []
+  },
+  "reopenConditions": [
+    "Authentic scheduled-run evidence becomes available",
+    "Task tool availability or runtime approval changes",
+    "Independent denial/bypass findings",
+    "Observed duplicate, misroute, leakage, failed write or readback mismatch"
+  ]
+}

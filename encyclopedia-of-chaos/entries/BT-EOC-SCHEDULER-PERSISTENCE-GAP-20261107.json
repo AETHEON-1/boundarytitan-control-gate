@@ -1,0 +1,125 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "BT-EOC-SCHEDULER-PERSISTENCE-GAP-20261107",
+  "title": "The Scheduler That Completed Without Delivering Evidence",
+  "classification": [
+    "Evidence custody",
+    "Scheduled automation",
+    "Unverified downstream persistence"
+  ],
+  "date": "2026-11-07",
+  "recordStatus": "YELLOW / CANDIDATE / NOT ADMITTED",
+  "primaryLane": "Agentic Systems",
+  "crossReferences": [
+    "Evidence Workbench",
+    "Independent Verification",
+    "research/task-bridge/BOUNDED-REPO-INTAKE-v0.2.md",
+    "PR #66"
+  ],
+  "claim": "A scheduler's recorded completion does not establish successful downstream evidence intake, persistence, or independent recoverability.",
+  "caseScope": {
+    "siteId": "appgprj_6aee5e8e7db88191b0f98b0000cd04b4",
+    "automationId": "6ae2b9d15f8481919d0cdff95cf9f06a",
+    "schedulerRunId": "29200c68-559c-8320-bed2-e0f3a0f2853b",
+    "scheduledFor": "2026-11-07T15:37:56Z",
+    "startedAt": "2026-11-07T15:52:58.428067Z",
+    "completedAt": "2026-11-07T15:53:16.121877Z"
+  },
+  "sourceLocators": [
+    {
+      "type": "automation metadata",
+      "locator": "Automation 6ae2b9d15f8481919d0cdff95cf9f06a / run 29200c68-559c-8320-bed2-e0f3a0f2853b",
+      "observation": "Recorded status completed; task result PARTIAL COMPLETION / DRAFT SYNC PENDING; does not establish Site intake."
+    },
+    {
+      "type": "repository policy",
+      "url": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/4ea1a1fee817065b2d39c79e7da997850d0f9bad/research/task-bridge/BOUNDED-REPO-INTAKE-v0.2.md",
+      "observation": "Additive candidate custody permitted in existing draft PR #66; no automatic admission."
+    }
+  ],
+  "evidence": [
+    {
+      "state": "SUPPORTED",
+      "scope": "Scheduler metadata reported one completed run, not successful intake."
+    },
+    {
+      "state": "SUPPORTED",
+      "scope": "Site source-management tool was unavailable in the recovery session; no intake was executed in that session."
+    },
+    {
+      "state": "INDETERMINATE",
+      "scope": "Whether an independent downstream intake ever succeeded for the referenced scheduler run."
+    },
+    {
+      "state": "NOT TESTED",
+      "scope": "Source revision, script SHA-256 checks, intake, persistence, independent version readback and downstream consequence closure."
+    }
+  ],
+  "firstUnsupportedArrow": "Recorded scheduler COMPLETED → downstream evidence intake completed.",
+  "furtherUnsupportedArrows": [
+    "Intake completed → evidence persisted",
+    "Evidence persisted → evidence independently recoverable"
+  ],
+  "counterevidenceAndAlternatives": [
+    "The scheduler may have executed correctly and reported a partial result; scheduler malfunction is not established.",
+    "Unavailable Site tools in this session do not establish that the Site failed, that stored evidence was lost, or that another authorized execution environment lacks access.",
+    "A later successful manual intake would not prove the earlier scheduled run performed that intake."
+  ],
+  "reproduction": {
+    "status": "NOT EXECUTED",
+    "environment": "Existing private Site source-management environment, unavailable in this session",
+    "commands": [],
+    "requiredProcedure": [
+      "Open the existing Site source, without creating a replacement.",
+      "Read SCHEDULED-INTAKE.md and compare exact SHA-256 values for both pinned scripts before execution.",
+      "Run one bounded intake only if both hashes match.",
+      "Record changed/no-change outcome and any source commit and undeployed draft version.",
+      "Independently read back exact resulting source/version receipts.",
+      "For scheduler-origin proof, correlate a separate subsequent scheduled run to its own receipts."
+    ],
+    "expectedPositive": "Exact source, verified hashes, intake outcome and independently readable source/version receipt linked to the correct execution.",
+    "negative": "Completed scheduler status with no downstream source/version receipt.",
+    "defeatingObservation": "Independently retrieved, run-correlated intake and persistence receipts establish the intended outcome for the claimed run."
+  },
+  "pinnedExpectedHashes": {
+    "scripts/intake-evidence.py": "488aee61e67cb2b63174a9a38c6f3e13fb0444664aaf820fc3b9b2db79f66c59",
+    "scripts/rebuild-snapshot.py": "f98aebe611b8b9283d2cbc914821886795da2bf47bd3620b5cd2ca3f398039cc"
+  },
+  "consequences": {
+    "beneficial": "An explicit delivery receipt could prevent false promotion of incomplete evidence.",
+    "harmful": "Unverified task completion could conceal stale dashboards or missing intake if a downstream consumer relies on it.",
+    "ambiguous": "The actual downstream effect is unknown; no loss, harm or Site malfunction is established."
+  },
+  "omissions": [
+    "Current private Site source revision",
+    "Exact observed script hashes",
+    "Site intake execution receipt",
+    "Changed/no-change evidence result",
+    "Source commit and draft-version receipt",
+    "Independent readback",
+    "Scheduled-run-to-intake correlation",
+    "Independent specialist review"
+  ],
+  "reversibility": "Unknown; no evidence loss demonstrated. No state change made by this candidate.",
+  "externalStop": {
+    "owner": "Human BoundaryTitan owner",
+    "enforcement": "NOT TESTED",
+    "authority": "Human disposition reserved; machine cannot admit or certify this record."
+  },
+  "specialistReview": "PENDING",
+  "humanDisposition": "PENDING",
+  "authorizationGranted": false,
+  "executionAuthorized": false,
+  "mergeAuthorized": false,
+  "publicationOutsideRepoAuthorized": false,
+  "archiveAdmissionAuthorized": false,
+  "corrections": [],
+  "reopenConditions": [
+    "Supported private Site source access and exact hash verification",
+    "A completed bounded intake with source/version readback",
+    "Independent correlation of a later scheduled execution to downstream evidence receipts"
+  ],
+  "humanTranslationKey": "The delivery truck returned to the warehouse. Its dashboard says the route is complete. Nobody has checked whether the package arrived.",
+  "sigmaLine": "A completed task is not a delivered consequence.",
+  "provenanceLimit": "This is an interactive, human-requested repository custody operation, not an authentic scheduled-run deposit or independent validation."
+}

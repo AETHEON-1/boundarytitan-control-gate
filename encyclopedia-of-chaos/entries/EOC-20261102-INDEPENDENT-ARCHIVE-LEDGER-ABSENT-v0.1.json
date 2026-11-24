@@ -1,0 +1,63 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261102-INDEPENDENT-ARCHIVE-LEDGER-ABSENT-v0.1",
+  "recordedDate": "2026-11-02",
+  "kind": "HISTORICAL_TASK_HEALTH_UNRESOLVED_CANDIDATE",
+  "claim": "No independently held canonical Encyclopedia of Chaos ledger and admission receipt has been established.",
+  "evidenceState": "INDETERMINATE",
+  "sources": [
+    {
+      "type": "owner_task_contract",
+      "locator": "Defense and Operations Brief task definition 6ae2b9d59dc08191af8196a28264f4d7, observed 2026-11-02; reported history is not independently verified"
+    },
+    {
+      "type": "repository",
+      "locator": "encyclopedia-of-chaos/entries/EOC-20261102-TASK-REPO-BOUNDARY-v0.1.json"
+    }
+  ],
+  "observations": [
+    {
+      "id": "PRESERVED-REPORT",
+      "description": "Repo archive architecture explicitly remains a candidate; current custody branch and PR are draft.",
+      "state": "INDETERMINATE"
+    }
+  ],
+  "firstUnsupportedArrow": "A repository JSON candidate and Git commit do not independently establish complete archive custody or human admission.",
+  "testCases": [
+    {
+      "id": "SOURCE-RECONCILIATION",
+      "purpose": "Obtain externally controlled ledger/custody receipt and named human admission evidence; compare append-only lineage.",
+      "execution": "NOT EXECUTED; read-only evidence needed"
+    }
+  ],
+  "reproduction": [
+    "Obtain externally controlled ledger/custody receipt and named human admission evidence; compare append-only lineage."
+  ],
+  "environment": "Defense and Operations Brief scheduled metadata read, source task 6ae2b9d59dc08191af8196a28264f4d7, current execution b45f0aaf-04cc-832d-80bf-19681c449250; original historical source may be inaccessible",
+  "limitations": [
+    "No independent source-root receipt for historical assertion",
+    "No synthetic test, live probe or independent enforcement evaluation",
+    "Candidate record is not archive admission"
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Preserving distinct failure classes prevents silent false closure"
+    ],
+    "harmful": [
+      "Incorrect task-health assurance could hide missed delivery, duplicated work, stale state or unauthorized promotion"
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "HUMAN_OWNER_RESERVED",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "PENDING",
+  "authorizationGranted": false,
+  "links": {
+    "parent": "encyclopedia-of-chaos/entries/EOC-20261102-TASK-REPO-BOUNDARY-v0.1.json",
+    "supersedes": null,
+    "corrections": []
+  },
+  "reopenConditions": [
+    "Obtain externally controlled ledger/custody receipt and named human admission evidence; compare append-only lineage."
+  ]
+}

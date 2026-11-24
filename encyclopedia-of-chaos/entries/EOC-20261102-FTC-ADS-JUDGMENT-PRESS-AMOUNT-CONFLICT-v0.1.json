@@ -1,0 +1,110 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261102-FTC-ADS-JUDGMENT-PRESS-AMOUNT-CONFLICT-v0.1",
+  "recordedDate": "2026-11-02",
+  "kind": "PRIMARY_COURT_ORDER_VS_AGENCY_PRESS_RELEASE_NUMERIC_CONTRADICTION",
+  "claim": "Court order dated 2026-10-14 enters $108,586,567.60 against defaulting corporate defendants; FTC 2026-10-22 press release describes $106.8 million for the same corporate default judgment. Source mismatch is unresolved. Neither amount establishes collections or restitution.",
+  "sources": [
+    {
+      "type": "primary_court_order",
+      "locator": "https://www.ftc.gov/system/files/ftc_gov/pdf/ADS-DefaultJudgmentAgainstCorporateDefendants.pdf",
+      "eventDate": "2026-10-14",
+      "retrievedDate": "2026-11-02",
+      "location": "Section VIII.A, pp.20-21"
+    },
+    {
+      "type": "agency_press_release",
+      "locator": "https://search.ftc.gov/news-events/news/press-releases/2026/10/court-permanently-shuts-down-illegal-debt-relief-operation-following-ftc-allegation-schemes",
+      "publicationDate": "2026-10-22",
+      "retrievedDate": "2026-11-02"
+    },
+    {
+      "type": "docket_index",
+      "locator": "https://www.ftc.gov/legal-library/browse/cases-proceedings/accelerated-debt-settlement-timeline-item-2026-10-22",
+      "retrievedDate": "2026-11-02"
+    }
+  ],
+  "evidenceState": "CONTRADICTED",
+  "observations": [
+    {
+      "id": "COURT_AMOUNT",
+      "description": "Court docket 90 Section VIII.A: $108,586,567.60, default judgment, not receipt.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "PRESS_AMOUNT",
+      "description": "FTC October 22 release: $106.8 million for corporate default judgment.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "NUMERIC_DISCREPANCY",
+      "description": "Agency release number is not an ordinary rounding of operative court order number; cause unknown.",
+      "state": "CONTRADICTED"
+    },
+    {
+      "id": "PAYMENT_STATE",
+      "description": "No independent aggregate collection, receivership distribution or cashed restitution receipts retrieved.",
+      "state": "INDETERMINATE"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "POSITIVE-SOURCE-COMPARISON",
+      "purpose": "Compare exact order and release values",
+      "execution": "READ-ONLY SOURCE COMPARISON PERFORMED 2026-11-02"
+    },
+    {
+      "id": "NEGATIVE-ROUNDING",
+      "purpose": "Check whether 106.8m is ordinary rounding of 108.5865676m",
+      "execution": "READ-ONLY ARITHMETIC; mismatch observed"
+    },
+    {
+      "id": "DEFEATING-CORRECTION",
+      "purpose": "Find later corrected order or agency erratum resolving discrepancy",
+      "execution": "NOT TESTED; targeted future docket/press reconciliation"
+    },
+    {
+      "id": "RESTITUTION-RECEIPT",
+      "purpose": "Verify funds actually collected and paid to consumers",
+      "execution": "NOT TESTED; no victim-level data accessed"
+    }
+  ],
+  "reproduction": [
+    "Read FTC October 22 release and record stated corporate judgment amount.",
+    "Read federal court docket 90, Section VIII.A, and record judgment amount.",
+    "Preserve both amounts and legal scope; check for subsequent correction without overwriting history."
+  ],
+  "environment": "Lawful read-only public web inspection, no court interaction, no financial transfer, no field test.",
+  "limitations": [
+    "No independent docket audit beyond retrieved court order and FTC index",
+    "No verified agency correction",
+    "No actual receiver collection or victim restitution receipts",
+    "No unique scheduler execution ID",
+    "No independent specialist adjudication"
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Correct financial figures support accountable restitution reporting"
+    ],
+    "harmful": [
+      "Incorrect nominal judgment amounts may be mistaken for money already recovered"
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "OWNER_BOUNDED_REPO_CUSTODY_ONLY",
+  "externalStopState": "LEGAL_ORDER_DOCUMENTED_EFFECTIVE_COMPLIANCE_NOT_TESTED",
+  "specialistReview": "PENDING",
+  "authorizationGranted": false,
+  "links": {
+    "parent": null,
+    "supersedes": null,
+    "corrections": [],
+    "relatedIntake": "research/task-bridge/intake/BT-HC-20261014-FTC-ADS-JUDGMENT-RECEIVER-RESTITUTION-v0.1.md"
+  },
+  "reopenConditions": [
+    "FTC correction or revised docket order",
+    "Receivership asset-transfer/collection accounting",
+    "Case-specific consumer restitution distribution and receipt evidence",
+    "Independent specialist reconciliation"
+  ]
+}

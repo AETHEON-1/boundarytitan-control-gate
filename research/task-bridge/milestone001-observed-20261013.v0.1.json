@@ -1,0 +1,21 @@
+{
+  "schema": "BT-M001-EVIDENCE-v0.1",
+  "task": {
+    "taskId": "6a9c5e63cc5881918c926077d66e441c",
+    "title": "Open-World Kernel Scout",
+    "lastRunTime": "2026-10-13T19:30:14.906442Z",
+    "executionId": null,
+    "originalOutput": null,
+    "metadataOrigin": "ChatGPT Tasks metadata inspection; does not include execution payload"
+  },
+  "github": {
+    "headSha": "f506b79f49bd7d998134838cd85042685ac2695e",
+    "workflowRunId": 38461607528,
+    "artifactId": 11845977103,
+    "sourceKind": "SYNTHETIC_FIXTURE",
+    "originalFixturePath": "research/task-bridge/synthetic-finding.v0.1.json"
+  },
+  "originAttested": false,
+  "archiveAdmitted": false,
+  "executionAuthorized": false
+}

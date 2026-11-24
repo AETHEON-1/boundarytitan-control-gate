@@ -1,0 +1,119 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261102-REF-UPDATE-READTIMEOUT-RECOVERED-v0.1",
+  "recordedDate": "2026-11-02",
+  "kind": "REF_UPDATE_TIMEOUT_RECOVERED",
+  "claim": "During bounded two-note intake custody, GitHub update_ref(expected_sha=1604d30c5920b419f4d0f133ecda3ef03b40745d,force=false) returned ReadTimeout. The commit object existed but the authorized branch head initially remained at its old SHA. After a fresh head/PR read, one retry of the same non-force expected-SHA ref update succeeded. Both committed files were fetched pinned to the resulting commit and independently matched their Git tree blob SHA and blob content. A timeout is not proof of a failed write or a successful write without reconciliation.",
+  "sources": [
+    {
+      "type": "tool_execution",
+      "locator": "GitHub connector create_blob -> create_tree -> create_commit -> update_ref(expected SHA, force=false) timed out; fresh branch and PR reads confirmed old head; retry succeeded."
+    },
+    {
+      "type": "repository",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/commit/6074fdd4c5a4420a8d145a42272b97bf72d97b1e"
+    },
+    {
+      "type": "repository",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/6074fdd4c5a4420a8d145a42272b97bf72d97b1e/research/task-bridge/intake/BT-OW-20261014-GH-AW-MCP-ARGV-SCHEMA-ESCAPE-v0.1.md"
+    },
+    {
+      "type": "repository",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/6074fdd4c5a4420a8d145a42272b97bf72d97b1e/research/task-bridge/intake/BT-HC-NJ-EO26080463-PRIORITY-CURTAILMENT-RFI-v0.1.md"
+    }
+  ],
+  "evidenceState": "SUPPORTED",
+  "observations": [
+    {
+      "id": "INITIAL-TIMEOUT",
+      "description": "Initial ref update returned UNKNOWN / ReadTimeout; orchestration emitted PERSISTENCE PENDING and recorded orphan candidate commit 6074fdd4c5a4420a8d145a42272b97bf72d97b1e.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "HEAD-RECONCILIATION",
+      "description": "Fresh branch head and draft PR #66 still pointed to 1604d30c5920b419f4d0f133ecda3ef03b40745d; candidate commit existed with that parent. Initial update had not advanced observed branch.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "RETRY-SUCCESS",
+      "description": "One expected-SHA non-force retry returned success=true. Fresh branch and PR head advanced to 6074fdd4c5a4420a8d145a42272b97bf72d97b1e; PR remained open/draft/unmerged.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "PINNED-READBACK",
+      "description": "Two paths at pinned commit matched corresponding Git tree blob SHAs; fetch_file and fetch_blob content matched for each. Blob IDs 533ca92dd513d93806cbfc557825a9eefcf24089 and fa2b2fbdd35ca450a673980ac24b66c522377196.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "WORKFLOW-SCOPE",
+      "description": "Commit workflow query returned zero pull_request-triggered runs on first page; this is not a universal workflow absence proof.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "ORIGIN-ATTESTATION",
+      "description": "Source task definition ID 6ae2b9d15f8481919d0cdff95cf9f06a known, unique scheduler execution ID null; project-specific delivery and independent specialist receipt not established.",
+      "state": "INDETERMINATE"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "POSITIVE-PINNED-READBACK",
+      "purpose": "Check branch SHA, PR state, exact committed paths and Git blob identity after ambiguous update",
+      "execution": "READ-ONLY RECONCILIATION PERFORMED; matching pinned blob receipts"
+    },
+    {
+      "id": "NEGATIVE-AMBIGUOUS-TIMEOUT",
+      "purpose": "Ensure transport timeout is not equated with known failed or known successful branch mutation",
+      "execution": "OBSERVED TRANSIENT FAILURE; no synthetic test executed"
+    },
+    {
+      "id": "DEFEATING-CONCURRENT-HEAD",
+      "purpose": "If head changed, stale expected-SHA update must be rejected and path re-deduplicated",
+      "execution": "NOT EXECUTED; no observed concurrent head change"
+    },
+    {
+      "id": "SCHEDULER-ORIGIN",
+      "purpose": "Verify actual scheduled execution ID independently from source task definition",
+      "execution": "NOT TESTED; execution ID unavailable"
+    }
+  ],
+  "reproduction": [
+    "Create a candidate Git commit with parent equal to observed branch head and use update_ref with force=false and expected_sha equal to that head.",
+    "On timeout, read branch and PR head and candidate commit before any retry. Never infer state from exception alone.",
+    "If head remains unchanged, retry the same expected-SHA non-force ref update once; if head moved, re-deduplicate and rebuild only if still authorized.",
+    "Fetch exact files pinned to returned commit, compare Git tree and file blob SHA and content; inspect workflow association scope."
+  ],
+  "environment": "Signals and Opportunities bounded documentation custody; GitHub connector through functions.exec. No held battery, field test, external contact, merge or deployment.",
+  "limitations": [
+    "No unique scheduler execution ID or independent project routing receipt",
+    "First ref update transport timeout has unknown remote processing state, but subsequent fresh branch read showed unchanged head",
+    "Workflow query limited to first page of pull_request-triggered runs",
+    "No independent review of candidate evidence",
+    "No authority to change GitHub workflows, code, settings or merge protections"
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Reconciliation and one bounded retry recovered custody without duplicate files or blind overwrite"
+    ],
+    "harmful": [
+      "Without readback, timeout could cause false persistence claims, duplicate deposits or lost research custody"
+    ],
+    "classification": "AMBIGUOUS"
+  },
+  "authorityState": "OWNER_BOUNDED_REPO_CUSTODY_ONLY",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "PENDING",
+  "authorizationGranted": false,
+  "links": {
+    "parent": "encyclopedia-of-chaos/entries/EOC-20261102-POSTWRITE-RECEIPT-EXCEPTION-v0.1.json",
+    "supersedes": null,
+    "corrections": [],
+    "relatedIntake": "research/task-bridge/intake/BT-OW-20261014-GH-AW-MCP-ARGV-SCHEMA-ESCAPE-v0.1.md"
+  },
+  "reopenConditions": [
+    "A later observed update_ref timeout with different branch-head result",
+    "Evidence of retry creating duplicate or stale commits",
+    "Independent scheduler-origin receipt",
+    "Evidence of unobserved workflow side effect or pinned mismatch"
+  ]
+}

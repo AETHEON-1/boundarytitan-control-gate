@@ -1,0 +1,106 @@
+{
+  "schema": "BT-EOC-ENTRY-v0.1",
+  "id": "EOC-20261102-CAISO-TARIFF-DOCX-RETRIEVAL-GAP-v0.1",
+  "recordedDate": "2026-11-02",
+  "kind": "PRIMARY_TARIFF_DRAFT_RETRIEVAL_GAP",
+  "claim": "CAISO's 2026-10-30 second revised draft tariff language is listed by the primary stakeholder site but its full DOCX text was not inspected in this run. A web document reader rejected the .docx content type and a separate isolated container download failed at DNS resolution. Neither failure establishes that the document is unavailable to the public, invalid, or inconsistent with the October 22 CAISO board memorandum. Do not infer final tariff language from a board press release.",
+  "sources": [
+    {
+      "type": "primary_index",
+      "locator": "https://stakeholdercenter.caiso.com/StakeholderInitiatives/Large-loads"
+    },
+    {
+      "type": "document_locator",
+      "locator": "https://stakeholdercenter.caiso.com/InitiativeDocuments/Second-Revised-Draft-Tariff-Language-Large-Loads-Order-to-Show-Cause-Oct-30-2026.docx"
+    },
+    {
+      "type": "primary_board_memo",
+      "locator": "https://www.caiso.com/documents/decision-on-large-load-enhancements-memo-oct-2026.pdf"
+    },
+    {
+      "type": "repository",
+      "locator": "https://github.com/AETHEON-1/boundarytitan-control-gate/blob/1a50eee0e3f095d9a27ba61fb7635cd509d74d21/research/task-bridge/intake/BT-HC-20261028-CAISO-FILI-DISCONNECT-COST-SHIFT-v0.1.md"
+    }
+  ],
+  "evidenceState": "INDETERMINATE",
+  "observations": [
+    {
+      "id": "INDEXED",
+      "description": "CAISO initiative page lists Oct 30 second revised tariff language as a DOCX and records Oct 28 board approval with Nov 16 anticipated FERC filing.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "WEB_READER",
+      "description": "web click returned unsupported content-type application/octet-stream for the DOCX locator; no document text extracted.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "CONTAINER_FETCH",
+      "description": "isolated container requests.get to stakeholdercenter.caiso.com failed DNS resolution, before any HTTP status was received.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "MEMO_AVAILABLE",
+      "description": "CAISO Oct 22 board memorandum and Oct 28 press release were successfully retrieved; neither proves exact Oct 30 tariff wording.",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "DOCUMENT_CONTRADICTION",
+      "description": "No contradiction between Oct 30 text and Oct 22 memo can be assessed without the Oct 30 text.",
+      "state": "INDETERMINATE"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "READ_DOCX",
+      "purpose": "Inspect full Oct 30 revised tariff language against board memo and identify scope/authority/denial clauses",
+      "execution": "NOT EXECUTED: no accessible DOCX bytes in current tools"
+    },
+    {
+      "id": "COMPARE_VERSION",
+      "purpose": "Compare Oct 26 and Oct 30 draft terms on remote disconnect, cost recovery, fallback and enforcement",
+      "execution": "NOT EXECUTED"
+    },
+    {
+      "id": "NEGATIVE_INFERENCE",
+      "purpose": "Do not convert failed retrieval into evidence that no effective tariff clause exists",
+      "execution": "REASONING BOUNDARY APPLIED; no field test"
+    }
+  ],
+  "reproduction": [
+    "Read the CAISO primary initiative page and follow the Oct 30 second revised draft tariff language document.",
+    "If a reader rejects DOCX MIME type, use an authorized document reader or an accessible mirror with source identity and integrity verification; do not infer content from URL alone.",
+    "Compare dated revisions and the eventual FERC filing/order before any tariff-effective or operational control claim."
+  ],
+  "environment": "Public read-only web and isolated container fetch; no probing of operational systems, no software installation, no external interaction or held battery.",
+  "limitations": [
+    "Oct 30 tariff draft text not read; available board memo is an earlier proposal",
+    "Container network DNS failure is an environment limitation, not proof of source absence",
+    "No FERC final acceptance, utility-specific agreement, physical curtailment receipt or realized ratepayer outcome",
+    "Unique scheduler execution ID null; specialist review not performed"
+  ],
+  "consequenceHypotheses": {
+    "beneficial": [
+      "Preserving this gap prevents false certainty about exact curtailment authority or cost protections"
+    ],
+    "harmful": [
+      "Treating a summary as full tariff text could misstate enforceability or customer remedy"
+    ],
+    "classification": "UNDETERMINED"
+  },
+  "authorityState": "OWNER_BOUNDED_REPO_CUSTODY_ONLY",
+  "externalStopState": "NOT_TESTED",
+  "specialistReview": "PENDING",
+  "authorizationGranted": false,
+  "links": {
+    "parent": null,
+    "supersedes": null,
+    "corrections": [],
+    "relatedIntake": "research/task-bridge/intake/BT-HC-20261028-CAISO-FILI-DISCONNECT-COST-SHIFT-v0.1.md"
+  },
+  "reopenConditions": [
+    "The Oct 30 DOCX is retrieved with verified source and parsed",
+    "FERC filing or order resolves proposed tariff text",
+    "A later source contradicts the board memo or reveals omitted control clauses"
+  ]
+}
