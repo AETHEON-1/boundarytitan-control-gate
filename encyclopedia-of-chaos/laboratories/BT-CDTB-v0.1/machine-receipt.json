@@ -1,0 +1,917 @@
+{
+  "authority_state": "CANDIDATE",
+  "fixture_sha256": "e3913646d637e91dae9c58ba90b98267f0e277ae9f7ccec281ca6cdba9da5a1a",
+  "independent_review": "NOT TESTED",
+  "matched": 31,
+  "results": [
+    {
+      "expected": "SUPPORTED",
+      "family": "CD-01",
+      "fixture_match": true,
+      "id": "CD-01-positive",
+      "inputs": {
+        "budget": 10,
+        "complete_journal": true,
+        "costs": [
+          4,
+          6
+        ]
+      },
+      "model_observation": {
+        "delivered": [
+          true,
+          true
+        ],
+        "journal_complete": true,
+        "remaining": 0
+      },
+      "observed_model_state": "SUPPORTED"
+    },
+    {
+      "expected": "CONTRADICTED",
+      "family": "CD-01",
+      "fixture_match": true,
+      "id": "CD-01-negative",
+      "inputs": {
+        "budget": 9,
+        "complete_journal": true,
+        "costs": [
+          4,
+          6
+        ]
+      },
+      "model_observation": {
+        "delivered": [
+          true,
+          false
+        ],
+        "journal_complete": true,
+        "remaining": 5
+      },
+      "observed_model_state": "CONTRADICTED"
+    },
+    {
+      "expected": "INDETERMINATE",
+      "family": "CD-01",
+      "fixture_match": true,
+      "id": "CD-01-missing",
+      "inputs": {
+        "budget": 10,
+        "complete_journal": false,
+        "costs": [
+          4,
+          6
+        ]
+      },
+      "model_observation": {
+        "delivered": [
+          true,
+          true
+        ],
+        "journal_complete": false,
+        "remaining": 0
+      },
+      "observed_model_state": "INDETERMINATE"
+    },
+    {
+      "expected": "SUPPORTED",
+      "family": "CD-02",
+      "fixture_match": true,
+      "id": "CD-02-positive",
+      "inputs": {
+        "dependency_inventory_complete": true,
+        "failed": [
+          "power-A"
+        ],
+        "routes": [
+          [
+            "power-A",
+            "bus-A"
+          ],
+          [
+            "power-B",
+            "bus-B"
+          ]
+        ]
+      },
+      "model_observation": {
+        "failed": [
+          "power-A"
+        ],
+        "route_live": [
+          false,
+          true
+        ],
+        "shared_dependencies": []
+      },
+      "observed_model_state": "SUPPORTED"
+    },
+    {
+      "expected": "CONTRADICTED",
+      "family": "CD-02",
+      "fixture_match": true,
+      "id": "CD-02-negative",
+      "inputs": {
+        "dependency_inventory_complete": true,
+        "failed": [
+          "bus"
+        ],
+        "routes": [
+          [
+            "power-A",
+            "bus"
+          ],
+          [
+            "power-B",
+            "bus"
+          ]
+        ]
+      },
+      "model_observation": {
+        "failed": [
+          "bus"
+        ],
+        "route_live": [
+          false,
+          false
+        ],
+        "shared_dependencies": [
+          "bus"
+        ]
+      },
+      "observed_model_state": "CONTRADICTED"
+    },
+    {
+      "expected": "INDETERMINATE",
+      "family": "CD-02",
+      "fixture_match": true,
+      "id": "CD-02-missing",
+      "inputs": {
+        "dependency_inventory_complete": false,
+        "failed": [
+          "power-A"
+        ],
+        "routes": [
+          [
+            "power-A",
+            "bus-A"
+          ],
+          [
+            "power-B",
+            "bus-B"
+          ]
+        ]
+      },
+      "model_observation": {
+        "failed": [
+          "power-A"
+        ],
+        "route_live": [
+          false,
+          true
+        ],
+        "shared_dependencies": []
+      },
+      "observed_model_state": "INDETERMINATE"
+    },
+    {
+      "expected": "SUPPORTED",
+      "family": "CD-03",
+      "fixture_match": true,
+      "id": "CD-03-positive",
+      "inputs": {
+        "effects": [
+          4,
+          4
+        ],
+        "journal_complete": true,
+        "local_caps": [
+          6,
+          6
+        ],
+        "parent_cap": 10
+      },
+      "model_observation": {
+        "local_checks": [
+          true,
+          true
+        ],
+        "parent_cap": 10,
+        "total_effect": 8
+      },
+      "observed_model_state": "SUPPORTED"
+    },
+    {
+      "expected": "CONTRADICTED",
+      "family": "CD-03",
+      "fixture_match": true,
+      "id": "CD-03-negative",
+      "inputs": {
+        "effects": [
+          6,
+          6
+        ],
+        "journal_complete": true,
+        "local_caps": [
+          6,
+          6
+        ],
+        "parent_cap": 10
+      },
+      "model_observation": {
+        "local_checks": [
+          true,
+          true
+        ],
+        "parent_cap": 10,
+        "total_effect": 12
+      },
+      "observed_model_state": "CONTRADICTED"
+    },
+    {
+      "expected": "INDETERMINATE",
+      "family": "CD-03",
+      "fixture_match": true,
+      "id": "CD-03-missing",
+      "inputs": {
+        "effects": [
+          4,
+          4
+        ],
+        "journal_complete": false,
+        "local_caps": [
+          6,
+          6
+        ],
+        "parent_cap": 10
+      },
+      "model_observation": {
+        "local_checks": [
+          true,
+          true
+        ],
+        "parent_cap": 10,
+        "total_effect": 8
+      },
+      "observed_model_state": "INDETERMINATE"
+    },
+    {
+      "expected": "SUPPORTED",
+      "family": "CD-04",
+      "fixture_match": true,
+      "id": "CD-04-positive",
+      "inputs": {
+        "commit_interval": [
+          1,
+          3
+        ],
+        "revocation_interval": [
+          5,
+          6
+        ]
+      },
+      "model_observation": {
+        "commit_interval": [
+          1,
+          3
+        ],
+        "policy": "strict precedence; no reauthorization in model",
+        "revocation_interval": [
+          5,
+          6
+        ]
+      },
+      "observed_model_state": "SUPPORTED"
+    },
+    {
+      "expected": "CONTRADICTED",
+      "family": "CD-04",
+      "fixture_match": true,
+      "id": "CD-04-negative",
+      "inputs": {
+        "commit_interval": [
+          7,
+          8
+        ],
+        "revocation_interval": [
+          5,
+          6
+        ]
+      },
+      "model_observation": {
+        "commit_interval": [
+          7,
+          8
+        ],
+        "policy": "strict precedence; no reauthorization in model",
+        "revocation_interval": [
+          5,
+          6
+        ]
+      },
+      "observed_model_state": "CONTRADICTED"
+    },
+    {
+      "expected": "INDETERMINATE",
+      "family": "CD-04",
+      "fixture_match": true,
+      "id": "CD-04-missing",
+      "inputs": {
+        "commit_interval": [
+          6,
+          8
+        ],
+        "revocation_interval": [
+          5,
+          7
+        ]
+      },
+      "model_observation": {
+        "commit_interval": [
+          6,
+          8
+        ],
+        "policy": "strict precedence; no reauthorization in model",
+        "revocation_interval": [
+          5,
+          7
+        ]
+      },
+      "observed_model_state": "INDETERMINATE"
+    },
+    {
+      "expected": "SUPPORTED",
+      "family": "CD-05",
+      "fixture_match": true,
+      "id": "CD-05-positive",
+      "inputs": {
+        "first_factor": 2,
+        "hypotheses": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "hypothesis_class_complete": true,
+        "product": 12
+      },
+      "model_observation": {
+        "hypothesis_class_complete": true,
+        "survivors": [
+          [
+            2,
+            6
+          ]
+        ]
+      },
+      "observed_model_state": "SUPPORTED"
+    },
+    {
+      "expected": "CONTRADICTED",
+      "family": "CD-05",
+      "fixture_match": true,
+      "id": "CD-05-negative",
+      "inputs": {
+        "first_factor": null,
+        "hypotheses": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "hypothesis_class_complete": true,
+        "product": 12
+      },
+      "model_observation": {
+        "hypothesis_class_complete": true,
+        "survivors": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            12,
+            1
+          ]
+        ]
+      },
+      "observed_model_state": "CONTRADICTED"
+    },
+    {
+      "expected": "INDETERMINATE",
+      "family": "CD-05",
+      "fixture_match": true,
+      "id": "CD-05-missing",
+      "inputs": {
+        "first_factor": 2,
+        "hypotheses": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        "hypothesis_class_complete": false,
+        "product": 12
+      },
+      "model_observation": {
+        "hypothesis_class_complete": false,
+        "survivors": [
+          [
+            2,
+            6
+          ]
+        ]
+      },
+      "observed_model_state": "INDETERMINATE"
+    },
+    {
+      "expected": "SUPPORTED",
+      "family": "CD-06",
+      "fixture_match": true,
+      "id": "CD-06-positive",
+      "inputs": {
+        "initial": 10,
+        "loss": 3,
+        "loss_record_complete": true,
+        "remedy": 3,
+        "restored": 10
+      },
+      "model_observation": {
+        "state_restored": true,
+        "uncompensated_loss": 0
+      },
+      "observed_model_state": "SUPPORTED"
+    },
+    {
+      "expected": "CONTRADICTED",
+      "family": "CD-06",
+      "fixture_match": true,
+      "id": "CD-06-negative",
+      "inputs": {
+        "initial": 10,
+        "loss": 3,
+        "loss_record_complete": true,
+        "remedy": 0,
+        "restored": 10
+      },
+      "model_observation": {
+        "state_restored": true,
+        "uncompensated_loss": 3
+      },
+      "observed_model_state": "CONTRADICTED"
+    },
+    {
+      "expected": "INDETERMINATE",
+      "family": "CD-06",
+      "fixture_match": true,
+      "id": "CD-06-missing",
+      "inputs": {
+        "initial": 10,
+        "loss": 3,
+        "loss_record_complete": false,
+        "remedy": 3,
+        "restored": 10
+      },
+      "model_observation": {
+        "state_restored": true,
+        "uncompensated_loss": 0
+      },
+      "observed_model_state": "INDETERMINATE"
+    },
+    {
+      "expected": "SUPPORTED",
+      "family": "CD-07",
+      "fixture_match": true,
+      "id": "CD-07-positive",
+      "inputs": {
+        "capacity": 12,
+        "minimums": [
+          6,
+          6
+        ],
+        "requirements_complete": true
+      },
+      "model_observation": {
+        "individual_feasible": [
+          true,
+          true
+        ],
+        "joint_allocations": [
+          [
+            6,
+            6
+          ]
+        ]
+      },
+      "observed_model_state": "SUPPORTED"
+    },
+    {
+      "expected": "CONTRADICTED",
+      "family": "CD-07",
+      "fixture_match": true,
+      "id": "CD-07-negative",
+      "inputs": {
+        "capacity": 10,
+        "minimums": [
+          6,
+          6
+        ],
+        "requirements_complete": true
+      },
+      "model_observation": {
+        "individual_feasible": [
+          true,
+          true
+        ],
+        "joint_allocations": []
+      },
+      "observed_model_state": "CONTRADICTED"
+    },
+    {
+      "expected": "INDETERMINATE",
+      "family": "CD-07",
+      "fixture_match": true,
+      "id": "CD-07-missing",
+      "inputs": {
+        "capacity": 12,
+        "minimums": [
+          6,
+          6
+        ],
+        "requirements_complete": false
+      },
+      "model_observation": {
+        "individual_feasible": [
+          true,
+          true
+        ],
+        "joint_allocations": [
+          [
+            6,
+            6
+          ]
+        ]
+      },
+      "observed_model_state": "INDETERMINATE"
+    },
+    {
+      "expected": "SUPPORTED",
+      "family": "CD-08",
+      "fixture_match": true,
+      "id": "CD-08-positive",
+      "inputs": {
+        "target": {
+          "finite_latency": true,
+          "independent_route": true,
+          "local_enforcement": true
+        }
+      },
+      "model_observation": {
+        "scope": "assumption check only; not proof of equivalent mechanism",
+        "unestablished_assumptions": [],
+        "violated_assumptions": []
+      },
+      "observed_model_state": "SUPPORTED"
+    },
+    {
+      "expected": "CONTRADICTED",
+      "family": "CD-08",
+      "fixture_match": true,
+      "id": "CD-08-negative",
+      "inputs": {
+        "target": {
+          "finite_latency": false,
+          "independent_route": true,
+          "local_enforcement": true
+        }
+      },
+      "model_observation": {
+        "scope": "assumption check only; not proof of equivalent mechanism",
+        "unestablished_assumptions": [],
+        "violated_assumptions": [
+          "finite_latency"
+        ]
+      },
+      "observed_model_state": "CONTRADICTED"
+    },
+    {
+      "expected": "INDETERMINATE",
+      "family": "CD-08",
+      "fixture_match": true,
+      "id": "CD-08-missing",
+      "inputs": {
+        "target": {
+          "finite_latency": "UNKNOWN",
+          "independent_route": true,
+          "local_enforcement": true
+        }
+      },
+      "model_observation": {
+        "scope": "assumption check only; not proof of equivalent mechanism",
+        "unestablished_assumptions": [
+          "finite_latency"
+        ],
+        "violated_assumptions": []
+      },
+      "observed_model_state": "INDETERMINATE"
+    },
+    {
+      "expected": "SUPPORTED",
+      "family": "CD-09",
+      "fixture_match": true,
+      "id": "CD-09-positive",
+      "inputs": {
+        "observed_paths": [
+          "primary",
+          "alternate"
+        ],
+        "oracle_complete": true,
+        "specimens": [
+          {
+            "defects": {
+              "alternate": false,
+              "primary": false
+            },
+            "id": "correct"
+          },
+          {
+            "defects": {
+              "alternate": false,
+              "primary": true
+            },
+            "id": "primary-defect"
+          },
+          {
+            "defects": {
+              "alternate": true,
+              "primary": false
+            },
+            "id": "alternate-defect"
+          }
+        ]
+      },
+      "model_observation": {
+        "labels": [
+          {
+            "evaluator_defect": false,
+            "id": "correct",
+            "oracle_defect": false
+          },
+          {
+            "evaluator_defect": true,
+            "id": "primary-defect",
+            "oracle_defect": true
+          },
+          {
+            "evaluator_defect": true,
+            "id": "alternate-defect",
+            "oracle_defect": true
+          }
+        ],
+        "misclassified": []
+      },
+      "observed_model_state": "SUPPORTED"
+    },
+    {
+      "expected": "CONTRADICTED",
+      "family": "CD-09",
+      "fixture_match": true,
+      "id": "CD-09-negative",
+      "inputs": {
+        "observed_paths": [
+          "primary"
+        ],
+        "oracle_complete": true,
+        "specimens": [
+          {
+            "defects": {
+              "alternate": false,
+              "primary": false
+            },
+            "id": "correct"
+          },
+          {
+            "defects": {
+              "alternate": false,
+              "primary": true
+            },
+            "id": "primary-defect"
+          },
+          {
+            "defects": {
+              "alternate": true,
+              "primary": false
+            },
+            "id": "alternate-defect"
+          }
+        ]
+      },
+      "model_observation": {
+        "labels": [
+          {
+            "evaluator_defect": false,
+            "id": "correct",
+            "oracle_defect": false
+          },
+          {
+            "evaluator_defect": true,
+            "id": "primary-defect",
+            "oracle_defect": true
+          },
+          {
+            "evaluator_defect": false,
+            "id": "alternate-defect",
+            "oracle_defect": true
+          }
+        ],
+        "misclassified": [
+          "alternate-defect"
+        ]
+      },
+      "observed_model_state": "CONTRADICTED"
+    },
+    {
+      "expected": "INDETERMINATE",
+      "family": "CD-09",
+      "fixture_match": true,
+      "id": "CD-09-missing",
+      "inputs": {
+        "observed_paths": [
+          "primary",
+          "alternate"
+        ],
+        "oracle_complete": false,
+        "specimens": [
+          {
+            "defects": {
+              "alternate": false,
+              "primary": false
+            },
+            "id": "correct"
+          },
+          {
+            "defects": {
+              "alternate": false,
+              "primary": true
+            },
+            "id": "primary-defect"
+          },
+          {
+            "defects": {
+              "alternate": true,
+              "primary": false
+            },
+            "id": "alternate-defect"
+          }
+        ]
+      },
+      "model_observation": {
+        "labels": [
+          {
+            "evaluator_defect": false,
+            "id": "correct",
+            "oracle_defect": false
+          },
+          {
+            "evaluator_defect": true,
+            "id": "primary-defect",
+            "oracle_defect": true
+          },
+          {
+            "evaluator_defect": true,
+            "id": "alternate-defect",
+            "oracle_defect": true
+          }
+        ],
+        "misclassified": []
+      },
+      "observed_model_state": "INDETERMINATE"
+    },
+    {
+      "expected": "SUPPORTED",
+      "family": "CD-10",
+      "fixture_match": true,
+      "id": "CD-10-positive",
+      "inputs": {
+        "exercise_observed": true,
+        "exported": true,
+        "fallback_available": true,
+        "format_readable": true,
+        "owner_credentials": true
+      },
+      "model_observation": {
+        "exercise_observed": true,
+        "required_conditions": {
+          "credentials": true,
+          "export": true,
+          "fallback": true,
+          "usable_copy": true
+        }
+      },
+      "observed_model_state": "SUPPORTED"
+    },
+    {
+      "expected": "CONTRADICTED",
+      "family": "CD-10",
+      "fixture_match": true,
+      "id": "CD-10-negative",
+      "inputs": {
+        "exercise_observed": true,
+        "exported": true,
+        "fallback_available": true,
+        "format_readable": false,
+        "owner_credentials": true
+      },
+      "model_observation": {
+        "exercise_observed": true,
+        "required_conditions": {
+          "credentials": true,
+          "export": true,
+          "fallback": true,
+          "usable_copy": false
+        }
+      },
+      "observed_model_state": "CONTRADICTED"
+    },
+    {
+      "expected": "INDETERMINATE",
+      "family": "CD-10",
+      "fixture_match": true,
+      "id": "CD-10-missing",
+      "inputs": {
+        "exercise_observed": false,
+        "exported": true,
+        "fallback_available": true,
+        "format_readable": true,
+        "owner_credentials": true
+      },
+      "model_observation": {
+        "exercise_observed": false,
+        "required_conditions": {
+          "credentials": true,
+          "export": true,
+          "fallback": true,
+          "usable_copy": true
+        }
+      },
+      "observed_model_state": "INDETERMINATE"
+    },
+    {
+      "expected": "TEST INVALID",
+      "family": "CD-04",
+      "fixture_match": true,
+      "id": "CD-04-invalid",
+      "inputs": {
+        "commit_interval": [
+          1,
+          2
+        ],
+        "revocation_interval": [
+          8,
+          5
+        ]
+      },
+      "model_observation": {
+        "reason": "invalid interval"
+      },
+      "observed_model_state": "TEST INVALID"
+    }
+  ],
+  "runner_sha256": "cfef66a6b1b95a07b1ab3063711ad6a52bc8121cfa27e7f58418487753b09ac2",
+  "scope": "synthetic declared model claims only",
+  "states": {
+    "CONTRADICTED": 10,
+    "INDETERMINATE": 10,
+    "SUPPORTED": 10,
+    "TEST INVALID": 1
+  },
+  "total": 31
+}

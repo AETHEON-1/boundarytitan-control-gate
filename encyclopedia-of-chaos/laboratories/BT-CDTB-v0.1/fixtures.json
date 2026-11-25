@@ -1,0 +1,538 @@
+[
+  {
+    "expected": "SUPPORTED",
+    "family": "CD-01",
+    "id": "CD-01-positive",
+    "inputs": {
+      "budget": 10,
+      "complete_journal": true,
+      "costs": [
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "expected": "CONTRADICTED",
+    "family": "CD-01",
+    "id": "CD-01-negative",
+    "inputs": {
+      "budget": 9,
+      "complete_journal": true,
+      "costs": [
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "expected": "INDETERMINATE",
+    "family": "CD-01",
+    "id": "CD-01-missing",
+    "inputs": {
+      "budget": 10,
+      "complete_journal": false,
+      "costs": [
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "expected": "SUPPORTED",
+    "family": "CD-02",
+    "id": "CD-02-positive",
+    "inputs": {
+      "dependency_inventory_complete": true,
+      "failed": [
+        "power-A"
+      ],
+      "routes": [
+        [
+          "power-A",
+          "bus-A"
+        ],
+        [
+          "power-B",
+          "bus-B"
+        ]
+      ]
+    }
+  },
+  {
+    "expected": "CONTRADICTED",
+    "family": "CD-02",
+    "id": "CD-02-negative",
+    "inputs": {
+      "dependency_inventory_complete": true,
+      "failed": [
+        "bus"
+      ],
+      "routes": [
+        [
+          "power-A",
+          "bus"
+        ],
+        [
+          "power-B",
+          "bus"
+        ]
+      ]
+    }
+  },
+  {
+    "expected": "INDETERMINATE",
+    "family": "CD-02",
+    "id": "CD-02-missing",
+    "inputs": {
+      "dependency_inventory_complete": false,
+      "failed": [
+        "power-A"
+      ],
+      "routes": [
+        [
+          "power-A",
+          "bus-A"
+        ],
+        [
+          "power-B",
+          "bus-B"
+        ]
+      ]
+    }
+  },
+  {
+    "expected": "SUPPORTED",
+    "family": "CD-03",
+    "id": "CD-03-positive",
+    "inputs": {
+      "effects": [
+        4,
+        4
+      ],
+      "journal_complete": true,
+      "local_caps": [
+        6,
+        6
+      ],
+      "parent_cap": 10
+    }
+  },
+  {
+    "expected": "CONTRADICTED",
+    "family": "CD-03",
+    "id": "CD-03-negative",
+    "inputs": {
+      "effects": [
+        6,
+        6
+      ],
+      "journal_complete": true,
+      "local_caps": [
+        6,
+        6
+      ],
+      "parent_cap": 10
+    }
+  },
+  {
+    "expected": "INDETERMINATE",
+    "family": "CD-03",
+    "id": "CD-03-missing",
+    "inputs": {
+      "effects": [
+        4,
+        4
+      ],
+      "journal_complete": false,
+      "local_caps": [
+        6,
+        6
+      ],
+      "parent_cap": 10
+    }
+  },
+  {
+    "expected": "SUPPORTED",
+    "family": "CD-04",
+    "id": "CD-04-positive",
+    "inputs": {
+      "commit_interval": [
+        1,
+        3
+      ],
+      "revocation_interval": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "expected": "CONTRADICTED",
+    "family": "CD-04",
+    "id": "CD-04-negative",
+    "inputs": {
+      "commit_interval": [
+        7,
+        8
+      ],
+      "revocation_interval": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "expected": "INDETERMINATE",
+    "family": "CD-04",
+    "id": "CD-04-missing",
+    "inputs": {
+      "commit_interval": [
+        6,
+        8
+      ],
+      "revocation_interval": [
+        5,
+        7
+      ]
+    }
+  },
+  {
+    "expected": "SUPPORTED",
+    "family": "CD-05",
+    "id": "CD-05-positive",
+    "inputs": {
+      "first_factor": 2,
+      "hypotheses": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "hypothesis_class_complete": true,
+      "product": 12
+    }
+  },
+  {
+    "expected": "CONTRADICTED",
+    "family": "CD-05",
+    "id": "CD-05-negative",
+    "inputs": {
+      "first_factor": null,
+      "hypotheses": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "hypothesis_class_complete": true,
+      "product": 12
+    }
+  },
+  {
+    "expected": "INDETERMINATE",
+    "family": "CD-05",
+    "id": "CD-05-missing",
+    "inputs": {
+      "first_factor": 2,
+      "hypotheses": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "hypothesis_class_complete": false,
+      "product": 12
+    }
+  },
+  {
+    "expected": "SUPPORTED",
+    "family": "CD-06",
+    "id": "CD-06-positive",
+    "inputs": {
+      "initial": 10,
+      "loss": 3,
+      "loss_record_complete": true,
+      "remedy": 3,
+      "restored": 10
+    }
+  },
+  {
+    "expected": "CONTRADICTED",
+    "family": "CD-06",
+    "id": "CD-06-negative",
+    "inputs": {
+      "initial": 10,
+      "loss": 3,
+      "loss_record_complete": true,
+      "remedy": 0,
+      "restored": 10
+    }
+  },
+  {
+    "expected": "INDETERMINATE",
+    "family": "CD-06",
+    "id": "CD-06-missing",
+    "inputs": {
+      "initial": 10,
+      "loss": 3,
+      "loss_record_complete": false,
+      "remedy": 3,
+      "restored": 10
+    }
+  },
+  {
+    "expected": "SUPPORTED",
+    "family": "CD-07",
+    "id": "CD-07-positive",
+    "inputs": {
+      "capacity": 12,
+      "minimums": [
+        6,
+        6
+      ],
+      "requirements_complete": true
+    }
+  },
+  {
+    "expected": "CONTRADICTED",
+    "family": "CD-07",
+    "id": "CD-07-negative",
+    "inputs": {
+      "capacity": 10,
+      "minimums": [
+        6,
+        6
+      ],
+      "requirements_complete": true
+    }
+  },
+  {
+    "expected": "INDETERMINATE",
+    "family": "CD-07",
+    "id": "CD-07-missing",
+    "inputs": {
+      "capacity": 12,
+      "minimums": [
+        6,
+        6
+      ],
+      "requirements_complete": false
+    }
+  },
+  {
+    "expected": "SUPPORTED",
+    "family": "CD-08",
+    "id": "CD-08-positive",
+    "inputs": {
+      "target": {
+        "finite_latency": true,
+        "independent_route": true,
+        "local_enforcement": true
+      }
+    }
+  },
+  {
+    "expected": "CONTRADICTED",
+    "family": "CD-08",
+    "id": "CD-08-negative",
+    "inputs": {
+      "target": {
+        "finite_latency": false,
+        "independent_route": true,
+        "local_enforcement": true
+      }
+    }
+  },
+  {
+    "expected": "INDETERMINATE",
+    "family": "CD-08",
+    "id": "CD-08-missing",
+    "inputs": {
+      "target": {
+        "finite_latency": "UNKNOWN",
+        "independent_route": true,
+        "local_enforcement": true
+      }
+    }
+  },
+  {
+    "expected": "SUPPORTED",
+    "family": "CD-09",
+    "id": "CD-09-positive",
+    "inputs": {
+      "observed_paths": [
+        "primary",
+        "alternate"
+      ],
+      "oracle_complete": true,
+      "specimens": [
+        {
+          "defects": {
+            "alternate": false,
+            "primary": false
+          },
+          "id": "correct"
+        },
+        {
+          "defects": {
+            "alternate": false,
+            "primary": true
+          },
+          "id": "primary-defect"
+        },
+        {
+          "defects": {
+            "alternate": true,
+            "primary": false
+          },
+          "id": "alternate-defect"
+        }
+      ]
+    }
+  },
+  {
+    "expected": "CONTRADICTED",
+    "family": "CD-09",
+    "id": "CD-09-negative",
+    "inputs": {
+      "observed_paths": [
+        "primary"
+      ],
+      "oracle_complete": true,
+      "specimens": [
+        {
+          "defects": {
+            "alternate": false,
+            "primary": false
+          },
+          "id": "correct"
+        },
+        {
+          "defects": {
+            "alternate": false,
+            "primary": true
+          },
+          "id": "primary-defect"
+        },
+        {
+          "defects": {
+            "alternate": true,
+            "primary": false
+          },
+          "id": "alternate-defect"
+        }
+      ]
+    }
+  },
+  {
+    "expected": "INDETERMINATE",
+    "family": "CD-09",
+    "id": "CD-09-missing",
+    "inputs": {
+      "observed_paths": [
+        "primary",
+        "alternate"
+      ],
+      "oracle_complete": false,
+      "specimens": [
+        {
+          "defects": {
+            "alternate": false,
+            "primary": false
+          },
+          "id": "correct"
+        },
+        {
+          "defects": {
+            "alternate": false,
+            "primary": true
+          },
+          "id": "primary-defect"
+        },
+        {
+          "defects": {
+            "alternate": true,
+            "primary": false
+          },
+          "id": "alternate-defect"
+        }
+      ]
+    }
+  },
+  {
+    "expected": "SUPPORTED",
+    "family": "CD-10",
+    "id": "CD-10-positive",
+    "inputs": {
+      "exercise_observed": true,
+      "exported": true,
+      "fallback_available": true,
+      "format_readable": true,
+      "owner_credentials": true
+    }
+  },
+  {
+    "expected": "CONTRADICTED",
+    "family": "CD-10",
+    "id": "CD-10-negative",
+    "inputs": {
+      "exercise_observed": true,
+      "exported": true,
+      "fallback_available": true,
+      "format_readable": false,
+      "owner_credentials": true
+    }
+  },
+  {
+    "expected": "INDETERMINATE",
+    "family": "CD-10",
+    "id": "CD-10-missing",
+    "inputs": {
+      "exercise_observed": false,
+      "exported": true,
+      "fallback_available": true,
+      "format_readable": true,
+      "owner_credentials": true
+    }
+  },
+  {
+    "expected": "TEST INVALID",
+    "family": "CD-04",
+    "id": "CD-04-invalid",
+    "inputs": {
+      "commit_interval": [
+        1,
+        2
+      ],
+      "revocation_interval": [
+        8,
+        5
+      ]
+    }
+  }
+]
