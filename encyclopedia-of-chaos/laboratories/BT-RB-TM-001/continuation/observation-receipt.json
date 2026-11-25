@@ -1,0 +1,289 @@
+{
+  "scope": "16 exhaustive Boolean model configurations; no actual Trailmark; no independent oracle or custody",
+  "total": 16,
+  "shared_agreements": 16,
+  "metrics_all": {
+    "count_detector": {
+      "TP": 4,
+      "TN": 4,
+      "FP": 0,
+      "FN": 8
+    },
+    "membership_detector": {
+      "TP": 4,
+      "TN": 4,
+      "FP": 0,
+      "FN": 8
+    },
+    "separate_detector": {
+      "TP": 6,
+      "TN": 4,
+      "FP": 0,
+      "FN": 6
+    },
+    "combined": {
+      "TP": 8,
+      "TN": 4,
+      "FP": 0,
+      "FN": 4
+    }
+  },
+  "metrics_intact": {
+    "count_detector": {
+      "TP": 2,
+      "TN": 1,
+      "FP": 0,
+      "FN": 1
+    },
+    "membership_detector": {
+      "TP": 2,
+      "TN": 1,
+      "FP": 0,
+      "FN": 1
+    },
+    "separate_detector": {
+      "TP": 3,
+      "TN": 1,
+      "FP": 0,
+      "FN": 0
+    },
+    "combined": {
+      "TP": 3,
+      "TN": 1,
+      "FP": 0,
+      "FN": 0
+    }
+  },
+  "rows": [
+    {
+      "normal": false,
+      "hidden": false,
+      "shared_drop": false,
+      "separate_drop": false,
+      "ground": false,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": false,
+      "combined": false,
+      "shared_projection": [],
+      "separate_projection": []
+    },
+    {
+      "normal": false,
+      "hidden": false,
+      "shared_drop": false,
+      "separate_drop": true,
+      "ground": false,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": false,
+      "combined": false,
+      "shared_projection": [],
+      "separate_projection": []
+    },
+    {
+      "normal": false,
+      "hidden": false,
+      "shared_drop": true,
+      "separate_drop": false,
+      "ground": false,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": false,
+      "combined": false,
+      "shared_projection": [],
+      "separate_projection": []
+    },
+    {
+      "normal": false,
+      "hidden": false,
+      "shared_drop": true,
+      "separate_drop": true,
+      "ground": false,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": false,
+      "combined": false,
+      "shared_projection": [],
+      "separate_projection": []
+    },
+    {
+      "normal": false,
+      "hidden": true,
+      "shared_drop": false,
+      "separate_drop": false,
+      "ground": true,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": true,
+      "combined": true,
+      "shared_projection": [],
+      "separate_projection": [
+        "hidden"
+      ]
+    },
+    {
+      "normal": false,
+      "hidden": true,
+      "shared_drop": false,
+      "separate_drop": true,
+      "ground": true,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": false,
+      "combined": false,
+      "shared_projection": [],
+      "separate_projection": []
+    },
+    {
+      "normal": false,
+      "hidden": true,
+      "shared_drop": true,
+      "separate_drop": false,
+      "ground": true,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": true,
+      "combined": true,
+      "shared_projection": [],
+      "separate_projection": [
+        "hidden"
+      ]
+    },
+    {
+      "normal": false,
+      "hidden": true,
+      "shared_drop": true,
+      "separate_drop": true,
+      "ground": true,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": false,
+      "combined": false,
+      "shared_projection": [],
+      "separate_projection": []
+    },
+    {
+      "normal": true,
+      "hidden": false,
+      "shared_drop": false,
+      "separate_drop": false,
+      "ground": true,
+      "count_detector": true,
+      "membership_detector": true,
+      "separate_detector": true,
+      "combined": true,
+      "shared_projection": [
+        "normal"
+      ],
+      "separate_projection": [
+        "normal"
+      ]
+    },
+    {
+      "normal": true,
+      "hidden": false,
+      "shared_drop": false,
+      "separate_drop": true,
+      "ground": true,
+      "count_detector": true,
+      "membership_detector": true,
+      "separate_detector": false,
+      "combined": true,
+      "shared_projection": [
+        "normal"
+      ],
+      "separate_projection": []
+    },
+    {
+      "normal": true,
+      "hidden": false,
+      "shared_drop": true,
+      "separate_drop": false,
+      "ground": true,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": true,
+      "combined": true,
+      "shared_projection": [],
+      "separate_projection": [
+        "normal"
+      ]
+    },
+    {
+      "normal": true,
+      "hidden": false,
+      "shared_drop": true,
+      "separate_drop": true,
+      "ground": true,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": false,
+      "combined": false,
+      "shared_projection": [],
+      "separate_projection": []
+    },
+    {
+      "normal": true,
+      "hidden": true,
+      "shared_drop": false,
+      "separate_drop": false,
+      "ground": true,
+      "count_detector": true,
+      "membership_detector": true,
+      "separate_detector": true,
+      "combined": true,
+      "shared_projection": [
+        "normal"
+      ],
+      "separate_projection": [
+        "normal",
+        "hidden"
+      ]
+    },
+    {
+      "normal": true,
+      "hidden": true,
+      "shared_drop": false,
+      "separate_drop": true,
+      "ground": true,
+      "count_detector": true,
+      "membership_detector": true,
+      "separate_detector": false,
+      "combined": true,
+      "shared_projection": [
+        "normal"
+      ],
+      "separate_projection": []
+    },
+    {
+      "normal": true,
+      "hidden": true,
+      "shared_drop": true,
+      "separate_drop": false,
+      "ground": true,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": true,
+      "combined": true,
+      "shared_projection": [],
+      "separate_projection": [
+        "normal",
+        "hidden"
+      ]
+    },
+    {
+      "normal": true,
+      "hidden": true,
+      "shared_drop": true,
+      "separate_drop": true,
+      "ground": true,
+      "count_detector": false,
+      "membership_detector": false,
+      "separate_detector": false,
+      "combined": false,
+      "shared_projection": [],
+      "separate_projection": []
+    }
+  ]
+}

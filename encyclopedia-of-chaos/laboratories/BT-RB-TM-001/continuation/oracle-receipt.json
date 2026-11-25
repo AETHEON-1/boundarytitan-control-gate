@@ -1,0 +1,100 @@
+{
+  "scope": "Seven stipulated synthetic cases; same-machine fixture and evaluator; no actual Trailmark",
+  "stop_tick": 2,
+  "rows": [
+    {
+      "case": "denial",
+      "ground": false,
+      "records": [],
+      "commit_oracle": false,
+      "observation_oracle": false,
+      "commit_oracle_correct": true,
+      "observation_oracle_correct": true
+    },
+    {
+      "case": "visible_forbidden",
+      "ground": true,
+      "records": [
+        {
+          "commit": 5,
+          "observed": 5
+        }
+      ],
+      "commit_oracle": true,
+      "observation_oracle": true,
+      "commit_oracle_correct": true,
+      "observation_oracle_correct": true
+    },
+    {
+      "case": "omitted_effect",
+      "ground": true,
+      "records": [],
+      "commit_oracle": false,
+      "observation_oracle": false,
+      "commit_oracle_correct": false,
+      "observation_oracle_correct": false
+    },
+    {
+      "case": "phantom_effect",
+      "ground": false,
+      "records": [
+        {
+          "commit": 5,
+          "observed": 5
+        }
+      ],
+      "commit_oracle": true,
+      "observation_oracle": true,
+      "commit_oracle_correct": false,
+      "observation_oracle_correct": false
+    },
+    {
+      "case": "late_report_of_pre_stop",
+      "ground": false,
+      "records": [
+        {
+          "commit": 1,
+          "observed": 5
+        }
+      ],
+      "commit_oracle": false,
+      "observation_oracle": true,
+      "commit_oracle_correct": true,
+      "observation_oracle_correct": false
+    },
+    {
+      "case": "delayed_forbidden",
+      "ground": true,
+      "records": [
+        {
+          "commit": 5,
+          "observed": 9
+        }
+      ],
+      "commit_oracle": true,
+      "observation_oracle": true,
+      "commit_oracle_correct": true,
+      "observation_oracle_correct": true
+    },
+    {
+      "case": "duplicate_report",
+      "ground": true,
+      "records": [
+        {
+          "commit": 5,
+          "observed": 5
+        },
+        {
+          "commit": 5,
+          "observed": 6
+        }
+      ],
+      "commit_oracle": true,
+      "observation_oracle": true,
+      "commit_oracle_correct": true,
+      "observation_oracle_correct": true
+    }
+  ],
+  "commit_oracle_errors": 2,
+  "observation_oracle_errors": 3
+}

@@ -761,6 +761,161 @@
       "sha256": "7dc069d4d3cd322c2b3f5744e98fa051adf001719898f4479ff11fd27a5f1839"
     },
     {
+      "path": "encyclopedia-of-chaos/2026-11-24-mechanism-indexed-knowledge-architecture-v0.1.md",
+      "size_bytes": 10982,
+      "sha256": "5835c4c6a2b97e7c339511be87f52f8dbd0f6e84fdf46f5ed3191ab81bd41be8"
+    },
+    {
+      "path": "encyclopedia-of-chaos/implementation/README.md",
+      "size_bytes": 3086,
+      "sha256": "47b6944fcfbd92584b280939a5bd558ff74f144533df48acd8391e9ad21466e9"
+    },
+    {
+      "path": "encyclopedia-of-chaos/implementation/candidates.json",
+      "size_bytes": 10488,
+      "sha256": "420cb4dfe4c64050418cd478efb8396f8e6b61e0a3fe63ec814d05b1442db15d"
+    },
+    {
+      "path": "encyclopedia-of-chaos/implementation/entry.schema.json",
+      "size_bytes": 3620,
+      "sha256": "49b8cbe36d30918348aa5e71150b3188d04a127bb970979460094b5a0c36eb13"
+    },
+    {
+      "path": "encyclopedia-of-chaos/implementation/machine-test-receipt.json",
+      "size_bytes": 1561,
+      "sha256": "160ae6b683edb78dee929c0855d243e6b3166b7278f0b2a4129af192bf782255"
+    },
+    {
+      "path": "encyclopedia-of-chaos/implementation/mechanisms.json",
+      "size_bytes": 1996,
+      "sha256": "01a4689e5efd0c51623bda25cc1973728bce601d78c0c0783fdf5d77f6e5de2e"
+    },
+    {
+      "path": "encyclopedia-of-chaos/implementation/retrieve.cjs",
+      "size_bytes": 6512,
+      "sha256": "1a8294364800acbfe4a96d19d4b5f2d7015e425d83f128f32e1f9b42b5a388d3"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-CTC-001/EC-MAR-001.md",
+      "size_bytes": 2520,
+      "sha256": "38f5ade31da0087fecdfb38af6e4619a8d2d85d6b36815c6ef83fef928f84148"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-CTC-001/README.md",
+      "size_bytes": 3584,
+      "sha256": "78687e2644411a7ed71f099c71b871994b037a823e28b7330d30e3e3bea52356"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-CTC-001/SHA256SUMS",
+      "size_bytes": 580,
+      "sha256": "6da90985a6d9a29fd5b98e0a80987a35e7bda6b2512a27136a6894b85f6fe7fe"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-CTC-001/recovery_lab.py",
+      "size_bytes": 7193,
+      "sha256": "fa2dc947f826ba2c2d123e28d44c9b251504515ea1a0bc8da338805dd0ae5a16"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-CTC-001/review-handoff.md",
+      "size_bytes": 1916,
+      "sha256": "795ffd01cae8a0c315c40a7a1a121e09356dab97348accace98d3f8c1333eb0d"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-CTC-001/test-receipt.json",
+      "size_bytes": 37082,
+      "sha256": "fa86f67eadc5790ae698755ee58d6711fd2f6eeeb62d289b5ed984e274a5db05"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-CTC-001/transfer-record.json",
+      "size_bytes": 4000,
+      "sha256": "78049bec74b069cf5b1eeef18668b92ccad88be8564e8a75bd88b780a9a4a91f"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-CTC-001/transfer.schema.json",
+      "size_bytes": 2245,
+      "sha256": "443c61fc14933c72372f66d6f46a4b6069c9bae0d682c189693b4114a8354be7"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/REVIEW.md",
+      "size_bytes": 8008,
+      "sha256": "c1b67a116e5fe0b43ad61ff51c5e458cafc159b25f4429c7960df87d4d398933"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/SHA256SUMS",
+      "size_bytes": 675,
+      "sha256": "d0b7c684caf051d9676af486d1f366b1d10d5c4094b3af3fae97ceeb55fd6842"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/acquisition.log",
+      "size_bytes": 269,
+      "sha256": "a14d38ef7394e489991d54edb122c499317afac400bf5f3e8316fba9e35c09f1"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/compare.py",
+      "size_bytes": 3243,
+      "sha256": "7cf6eb243fe3062e9afa92f066cc96edd79fd15f338d3034f4f48c3760b2841e"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/comparison.json",
+      "size_bytes": 16540,
+      "sha256": "894d398e343d28c45690bdb705ec814d470e2602dd0768340fabe6923da8f601"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/continuation/REVIEW.md",
+      "size_bytes": 6272,
+      "sha256": "3238eda52d1b87a6ca995c0153eafa7f328a4d7dc09ecf624ea6889c9367c368"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/continuation/SHA256SUMS",
+      "size_bytes": 513,
+      "sha256": "1129fb3315cafd14c375e19087197205595ccecb4930765e81b8c85be569f73a"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/continuation/acquisition-recheck.log",
+      "size_bytes": 152,
+      "sha256": "142c99b646f2a1472d4518a2f1ea23cbf0c75d3618bbb2679264e79d72e07a12"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/continuation/observation-receipt.json",
+      "size_bytes": 6420,
+      "sha256": "04ffc21d4b43c3117f38d1c5f9af2dd3b8fd6813c77c0b6c315d1d10fb5195e5"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/continuation/oracle-receipt.json",
+      "size_bytes": 2267,
+      "sha256": "7d3aa1ba0393c9237ef2c71b9e800316fccb475bd11299b0ca706d293b14c2ab"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/continuation/oracle_probe.py",
+      "size_bytes": 1743,
+      "sha256": "99ceb8fb50c73ccf13e5327f8f2741534a60b311c7f5efb166c1fbf767e76c42"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/continuation/shared_observation.py",
+      "size_bytes": 2672,
+      "sha256": "d8c72bad1fc604ee95941f942f6a280b9e45ebbcf1ff821b3f669258cbe53e5f"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/first-transcription.py",
+      "size_bytes": 7176,
+      "sha256": "97214ca876982442573aba78c2e596f88e6cc5f06df495ce0daed6da1a2e2b76"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/manifest-delta-candidate.json",
+      "size_bytes": 997,
+      "sha256": "e366c4a3c07e8b9c10094e8c83ad2b71a4cf84307c5f500f8020f3c981e5813a"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/reproduced.json",
+      "size_bytes": 37082,
+      "sha256": "fa86f67eadc5790ae698755ee58d6711fd2f6eeeb62d289b5ed984e274a5db05"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/specimen/recovery_lab.py",
+      "size_bytes": 7193,
+      "sha256": "fa2dc947f826ba2c2d123e28d44c9b251504515ea1a0bc8da338805dd0ae5a16"
+    },
+    {
       "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-16-ada-jay-001-failures-v0.1.md",
       "size_bytes": 2688,
       "sha256": "6a1937fed4457fdb92887b533d7a30cc3310099d069403adb0f8da2eaa195b46"
@@ -801,6 +956,21 @@
       "sha256": "01cb171e2f7af31ae36bf5efecd6ad8c856093c9f4f0164fc311d1cb75fd2ec5"
     },
     {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-24-global-failure-authority-intake-v0.1.md",
+      "size_bytes": 15181,
+      "sha256": "821475a1046ba0fc323ee4f6125da52746e919fab9e6eaaeb8beaa76ad41457c"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-24-recovery-counterevidence-omissions-intake-v0.1.md",
+      "size_bytes": 20603,
+      "sha256": "b29da3ec84389440b733c403626ee1d9ed8d00001a86a8ec62bcdd33deb00110"
+    },
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-25-trailmark-structural-evidence-crosswalk-v0.1.md",
+      "size_bytes": 5410,
+      "sha256": "17eef7a39206cd8ba9bb1ef57bec5ad344d5599f0119aa3ec32fd7435bdae612"
+    },
+    {
       "path": "encyclopedia-of-chaos/reality-benchmarks/RB-001-51-50-failures-contradictions-v0.1.md",
       "size_bytes": 4281,
       "sha256": "863e6656f3a08a21d804a5f457fa4ebefc312dd0c1daa485ee20dd328f7b9acf"
@@ -809,6 +979,11 @@
       "path": "evaluation-record.schema.json",
       "size_bytes": 2179,
       "sha256": "4cc299f1b268eb47fe5b32af428321859317a877688bf5d728b3ec3bdb533ba3"
+    },
+    {
+      "path": "evidence/BT-PUMP-CANMAY-FSM-001-004-review-packet-2026-11-22.md",
+      "size_bytes": 7091,
+      "sha256": "d75b592d77cc70034100e235d84f47f866b3b8651e1a650f3373ab8979a4ed99"
     },
     {
       "path": "examples/review-packet.html",
@@ -939,6 +1114,66 @@
       "path": "research/candidates/2026-11-17-ada-nsa-001-v0.1.md",
       "size_bytes": 4299,
       "sha256": "fdade39ddbb7ec341ccd2ea906297d1f919c63e8f6c4272228d04f2270d8e355"
+    },
+    {
+      "path": "research/candidates/2026-11-24-cross-model-dependency-ledger-v0.1.md",
+      "size_bytes": 10923,
+      "sha256": "280cdc027e1ea817744939a8526b4a229176f6417e9ab4182165bb7d2de788d5"
+    },
+    {
+      "path": "research/candidates/2026-11-24-global-authority-composition-addendum-v0.1.md",
+      "size_bytes": 21474,
+      "sha256": "1c65ba5db4fd74b52b849f69f6eef256791d5310c720e7ac47b0fea5993a0ead"
+    },
+    {
+      "path": "research/candidates/2026-11-24-global-update-omissions-review-v0.1.md",
+      "size_bytes": 17679,
+      "sha256": "32c2ac060cf01b1dd144b310a5f6bcf60046013aeb69d3975ae52f7d45e308b1"
+    },
+    {
+      "path": "research/candidates/2026-11-24-global-update-source-register-v0.1.md",
+      "size_bytes": 9499,
+      "sha256": "612f12085ec3c7ab9d992fd231d46145dc524fb7371909f949e97f158fe48b8e"
+    },
+    {
+      "path": "research/candidates/2026-11-24-global-update-specialist-routing-v0.1.md",
+      "size_bytes": 7448,
+      "sha256": "28352476bf95209ede145a657954c0a1a5ef7518446ec5de9ce2a465e9c0e669"
+    },
+    {
+      "path": "research/candidates/2026-11-25-trailmark-SHA256SUMS",
+      "size_bytes": 439,
+      "sha256": "d6ab0a32685f0de9b25a1022bccf6a82fb691be339b3ea9445ca70ceb0005270"
+    },
+    {
+      "path": "research/candidates/2026-11-25-trailmark-falsification-plan-v0.1.md",
+      "size_bytes": 8860,
+      "sha256": "ce14a122aa6e5db154002a4c1c66c44ea12d3f2a4993fa17a3ba8289827f1bb6"
+    },
+    {
+      "path": "research/candidates/2026-11-25-trailmark-structural-reachability-v0.1.md",
+      "size_bytes": 7439,
+      "sha256": "5881a8f8472018c1d581070508b41a7f8bce5403552d8fc970b0183b3681085c"
+    },
+    {
+      "path": "research/candidates/NSA-NSANET-OUTAGE-BT-HC-004-EVIDENCE-MAP-2026-11-20.md",
+      "size_bytes": 10808,
+      "sha256": "d210398a2e804d0e0c72691242e0c6353e87e7bb080d9cd45443b0a0f335dfe4"
+    },
+    {
+      "path": "research/evidence/BT-GLOBAL-AC-LEDGER-001-v0.1.md",
+      "size_bytes": 21932,
+      "sha256": "0effb6ab37ae0767d8ad5be811cfb80f783cb2e0e0230a52303c53ef574e80c8"
+    },
+    {
+      "path": "research/evidence/BT-SCI-2026-001-mitochondrial-71THz.md",
+      "size_bytes": 3074,
+      "sha256": "ef7fccced7ea0d43be8a0d8d20f6ff0f10d027b9e2117e2b9649260ade92adf6"
+    },
+    {
+      "path": "research/evidence/BT-SCI-2026-002-long-period-radio-transient.md",
+      "size_bytes": 2543,
+      "sha256": "3735cf61dd6bb128d4b99e6c5b55b2c24e47e44fdc1d62a4a6ad1c11366d981f"
     },
     {
       "path": "research/quora-lane/RESPONSE-RECONCILIATION-v0.1.md",

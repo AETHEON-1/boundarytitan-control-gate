@@ -1,0 +1,4 @@
+Python 3.13.5
+trailmark absent
+fatal: unable to access 'https://github.com/trailofbits/trailmark.git/': Could not resolve host: github.com
+git exit=128
