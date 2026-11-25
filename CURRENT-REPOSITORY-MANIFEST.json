@@ -896,6 +896,41 @@
       "sha256": "d8c72bad1fc604ee95941f942f6a280b9e45ebbcf1ff821b3f669258cbe53e5f"
     },
     {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/external-handoff/01-REPRODUCE.md",
+      "size_bytes": 9041,
+      "sha256": "30976f50ea4f0553a0037eb2743c05ba27081c207dbf9244dcdc3a345daab3e3"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/external-handoff/02-BLIND-FIXTURE-CONTRACT.md",
+      "size_bytes": 6167,
+      "sha256": "04b55f398cbddcfca6c58663f38537dd39bc5f60225d3833fa8e143a164e1433"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/external-handoff/03-EVIDENCE-DEPENDENCIES.md",
+      "size_bytes": 5220,
+      "sha256": "c45d7352bf74a2ba0f0878bff37960862d704a9a54ba30b9d2d5ed20444f9f53"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/external-handoff/04-REFERENCE-CROSSWALK.md",
+      "size_bytes": 5863,
+      "sha256": "492ee88de8f4a841bf855dece89e92bd1d751f1c66fcfa065e774a803955a8a1"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/external-handoff/05-DISPOSITION.md",
+      "size_bytes": 6398,
+      "sha256": "4b5f56940ae767f66f699f8c41f8e27cb0f73db0eaab4816cadc8ba66d1d3be8"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/external-handoff/SHA256SUMS",
+      "size_bytes": 527,
+      "sha256": "c9cf9246d41a1a8a478a848e3137a84602cfa599ce3b0bb356eea27c253a3322"
+    },
+    {
+      "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/external-handoff/START-HERE.md",
+      "size_bytes": 3255,
+      "sha256": "7fe92fb9a815bad3308ae30f9a26d316964af7959d160e4b04ac6bc406ba7780"
+    },
+    {
       "path": "encyclopedia-of-chaos/laboratories/BT-RB-TM-001/first-transcription.py",
       "size_bytes": 7176,
       "sha256": "97214ca876982442573aba78c2e596f88e6cc5f06df495ce0daed6da1a2e2b76"
