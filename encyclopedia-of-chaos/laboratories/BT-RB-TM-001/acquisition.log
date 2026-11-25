@@ -1,0 +1,4 @@
+Initial acquisition probe: git ls-remote https://github.com/trailofbits/trailmark.git refs/tags/v0.9.0
+fatal: unable to access https://github.com/trailofbits/trailmark.git/: Could not resolve host: github.com
+exit 128
+Trailmark executable absent; no install performed.

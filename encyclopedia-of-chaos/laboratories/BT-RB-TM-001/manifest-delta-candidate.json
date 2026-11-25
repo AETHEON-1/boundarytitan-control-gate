@@ -1,0 +1,26 @@
+{
+  "base": "05bb5292ccab3068719fc8dab809e0abd442c21a",
+  "scope": "four Trailmark paths only, NOT a complete replacement ledger",
+  "files": [
+    {
+      "path": "encyclopedia-of-chaos/reality-benchmarks/2026-11-25-trailmark-structural-evidence-crosswalk-v0.1.md",
+      "size_bytes": 5410,
+      "sha256": "17eef7a39206cd8ba9bb1ef57bec5ad344d5599f0119aa3ec32fd7435bdae612"
+    },
+    {
+      "path": "research/candidates/2026-11-25-trailmark-SHA256SUMS",
+      "size_bytes": 439,
+      "sha256": "d6ab0a32685f0de9b25a1022bccf6a82fb691be339b3ea9445ca70ceb0005270"
+    },
+    {
+      "path": "research/candidates/2026-11-25-trailmark-falsification-plan-v0.1.md",
+      "size_bytes": 8860,
+      "sha256": "ce14a122aa6e5db154002a4c1c66c44ea12d3f2a4993fa17a3ba8289827f1bb6"
+    },
+    {
+      "path": "research/candidates/2026-11-25-trailmark-structural-reachability-v0.1.md",
+      "size_bytes": 7439,
+      "sha256": "5881a8f8472018c1d581070508b41a7f8bce5403552d8fc970b0183b3681085c"
+    }
+  ]
+}

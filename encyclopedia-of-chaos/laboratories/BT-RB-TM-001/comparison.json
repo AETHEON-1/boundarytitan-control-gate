@@ -1,0 +1,780 @@
+{
+  "scope": "Python AST baseline; no Trailmark execution; four selected configurations of a single exact source; machine-authored comparison",
+  "static_call_expressions": [
+    {
+      "caller": "module",
+      "callee_expression": "dataclass",
+      "line": 6,
+      "column": 1
+    },
+    {
+      "caller": "module.run.schedule",
+      "callee_expression": "heapq.heappush",
+      "line": 35,
+      "column": 16
+    },
+    {
+      "caller": "module.run.log",
+      "callee_expression": "trace.append",
+      "line": 36,
+      "column": 27
+    },
+    {
+      "caller": "module.run.log",
+      "callee_expression": "dict",
+      "line": 36,
+      "column": 40
+    },
+    {
+      "caller": "module.run.commit",
+      "callee_expression": "log",
+      "line": 39,
+      "column": 22
+    },
+    {
+      "caller": "module.run.commit",
+      "callee_expression": "log",
+      "line": 42,
+      "column": 16
+    },
+    {
+      "caller": "module.run.commit",
+      "callee_expression": "log",
+      "line": 44,
+      "column": 16
+    },
+    {
+      "caller": "module.run.commit",
+      "callee_expression": "log",
+      "line": 47,
+      "column": 12
+    },
+    {
+      "caller": "module.run.commit",
+      "callee_expression": "effects.append",
+      "line": 48,
+      "column": 8
+    },
+    {
+      "caller": "module.run.commit",
+      "callee_expression": "dict",
+      "line": 48,
+      "column": 23
+    },
+    {
+      "caller": "module.run.commit",
+      "callee_expression": "log",
+      "line": 49,
+      "column": 8
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "schedule",
+      "line": 50,
+      "column": 4
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "schedule",
+      "line": 50,
+      "column": 25
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "schedule",
+      "line": 50,
+      "column": 46
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "schedule",
+      "line": 51,
+      "column": 4
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "schedule",
+      "line": 51,
+      "column": 45
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "schedule",
+      "line": 52,
+      "column": 18
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "schedule",
+      "line": 53,
+      "column": 16
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "schedule",
+      "line": 54,
+      "column": 29
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "heapq.heappop",
+      "line": 56,
+      "column": 18
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "log",
+      "line": 57,
+      "column": 27
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "log",
+      "line": 59,
+      "column": 35
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "log",
+      "line": 61,
+      "column": 38
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "log",
+      "line": 62,
+      "column": 31
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "log",
+      "line": 63,
+      "column": 28
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "log",
+      "line": 65,
+      "column": 16
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "schedule",
+      "line": 66,
+      "column": 12
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "log",
+      "line": 71,
+      "column": 12
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "log",
+      "line": 74,
+      "column": 12
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "log",
+      "line": 76,
+      "column": 54
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "commit",
+      "line": 77,
+      "column": 12
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "effects.append",
+      "line": 81,
+      "column": 20
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "dict",
+      "line": 81,
+      "column": 35
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "log",
+      "line": 82,
+      "column": 20
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "essential_misses.append",
+      "line": 83,
+      "column": 22
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "log",
+      "line": 83,
+      "column": 50
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "commit",
+      "line": 84,
+      "column": 38
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "dict",
+      "line": 88,
+      "column": 11
+    },
+    {
+      "caller": "module.run",
+      "callee_expression": "asdict",
+      "line": 88,
+      "column": 23
+    },
+    {
+      "caller": "module",
+      "callee_expression": "Config",
+      "line": 92,
+      "column": 5
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 96,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 97,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 98,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 99,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 100,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 101,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 102,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 103,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 104,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 105,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 106,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 107,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 108,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 109,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 110,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 111,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 112,
+      "column": 2
+    },
+    {
+      "caller": "module",
+      "callee_expression": "replace",
+      "line": 113,
+      "column": 2
+    },
+    {
+      "caller": "module.battery",
+      "callee_expression": "run",
+      "line": 119,
+      "column": 10
+    },
+    {
+      "caller": "module.battery",
+      "callee_expression": "len",
+      "line": 120,
+      "column": 27
+    },
+    {
+      "caller": "module.battery",
+      "callee_expression": "len",
+      "line": 120,
+      "column": 62
+    },
+    {
+      "caller": "module.battery",
+      "callee_expression": "results.append",
+      "line": 121,
+      "column": 8
+    },
+    {
+      "caller": "module.battery",
+      "callee_expression": "dict",
+      "line": 122,
+      "column": 11
+    },
+    {
+      "caller": "module.battery",
+      "callee_expression": "len",
+      "line": 123,
+      "column": 22
+    },
+    {
+      "caller": "module.battery",
+      "callee_expression": "sum",
+      "line": 123,
+      "column": 43
+    },
+    {
+      "caller": "module.battery",
+      "callee_expression": "sum",
+      "line": 124,
+      "column": 27
+    },
+    {
+      "caller": "module",
+      "callee_expression": "argparse.ArgumentParser",
+      "line": 127,
+      "column": 6
+    },
+    {
+      "caller": "module",
+      "callee_expression": "p.add_argument",
+      "line": 127,
+      "column": 33
+    },
+    {
+      "caller": "module",
+      "callee_expression": "p.add_argument",
+      "line": 127,
+      "column": 61
+    },
+    {
+      "caller": "module",
+      "callee_expression": "p.parse_args",
+      "line": 127,
+      "column": 93
+    },
+    {
+      "caller": "module",
+      "callee_expression": "run",
+      "line": 129,
+      "column": 49
+    },
+    {
+      "caller": "module",
+      "callee_expression": "battery",
+      "line": 130,
+      "column": 14
+    },
+    {
+      "caller": "module",
+      "callee_expression": "json.dumps",
+      "line": 131,
+      "column": 6
+    },
+    {
+      "caller": "module",
+      "callee_expression": "Path(a.output).write_text",
+      "line": 132,
+      "column": 17
+    },
+    {
+      "caller": "module",
+      "callee_expression": "Path",
+      "line": 132,
+      "column": 17
+    },
+    {
+      "caller": "module",
+      "callee_expression": "print",
+      "line": 133,
+      "column": 10
+    },
+    {
+      "caller": "module",
+      "callee_expression": "SystemExit",
+      "line": 134,
+      "column": 10
+    }
+  ],
+  "static_call_expression_count": 77,
+  "static_digest": "00fdc430ad4e1a47fab0efe685690367e05c10ab6d05e4f1bc8f4ef056a1c261",
+  "cases": [
+    {
+      "case": "restart_loses_stop",
+      "source_sha256": "fa2dc947f826ba2c2d123e28d44c9b251504515ea1a0bc8da338805dd0ae5a16",
+      "static_call_expression_sha256": "00fdc430ad4e1a47fab0efe685690367e05c10ab6d05e4f1bc8f4ef056a1c261",
+      "runtime_python_call_pairs": [
+        [
+          "run",
+          "run.<locals>.commit"
+        ],
+        [
+          "run",
+          "run.<locals>.log"
+        ],
+        [
+          "run",
+          "run.<locals>.schedule"
+        ],
+        [
+          "run.<locals>.commit",
+          "run.<locals>.log"
+        ]
+      ],
+      "forbidden_normal_effect_ticks": [
+        5
+      ],
+      "expected_ticks": [
+        5
+      ],
+      "matches": true,
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        },
+        {
+          "tick": 4,
+          "event": "restart",
+          "denied": false,
+          "epoch": 0
+        },
+        {
+          "tick": 5,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 5,
+          "action": "normal",
+          "path": "worker"
+        },
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ]
+    },
+    {
+      "case": "restart_preserves_stop",
+      "source_sha256": "fa2dc947f826ba2c2d123e28d44c9b251504515ea1a0bc8da338805dd0ae5a16",
+      "static_call_expression_sha256": "00fdc430ad4e1a47fab0efe685690367e05c10ab6d05e4f1bc8f4ef056a1c261",
+      "runtime_python_call_pairs": [
+        [
+          "run",
+          "run.<locals>.commit"
+        ],
+        [
+          "run",
+          "run.<locals>.log"
+        ],
+        [
+          "run",
+          "run.<locals>.schedule"
+        ],
+        [
+          "run.<locals>.commit",
+          "run.<locals>.log"
+        ]
+      ],
+      "forbidden_normal_effect_ticks": [],
+      "expected_ticks": [],
+      "matches": true,
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": true,
+          "power": true
+        },
+        {
+          "tick": 4,
+          "event": "restart",
+          "denied": true,
+          "epoch": 1
+        },
+        {
+          "tick": 5,
+          "event": "commit_denied",
+          "action": "normal",
+          "reason": "live_fence",
+          "token": 0,
+          "epoch": 1
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ]
+    },
+    {
+      "case": "cancel_without_fence",
+      "source_sha256": "fa2dc947f826ba2c2d123e28d44c9b251504515ea1a0bc8da338805dd0ae5a16",
+      "static_call_expression_sha256": "00fdc430ad4e1a47fab0efe685690367e05c10ab6d05e4f1bc8f4ef056a1c261",
+      "runtime_python_call_pairs": [
+        [
+          "run",
+          "run.<locals>.log"
+        ],
+        [
+          "run",
+          "run.<locals>.schedule"
+        ]
+      ],
+      "forbidden_normal_effect_ticks": [],
+      "expected_ticks": [],
+      "matches": true,
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": false,
+          "power": true
+        },
+        {
+          "tick": 5,
+          "event": "worker_cancelled"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        }
+      ]
+    },
+    {
+      "case": "cancel_without_fence_retry",
+      "source_sha256": "fa2dc947f826ba2c2d123e28d44c9b251504515ea1a0bc8da338805dd0ae5a16",
+      "static_call_expression_sha256": "00fdc430ad4e1a47fab0efe685690367e05c10ab6d05e4f1bc8f4ef056a1c261",
+      "runtime_python_call_pairs": [
+        [
+          "run",
+          "run.<locals>.commit"
+        ],
+        [
+          "run",
+          "run.<locals>.log"
+        ],
+        [
+          "run",
+          "run.<locals>.schedule"
+        ],
+        [
+          "run.<locals>.commit",
+          "run.<locals>.log"
+        ]
+      ],
+      "forbidden_normal_effect_ticks": [
+        7
+      ],
+      "expected_ticks": [
+        7
+      ],
+      "matches": true,
+      "essential_misses": [],
+      "trace": [
+        {
+          "tick": 0,
+          "event": "worker_queued",
+          "token": 0
+        },
+        {
+          "tick": 1,
+          "event": "dependency_state",
+          "failed": true
+        },
+        {
+          "tick": 2,
+          "event": "stop_requested",
+          "valid_owner": true,
+          "route": "independent"
+        },
+        {
+          "tick": 3,
+          "event": "stop_effective",
+          "epoch": 1,
+          "queued": false,
+          "power": true
+        },
+        {
+          "tick": 5,
+          "event": "worker_cancelled"
+        },
+        {
+          "tick": 6,
+          "event": "essential_completed"
+        },
+        {
+          "tick": 7,
+          "event": "effect_committed",
+          "action": "normal",
+          "path": "worker"
+        }
+      ],
+      "effects": [
+        {
+          "tick": 6,
+          "action": "essential",
+          "path": "restricted_service"
+        },
+        {
+          "tick": 7,
+          "action": "normal",
+          "path": "worker"
+        }
+      ]
+    }
+  ],
+  "constant_no_violation_classifier": {
+    "TP": 0,
+    "TN": 2,
+    "FP": 0,
+    "FN": 2
+  },
+  "limits": "AST call expressions are not resolved edges; profiling records only same-file Python calls, not C calls, data dependencies or event ordering; journal originates in same simulator; no independent oracle, reviewer or custody."
+}
