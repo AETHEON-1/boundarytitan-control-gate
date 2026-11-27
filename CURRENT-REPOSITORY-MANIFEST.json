@@ -736,6 +736,16 @@
       "sha256": "9af70bf10d65866fe57a5adde854caef020331f7be8b00afeb0232aedeef6bcb"
     },
     {
+      "path": "challenges/specialist-falsification/BT-SFB-001-REGISTER.md",
+      "size_bytes": 6430,
+      "sha256": "8aee4fb6281730b1a40f2ba95a8f5318498c695d6b7946314679797f8c6473a6"
+    },
+    {
+      "path": "challenges/specialist-falsification/README.md",
+      "size_bytes": 3501,
+      "sha256": "e23535763dfbb13e19764137bfdbd852bbe09f62a814976a3e9c16c2920ba6a9"
+    },
+    {
       "path": "challenges/specialist-handoff-template.yaml",
       "size_bytes": 1007,
       "sha256": "0814cb44c8358db824110c1f45821c12ecab37b43d9f6d7431101010e83b67f4"
