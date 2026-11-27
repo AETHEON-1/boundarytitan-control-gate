@@ -29,5 +29,9 @@ jobs:
         run: npm test -- --coverage=false
       - name: Run Python handoff tests
         run: npm run test:python
+      - name: Test maintenance sentinel negative controls
+        run: python3 -B -m unittest discover -s maintenance/tests -p 'test_*.py' -v
+      - name: Run maintenance sentinel
+        run: python3 -B maintenance/integrity_sentinel.py --root .
       - name: Verify repository state
         run: npm run verify:state
