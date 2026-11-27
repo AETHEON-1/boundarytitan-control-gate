@@ -1076,6 +1076,11 @@
       "sha256": "3735cf61dd6bb128d4b99e6c5b55b2c24e47e44fdc1d62a4a6ad1c11366d981f"
     },
     {
+      "path": "research/quora-lane/QUORA-SPECIALIST-CONVERSATION-DELTA-2026-11-27-v0.1.md",
+      "size_bytes": 19150,
+      "sha256": "4a42e3a6ce78837b6bbb66314a8875c56c77bee3261d393663ecc676f4a3880b"
+    },
+    {
       "path": "research/quora-lane/RESPONSE-RECONCILIATION-v0.1.md",
       "size_bytes": 4067,
       "sha256": "77abaf043739d9ae7e94b3d24e18596e3dbb354e4abd6eae000bf8837c66003f"
