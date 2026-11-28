@@ -1056,6 +1056,11 @@
       "sha256": "28352476bf95209ede145a657954c0a1a5ef7518446ec5de9ce2a465e9c0e669"
     },
     {
+      "path": "research/candidates/2026-11-27-decision-construction-boundary-v0.1.md",
+      "size_bytes": 15463,
+      "sha256": "37d6594eafec07a63daeee42f185bf189521016649c5fe2e59f990d2320963ad"
+    },
+    {
       "path": "research/candidates/NSA-NSANET-OUTAGE-BT-HC-004-EVIDENCE-MAP-2026-11-20.md",
       "size_bytes": 10808,
       "sha256": "d210398a2e804d0e0c72691242e0c6353e87e7bb080d9cd45443b0a0f335dfe4"
